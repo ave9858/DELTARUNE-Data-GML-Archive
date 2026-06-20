@@ -244,7 +244,7 @@ if (global.myfight == 3) {
 		scr_battle_sprite_set("kris", spr_kris_zoosuit_cup, 0, true);
 		scr_battle_sprite_set("susie", spr_susie_zoosuit_cup, 0, true);
 		scr_battle_sprite_set("ralsei", spr_ralsei_zoosuit_cup, 0, true);
-		msgsetloc(0, "* Everyone chat around the watercooler./%", "obj_watercooler_enemy_slash_Step_0_gml_226_0");
+		msgsetloc(0, "* Everyone chatted around the watercooler./%", "obj_watercooler_enemy_slash_Step_0_gml_226_0");
 		scr_battletext_default();
 		acting = 3.1;
 	}

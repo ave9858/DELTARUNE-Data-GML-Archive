@@ -11,8 +11,10 @@ function scr_get_border(arg0) {
 		if (global.plot >= 120)
 			_border_image = border_dw_green_room;
 
-		if (global.plot >= 122)
-			_border_image = border_dw_tv_black;
+		if (global.plot >= 122) {
+			if (arg0 == room_ch3_gameshowroom)
+				_border_image = border_dw_tv_black;
+		}
 
 		if (global.plot >= 160)
 			_border_image = border_dw_green_room;
@@ -53,7 +55,7 @@ function scr_get_border(arg0) {
 		if (arg0 == room_dw_couch_overworld_intro || arg0 == room_dw_couch_overworld_05)
 			_border_image = border_dw_tv_black;
 
-		if (arg0 == room_dw_tv_curtain || arg0 == room_dw_chef || arg0 == room_dw_rhythm || arg0 == room_dw_ranking_a)
+		if (arg0 == room_dw_tv_curtain || arg0 == room_dw_chef || arg0 == room_dw_rhythm || arg0 == room_dw_ranking_a || arg0 == room_dw_rhythm_countdown || arg0 == room_dw_susiezilla)
 			_border_image = border_dw_blue_stars;
 
 		if (arg0 == room_board_gsa02_b0 || arg0 == room_board_intro || arg0 == room_board_1 || arg0 == room_board_2)
