@@ -7,7 +7,7 @@ var yy = floor((wh - (sh * global.window_scale)) / 2);
 global.window_xofs = xx;
 global.window_yofs = yy;
 
-if (os_type == os_switch && wh == 720)
+if (scr_is_switch_os() && wh == 720)
 	texture_set_interpolation(true);
 else
 	texture_set_interpolation(false);
@@ -40,7 +40,7 @@ if (global.screen_border_active && border_alpha >= 0) {
 	if (instance_exists(obj_savepoint))
 		global.disable_border = false;
 
-	if (room_id == PLACE_CONTACT || room_id == 880 || room_id == PLACE_MENU || room_id == room_gameover || room_id == PLACE_DOG || room_id == ROOM_INITIALIZE || room_id == room_title_placeholder || room_id == room_intro_ch2)
+	if (room_id == PLACE_CONTACT || room_id == 886 || room_id == PLACE_MENU || room_id == room_gameover || room_id == PLACE_DOG || room_id == ROOM_INITIALIZE || room_id == room_title_placeholder || room_id == room_intro_ch2)
 		global.disable_border = true;
 }
 

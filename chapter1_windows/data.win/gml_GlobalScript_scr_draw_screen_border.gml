@@ -12,10 +12,10 @@ function scr_draw_screen_border(arg0) {
 		var room_id = room;
 		var _border_image = global.darkzone ? border_dark : border_light;
 
-		if (room_id == room_legend || room_id == 318 || room_id == PLACE_MENU || room_id == PLACE_LOGO)
+		if (room_id == room_legend || room_id == 321 || room_id == PLACE_MENU || room_id == PLACE_LOGO)
 			_border_image = border_dark;
 
-		if (room_id == PLACE_CONTACT || room_id == 314 || room_id == PLACE_MENU || room_id == room_splashscreen || room_id == room_gameover || room_id == PLACE_DOG || room_id == room_dark1a || room_id == room_dark_eyepuzzle)
+		if (room_id == PLACE_CONTACT || room_id == 317 || room_id == PLACE_MENU || room_id == room_splashscreen || room_id == room_gameover || room_id == PLACE_DOG || room_id == room_dark1a || room_id == room_dark_eyepuzzle)
 			obj_time.border_alpha = 0;
 		else if (room_id == room_insidecloset || room_id == room_cc_fountain)
 			obj_time.border_fade_out = obj_time.border_alpha > 0;
@@ -60,7 +60,7 @@ function scr_draw_screen_border(arg0) {
 		if (ossafe_file_exists("filech1_5"))
 			game_won = true;
 
-		if ((room_id == room_legend || room_id == 318 || room_id == PLACE_MENU) && game_won == true) {
+		if ((room_id == room_legend || room_id == 321 || room_id == PLACE_MENU) && game_won == true) {
 			_border_image = border_dark;
 			obj_time.border_alpha = 1;
 		}
