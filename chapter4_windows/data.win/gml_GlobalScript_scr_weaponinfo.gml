@@ -614,7 +614,7 @@ function scr_weaponinfo(arg0) {
 			weaponchar4temp = 1;
 			weaponicontemp = 18;
 			weaponabilityicontemp = 18;
-			weaponabilitytemp = "SlayDark";
+			weaponabilitytemp = stringsetloc("SlayDark", "scr_weaponinfo_slash_scr_weaponinfo_gml_624_0");
 			value = 0;
 			break;
 

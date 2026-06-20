@@ -1517,9 +1517,28 @@ if (room == room_dw_b3bs_bibliox) {
 	}
 
 	if (global.flag[1055] >= 6) {
-		scr_speaker("Bibliox");
-		msgsetloc(0, "* Mumble^1, mumble.../", "obj_npc_room_slash_Other_10_gml_1948_0");
-		msgnextloc("* My favorite game^1, what a shame.../%", "obj_npc_room_slash_Other_10_gml_1949_0");
+		var egg = false;
+
+		if (global.flag[1092] == 6)
+			egg = true;
+
+		if (!egg) {
+			scr_speaker("no_name");
+			msgsetloc(0, "* Mumble..^1. no more characters..^1. all gone.../", "obj_npc_room_slash_Other_10_gml_1953_0");
+			msgnextloc("* What? You want to find them?/", "obj_npc_room_slash_Other_10_gml_1954_0");
+			msgnextloc("* No^1, no^1, they already went nowhere.../", "obj_npc_room_slash_Other_10_gml_1955_0");
+			msgnextloc("* ..^1. the ticket..^1. it's under the ball machine.../%", "obj_npc_room_slash_Other_10_gml_1956_0");
+			global.flag[1092] = 5;
+
+			if (talked) {
+				scr_speaker("no_name");
+				msgsetloc(0, "* ..^1. the ticket..^1. it's under the ball machine.../%", "obj_npc_room_slash_Other_10_gml_1962_0");
+			}
+		} else {
+			scr_speaker("Bibliox");
+			msgsetloc(0, "* Mumble^1, mumble.../", "obj_npc_room_slash_Other_10_gml_1948_0");
+			msgnextloc("* My favorite game^1, what a shame.../%", "obj_npc_room_slash_Other_10_gml_1949_0");
+		}
 	}
 }
 

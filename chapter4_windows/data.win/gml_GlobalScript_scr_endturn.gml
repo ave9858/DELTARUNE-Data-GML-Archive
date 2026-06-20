@@ -55,11 +55,14 @@ function scr_endturn() {
 			if (global.charaction[0] == 1)
 				obj_sound_of_justice_enemy.kris_phase2_try_attack_con = 1;
 
-			if (global.charaction[1] == 1)
-				obj_sound_of_justice_enemy.susie_phase2_try_attack_con = 1;
+			if (global.charaction[1] == 4) {
+			} else {
+				if (global.charaction[1] == 1)
+					obj_sound_of_justice_enemy.susie_phase2_try_attack_con = 1;
 
-			global.charaction[1] = 0;
-			global.faceaction[1] = 0;
+				global.charaction[1] = 0;
+				global.faceaction[1] = 0;
+			}
 		}
 	}
 

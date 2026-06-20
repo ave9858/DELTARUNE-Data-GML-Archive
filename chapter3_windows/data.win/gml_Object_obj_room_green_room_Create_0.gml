@@ -416,3 +416,6 @@ if (global.entrance == 8) {
 
 if (global.flag[1067] == 0 && global.flag[1055] >= 6 && global.plot >= 280)
 	instance_create(874, 86, obj_treasure_room);
+
+repeat (array_length(global.keyitem))
+	scr_keyitemremove(8);

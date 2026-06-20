@@ -19,6 +19,7 @@ ilovetv = 0;
 ilovetv_increase = 0;
 ilovetv_increased = false;
 ilovetv_pitch = 1;
+ilovetvlimit = true;
 lastchosen = "";
 umbrella = 0;
 sunglasses = 0;

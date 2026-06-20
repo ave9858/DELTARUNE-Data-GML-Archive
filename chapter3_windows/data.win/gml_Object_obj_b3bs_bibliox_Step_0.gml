@@ -44,7 +44,14 @@ if (con == 5 && !bw_ex()) {
 }
 
 if (endcon == 1) {
-	if (obj_b3bs_console.swordinteract == 1) {
+	var trig = false;
+
+	with (obj_b3bs_console) {
+		if (swordinteract == 1)
+			trig = true;
+	}
+
+	if (trig) {
 		endcon = 2;
 		global.interact = 1;
 		global.msc = 1411;
@@ -55,6 +62,9 @@ if (endcon == 1) {
 
 if (endcon == 2 && !d_ex()) {
 	endcon = 1;
-	obj_b3bs_console.swordinteract = 0;
+
+	with (obj_b3bs_console)
+		swordinteract = 0;
+
 	global.interact = 0;
 }

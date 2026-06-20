@@ -430,7 +430,17 @@ function scr_spell(arg0, arg1) {
 			break;
 
 		case 207:
-			var healamount = (global.chapter == 1) ? 80 : 140;
+			var healamount = 80;
+
+			if (global.chapter == 2)
+				healamount = 140;
+
+			if (global.chapter == 3)
+				healamount = 150;
+
+			if (global.chapter == 4)
+				healamount = 160;
+
 			scr_healallitemspell(scr_heal_amount_modify_by_equipment(healamount));
 			item_use = true;
 			break;

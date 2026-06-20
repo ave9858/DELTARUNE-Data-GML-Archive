@@ -182,3 +182,6 @@ unlock_z_rank = function() {
 	with (z_rank_block)
 		instance_destroy();
 };
+
+repeat (array_length(global.keyitem))
+	scr_keyitemremove(8);

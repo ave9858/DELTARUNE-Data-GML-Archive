@@ -70,3 +70,15 @@ function scr_keyitemremove(arg0) {
 		removed = 1;
 	}
 }
+
+function scr_keyitemremove_all(arg0) {
+	var count = 0;
+
+	for (var i = 0; i < array_length(global.keyitem); i++) {
+		if (global.keyitem[i] == arg0)
+			count++;
+	}
+
+	repeat (count)
+		scr_keyitemremove(arg0);
+}

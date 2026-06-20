@@ -917,9 +917,7 @@ if (global.myfight == 0) {
 
 					global.chartarget[global.charturn] = global.bmenucoord[global.bmenuno][global.charturn];
 
-					if (i_ex(obj_sound_of_justice_enemy) && obj_sound_of_justice_enemy.phase == 2 && global.charturn == 1)
-						scr_nexthero();
-					else if (i_ex(obj_titan_enemy) && obj_titan_enemy.acting == 1)
+					if (i_ex(obj_titan_enemy) && obj_titan_enemy.acting == 1)
 						scr_nexthero();
 					else if (balthizardskip && global.plot == 141)
 						scr_nexthero();

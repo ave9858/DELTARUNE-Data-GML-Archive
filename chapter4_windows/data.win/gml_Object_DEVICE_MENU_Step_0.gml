@@ -62,17 +62,17 @@ if (MENU_NO == 1 || MENU_NO == 4 || MENU_NO == 6 || MENU_NO == 7 || MENU_NO == 1
 					f.image_xscale = 1000;
 					f.image_yscale = 1000;
 
-					if (ossafe_file_exists("config_" + string(global.filechoice) + ".ini")) {
-						ossafe_ini_open("config_" + string(global.filechoice) + ".ini");
+					if (ossafe_file_exists("keyconfig_" + string(global.filechoice) + ".ini")) {
+						ossafe_ini_open("keyconfig_" + string(global.filechoice) + ".ini");
 
-						for (i = 0; i < 10; i += 1) {
+						for (var i = 0; i < 10; i += 1) {
 							readval = ini_read_real("KEYBOARD_CONTROLS", string(i), -1);
 
 							if (readval != -1)
 								global.input_k[i] = readval;
 						}
 
-						for (i = 0; i < 10; i += 1) {
+						for (var i = 0; i < 10; i += 1) {
 							readval = ini_read_real("GAMEPAD_CONTROLS", string(i), -1);
 
 							if (readval != -1)
@@ -95,6 +95,107 @@ if (MENU_NO == 1 || MENU_NO == 4 || MENU_NO == 6 || MENU_NO == 7 || MENU_NO == 1
 							scr_enable_screen_border(!_disable_border);
 							ossafe_ini_close();
 							ossafe_savedata_save();
+						}
+					} else if (ossafe_file_exists("config_" + string(global.filechoice) + ".ini")) {
+						ossafe_ini_open("config_" + string(global.filechoice) + ".ini");
+
+						for (var i = 0; i < 10; i += 1) {
+							readval = ini_read_real("KEYBOARD_CONTROLS", string(i), -1);
+
+							if (readval != -1)
+								global.input_k[i] = readval;
+						}
+
+						for (var i = 0; i < 10; i += 1) {
+							readval = ini_read_real("GAMEPAD_CONTROLS", string(i), -1);
+
+							if (readval != -1)
+								global.input_g[i] = readval;
+						}
+
+						readval = ini_read_real("SHOULDERLB_REASSIGN", "SHOULDERLB_REASSIGN", obj_gamecontroller.gamepad_shoulderlb_reassign);
+
+						if (readval != -1)
+							obj_gamecontroller.gamepad_shoulderlb_reassign = readval;
+
+						global.input_g[0] = gp_padd;
+						global.input_g[1] = gp_padr;
+						global.input_g[2] = gp_padu;
+						global.input_g[3] = gp_padl;
+						global.input_g[4] = global.button0;
+						global.input_g[5] = global.button1;
+						global.input_g[6] = global.button2;
+						global.input_g[7] = 999;
+						global.input_g[8] = 999;
+						global.input_g[9] = 999;
+						global.button0 = global.input_g[4];
+						global.button1 = global.input_g[5];
+						global.button2 = global.input_g[6];
+
+						if (global.is_console) {
+							global.screen_border_id = ini_read_string("BORDER", "TYPE", "Dynamic");
+							var _disable_border = global.screen_border_id == "None" || global.screen_border_id == "なし";
+							scr_enable_screen_border(!_disable_border);
+						}
+
+						ossafe_ini_close();
+						ossafe_savedata_save();
+					} else if (ossafe_file_exists("config_" + string(global.filechoice) + ".ini")) {
+						ossafe_ini_open("config_" + string(global.filechoice) + ".ini");
+
+						for (var i = 0; i < 10; i += 1) {
+							readval = ini_read_real("KEYBOARD_CONTROLS", string(i), -1);
+
+							if (readval != -1)
+								global.input_k[i] = readval;
+						}
+
+						for (var i = 0; i < 10; i += 1) {
+							readval = ini_read_real("GAMEPAD_CONTROLS", string(i), -1);
+
+							if (readval != -1)
+								global.input_g[i] = readval;
+						}
+
+						readval = ini_read_real("SHOULDERLB_REASSIGN", "SHOULDERLB_REASSIGN", obj_gamecontroller.gamepad_shoulderlb_reassign);
+
+						if (readval != -1)
+							obj_gamecontroller.gamepad_shoulderlb_reassign = readval;
+
+						global.input_g[0] = gp_padd;
+						global.input_g[1] = gp_padr;
+						global.input_g[2] = gp_padu;
+						global.input_g[3] = gp_padl;
+						global.input_g[4] = global.button0;
+						global.input_g[5] = global.button1;
+						global.input_g[6] = global.button2;
+						global.input_g[7] = 999;
+						global.input_g[8] = 999;
+						global.input_g[9] = 999;
+						global.button0 = global.input_g[4];
+						global.button1 = global.input_g[5];
+						global.button2 = global.input_g[6];
+
+						if (global.is_console) {
+							global.screen_border_id = ini_read_string("BORDER", "TYPE", "Dynamic");
+							var _disable_border = global.screen_border_id == "None" || global.screen_border_id == "なし";
+							scr_enable_screen_border(!_disable_border);
+						}
+
+						ossafe_ini_close();
+						ossafe_savedata_save();
+
+						if (!global.is_console) {
+							ossafe_ini_open("keyconfig_" + string(global.filechoice) + ".ini");
+
+							for (var i = 0; i < 10; i++)
+								ini_write_real("KEYBOARD_CONTROLS", string(i), global.input_k[i]);
+
+							for (var i = 0; i < 10; i++)
+								ini_write_real("GAMEPAD_CONTROLS", string(i), global.input_g[i]);
+
+							ini_write_real("SHOULDERLB_REASSIGN", "SHOULDERLB_REASSIGN", obj_gamecontroller.gamepad_shoulderlb_reassign);
+							ossafe_ini_close();
 						}
 					}
 
@@ -205,8 +306,11 @@ if (MENU_NO == 1 || MENU_NO == 4 || MENU_NO == 6 || MENU_NO == 7 || MENU_NO == 1
 				ossafe_ini_close();
 				ossafe_savedata_save();
 
-				if (ossafe_file_exists("config_" + string(MENUCOORD[5]) + ".ini"))
-					ossafe_file_delete("config_" + string(MENUCOORD[5]) + ".ini");
+				if (ossafe_file_exists("keyconfig_" + string(MENUCOORD[5]) + ".ini"))
+					ossafe_file_delete("keyconfig_" + string(MENUCOORD[5]) + ".ini");
+
+				if (ossafe_file_exists("keyconfig_" + string(MENUCOORD[5]) + ".ini"))
+					ossafe_file_delete("keyconfig_" + string(MENUCOORD[5]) + ".ini");
 
 				TEMPCOMMENT = stringsetloc("IT WAS AS IF IT WAS NEVER THERE AT ALL.", "DEVICE_MENU_slash_Step_0_gml_126_0");
 

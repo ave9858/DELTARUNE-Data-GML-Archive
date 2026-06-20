@@ -160,3 +160,7 @@ if (global.plot > 150) {
 		}
 	}
 }
+
+trippin = 0;
+canetimer = 0;
+caught = -4;

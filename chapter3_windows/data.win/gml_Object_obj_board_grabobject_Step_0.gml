@@ -509,8 +509,18 @@ if (con == 2) {
 			visible = true;
 			frozen = false;
 
-			if ((object_index == obj_board_grabbleObject || object_index == obj_board_grabbablegrass || object_index == obj_board_grabbablebomb) && other.type != 3)
+			if ((object_index == obj_board_grabbleObject || object_index == obj_board_grabbablegrass || object_index == obj_board_grabbablebomb) && other.type != 3) {
 				grabcount++;
+
+				if (variable_instance_exists(id, "extflag") && is_string(extflag) && extflag == "shell") {
+					with (instance_create(x, y, obj_board_breakpoof)) {
+						depth = other.depth;
+						image_blend = #9296FF;
+					}
+
+					x = room_width * 4;
+				}
+			}
 
 			if (object_index == obj_shadow_mantle_bomb || object_index == obj_board_bomb)
 				con = 2;

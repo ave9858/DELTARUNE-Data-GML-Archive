@@ -181,10 +181,15 @@ if (ds_map_find_value(async_load, "id") == global.savedata_async_id) {
 				if (prev_title != "n/a") {
 					_load_state = UnknownEnum.Value_2;
 					_pending_title = prev_title;
-				} else {
+				} else if (array_length(_pending_titles) > 0) {
 					load_default_settings();
 					audio_group_load(0);
 					_parent.trigger_event("load_prompt", _pending_titles);
+				} else {
+					load_default_settings();
+					audio_group_load(0);
+					create_new_save_file();
+					_parent.trigger_event("init_complete");
 				}
 			}
 

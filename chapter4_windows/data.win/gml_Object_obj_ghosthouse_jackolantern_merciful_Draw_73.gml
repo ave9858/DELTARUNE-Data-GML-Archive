@@ -1,4 +1,4 @@
-if (scr_debug && sunkus_kb_check(vk_space)) {
+if (scr_debug() && sunkus_kb_check(vk_space)) {
 	draw_set_color(c_orange);
 	d_circle(x, y, 45 - (size * 30), true);
 	draw_set_color(c_red);

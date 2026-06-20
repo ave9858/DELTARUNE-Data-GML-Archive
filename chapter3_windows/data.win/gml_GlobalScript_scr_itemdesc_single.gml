@@ -36,6 +36,13 @@ function scr_itemdesc_single(arg0) {
 
 		case 7:
 			var healamount = (global.chapter == 1) ? 80 : 140;
+
+			if (global.chapter == 3)
+				healamount = 150;
+
+			if (global.chapter >= 4)
+				healamount = 160;
+
 			__itemdesc = stringsetsubloc("A pastry in the shape of a top.#Heals ~1 HP to the team.", string(healamount), "scr_itemdesc_single_slash_scr_itemdesc_single_gml_27_0");
 			break;
 

@@ -196,6 +196,10 @@ if (ilovetv_increase > 0 && digit_flash_timer == 0) {
 			ilovetv_pitch = 1 + (ilovetv / 100);
 		} else {
 			ilovetv++;
+
+			if (ilovetvlimit == true && ilovetv == 40)
+				ilovetv = 30;
+
 			ilovetv_increase--;
 			ilovetv_pitch += 0.1;
 		}
@@ -1795,6 +1799,7 @@ if (i_ex(obj_battlecontroller)) {
 				tenna.gravity = 0;
 				snd_play(snd_impact);
 				instance_create(x, y, obj_shake);
+				ilovetvlimit = false;
 				msgsetloc(0, "WOW looks like&we are out&of time!/%", "obj_elnina_lanino_controller_slash_Step_0_gml_1531_0");
 
 				with (scr_enemyblcon(tenna.x + 56, tenna.y - 140, 10))

@@ -353,6 +353,10 @@ if (con == 50) {
 	alarm[0] = 30;
 	global.interact = 1;
 	global.facing = 0;
+
+	with (platter_marker)
+		clean_up();
+
 	scr_getchar(2);
 	scr_makecaterpillar(obj_mainchara.x + 40, obj_mainchara.y - 7, 2, 0);
 

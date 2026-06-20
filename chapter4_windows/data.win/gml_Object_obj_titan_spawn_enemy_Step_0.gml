@@ -210,20 +210,20 @@ if (global.myfight == 3) {
 	if (acting == 3 && actcon == 0) {
 		global.msg[0] = stringsetloc("* Your SOUL shined its power on RALSEI and SUSIE!/%", "obj_titan_enemy_slash_Step_0_gml_1759_0");
 		scr_battletext_default();
-		actcon = 20;
+		acting = 20;
 		acttimer = 0;
 	}
 
-	if (actcon == 20) {
+	if (acting == 20) {
 		acttimer += 1;
 
 		if (acttimer >= 10 || !instance_exists(obj_writer)) {
 			acttimer = 0;
-			actcon = 21;
+			acting = 21;
 		}
 	}
 
-	if (actcon == 21) {
+	if (acting == 21) {
 		scr_battle_sprite_set("susie", spr_susie_heal_charge, 1/3, 0);
 
 		with (obj_herosusie) {
@@ -258,10 +258,10 @@ if (global.myfight == 3) {
 		with (obj_herokris)
 			scr_oflash();
 
-		actcon = 22;
+		acting = 22;
 	}
 
-	if (actcon == 22) {
+	if (acting == 22) {
 		acttimer += 1;
 
 		if (acttimer >= 20) {
@@ -270,6 +270,7 @@ if (global.myfight == 3) {
 
 			scr_battle_sprite_set("susie", spr_susie_heal_charge_loop, 1/3, 1);
 			global.faceaction[1] = 2;
+			acting = 0;
 			actcon = 1;
 			dualhealcon = 1;
 		}

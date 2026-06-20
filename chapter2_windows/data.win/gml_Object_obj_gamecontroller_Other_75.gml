@@ -44,8 +44,8 @@ switch (ds_map_find_value(async_load, "event_type")) {
 				scr_controls_default();
 
 				if (_load_enabled) {
-					if (ossafe_file_exists("config_" + string(global.filechoice) + ".ini")) {
-						ossafe_ini_open("config_" + string(global.filechoice) + ".ini");
+					if (ossafe_file_exists("keyconfig_" + string(global.filechoice) + ".ini")) {
+						ossafe_ini_open("keyconfig_" + string(global.filechoice) + ".ini");
 
 						for (var i = 0; i < 10; i++) {
 							readval = ini_read_real("KEYBOARD_CONTROLS", string(i), -1);

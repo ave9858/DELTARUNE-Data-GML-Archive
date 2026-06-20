@@ -29,7 +29,7 @@ draw_set_color(c_black);
 draw_set_font(fnt_mainbig);
 var _textscale = 1;
 
-if (rand == 9)
+if (rand == 9 && global.lang != "ja")
 	_textscale = 0.7;
 else
 	_textscale = 1;
@@ -86,7 +86,7 @@ if (acttimer > acttimermax) {
 		dialoguer = 1;
 		facer = 1;
 		charline = 26;
-		preventcskip2 = 1;
+		preventcskip = 1;
 	}
 
 	instance_destroy();
@@ -126,7 +126,7 @@ if (con == 1) {
 			dialoguer = 1;
 			facer = 1;
 			charline = 26;
-			preventcskip2 = 1;
+			preventcskip = 1;
 		}
 	}
 
@@ -169,7 +169,7 @@ if (con == 2) {
 			dialoguer = 1;
 			facer = 1;
 			charline = 26;
-			preventcskip2 = 1;
+			preventcskip = 1;
 		}
 
 		with (global.monsterinstance[creatorid.myself]) {

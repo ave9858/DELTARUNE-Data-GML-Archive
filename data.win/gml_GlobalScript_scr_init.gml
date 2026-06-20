@@ -64,7 +64,7 @@ function get_chapter_title(arg0) {
 }
 
 function get_version() {
-	var version = "v16";
+	var version = "v17";
 	return version;
 }
 

@@ -24,7 +24,7 @@ if (kris_move) {
 		if (can_move)
 			kris_move_timer++;
 
-		if (kris_move_timer >= 5) {
+		if (kris_move_timer >= 5 && !d_ex() && global.interact == 0) {
 			global.interact = 1;
 			kris_fall = true;
 			kris_move = false;
@@ -47,11 +47,11 @@ if (kris_fall) {
 			x += 6;
 			vspeed = 6;
 			scr_lerpvar("image_index", 1, 4, 12);
+		}
 
-			if (global.facing == 1) {
-				x += 6;
-				scr_flip("x");
-			}
+		with (obj_readable_room1) {
+			x = -100;
+			y = -100;
 		}
 	}
 
@@ -86,11 +86,6 @@ if (kris_fall) {
 
 	if (kris_fall_timer == 162) {
 		with (obj_mainchara) {
-			if (global.facing == 1) {
-				x -= 6;
-				scr_flip("x");
-			}
-
 			image_index = 0;
 			sprite_index = spr_krisd;
 			cutscene = 0;
@@ -103,6 +98,11 @@ if (kris_fall) {
 		kris_fall = false;
 		global.interact = 0;
 		global.facing = 0;
+
+		with (obj_readable_room1) {
+			x = xstart;
+			y = ystart;
+		}
 	}
 }
 
@@ -772,6 +772,19 @@ if (con == 50 && !d_ex() && customcon == 1) {
 	c_wait(24);
 	c_snd_play(snd_doorclose);
 	c_wait(60);
+	c_sel(no);
+	c_visible(0);
+	c_sel(su);
+	c_visible(0);
+	c_customfunc(function() {
+		var black_cover = scr_marker(0, room_height, spr_pixel_white);
+
+		with (black_cover) {
+			image_blend = c_black;
+			image_xscale = 100;
+			image_yscale = 40;
+		}
+	});
 	c_snd_play(snd_noise);
 	c_var_instance(310, "kris_x", kris_closet_x);
 	c_var_instance(310, "kris_y", 80);

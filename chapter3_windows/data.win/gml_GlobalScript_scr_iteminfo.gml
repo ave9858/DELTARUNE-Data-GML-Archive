@@ -62,6 +62,13 @@ function scr_iteminfo(arg0) {
 
 		case 7:
 			var healamount = (global.chapter == 1) ? 80 : 140;
+
+			if (global.chapter == 3)
+				healamount = 150;
+
+			if (global.chapter >= 4)
+				healamount = 160;
+
 			itemnameb = stringsetloc("Spincake", "scr_iteminfo_slash_scr_iteminfo_gml_58_0");
 			itemdescb = stringsetsubloc("Heals#team#~1HP", string(healamount), "scr_iteminfo_slash_scr_iteminfo_gml_59_0");
 			itemtarget = 2;

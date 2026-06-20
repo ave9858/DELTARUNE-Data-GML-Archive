@@ -1,1 +1,2 @@
-scr_keyitemremove(8);
+repeat (array_length(global.keyitem))
+	scr_keyitemremove(8);

@@ -108,14 +108,18 @@ function scr_itemuse(arg0) {
 			break;
 
 		case 7:
-			if (global.chapter == 1)
-				scr_healitem_all(80);
+			var healamount = 80;
 
 			if (global.chapter == 2)
-				scr_healitem_all(140);
+				healamount = 140;
 
-			if (global.chapter > 2)
-				scr_healitem_all(140);
+			if (global.chapter == 3)
+				healamount = 150;
+
+			if (global.chapter == 4)
+				healamount = 160;
+
+			scr_healitem_all(healamount);
 
 			if (scr_havechar(2))
 				scr_itemcomment(suspos, stringsetloc("I'm dizzy.", "scr_itemuse_slash_scr_itemuse_gml_110_0"));

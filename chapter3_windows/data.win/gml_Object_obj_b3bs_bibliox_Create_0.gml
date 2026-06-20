@@ -76,4 +76,20 @@ endcon = 0;
 if (global.flag[1055] >= 6) {
 	scr_marker_ext(128, 64, spr_pxwhite, 384, 160, undefined, undefined, c_black, 99801);
 	endcon = 1;
+
+	with (obj_npc_room)
+		sprite_index = spr_npc_bibliox;
+
+	var egg = false;
+
+	if (global.flag[1092] == 6)
+		egg = true;
+
+	if (egg) {
+		with (obj_npc_room)
+			instance_destroy();
+
+		with (instance_create(444, 248, obj_b3bs_console))
+			scr_darksize();
+	}
 }

@@ -94,13 +94,28 @@ if (global.flag[1226] == 0) {
 	bgalpha = 0;
 	controltext1 = 0;
 	controltext2 = 0;
-} else {
-	if (global.entrance == 5) {
-		with (obj_caterpillarchara)
-			visible = false;
-	}
+} else if (global.entrance == 5) {
+	with (obj_caterpillarchara)
+		visible = false;
+}
 
-	instance_destroy();
+shine = -4;
+
+if (global.flag[1226] == 1) {
+	if (global.flag[1092] == 5) {
+		show_debug_message_concat("yes");
+		shine = instance_create(245, 305, obj_trigger_interact);
+
+		with (shine) {
+			sprite_index = spr_shine_white;
+			scr_darksize();
+			image_speed = 0.2;
+			image_alpha = 1;
+			visible = true;
+			scr_depth();
+			depth += 5000;
+		}
+	}
 }
 
 if (global.entrance != 5)

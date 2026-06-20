@@ -748,7 +748,7 @@ function scr_armorinfo(arg0) {
 			armorchar2temp = 0;
 			armorchar3temp = 1;
 			armorchar4temp = 1;
-			armorabilitytemp = stringset("Elegance");
+			armorabilitytemp = stringsetloc("Elegance", "scr_armorinfo_slash_scr_armorinfo_gml_782_0");
 			armorabilityicontemp = 7;
 			armoricontemp = 4;
 			value = 1234;

@@ -27,6 +27,7 @@ function scr_gamestart_chapter_override() {
 	scr_keyitemremove(17);
 	scr_keyitemremove(18);
 	scr_keyitemremove(19);
+	scr_keyitemremove_all(8);
 	scr_itemremove(4);
 
 	if (global.chapter == 4) {

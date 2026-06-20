@@ -1,3 +1,25 @@
+with (shine) {
+	if (myinteract == 3) {
+		scr_lerpvar("image_alpha", 1, 0, 15);
+		global.interact = 1;
+		global.flag[1092] = 6;
+		scr_speaker("no_name");
+		msgsetloc(0, "* (You thought you saw something on the ground..^1. but you must've already had it.)/%", "obj_room_ranking_b_slash_Step_0_gml_12_0_b");
+		d_make();
+		myinteract = 4;
+	}
+
+	if (myinteract == 4 && !d_ex()) {
+		snd_play(snd_egg);
+		scr_keyitemget(18);
+		global.interact = 0;
+		instance_destroy();
+	}
+}
+
+if (global.flag[1226] == 1)
+	exit;
+
 if (i_ex(gatrig)) {
 	if (gatrig.myinteract == 3) {
 		gatrig.myinteract++;

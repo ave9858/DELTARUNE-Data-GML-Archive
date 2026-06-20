@@ -45,8 +45,10 @@ trigd = 0;
 pressed = 0;
 doorcon = 0;
 switchtile = instance_create(512, 128, obj_board_switchtile);
+camcontrol = true;
 
-if (global.flag[1112] == 1) {
+if (global.flag[1112] == 1 || global.flag[1055] >= 6) {
+	camcontrol = false;
 	doorcon = 3;
 	safe_delete(doorblock);
 
@@ -54,7 +56,6 @@ if (global.flag[1112] == 1) {
 		instance_destroy();
 }
 
-camcontrol = true;
 debug_message(room_get_name(room) + "start: block x/y=" + string(global.flag[1109]) + "|" + string(global.flag[1110]));
 endcon = 0;
 

@@ -39,14 +39,14 @@ if (MENU_NO == 1 || MENU_NO == 4 || MENU_NO == 6 || MENU_NO == 7) {
 					if (ossafe_file_exists("keyconfig_" + string(global.filechoice) + ".ini")) {
 						ossafe_ini_open("keyconfig_" + string(global.filechoice) + ".ini");
 
-						for (i = 0; i < 10; i += 1) {
+						for (var i = 0; i < 10; i += 1) {
 							readval = ini_read_real("KEYBOARD_CONTROLS", string(i), -1);
 
 							if (readval != -1)
 								global.input_k[i] = readval;
 						}
 
-						for (i = 0; i < 10; i += 1) {
+						for (var i = 0; i < 10; i += 1) {
 							readval = ini_read_real("GAMEPAD_CONTROLS", string(i), -1);
 
 							if (readval != -1)
@@ -73,14 +73,14 @@ if (MENU_NO == 1 || MENU_NO == 4 || MENU_NO == 6 || MENU_NO == 7) {
 					} else if (ossafe_file_exists("config_" + string(global.filechoice) + ".ini")) {
 						ossafe_ini_open("config_" + string(global.filechoice) + ".ini");
 
-						for (i = 0; i < 10; i += 1) {
+						for (var i = 0; i < 10; i += 1) {
 							readval = ini_read_real("KEYBOARD_CONTROLS", string(i), -1);
 
 							if (readval != -1)
 								global.input_k[i] = readval;
 						}
 
-						for (i = 0; i < 10; i += 1) {
+						for (var i = 0; i < 10; i += 1) {
 							readval = ini_read_real("GAMEPAD_CONTROLS", string(i), -1);
 
 							if (readval != -1)
@@ -114,6 +114,19 @@ if (MENU_NO == 1 || MENU_NO == 4 || MENU_NO == 6 || MENU_NO == 7) {
 
 						ossafe_ini_close();
 						ossafe_savedata_save();
+
+						if (!global.is_console) {
+							ossafe_ini_open("keyconfig_" + string(global.filechoice) + ".ini");
+
+							for (var i = 0; i < 10; i++)
+								ini_write_real("KEYBOARD_CONTROLS", string(i), global.input_k[i]);
+
+							for (var i = 0; i < 10; i++)
+								ini_write_real("GAMEPAD_CONTROLS", string(i), global.input_g[i]);
+
+							ini_write_real("SHOULDERLB_REASSIGN", "SHOULDERLB_REASSIGN", obj_gamecontroller.gamepad_shoulderlb_reassign);
+							ossafe_ini_close();
+						}
 					}
 
 					if (os_type == os_ps5) {

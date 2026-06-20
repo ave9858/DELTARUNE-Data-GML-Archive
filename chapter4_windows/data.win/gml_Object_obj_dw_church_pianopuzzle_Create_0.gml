@@ -52,7 +52,9 @@ if (global.flag[850] >= 5)
 if (fightjack)
 	event_user(9);
 
-with (obj_border_controller)
+with (obj_border_controller) {
+	custom_effect_fade_speed = 0.02;
 	stop_custom_effect();
+}
 
 scr_musicer("smallpiano_room.ogg");

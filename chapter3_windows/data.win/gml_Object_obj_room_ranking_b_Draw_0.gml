@@ -1,3 +1,6 @@
+if (global.flag[1226] == 1)
+	exit;
+
 siner++;
 var xx = camerax();
 var yy = cameray();

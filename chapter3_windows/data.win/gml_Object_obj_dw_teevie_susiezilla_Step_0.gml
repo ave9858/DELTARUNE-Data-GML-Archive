@@ -200,6 +200,7 @@ if (sukcon == 4) {
 				x: obj_mainchara.x + 18,
 				y: obj_mainchara.y + 70
 			};
+			fun = true;
 
 			if (point_distance(_s.x, _s.y, _k.x, _k.y) > 64) {
 				var _x = x;

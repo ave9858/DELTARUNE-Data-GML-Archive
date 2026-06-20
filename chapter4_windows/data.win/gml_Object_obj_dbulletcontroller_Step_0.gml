@@ -2009,10 +2009,10 @@ if (type == 149) {
 		path_add_point(path, pumpkin_x - 225, pumpkin_y, 100);
 		path_add_point(path, pumpkin_x - 225, pumpkin_y + 41, 100);
 		path_add_point(path, pumpkin_x - 75, pumpkin_y + 41, 100);
-		path_add_point(path, pumpkin_x - 75, pumpkin_y + 78, 100);
-		path_add_point(path, pumpkin_x - 225, pumpkin_y + 78, 100);
-		path_add_point(path, pumpkin_x - 225, pumpkin_y + 123, 100);
-		path_add_point(path, pumpkin_x + 240, pumpkin_y + 123, 100);
+		path_add_point(path, pumpkin_x - 75, pumpkin_y + 78, 88);
+		path_add_point(path, pumpkin_x - 225, pumpkin_y + 78, 75);
+		path_add_point(path, pumpkin_x - 225, pumpkin_y + 123, 60);
+		path_add_point(path, pumpkin_x + 240, pumpkin_y + 123, 40);
 		obj_heart.wspeed = global.sp / 2;
 
 		with (instance_create_depth(obj_growtangle.x - 120, obj_growtangle.y - 88, -10, obj_ghosthouse_trigger)) {
@@ -2037,9 +2037,9 @@ if (type == 149) {
 			}
 
 			for (var _linex = -38; _linex <= 50; _linex += 20) {
-				with (instance_create(obj_growtangle.x + _linex, obj_growtangle.y + 22 + (58 * _flip), obj_gh_fireball_hop)) {
-					cycle_length = 50;
-					width = 27 * _flip;
+				with (instance_create(obj_growtangle.x + (_linex * 1.3), obj_growtangle.y + 22 + (58 * _flip), obj_gh_fireball_hop)) {
+					cycle_length = 60;
+					width = 32 * _flip;
 
 					if (((_linex + 38) % 40) == 0) {
 						instance_create(x, y, obj_ghosthouse_dot);

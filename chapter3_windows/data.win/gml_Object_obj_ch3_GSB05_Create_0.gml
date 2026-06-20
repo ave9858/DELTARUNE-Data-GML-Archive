@@ -3,6 +3,9 @@ if (scr_debug()) {
 		global.flag[1228] = 0;
 }
 
+repeat (array_length(global.keyitem))
+	scr_keyitemremove(8);
+
 con = -1;
 customcon = 0;
 make_text = false;
