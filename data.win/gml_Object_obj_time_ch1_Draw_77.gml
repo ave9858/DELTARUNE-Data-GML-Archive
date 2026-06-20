@@ -24,12 +24,12 @@ if (os_type == os_switch || os_type == os_ps4) {
 			draw_set_color(c_white);
 		}
 	} else {
-		var room_id = global.currentroom;
+		var room_id = scr_get_room_by_id(global.currentroom);
 
 		if (instance_exists(obj_savepoint_ch1))
 			global.disable_border = false;
 
-		if (room_id == PLACE_CONTACT_ch1 || room_id == 1638 || room_id == PLACE_MENU_ch1 || room_id == room_splashscreen_ch1 || room_id == room_gameover_ch1 || room_id == PLACE_DOG_ch1 || room_id == room_dark1a_ch1 || room_id == room_dark_eyepuzzle_ch1)
+		if (room_id == PLACE_CONTACT_ch1 || room_id == 1642 || room_id == PLACE_MENU_ch1 || room_id == room_splashscreen_ch1 || room_id == room_gameover_ch1 || room_id == PLACE_DOG_ch1 || room_id == room_dark1a_ch1 || room_id == room_dark_eyepuzzle_ch1)
 			global.disable_border = true;
 	}
 

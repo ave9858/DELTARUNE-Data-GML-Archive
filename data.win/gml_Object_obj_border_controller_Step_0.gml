@@ -21,7 +21,7 @@ if (!return_title) {
 		var room_id = room;
 		_border_image = global.darkzone ? border_dw_castletown : border_lw_town;
 
-		if (room_id == room_legend || room_id == 886 || room_id == PLACE_MENU || room_id == PLACE_LOGO)
+		if (room_id == room_legend || room_id == 887 || room_id == PLACE_MENU || room_id == PLACE_LOGO)
 			_border_image = border_dw_castletown;
 
 		if (room_id >= room_dw_cyber_intro_1 && room_id < room_dw_city_spamton_shop_exterior)
@@ -44,7 +44,7 @@ if (!return_title) {
 		if (room_id == room_shop_ch2_spamton)
 			_border_image = border_dw_city;
 
-		if (room_id == PLACE_CONTACT || room_id == 881 || room_id == PLACE_MENU || room_id == room_gameover || room_id == PLACE_DOG || room_id == room_title_placeholder || room_id == room_intro_ch2) {
+		if (room_id == PLACE_CONTACT || room_id == 882 || room_id == PLACE_MENU || room_id == room_gameover || room_id == PLACE_DOG || room_id == room_title_placeholder || room_id == room_intro_ch2) {
 			border_alpha = 0;
 		} else if (room_id == room_insidecloset || room_id == room_cc_fountain) {
 			border_fade_out = border_alpha > 0;
@@ -240,7 +240,7 @@ if (!return_title) {
 			}
 		}
 
-		if ((room_id == room_legend || room_id == 886 || room_id == PLACE_MENU) && global.game_won == 1) {
+		if ((room_id == room_legend || room_id == 887 || room_id == PLACE_MENU) && global.game_won == 1) {
 			_border_image = border_dw_castletown;
 			border_alpha = 1;
 		}
