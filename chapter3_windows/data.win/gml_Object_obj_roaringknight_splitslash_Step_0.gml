@@ -77,7 +77,7 @@ if (timer == 30) {
 			_splitter.difficulty = difficulty;
 		}
 	} else {
-		_splitter = 909;
+		_splitter = 910;
 	}
 
 	_splitter.xoffset = xoffset;

@@ -27,7 +27,7 @@ if (powerup == 0) {
 }
 
 if (kris_real == 0)
-	kris_real = 1184;
+	kris_real = 1185;
 
 if (susie_real == 0) {
 	with (obj_caterpillarchara) {
@@ -124,7 +124,50 @@ if (active == 1) {
 	}
 
 	if (con == 12) {
-		if (abs(kris.x - 32 - susie.x) < 6 && abs(kris.y - susie.y) < 6) {
+		if (susie.is_moving == false)
+			susiefail++;
+
+		susiefail2++;
+
+		if (susiefail > 3 || (susiefail2 > 30 && susie.is_moving == false)) {
+			var targx = kris.x - 32;
+			var targy = kris.y;
+
+			with (susie) {
+				path_end();
+				susierecordstring = "";
+				susierecordcon = 0;
+				susierecordcount = 0;
+				x = scr_even(lerp(x, targx, 0.16666666666666666));
+				y = scr_even(lerp(y, targy, 0.16666666666666666));
+
+				if (point_distance(x, y, xprevious, yprevious) > 4) {
+					var _facing = point_direction(xprevious, yprevious, x, y);
+					_facing += 90;
+
+					if (_facing > 360)
+						_facing -= 360;
+
+					_facing = round(_facing / 90);
+
+					if (_facing == 4)
+						_facing = 0;
+
+					facing = _facing;
+				}
+			}
+		}
+
+		if ((abs(kris.x - 32 - susie.x) < 8 && abs(kris.y - susie.y) < 8) || susiefail2 >= 60) {
+			with (susie) {
+				path_end();
+				susierecordstring = "";
+				susierecordcon = 0;
+				susierecordcount = 0;
+			}
+
+			susie.x = kris.x - 32;
+			susie.y = kris.y;
 			susie.facing = 1;
 			safe_delete(obj_board_writer);
 			safe_delete(obj_writer);

@@ -3,7 +3,6 @@ global.is_console = scr_is_switch_os() || os_type == os_ps4 || os_type == os_ps5
 if (!global.is_console)
 	window_enable_borderless_fullscreen(true);
 
-show_debug_message("global.is_console=" + string(global.is_console));
 global.debug = 0;
 var launch_data = scr_init_launch_parameters();
 global.launcher = launch_data.is_launcher;
@@ -57,13 +56,13 @@ global.savedata_async_id = -1;
 global.savedata_async_load = false;
 global.savedata_error = false;
 global.savedata_debuginfo = "";
-global.versionno = "v0.0.090";
+global.versionno = "v0.0.094";
 
 if (scr_is_switch_os())
-	global.versionno = "v0.0.088";
+	global.versionno = "v0.0.092";
 
 if (os_type == os_ps4 || os_type == os_ps5)
-	global.versionno = "v0.0.088";
+	global.versionno = "v0.0.092";
 
 global.game_won = false;
 scr_input_manager_init();

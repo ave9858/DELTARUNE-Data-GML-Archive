@@ -10,13 +10,13 @@ if (global.plot >= 220 && global.plot < 225) {
 	with (door_readable)
 		extflag = "church_door_listen";
 
-	anim_sprite[0][0] = 4429;
+	anim_sprite[0][0] = 4430;
 	anim_sprite[0][1] = [500, 330, 330, 330, 330, 200, 100, 50, 100, 50, 50, 100, 500];
-	anim_sprite[1][0] = 4069;
+	anim_sprite[1][0] = 4070;
 	anim_sprite[1][1] = [100, 100, 200, 1000];
 	anim_sprite[2][0] = 2868;
 	anim_sprite[2][1] = [100, 100, 100, 100, 50, 200, 100];
-	anim_sprite[3][0] = 3378;
+	anim_sprite[3][0] = 3379;
 	anim_sprite[3][1] = [200, 200, 200, 1000];
 	anim_sprite_index = 0;
 	anim_modifier = 30;

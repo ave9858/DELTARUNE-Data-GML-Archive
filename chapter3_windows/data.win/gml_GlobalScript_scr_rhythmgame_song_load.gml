@@ -217,7 +217,7 @@ function scr_rhythmgame_load_events(arg0) {
 
 		if (chart_start <= 158.92 && chart_end >= 158.92) {
 			with (vocals.performer) {
-				scr_music_event_add(158.92, "mid", 4557, true);
+				scr_music_event_add(158.92, "mid", 4559, true);
 				scr_music_event_add(158.92, "idle", 450, true);
 				scr_music_event_add(158.92, "animspeed", 2, true);
 				scr_music_event_add(158.92, "sprite_index", spr_ralsei_sing_rude, true);

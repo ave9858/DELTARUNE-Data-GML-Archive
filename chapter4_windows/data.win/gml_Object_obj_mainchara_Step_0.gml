@@ -704,6 +704,7 @@ if (global.chapter == 4) {
 		} else {
 			dsprite = spr_krisd;
 			rsprite = spr_krisr;
+			lsprite = spr_krisl;
 			usprite = spr_krisu;
 		}
 	}

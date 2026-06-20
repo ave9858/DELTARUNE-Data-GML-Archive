@@ -1900,7 +1900,7 @@ function scr_monstersetup() {
 		if (scr_debug() && room == room_battletest)
 			global.tempflag[100] = 0;
 
-		if (global.tempflag[100] == 1) {
+		if (global.tempflag[100] > 0) {
 			global.canact[myself][2] = 1;
 			global.actname[myself][2] = stringsetloc("ScaredyCat", "scr_monstersetup_slash_scr_monstersetup_gml_2363_0");
 			global.actdesc[myself][2] = stringsetloc("Def.Down#Speed Up", "scr_monstersetup_slash_scr_monstersetup_gml_2364_0");

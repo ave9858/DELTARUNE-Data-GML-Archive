@@ -2,7 +2,7 @@ _party_people = [];
 timer = 0;
 
 get_party_list = function(arg0) {
-	var _people_pool = [797, 797, 959];
+	var _people_pool = [798, 798, 960];
 	var _people_list = [];
 
 	for (var i = 0; i < arg0; i++)

@@ -17,12 +17,12 @@ if (catch_timer == 1) {
 	var xoffset = 0;
 	var yoffset = 0;
 
-	if (actor_target == 1408) {
+	if (actor_target == 1409) {
 		xoffset = 0;
 		yoffset = 0;
 	}
 
-	if (actor_target == 1410) {
+	if (actor_target == 1411) {
 		xoffset = -3;
 		yoffset = 0;
 	}

@@ -33,7 +33,7 @@ if (ra == 0) {
 }
 
 if (inventory == 0)
-	inventory = 1729;
+	inventory = 1730;
 
 if (tenna == 0) {
 	with (obj_actor_tenna)
@@ -139,7 +139,7 @@ if (active == 1 && obj_board_camera.con == 0) {
 		}
 
 		if (triggered == 1) {
-			inventory = 1729;
+			inventory = 1730;
 			lancer = instance_create(inventory.x + 8, inventory.y + 10 + 96, obj_board_marker);
 			lancer.sprite_index = spr_board_lancer_down;
 			lancer.depth = 5000;

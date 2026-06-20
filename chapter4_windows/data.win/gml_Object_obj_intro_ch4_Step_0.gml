@@ -64,7 +64,7 @@ if (!files_exist && !debug_force_nofiles) {
 		snd_add_complex(snd, 3, 269, 0.7, 0.95, (_delay_sound_time - 1) + 0, -1, 0);
 		snd_play_delay(break_noise, _delay_sound_time, 0.5, 1);
 		snd_play_delay(break_noise, _delay_sound_time, 0.5, 0.94);
-		var _shattersprite = 4670;
+		var _shattersprite = 4671;
 		var _fragments = sprite_get_number(_shattersprite);
 		var _delay = 20;
 
@@ -154,7 +154,7 @@ if (!files_exist && !debug_force_nofiles) {
 			snd_add_complex(snd, 3, 269, 0.7, 0.95, (_delay_sound_time - 1) + 0, -1, 0);
 			snd_play_delay(break_noise, _delay_sound_time, 0.5, 0.5);
 			snd_play_delay(break_noise, _delay_sound_time, 0.5, 0.44);
-			var _shattersprite = 5772;
+			var _shattersprite = 5773;
 			var _fragments = sprite_get_number(_shattersprite);
 			var _delay = 20;
 

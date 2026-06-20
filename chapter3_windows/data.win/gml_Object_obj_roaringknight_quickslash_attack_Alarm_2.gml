@@ -3,7 +3,7 @@ if (next_up != -999) {
 
 	switch (next_up) {
 		case 3:
-			knight = 802;
+			knight = 803;
 			break;
 	}
 

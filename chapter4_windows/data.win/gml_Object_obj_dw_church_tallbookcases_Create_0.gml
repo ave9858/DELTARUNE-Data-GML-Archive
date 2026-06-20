@@ -50,7 +50,7 @@ if (global.plot >= 242) {
 	var spritesArray = layer_get_all_elements("DEBUG_ASSETS");
 
 	for (var i = 0; i < array_length(spritesArray); i++) {
-		if (layer_sprite_get_sprite(spritesArray[i]) == 5584) {
+		if (layer_sprite_get_sprite(spritesArray[i]) == 5585) {
 			cup = scr_makenpc_fromasset(spritesArray[i]);
 			cup.strict = true;
 		}

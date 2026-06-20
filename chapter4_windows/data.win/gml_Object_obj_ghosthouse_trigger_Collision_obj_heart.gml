@@ -2,7 +2,10 @@ if (active) {
 	if (tutu) {
 		if (tutu == 1) {
 			with (obj_your_tutu)
-				alarm[0] = 18;
+				alarm[0] = 30;
+
+			visible = false;
+			tutu = 9;
 		} else if (tutu == 3) {
 			if (room == room_bullettest || room == room_bullettest_new) {
 				var mus = mus_play(snd_init("pumpkin_boss.ogg"));

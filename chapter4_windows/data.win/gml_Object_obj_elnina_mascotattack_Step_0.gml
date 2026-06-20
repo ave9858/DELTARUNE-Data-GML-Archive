@@ -254,15 +254,15 @@ if (i_ex(obj_growtangle)) {
 							mybullet.sprite_index = bs[3];
 
 						if (i == 0) {
-							if (laninobulletsprite == 5684)
+							if (laninobulletsprite == 5685)
 								mybullet.sprite_index = bs[4];
 
-							if (laninobulletsprite == 3636)
+							if (laninobulletsprite == 3637)
 								mybullet.sprite_index = bs[3];
 						}
 
 						if (i == 1) {
-							if (elninabullesprite == 5613)
+							if (elninabullesprite == 5614)
 								mybullet.sprite_index = bs[5];
 
 							if (elninabullesprite == 823)

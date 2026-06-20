@@ -97,7 +97,7 @@ if (cracked) {
 		draw_sprite_ext(alt_sprindex, 2, x + _offset, y + _offset_y, image_xscale * 2, image_yscale * 2, image_angle, c_white, image_alpha);
 
 	if (ver == 0)
-		draw_sprite_part_ext_rot(4913, timer, 0, 0, sprite_width, amount, x + _barx, y + _bary, image_xscale, image_yscale, image_angle, meter_color, image_alpha);
+		draw_sprite_part_ext_rot(4915, timer, 0, 0, sprite_width, amount, x + _barx, y + _bary, image_xscale, image_yscale, image_angle, meter_color, image_alpha);
 
 	if (ver == 1)
 		draw_sprite_part_ext_rot(85, timer, 0, 0, sprite_width, amount, x + _barx + _offset, y + _bary + _offset_y, image_xscale * 2, image_yscale * 2, image_angle, meter_color, image_alpha);

@@ -38,8 +38,8 @@ if (con == 2) {
 	c_talk();
 	c_wait_box(1);
 	c_var_instance(id, "slow_text", true);
-	c_var_instance(818, "kind", -1);
-	c_var_instance(818, "tennaending", false);
+	c_var_instance(819, "kind", -1);
+	c_var_instance(819, "tennaending", false);
 	c_var_lerp_instance(te_actor, "image_xscale", 2, 0.5, 90);
 	c_var_lerp_instance(te_actor, "image_yscale", 2, 0.5, 90);
 	c_wait_talk();

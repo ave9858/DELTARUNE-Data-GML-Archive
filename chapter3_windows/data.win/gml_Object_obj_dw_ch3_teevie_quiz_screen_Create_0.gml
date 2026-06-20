@@ -33,7 +33,7 @@ screen_anim = 0;
 bullet_mode = false;
 bullet_timer = 0;
 bullet_max_time = 180;
-bullet_screen_sprite = 4884;
+bullet_screen_sprite = 4886;
 bullet_screen_index = 0;
 bullet_finish = false;
 bullet_screen_list = [];
@@ -116,7 +116,7 @@ pause = function() {
 };
 
 validate_answer = function() {
-	result_icon = (answer == answer_correct) ? 2416 : 4884;
+	result_icon = (answer == answer_correct) ? 2416 : 4886;
 	quiz_result = true;
 };
 
@@ -151,7 +151,7 @@ start_bullets = function() {
 
 	for (var i = 0; i < width; i++) {
 		for (var j = 0; j < height; j++)
-			bullet_screen_list[i][j] = 4884;
+			bullet_screen_list[i][j] = 4886;
 	}
 };
 

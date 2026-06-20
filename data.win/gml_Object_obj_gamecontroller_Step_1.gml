@@ -2,9 +2,11 @@ if (os_type == os_windows || os_type == os_linux || os_type == os_macosx) {
 	var controllerUpdate = -1;
 
 	for (var i = 0; i < gamepad_get_device_count(); i++) {
-		if (i != gamepad_id) {
+		if (gamepad_is_connected(i) && i != gamepad_id) {
 			if (gamepad_button_check(i, gp_face1) || gamepad_button_check(i, gp_face2) || gamepad_button_check(i, gp_face3) || gamepad_button_check(i, gp_face4) || gamepad_button_check(i, gp_padd) || gamepad_button_check(i, gp_padr) || gamepad_button_check(i, gp_padu) || gamepad_button_check(i, gp_padl) || abs(gamepad_axis_value(i, gp_axislh)) > 0.8 || abs(gamepad_axis_value(i, gp_axislv)) > 0.8) {
-				controllerUpdate = i;
+				if (gamepad_get_description(i) != gamepad_get_description(gamepad_id) && gamepad_get_guid(i) != gamepad_get_guid(gamepad_id))
+					controllerUpdate = i;
+
 				break;
 			}
 		}

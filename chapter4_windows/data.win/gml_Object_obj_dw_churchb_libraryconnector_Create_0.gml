@@ -34,7 +34,7 @@ npc3 = -4;
 npc4 = -4;
 
 for (var i = 0; i < array_length(spritesArray); i++) {
-	if (layer_sprite_get_sprite(spritesArray[i]) == 3298) {
+	if (layer_sprite_get_sprite(spritesArray[i]) == 3299) {
 		if (layer_sprite_get_blend(spritesArray[i]) == 16711935) {
 			layer_sprite_blend(spritesArray[i], 16777215);
 			npc1 = scr_makenpc_fromasset(spritesArray[i]);
@@ -51,7 +51,7 @@ for (var i = 0; i < array_length(spritesArray); i++) {
 		}
 	}
 
-	if (layer_sprite_get_sprite(spritesArray[i]) == 4928)
+	if (layer_sprite_get_sprite(spritesArray[i]) == 4929)
 		npc2 = scr_marker_fromasset(spritesArray[i], undefined, 1);
 
 	if (layer_sprite_get_sprite(spritesArray[i]) == 1614)

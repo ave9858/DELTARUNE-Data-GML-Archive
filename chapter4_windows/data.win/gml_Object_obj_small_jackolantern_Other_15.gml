@@ -7,5 +7,8 @@ if (damage && global.inv < 0) {
 	}
 }
 
+if (global.tempflag[89] >= 2)
+	damage = 20;
+
 event_inherited();
 global.inv = min(global.inv, 10);

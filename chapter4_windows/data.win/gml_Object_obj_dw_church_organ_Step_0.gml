@@ -347,7 +347,7 @@ if (con == 35 && !d_ex()) {
 	d_make();
 }
 
-if ((con == 40 && global.interact == 0 && !d_ex()) && !button3_h()) {
+if (con == 40 && global.interact == 0 && !d_ex()) {
 	con = -1;
 	global.interact = 1;
 
@@ -364,6 +364,7 @@ if ((con == 40 && global.interact == 0 && !d_ex()) && !button3_h()) {
 			msgnextloc("\\E1* Maybe the answer's somewhere around here...?/%", "obj_dw_church_organ_slash_Step_0_gml_455_0");
 			var d = d_make();
 			d.runcheck = 1;
+			d.preventcskip = 1;
 			d.side = 0;
 		} else {
 			play_cancel();

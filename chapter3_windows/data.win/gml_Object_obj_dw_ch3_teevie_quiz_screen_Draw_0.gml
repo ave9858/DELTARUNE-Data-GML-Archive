@@ -254,7 +254,7 @@ if (mode == 0) {
 			with (obj_mainchara)
 				battlemode = 1;
 
-			bullet_screen_sprite = 4884;
+			bullet_screen_sprite = 4886;
 		}
 
 		if (bullet_con == 2) {

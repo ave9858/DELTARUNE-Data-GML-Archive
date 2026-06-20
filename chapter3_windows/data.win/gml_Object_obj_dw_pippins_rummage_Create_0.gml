@@ -37,7 +37,7 @@ init = function(arg0) {
 
 	switch (pippins_mode) {
 		case 0:
-			pippins_sprite = 4968;
+			pippins_sprite = 4970;
 			is_inside = false;
 			break;
 

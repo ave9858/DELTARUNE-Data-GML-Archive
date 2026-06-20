@@ -26,7 +26,7 @@ with (instance_create(0, 0, obj_camera_nudger)) {
 var spritesArray = layer_get_all_elements("DEBUG_ASSETS");
 
 for (var i = 0; i < array_length(spritesArray); i++) {
-	if (layer_sprite_get_sprite(spritesArray[i]) == 4599) {
+	if (layer_sprite_get_sprite(spritesArray[i]) == 4600) {
 		var info = scr_assetgetinfo(spritesArray[i]);
 		redflame = instance_create(info[2], info[3], obj_dw_church_warpflame);
 

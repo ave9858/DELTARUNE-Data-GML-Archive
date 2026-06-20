@@ -130,13 +130,13 @@ if (global.plot > 150) {
 	var spritesArray = layer_get_all_elements("DEBUG_ASSETS");
 
 	for (var i = 0; i < array_length(spritesArray); i++) {
-		if (layer_sprite_get_sprite(spritesArray[i]) == 5126) {
+		if (layer_sprite_get_sprite(spritesArray[i]) == 5127) {
 			guei = scr_marker_fromasset(spritesArray[i], undefined, 1);
 			guei.image_speed = 0.25;
 			scr_depth(guei);
 		}
 
-		if (layer_sprite_get_sprite(spritesArray[i]) == 5584) {
+		if (layer_sprite_get_sprite(spritesArray[i]) == 5585) {
 			cup = scr_marker_fromasset(spritesArray[i], undefined, 1);
 			cup.image_speed = 0.25;
 			cup.con = 0;
@@ -153,7 +153,7 @@ if (global.plot > 150) {
 			cuptrig.marker.visible = false;
 		}
 
-		if (layer_sprite_get_sprite(spritesArray[i]) == 5275) {
+		if (layer_sprite_get_sprite(spritesArray[i]) == 5276) {
 			gueitrig = scr_makenpc_fromasset(spritesArray[i], undefined, 1);
 			gueitrig.marker.visible = false;
 			gueitrig.timer = 0;

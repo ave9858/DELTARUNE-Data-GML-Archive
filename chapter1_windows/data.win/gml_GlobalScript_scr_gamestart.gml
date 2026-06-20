@@ -190,7 +190,7 @@ function scr_gamestart() {
 
 	for (i = 0; i < 10; i += 1) {
 		global.writersnd[i] = snd_noise;
-		global.writerimg[i] = scr_84_get_sprite("spr_btact");
+		global.writerimg[i] = (global.lang == "en") ? spr_btact : spr_ja_btact;
 		global.smdir[i] = 90;
 		global.smspeed[i] = 2;
 		global.smface[i] = 505050;

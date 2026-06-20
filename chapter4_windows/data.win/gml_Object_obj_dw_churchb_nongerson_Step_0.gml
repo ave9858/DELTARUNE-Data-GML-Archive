@@ -112,7 +112,7 @@ if (con == 34 && !d_ex() && customcon == 1) {
 	customcon = 0;
 	con = 38;
 	c_waitcustom_end();
-	c_var_instance(rippler, "susie_sprite", 5196);
+	c_var_instance(rippler, "susie_sprite", 5197);
 	c_var_instance(id, "susie_timer", 10);
 	c_var_instance(id, "force_ripple", true);
 	c_speaker("susie");

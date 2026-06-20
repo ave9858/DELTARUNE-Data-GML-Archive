@@ -1,4 +1,4 @@
-if (i_ex(grabdaddy)) {
+if (instance_exists(grabdaddy)) {
 	if (type == 0) {
 		if ((con == 0 && blocked != 0 && grabdaddy.canfreemove && lifetimer > 2 && (grabdaddy.facing == 0 || grabdaddy.facing == 1 || grabdaddy.facing == 2 || grabdaddy.facing == 3)) || grabdaddy.graballpots == true) {
 			if (grabdaddy.graballpots_con == 3 && grabdaddy.graballpots_timer > 1 && drawreticle == true)
@@ -11,7 +11,7 @@ if (i_ex(grabdaddy)) {
 			draw_sprite_ext(spr_board_throw_reticle, 0, aimx, aimy, 2, 2, 0, c_white, 1);
 	}
 
-	if (type == 1) {
+	if (type == 1 && instance_exists(grabbedid)) {
 		if (con == 0) {
 			var bblocked = true;
 

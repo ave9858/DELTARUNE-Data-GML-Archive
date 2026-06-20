@@ -1,6 +1,6 @@
 scr_board_battlehealth();
 depth = 100010;
-kris = 1184;
+kris = 1185;
 
 with (obj_caterpillarchara) {
 	if (name == "ralsei")

@@ -263,7 +263,7 @@ if (i_ex(obj_growtangle)) {
 						}
 
 						if (i == 1) {
-							if (elninabullesprite == 4254)
+							if (elninabullesprite == 4255)
 								mybullet.sprite_index = bs[5];
 
 							if (elninabullesprite == 1650)

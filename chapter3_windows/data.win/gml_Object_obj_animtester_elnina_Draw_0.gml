@@ -1,6 +1,6 @@
 draw_sprite_ext(sprite_index, 0, x - 100, y, 2, 2, 0, c_white, 0.25);
 preset = 0;
-hairtufts = 4562;
+hairtufts = 4564;
 waist = 930;
 rightarm = 1641;
 head = 889;

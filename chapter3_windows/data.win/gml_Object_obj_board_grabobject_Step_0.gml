@@ -14,7 +14,9 @@ if (init == 0) {
 
 		if (grabbedid.object_index == obj_board_grabblenpc) {
 			type = 10;
-			grabbedid.sprite_index = grabbedid.grabindex;
+
+			if (variable_instance_exists(grabbedid, "grabindex"))
+				grabbedid.sprite_index = grabbedid.grabindex;
 
 			with (grabbedid)
 				safe_delete(mysolid);
@@ -48,23 +50,25 @@ if (init == 0) {
 		blockerlist[i] = susie.blockerlist[i];
 
 		if (ignoreplayer == 1) {
-			if (blockerlist[i] == 543)
+			if (blockerlist[i] == 544)
 				blockerlist[i] = 322;
 		}
 	}
 
-	marker = scr_marker(x, y, grabbedid.sprite_index);
-	marker.image_xscale = grabbedid.image_xscale;
-	marker.image_yscale = grabbedid.image_yscale;
-	marker.image_speed = grabbedid.image_speed;
-	marker.image_index = grabbedid.image_index;
-	marker.visible = false;
+	if (instance_exists(grabbedid)) {
+		marker = scr_marker(x, y, grabbedid.sprite_index);
+		marker.image_xscale = grabbedid.image_xscale;
+		marker.image_yscale = grabbedid.image_yscale;
+		marker.image_speed = grabbedid.image_speed;
+		marker.image_index = grabbedid.image_index;
+		marker.visible = false;
 
-	if (variable_instance_exists(grabbedid, throwdist))
-		throwdist = grabbedid.throwdist;
+		if (variable_instance_exists(grabbedid, "throwdist"))
+			throwdist = grabbedid.throwdist;
 
-	if (variable_instance_exists(grabbedid, snap))
-		snap = grabbedid.snap;
+		if (variable_instance_exists(grabbedid, "snap"))
+			snap = grabbedid.snap;
+	}
 
 	image_alpha = 0;
 	sprite_index = spr_whitepx_10;
@@ -82,7 +86,7 @@ lifetimer++;
 if (throwbuff > 0)
 	throwbuff--;
 
-if (con == 0) {
+if (con == 0 && instance_exists(grabdaddy)) {
 	if (type == 0) {
 		_xx = 0;
 		_yy = 0;
@@ -223,7 +227,7 @@ if (con == 0) {
 			aimy = clamp(aimy, uclamp, dclamp);
 		}
 
-		if (throwdist > 1) {
+		if (throwdist > 1 && instance_exists(grabdaddy)) {
 			if (grabdaddy.x < (aimx + 32) && grabdaddy.facing == 3)
 				blocked = 0;
 
@@ -238,7 +242,7 @@ if (con == 0) {
 		}
 	}
 
-	if (type == 1) {
+	if (type == 1 && instance_exists(grabdaddy)) {
 		tx = (round(grabdaddy.x / 32) * 32) - xoff;
 		ty = round(grabdaddy.bbox_top / 32) * 32;
 
@@ -275,38 +279,37 @@ if (con == 0) {
 		blocked = 0;
 		bridgereticle1 = false;
 		bridgereticle2 = false;
+		var _water = instance_place(checkx, checky, obj_board_watertile);
 
-		if (instance_place(checkx, checky, obj_board_watertile)) {
-			var _water = instance_place(checkx, checky, obj_board_watertile);
-
-			if (i_ex(_water)) {
-				if (_water.occupied == false) {
-					blocked = 1;
-					bridgereticle1 = true;
-					aimx = checkx;
-					aimy = checky;
-				}
+		if (instance_exists(_water)) {
+			if (_water.occupied == false) {
+				blocked = 1;
+				bridgereticle1 = true;
+				aimx = checkx;
+				aimy = checky;
 			}
 		}
 
-		if (blocked == 1) {
-			if (grabbedid.size > 1) {
-				blocked = 0;
-				var _water = instance_place(checkx + 32, checky, obj_board_watertile);
+		if (instance_exists(grabbedid)) {
+			if (blocked == 1) {
+				if (grabbedid.size > 1) {
+					blocked = 0;
+					_water = instance_place(checkx + 32, checky, obj_board_watertile);
 
-				if (i_ex(_water)) {
-					if (_water.occupied == false) {
-						blocked = 1;
-						bridgereticle2 = true;
-						aimx = checkx;
-						aimy = checky;
+					if (instance_exists(_water)) {
+						if (_water.occupied == false) {
+							blocked = 1;
+							bridgereticle2 = true;
+							aimx = checkx;
+							aimy = checky;
+						}
 					}
 				}
 			}
 		}
 	}
 
-	if (type == 2) {
+	if (type == 2 && instance_exists(grabdaddy)) {
 		tx = round(grabdaddy.x / 32) * 32;
 		ty = round(grabdaddy.bbox_top / 32) * 32;
 
@@ -346,7 +349,7 @@ if (con == 0) {
 		}
 	}
 
-	if (type == 3) {
+	if (type == 3 && instance_exists(grabdaddy)) {
 		tx = round(grabdaddy.x / 32) * 32;
 		ty = round(grabdaddy.bbox_top / 32) * 32;
 
@@ -426,7 +429,7 @@ if (con == 1) {
 		}
 	}
 
-	if (!instathrow) {
+	if (!instathrow && instance_exists(grabdaddy)) {
 		timer = 0;
 
 		if (grabdaddy.graballpots_con == 3) {
@@ -489,16 +492,18 @@ if (con == 2) {
 			snd_play(snd_impact_bc);
 
 		with (grabbedid) {
-			if (other.grabdaddy.graballpots_con != 3) {
-				setxy(other.aimx, other.aimy);
-			} else {
-				with (obj_board_controller.ralsei_object) {
-					follow = true;
-					facing = 0;
-					sprite_index = dsprite;
-				}
+			if (instance_exists(other.grabdaddy)) {
+				if (other.grabdaddy.graballpots_con != 3) {
+					setxy(other.aimx, other.aimy);
+				} else {
+					with (obj_board_controller.ralsei_object) {
+						follow = true;
+						facing = 0;
+						sprite_index = dsprite;
+					}
 
-				setxy(other.grabdaddy.xx, other.grabdaddy.yy);
+					setxy(other.grabdaddy.xx, other.grabdaddy.yy);
+				}
 			}
 
 			visible = true;
@@ -519,7 +524,7 @@ if (con == 2) {
 				if (object_index == obj_pushableblock_board) {
 					var grass = instance_place(x, y, obj_board_grabbablegrass);
 
-					if (i_ex(grass)) {
+					if (instance_exists(grass)) {
 						with (grass) {
 							if (con < 2.1)
 								con = 2.1;
@@ -532,10 +537,10 @@ if (con == 2) {
 		with (marker)
 			instance_destroy();
 
-		if (i_ex(grabdaddy)) {
-			grabdaddy.grabbed = 0;
-			grabdaddy.grab = 0;
-			grabdaddy.canfreemove = 1;
+		with (grabdaddy) {
+			grabbed = 0;
+			grab = 0;
+			canfreemove = 1;
 		}
 
 		instance_destroy();
@@ -546,16 +551,18 @@ if (con == 5) {
 	snd_play(snd_impact_bc);
 
 	with (grabbedid) {
-		if (other.grabdaddy.graballpots_con != 3) {
-			setxy(other.aimx, other.aimy);
-		} else {
-			with (obj_board_controller.ralsei_object) {
-				follow = true;
-				facing = 0;
-				sprite_index = dsprite;
-			}
+		if (instance_exists(other.grabdaddy)) {
+			if (other.grabdaddy.graballpots_con != 3) {
+				setxy(other.aimx, other.aimy);
+			} else {
+				with (obj_board_controller.ralsei_object) {
+					follow = true;
+					facing = 0;
+					sprite_index = dsprite;
+				}
 
-			setxy(other.grabdaddy.xx, other.grabdaddy.yy);
+				setxy(other.grabdaddy.xx, other.grabdaddy.yy);
+			}
 		}
 
 		visible = true;
@@ -581,12 +588,12 @@ else
 	scr_depth_board();
 
 if (obj_board_camera.con != 0) {
-	if (i_ex(grabbedid)) {
+	if (instance_exists(grabbedid)) {
 		if (grabbedid.object_index != obj_mainchara_board) {
 			safe_delete(grabbedid);
 			safe_delete(shadowmarker);
 
-			if (i_ex(grabdaddy)) {
+			if (instance_exists(grabdaddy)) {
 				grabdaddy.grabbed = 0;
 				grabdaddy.grab = 0;
 			}
@@ -596,12 +603,9 @@ if (obj_board_camera.con != 0) {
 	}
 }
 
-if (i_ex(shadowmarker)) {
+if (instance_exists(shadowmarker)) {
 	if (fakey > -10)
 		shadowmarker.visible = false;
 	else
 		shadowmarker.visible = true;
 }
-
-if (keyboard_check_pressed(ord("T")))
-	debug_print(object_get_name(grabbedid.object_index));

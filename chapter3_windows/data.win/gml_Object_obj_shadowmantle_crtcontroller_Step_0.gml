@@ -1,8 +1,8 @@
 if (crt == 0)
-	crt = 628;
+	crt = 629;
 
 if (boss == 0)
-	boss = 583;
+	boss = 584;
 
 if (i_ex(crt)) {
 	if (i_ex(boss)) {

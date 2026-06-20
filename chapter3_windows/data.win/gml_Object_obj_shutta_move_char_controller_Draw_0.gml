@@ -3,9 +3,9 @@ siner++;
 var offset = sin(siner / 6) * 2;
 
 if (character == "susie")
-	targetid = 1410;
-else
 	targetid = 1411;
+else
+	targetid = 1412;
 
 draw_set_alpha(image_alpha);
 ossafe_fill_rectangle_color(targetid.x - offset, targetid.y - offset, targetid.x + 96 + offset, targetid.y + 100 + offset, c_red, c_red, c_red, c_red, true);

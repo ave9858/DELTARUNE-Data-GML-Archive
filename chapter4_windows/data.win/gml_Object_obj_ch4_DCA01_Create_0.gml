@@ -41,8 +41,8 @@ if (global.plot >= 105 && global.plot < 110) {
 	pal_swap_layer_init();
 	pal_swap_enable_layer("TILES");
 	pal_swap_enable_layer("ASSETS_Staircase");
-	pal_swap_set_layer(3665, palette_index, "TILES", false);
-	pal_swap_set_layer(3665, palette_index, "ASSETS_Staircase", false);
+	pal_swap_set_layer(3666, palette_index, "TILES", false);
+	pal_swap_set_layer(3666, palette_index, "ASSETS_Staircase", false);
 	pal_swap_reset();
 	roaring_knight = instance_create(200, 100, obj_ch4_DCA01_roaringknight);
 	roaring_knight.sprite_index = spr_roaringknight_lift_head;

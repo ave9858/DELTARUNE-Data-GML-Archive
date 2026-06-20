@@ -72,6 +72,13 @@ if (image_angle < 1) {
 			inst = instance_create(x + _x + lengthdir_x(15, 270 + _image_angle), y + lengthdir_y(15, 270 + _image_angle), obj_gerson_growtangle_telegraph_new);
 			inst.image_angle = _image_angle;
 
+			if (image_angle == 270) {
+				with (inst) {
+					image_xscale = 1;
+					sprite_index = spr_gerson_swing_down_telegraph3;
+				}
+			}
+
 			if (i_ex(obj_heart))
 				inst.depth = obj_heart.depth + 1;
 		}

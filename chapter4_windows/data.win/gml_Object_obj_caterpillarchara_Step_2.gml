@@ -21,7 +21,7 @@ if (name != "susie" && !sprite_init) {
 	}
 
 	if (name == "ralsei")
-		climbsprite = 4836;
+		climbsprite = 4837;
 }
 
 if (!ignoredepth) {
@@ -56,7 +56,7 @@ if (name == "noelle") {
 
 if (name == "ralsei") {
 	slidesprite = spr_ralsei_slide;
-	climbsprite = 4836;
+	climbsprite = 4837;
 	halign = 2;
 	valign = 12;
 

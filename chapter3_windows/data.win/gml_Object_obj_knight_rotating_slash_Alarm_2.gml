@@ -7,15 +7,15 @@ if (next_up != -999) {
 			break;
 
 		case 3:
-			knight = 802;
+			knight = 803;
 			break;
 
 		case 4:
-			knight = 630;
+			knight = 631;
 			break;
 
 		case 5:
-			knight = 1173;
+			knight = 1174;
 			break;
 	}
 

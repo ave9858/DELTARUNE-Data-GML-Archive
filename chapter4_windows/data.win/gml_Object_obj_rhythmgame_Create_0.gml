@@ -79,6 +79,8 @@ note_hit_timer[1] = 0;
 note_hit_timer[2] = 0;
 note_hit_score[0] = 0;
 note_hit_score[1] = 0;
+demo_mode = false;
+draw_lyrics = true;
 intro_con = -1;
 camera_lerp = 0;
 fame_tier = 0;
@@ -92,19 +94,33 @@ scr_rhythmgame_init(0, song_id, true);
 drums = instance_create(170, y, obj_rhythmgame_chart);
 
 with (drums) {
+	var _performer = global.char[1] == 2 || global.char[2] == 2;
 	depth = other.depth - 10;
 	scr_rhythmgame_init(1, other.song_id, true);
 	mashcon = 1;
 	rhythmgame = other.id;
+
+	if (!_performer) {
+		performer.visible = false;
+		demo_mode = true;
+		mashcon = 0;
+	}
 }
 
 vocals = instance_create(470, y, obj_rhythmgame_chart);
 
 with (vocals) {
+	var _performer = global.char[1] == 3 || global.char[2] == 3;
 	depth = other.depth - 10;
 	scr_rhythmgame_init(2, other.song_id, true);
 	auto_play = true;
 	rhythmgame = other.id;
+
+	if (!_performer) {
+		performer.visible = false;
+		demo_mode = true;
+		other.draw_lyrics = false;
+	}
 }
 
 spooked = false;

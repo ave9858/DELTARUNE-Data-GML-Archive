@@ -34,6 +34,8 @@ init = function(arg0, arg1) {
 				set_windowsize = true;
 
 			ossafe_ini_close();
+		} else {
+			set_windowsize = true;
 		}
 	}
 

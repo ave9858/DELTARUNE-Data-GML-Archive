@@ -9,16 +9,16 @@ for (var i = 0; i < array_length(spritesArray); i++) {
 	if (layer_sprite_get_sprite(spritesArray[i]) == 1278)
 		p[0] = scr_assetgetinfo(spritesArray[i]);
 
-	if (layer_sprite_get_sprite(spritesArray[i]) == 5435)
+	if (layer_sprite_get_sprite(spritesArray[i]) == 5436)
 		p[1] = scr_assetgetinfo(spritesArray[i]);
 
 	if (layer_sprite_get_sprite(spritesArray[i]) == 2301)
 		p[2] = scr_assetgetinfo(spritesArray[i]);
 
-	if (layer_sprite_get_sprite(spritesArray[i]) == 4968)
+	if (layer_sprite_get_sprite(spritesArray[i]) == 4969)
 		s[0] = scr_assetgetinfo(spritesArray[i]);
 
-	if (layer_sprite_get_sprite(spritesArray[i]) == 4231)
+	if (layer_sprite_get_sprite(spritesArray[i]) == 4232)
 		s[1] = scr_assetgetinfo(spritesArray[i]);
 
 	if (layer_sprite_get_sprite(spritesArray[i]) == 2267)
@@ -119,7 +119,7 @@ if (revroom) {
 			}
 		}
 
-		if (layer_sprite_get_sprite(spritesArray[i]) == 3351) {
+		if (layer_sprite_get_sprite(spritesArray[i]) == 3352) {
 			telescope = scr_makenpc_fromasset(spritesArray[i]);
 
 			with (telescope) {

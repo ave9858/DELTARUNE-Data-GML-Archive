@@ -97,10 +97,10 @@ if (econ == 0) {
 		var spritesArray = layer_get_all_elements("BELL_ENEMYBELL");
 
 		for (var i = 0; i < array_length(spritesArray); i++) {
-			if (layer_sprite_get_sprite(spritesArray[i]) == 4548)
+			if (layer_sprite_get_sprite(spritesArray[i]) == 4549)
 				chaseloc = scr_assetgetinfo(spritesArray[i]);
 
-			if (layer_sprite_get_sprite(spritesArray[i]) == 5174) {
+			if (layer_sprite_get_sprite(spritesArray[i]) == 5175) {
 				fakebellbit = scr_marker_fromasset(spritesArray[i], 899999);
 				fakebellbit.image_alpha = 1;
 				fakebellbit.image_blend = #679CBC;
@@ -113,7 +113,7 @@ if (econ == 0) {
 				}
 			}
 
-			if (layer_sprite_get_sprite(spritesArray[i]) == 4859) {
+			if (layer_sprite_get_sprite(spritesArray[i]) == 4860) {
 				if (!instance_exists(fakebelloverlay)) {
 					fakebelloverlay = scr_marker_fromasset(spritesArray[i], 899990);
 					fakebelloverlay.image_alpha = 1;

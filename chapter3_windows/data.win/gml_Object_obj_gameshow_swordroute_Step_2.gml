@@ -9,5 +9,5 @@ if (i_ex(highlight)) {
 	if (instance_exists(kractor))
 		highlight.target = kractor;
 	else
-		highlight.target = 1184;
+		highlight.target = 1185;
 }

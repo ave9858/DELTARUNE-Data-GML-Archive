@@ -25,14 +25,14 @@ shop = -4;
 var spritesArray = layer_get_all_elements("DEBUG_ASSETS");
 
 for (var i = 0; i < array_length(spritesArray); i++) {
-	if (layer_sprite_get_sprite(spritesArray[i]) == 4517) {
+	if (layer_sprite_get_sprite(spritesArray[i]) == 4518) {
 		shop = scr_makenpc_fromasset(spritesArray[i]);
 		shop.marker.image_speed = 0.125;
 		shop.cost = -1;
 		shop.maketype = 0;
 	}
 
-	if (layer_sprite_get_sprite(spritesArray[i]) == 4599) {
+	if (layer_sprite_get_sprite(spritesArray[i]) == 4600) {
 		if (global.plot >= 249) {
 			if (layer_sprite_get_blend(spritesArray[i]) == 255) {
 				var info = scr_assetgetinfo(spritesArray[i]);

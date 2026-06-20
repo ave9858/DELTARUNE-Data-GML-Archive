@@ -71,9 +71,23 @@ if (x > (obj_heart.x - 80) && x < (obj_heart.x + 80)) {
 		repeat (max(floor(_speed / 8), 1)) {
 			x += (_xadd * 8);
 			y += (_yadd * 8);
+			active = 1;
 
-			if (place_meeting(x, y, obj_heart))
+			if (con == 1 && _speed == 80 && create_2nd_hitbox == false) {
+				hitbox = instance_create_depth(x, y, depth - 1, obj_sword_tunnel_hitbox);
+				hitbox.image_angle = image_angle;
+				hitbox.image_yscale = 0.4;
+				hitbox.image_xscale = 999;
+
+				with (obj_heart)
+					mask_index = spr_dodgeheart_smallmask;
+
+				create_2nd_hitbox = true;
+			} else if (create_2nd_hitbox == false && collision_line(x, y, x + lengthdir_x(37, image_angle), y + lengthdir_y(37, image_angle), obj_heart, 0, false)) {
 				event_user(5);
+			}
+
+			active = 0;
 		}
 
 		x = remx;

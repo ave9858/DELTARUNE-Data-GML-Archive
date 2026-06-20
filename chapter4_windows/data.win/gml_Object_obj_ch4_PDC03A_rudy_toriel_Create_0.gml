@@ -8,6 +8,7 @@ noelle_talked = 0;
 susie_ready = false;
 facing_temp = 0;
 actor_talker = -4;
+no_actor = -4;
 noelle_npc = scr_marker(235, 405, spr_noelle_juice_walk_left);
 
 with (noelle_npc) {

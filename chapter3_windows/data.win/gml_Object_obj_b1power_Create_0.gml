@@ -19,3 +19,5 @@ makesuretoreset = 0;
 skipredo = false;
 tempsolid = 0;
 restrain = false;
+susiefail = 0;
+susiefail2 = 0;

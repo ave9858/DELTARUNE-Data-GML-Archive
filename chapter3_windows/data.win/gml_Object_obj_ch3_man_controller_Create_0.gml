@@ -16,12 +16,12 @@ obj_mainchara.cutscene = true;
 with (obj_mainchara)
 	setxy(x + moveX, y + moveY);
 
-moveall[0] = 702;
+moveall[0] = 703;
 moveall[1] = 282;
-moveall[2] = 1023;
-moveall[3] = 1211;
-moveall[4] = 1077;
-moveall[5] = 1654;
+moveall[2] = 1024;
+moveall[3] = 1212;
+moveall[4] = 1078;
+moveall[5] = 1655;
 movealllength = array_length(moveall);
 
 for (var i = 0; i < movealllength; i++) {

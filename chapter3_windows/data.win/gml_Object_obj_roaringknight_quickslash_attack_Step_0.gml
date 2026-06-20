@@ -49,22 +49,22 @@ if ((local_turntimer < 120 || (local_turntimer < 150 && next_up == 4)) && slash_
 
 		switch (next_up) {
 			case 5:
-				new_knight = 1173;
+				new_knight = 1174;
 				slash_count = 993;
 				break;
 
 			case 4:
-				new_knight = 630;
+				new_knight = 631;
 				slash_count = 993;
 				break;
 
 			case 3:
-				new_knight = 802;
+				new_knight = 803;
 				slash_count = 999;
 				break;
 
 			case 2:
-				new_knight = 669;
+				new_knight = 670;
 				slash_count = 999;
 				break;
 		}
@@ -76,9 +76,9 @@ if ((local_turntimer < 120 || (local_turntimer < 150 && next_up == 4)) && slash_
 		knight_stream.creator = creator;
 
 		with (knight_stream) {
-			if (new_knight == 630)
+			if (new_knight == 631)
 				x -= 50;
-			else if (new_knight == 802)
+			else if (new_knight == 803)
 				x += 25;
 			else
 				x += 50;
@@ -86,7 +86,7 @@ if ((local_turntimer < 120 || (local_turntimer < 150 && next_up == 4)) && slash_
 			y -= 44;
 			turn_type = "end";
 
-			if (new_knight != 1173) {
+			if (new_knight != 1174) {
 				with (instance_create_depth(x, y, depth, obj_knight_warp)) {
 					master = other.id;
 					event_user(0);
@@ -111,10 +111,10 @@ if ((local_turntimer < 120 || (local_turntimer < 150 && next_up == 4)) && slash_
 			anchor_y = other.anchor_y;
 			event_user(0);
 
-			if (new_knight == 669)
+			if (new_knight == 670)
 				knight_stream.timer = 4;
 
-			if (new_knight == 1173) {
+			if (new_knight == 1174) {
 				new_knight.alarm[0] = 1;
 				new_knight.init_start = 3;
 				new_knight.init = 4;

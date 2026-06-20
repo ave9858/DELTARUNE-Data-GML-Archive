@@ -40,7 +40,7 @@ if (!init) {
 
 	if (preset == 3) {
 		tanimrate = 0.5;
-		tennasprite = 4957;
+		tennasprite = 4959;
 		txoff = 20;
 		tyoff = 68;
 		txscale = 0.5;

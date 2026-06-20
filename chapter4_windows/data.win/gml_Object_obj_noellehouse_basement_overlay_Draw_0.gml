@@ -73,4 +73,10 @@ if (room == room_lw_noellehouse_dess) {
 	d3d_set_fog(false, c_black, 0, 0);
 	gpu_set_alphatestenable(false);
 	gpu_set_blendmode(bm_normal);
+	draw_set_color(c_black);
+	ossafe_fill_rectangle(camerax(), 220, 124, view_hport[0] + 10);
+	ossafe_fill_rectangle(165, 220, view_wport[0] + 10, view_hport[0] + 10);
+	ossafe_fill_rectangle(262, -10, view_wport[0] + 10, view_hport[0] + 10);
+	ossafe_fill_rectangle(260, 0, view_wport[0] + 10, 45, false);
+	draw_set_color(c_white);
 }

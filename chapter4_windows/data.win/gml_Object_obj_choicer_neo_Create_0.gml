@@ -75,7 +75,7 @@ textposx[2] = 0;
 textposy[2] = 0;
 textposx[3] = 0;
 textposy[3] = 0;
-heartSprite = 3710;
+heartSprite = 3711;
 choicerstyle = 0;
 
 if (global.chapter == 3 && i_ex(obj_board_writer)) {

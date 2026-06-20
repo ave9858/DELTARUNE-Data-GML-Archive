@@ -1,7 +1,7 @@
 var propblue = 16764994;
 var liteblue = 16777215;
 image_blend = propblue;
-var tilespr = 4063;
+var tilespr = 4064;
 var tiletex = 1522;
 
 if (alwaysactive)
@@ -67,7 +67,7 @@ if (onscreen) {
 
 	if (icon_sprite == -4) {
 		if (musickind == 3)
-			icon_sprite = 4527;
+			icon_sprite = 4528;
 
 		if (prophecy_icon.custom_sprite != -4)
 			icon_sprite = prophecy_icon.custom_sprite;

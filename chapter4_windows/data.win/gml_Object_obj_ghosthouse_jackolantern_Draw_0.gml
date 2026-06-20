@@ -22,3 +22,6 @@ if (squish != 1) {
 } else {
 	draw_sprite_ext(sprite_index, image_index, x + shakex, y + shakey, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
 }
+
+if (scr_debug())
+	draw_text(16, 16, tutu);

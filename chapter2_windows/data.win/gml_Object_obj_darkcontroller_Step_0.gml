@@ -276,6 +276,9 @@ if (global.interact == 5) {
 					}
 
 					if (global.submenucoord[30] == 4) {
+						if (room == room_dw_mansion_krisroom && global.plot <= 100)
+							global.disable_border = true;
+
 						if (global.disable_border) {
 							selectnoise = 0;
 						} else {

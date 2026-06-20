@@ -17,8 +17,8 @@ if (view_current == 0) {
 	var sprangle = 0;
 	var scale = 2;
 	var spr = 2663;
-	var circlespr = 4058;
-	var arrowspr = 3798;
+	var circlespr = 4059;
+	var arrowspr = 3799;
 	var _space = 28;
 	var sinstrength = 2;
 	var basealpha = 0.35;

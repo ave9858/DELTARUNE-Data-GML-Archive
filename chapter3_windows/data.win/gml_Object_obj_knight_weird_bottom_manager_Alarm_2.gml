@@ -7,15 +7,15 @@ if (next_up != -999) {
 			break;
 
 		case 2:
-			knight = 669;
+			knight = 670;
 			break;
 
 		case 3:
-			knight = 802;
+			knight = 803;
 			break;
 
 		case 4:
-			knight = 630;
+			knight = 631;
 			break;
 	}
 
@@ -45,7 +45,7 @@ if (next_up != -999) {
 		anchor_y = other.anchor_y;
 		event_user(0);
 
-		if (knight == 630)
+		if (knight == 631)
 			knight.countdowner = 10;
 
 		with (instance_create_depth(x, y, depth, obj_knight_warp)) {

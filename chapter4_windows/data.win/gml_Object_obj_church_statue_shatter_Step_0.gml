@@ -1,5 +1,7 @@
-if (keyboard_check_pressed(ord("R")))
-	room_restart();
+if (scr_debug()) {
+	if (keyboard_check_pressed(ord("R")))
+		room_restart();
+}
 
 if (scr_debug() && room == room_vfx_tester) {
 	if (focus > 0 && keyboard_check_pressed(vk_right))

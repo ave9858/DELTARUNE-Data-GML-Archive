@@ -5437,8 +5437,8 @@ function scr_text(arg0) {
 				msgsetloc(0, "* How disobedient./", "scr_text_slash_scr_text_gml_5826_0");
 				msgnextloc("* Someone ought to whip you into shape!/%", "scr_text_slash_scr_text_gml_5827_0");
 
-				if (instance_exists(obj_npc_tasquemanager))
-					obj_npc_tasquemanager.con = 1;
+				with (obj_npc_tasquemanager)
+					con = 1;
 			}
 
 			break;
@@ -5461,8 +5461,8 @@ function scr_text(arg0) {
 				msgsetloc(0, "* Incorrect. It seems your organization is lacking./", "scr_text_slash_scr_text_gml_5853_0");
 				msgnextloc("* Someone ought to whip you into shape!/%", "scr_text_slash_scr_text_gml_5854_0");
 
-				if (instance_exists(obj_npc_tasquemanager))
-					obj_npc_tasquemanager.con = 1;
+				with (obj_npc_tasquemanager)
+					con = 1;
 			}
 
 			break;
@@ -5485,8 +5485,8 @@ function scr_text(arg0) {
 				msgsetloc(0, "* Incorrect. It seems your organization is lacking./", "scr_text_slash_scr_text_gml_5880_0");
 				msgnextloc("* Someone ought to whip you into shape!/%", "scr_text_slash_scr_text_gml_5881_0");
 
-				if (instance_exists(obj_npc_tasquemanager))
-					obj_npc_tasquemanager.con = 1;
+				with (obj_npc_tasquemanager)
+					con = 1;
 			}
 
 			break;
@@ -5499,8 +5499,8 @@ function scr_text(arg0) {
 				msgsetloc(0, "* That's correct!/", "scr_text_slash_scr_text_gml_5892_0");
 				msgnextloc("* I'm so happy I could whip something!/%", "scr_text_slash_scr_text_gml_5893_0");
 
-				if (instance_exists(obj_npc_tasquemanager))
-					obj_npc_tasquemanager.con = 1;
+				with (obj_npc_tasquemanager)
+					con = 1;
 			}
 
 			if (global.choice == 1) {
@@ -5508,16 +5508,16 @@ function scr_text(arg0) {
 				msgsetloc(0, "* Hm? That's the number 2^1, not the number 4.../", "scr_text_slash_scr_text_gml_5899_0");
 				msgnextloc("* Have you gotten disorganized? Someone ought to whip you into shape!/%", "scr_text_slash_scr_text_gml_5900_0");
 
-				if (instance_exists(obj_npc_tasquemanager))
-					obj_npc_tasquemanager.con = 1;
+				with (obj_npc_tasquemanager)
+					con = 1;
 			}
 
 			if (global.choice == 3 || global.choice == 2) {
 				msgsetloc(0, "* Incorrect. It seems your organization is lacking./", "scr_text_slash_scr_text_gml_5906_0");
 				msgnextloc("* Someone ought to whip you into shape!/%", "scr_text_slash_scr_text_gml_5907_0");
 
-				if (instance_exists(obj_npc_tasquemanager))
-					obj_npc_tasquemanager.con = 1;
+				with (obj_npc_tasquemanager)
+					con = 1;
 			}
 
 			break;
@@ -5906,16 +5906,16 @@ function scr_text(arg0) {
 				scr_speaker("noelle");
 				msgsetloc(0, "\\E2* (..^1. why did they sound so genuine?)/%", "scr_text_slash_scr_text_gml_6340_0");
 
-				if (instance_exists(obj_controller_dw_city_big_2))
-					obj_controller_dw_city_big_2.con = 70;
+				with (obj_controller_dw_city_big_2)
+					con = 70;
 			}
 
 			if (global.choice == 1) {
 				scr_speaker("noelle");
 				msgsetloc(0, "\\E8* Gosh^1, stop howling^1, I get it!/%", "scr_text_slash_scr_text_gml_6347_0");
 
-				if (instance_exists(obj_controller_dw_city_big_2))
-					obj_controller_dw_city_big_2.con = 70;
+				with (obj_controller_dw_city_big_2)
+					con = 70;
 			}
 
 			break;
@@ -5941,8 +5941,8 @@ function scr_text(arg0) {
 			msgsetloc(0, "\\EB* K-Kris...^1? What are you talking about!?/", "scr_text_slash_scr_text_gml_6378_0");
 			msgnextloc("\\EB* (I..^1. I must have said that out loud...?)/%", "scr_text_slash_scr_text_gml_6379_0");
 
-			if (instance_exists(obj_controller_dw_city_big_2))
-				obj_controller_dw_city_big_2.con = 14;
+			with (obj_controller_dw_city_big_2)
+				con = 14;
 
 			break;
 
@@ -6023,10 +6023,8 @@ function scr_text(arg0) {
 			if (global.choice == 0) {
 				global.msg[0] = stringsetloc(" %%", "scr_text_slash_scr_text_gml_6465_0");
 
-				if (instance_exists(obj_npc_dumpster)) {
-					with (obj_npc_dumpster)
-						con = 0;
-				}
+				with (obj_npc_dumpster)
+					con = 0;
 			}
 
 			if (global.choice == 1) {
@@ -6129,19 +6127,15 @@ function scr_text(arg0) {
 			if (global.choice == 0) {
 				global.msg[0] = stringsetloc("%%", "scr_text_slash_scr_text_gml_6574_0");
 
-				if (instance_exists(obj_ch2_city_berdly)) {
-					with (obj_ch2_city_berdly)
-						con = 12;
-				}
+				with (obj_ch2_city_berdly)
+					con = 12;
 			}
 
 			if (global.choice == 1) {
 				global.msg[0] = stringsetloc(" %%", "scr_text_slash_scr_text_gml_6583_0");
 
-				if (instance_exists(obj_ch2_city_berdly)) {
-					with (obj_ch2_city_berdly)
-						con = 14;
-				}
+				with (obj_ch2_city_berdly)
+					con = 14;
 			}
 
 			break;
@@ -6532,13 +6526,17 @@ function scr_text(arg0) {
 				if (global.flag[915] > 0)
 					scr_sideb_fail();
 
-				obj_controller_city_mice2.icon = 999;
+				with (obj_controller_city_mice2)
+					icon = 999;
 			}
 
 			if (global.choice == 1) {
 				msgset(0, "%%");
-				obj_controller_city_mice2.icon = 4;
-				obj_controller_city_mice2.timer = 0;
+
+				with (obj_controller_city_mice2) {
+					icon = 4;
+					timer = 0;
+				}
 			}
 
 			break;
@@ -6580,7 +6578,9 @@ function scr_text(arg0) {
 			if (global.choice == 1) {
 				scr_speaker("noelle");
 				msgsetloc(0, "\\E4* Y-yeah^1, we don't need anything like that./%", "scr_text_slash_scr_text_gml_7189_0");
-				obj_weirdEvent_addison_city_big_2.con = 72;
+
+				with (obj_weirdEvent_addison_city_big_2)
+					con = 72;
 			}
 
 			break;
@@ -6598,7 +6598,9 @@ function scr_text(arg0) {
 			if (global.choice == 1) {
 				scr_speaker("noelle");
 				msgsetloc(0, "\\E4* Y-yeah^1, we don't need anything like that./%", "scr_text_slash_scr_text_gml_7206_0");
-				obj_weirdEvent_addison_city_big_2.con = 72;
+
+				with (obj_weirdEvent_addison_city_big_2)
+					con = 72;
 			}
 
 			break;
@@ -6616,7 +6618,9 @@ function scr_text(arg0) {
 			if (global.choice == 1) {
 				scr_speaker("noelle");
 				msgsetloc(0, "\\E4* Y-yeah^1, we don't need anything like that./%", "scr_text_slash_scr_text_gml_7206_0");
-				obj_weirdEvent_addison_city_big_2.con = 72;
+
+				with (obj_weirdEvent_addison_city_big_2)
+					con = 72;
 			}
 
 			break;
@@ -6631,7 +6635,9 @@ function scr_text(arg0) {
 			if (global.choice == 1) {
 				scr_speaker("noelle");
 				msgsetloc(0, "\\E4* Y-yeah^1, we don't need anything like that./%", "scr_text_slash_scr_text_gml_7223_0");
-				obj_weirdEvent_addison_city_big_2.con = 72;
+
+				with (obj_weirdEvent_addison_city_big_2)
+					con = 72;
 			}
 
 			break;
@@ -6640,13 +6646,17 @@ function scr_text(arg0) {
 			if (global.choice == 0) {
 				scr_speaker("noelle");
 				msgsetloc(0, "\\EC* I.../%", "scr_text_slash_scr_text_gml_7234_0");
-				obj_weirdEvent_addison_city_big_2.con = 6;
+
+				with (obj_weirdEvent_addison_city_big_2)
+					con = 6;
 			}
 
 			if (global.choice == 1) {
 				scr_speaker("noelle");
 				msgsetloc(0, "\\E4* Y-yeah^1, we don't need anything like that./%", "scr_text_slash_scr_text_gml_7240_0");
-				obj_weirdEvent_addison_city_big_2.con = 72;
+
+				with (obj_weirdEvent_addison_city_big_2)
+					con = 72;
 			}
 
 			break;
@@ -6798,7 +6808,9 @@ function scr_text(arg0) {
 			if (global.choice == 0) {
 				scr_speaker("no_name");
 				msgsetloc(0, "* (You climbed into the manhole...)/%", "scr_text_slash_scr_text_gml_7348_0");
-				obj_weirdroute_sewerEntrance.con = 1;
+
+				with (obj_weirdroute_sewerEntrance)
+					con = 1;
 			}
 
 			if (global.choice == 1)
@@ -6828,13 +6840,17 @@ function scr_text(arg0) {
 				if (global.flag[915] > 0)
 					scr_sideb_fail();
 
-				obj_controller_city_mice2.icon = 999;
+				with (obj_controller_city_mice2)
+					icon = 999;
 			}
 
 			if (global.choice == 1) {
 				msgset(0, "%%");
-				obj_controller_city_mice2.icon = 6;
-				obj_controller_city_mice2.timer = 0;
+
+				with (obj_controller_city_mice2) {
+					icon = 6;
+					timer = 0;
+				}
 			}
 
 			break;
@@ -6861,13 +6877,17 @@ function scr_text(arg0) {
 				if (global.flag[915] > 0)
 					scr_sideb_fail();
 
-				obj_controller_city_mice2.icon = 999;
+				with (obj_controller_city_mice2)
+					icon = 999;
 			}
 
 			if (global.choice == 1) {
 				msgset(0, "%%");
-				obj_controller_city_mice2.icon = 8;
-				obj_controller_city_mice2.timer = 0;
+
+				with (obj_controller_city_mice2) {
+					icon = 8;
+					timer = 0;
+				}
 			}
 
 			break;
@@ -6895,13 +6915,17 @@ function scr_text(arg0) {
 				if (global.flag[915] > 0)
 					scr_sideb_fail();
 
-				obj_controller_city_mice2.icon = 999;
+				with (obj_controller_city_mice2)
+					icon = 999;
 			}
 
 			if (global.choice == 1) {
 				msgset(0, "%%");
-				obj_controller_city_mice2.icon = 10;
-				obj_controller_city_mice2.timer = 0;
+
+				with (obj_controller_city_mice2) {
+					icon = 10;
+					timer = 0;
+				}
 			}
 
 			break;
@@ -6927,13 +6951,17 @@ function scr_text(arg0) {
 				if (global.flag[915] > 0)
 					scr_sideb_fail();
 
-				obj_controller_city_mice2.icon = 999;
+				with (obj_controller_city_mice2)
+					icon = 999;
 			}
 
 			if (global.choice == 1) {
 				msgset(0, "%%");
-				obj_controller_city_mice2.icon = 12;
-				obj_controller_city_mice2.timer = 0;
+
+				with (obj_controller_city_mice2) {
+					icon = 12;
+					timer = 0;
+				}
 			}
 
 			break;
@@ -7104,10 +7132,8 @@ function scr_text(arg0) {
 
 					msgnext(itemgetstring);
 
-					if (i_ex(obj_npc_castle_cliff)) {
-						with (obj_npc_castle_cliff)
-							remove_shine = true;
-					}
+					with (obj_npc_castle_cliff)
+						remove_shine = true;
 				} else {
 					scr_speaker("no_name");
 					msgset(0, itemgetstring);

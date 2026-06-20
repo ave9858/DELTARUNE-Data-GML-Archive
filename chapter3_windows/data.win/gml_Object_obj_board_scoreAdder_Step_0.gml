@@ -8,7 +8,7 @@ if (init == 0) {
 			with (obj_board_scoreboard)
 				image_blend = #E33D47;
 
-			scr_shakeobj(553);
+			scr_shakeobj(554);
 		}
 	}
 

@@ -10,5 +10,5 @@ xoffset = 0;
 yoffset = 0;
 hookablelist[0] = 438;
 array_insert(hookablelist, array_length(hookablelist), 361);
-array_insert(hookablelist, array_length(hookablelist), 1409);
-array_insert(hookablelist, array_length(hookablelist), 776);
+array_insert(hookablelist, array_length(hookablelist), 1410);
+array_insert(hookablelist, array_length(hookablelist), 777);

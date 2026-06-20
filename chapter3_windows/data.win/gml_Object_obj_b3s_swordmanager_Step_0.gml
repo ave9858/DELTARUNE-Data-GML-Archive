@@ -73,7 +73,7 @@ if (kpause == 1) {
 	ktimer++;
 
 	if (ktimer == 1) {
-		scr_shakeobj_ext(1184, 4, 0);
+		scr_shakeobj_ext(1185, 4, 0);
 		obj_mainchara.sprite_index = spr_krisu_holdcontroller_slightright;
 	}
 

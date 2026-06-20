@@ -45,7 +45,7 @@ for (var i = 0; i < array_length(spritesArray); i++) {
 	if (layer_sprite_get_sprite(spritesArray[i]) == 2094)
 		npc[1] = scr_makenpc_fromasset(spritesArray[i]);
 
-	if (layer_sprite_get_sprite(spritesArray[i]) == 3019)
+	if (layer_sprite_get_sprite(spritesArray[i]) == 3020)
 		npc[2] = scr_makenpc_fromasset(spritesArray[i]);
 
 	if (layer_sprite_get_sprite(spritesArray[i]) == 1614)

@@ -1,4 +1,4 @@
-function scr_rhythmgame_init(arg0, arg1, arg2 = false) {
+function scr_rhythmgame_init(arg0, arg1, arg2 = false, arg3 = true) {
 	instrument = arg0;
 	note_color[0] = #01EA9E;
 	note_color[1] = #17EEFF;
@@ -33,7 +33,9 @@ function scr_rhythmgame_init(arg0, arg1, arg2 = false) {
 		note_color[0] = c_green;
 		note_color[1] = #B5E61D;
 		note_color[2] = c_lime;
-		scr_rhythmgame_notechart_vocals(arg1);
+
+		if (arg3)
+			scr_rhythmgame_notechart_vocals(arg1);
 
 		if (!arg2)
 			exit;

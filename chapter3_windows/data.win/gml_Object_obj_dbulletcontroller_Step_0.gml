@@ -1125,7 +1125,7 @@ if (type == 73) {
 		}
 
 		with (obj_lanino_enemy_rouxls) {
-			head = 4542;
+			head = 4544;
 			pose = -1;
 		}
 
@@ -1202,7 +1202,7 @@ if (type == 73) {
 		}
 
 		with (obj_elnina_enemy_rouxls)
-			head = 4843;
+			head = 4845;
 
 		with (obj_lanino_enemy_rouxls)
 			head = 1271;
@@ -1624,7 +1624,7 @@ if (type == 76) {
 			instance_destroy();
 
 		with (obj_elnina_enemy) {
-			obj_elnina_enemy.head = 4433;
+			obj_elnina_enemy.head = 4435;
 			global.typer = 50;
 			msgsetloc(0, "...", "obj_dbulletcontroller_slash_Step_0_gml_1575_0");
 			scr_enemyblcon(x - 10, global.monstery[myself] - 10, 10);
@@ -2368,7 +2368,7 @@ if (type == 130) {
 			}
 		} else {
 			with (obj_lanino_enemy) {
-				head = 4542;
+				head = 4544;
 				msgsetloc(0, "...&Elnina?", "obj_dbulletcontroller_slash_Step_0_gml_2479_0");
 
 				if (global.lang == "ja")
@@ -2396,7 +2396,7 @@ if (type == 130) {
 			msgsetloc(0, "... oh...", "obj_dbulletcontroller_slash_Step_0_gml_2532_0");
 
 			with (obj_elnina_enemy) {
-				head = 4433;
+				head = 4435;
 				scr_enemyblcon(x + 40, global.monstery[myself] - 70, 13);
 				myblcon.depth = other.depth - 100;
 			}

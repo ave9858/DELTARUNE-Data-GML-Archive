@@ -32,15 +32,15 @@ if (intro >= 1)
 
 if (gachainit == 0) {
 	kris_gacha = instance_create(0, 0, obj_tenna_board4_gacha);
-	kris_gacha.actor_target = 1408;
+	kris_gacha.actor_target = 1409;
 	kris_gacha.mode = 3;
 	kris_gacha.depth = obj_herokris.depth - 1;
 	susie_gacha = instance_create(0, 0, obj_tenna_board4_gacha);
-	susie_gacha.actor_target = 1410;
+	susie_gacha.actor_target = 1411;
 	susie_gacha.mode = 3;
 	susie_gacha.depth = obj_herosusie.depth - 1;
 	ralsei_gacha = instance_create(0, 0, obj_tenna_board4_gacha);
-	ralsei_gacha.actor_target = 1411;
+	ralsei_gacha.actor_target = 1412;
 	ralsei_gacha.mode = 3;
 	ralsei_gacha.depth = obj_heroralsei.depth - 1;
 	gachainit = 1;

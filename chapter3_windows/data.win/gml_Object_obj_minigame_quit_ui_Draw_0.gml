@@ -46,11 +46,27 @@ if (room == room_dw_rhythm)
 	xx = -210;
 
 if (room == room_dw_susiezilla) {
+	var iscontroller = global.is_console || obj_gamecontroller.gamepad_active;
 	xx = -22;
 	yy = -60;
 
-	if ((global.is_console || obj_gamecontroller.gamepad_active) && global.lang == "ja")
-		yy -= 36;
+	if (iscontroller) {
+		xx += 14;
+		yy -= 34;
+	} else {
+		xx -= 13;
+		yy -= 0;
+	}
+
+	if (global.lang == "ja") {
+		xx = -6;
+		yy = -96;
+
+		if (iscontroller) {
+			xx += 21;
+			yy -= 4;
+		}
+	}
 }
 
 var _alpha = 1;

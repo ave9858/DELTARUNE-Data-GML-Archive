@@ -19,7 +19,7 @@ laughtimer--;
 
 if (laughtimer == 0) {
 	talking = 0;
-	head = 4843;
+	head = 4845;
 }
 
 if (preset == 0) {

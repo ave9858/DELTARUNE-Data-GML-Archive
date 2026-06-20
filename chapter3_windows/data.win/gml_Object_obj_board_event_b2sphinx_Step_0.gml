@@ -5,7 +5,7 @@ if (init == 0)
 	init = 1;
 
 if (inventory == 0)
-	inventory = 1729;
+	inventory = 1730;
 
 if (con == 0)
 	scr_depth_board();

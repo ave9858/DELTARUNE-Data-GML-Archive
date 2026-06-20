@@ -1205,7 +1205,7 @@ if (global.monster[myself] == 1) {
 						endcon = 0.5;
 
 						with (obj_lanino_enemy_rouxls)
-							head = 4542;
+							head = 4544;
 
 						with (obj_elnina_enemy_rouxls)
 							head = 3799;
@@ -1505,7 +1505,7 @@ if (global.monster[myself] == 1) {
 				}
 
 				with (obj_lanino_enemy_rouxls)
-					head = 4542;
+					head = 4544;
 
 				endcon = 9.5;
 				endtalktimer = 0;
@@ -1528,7 +1528,7 @@ if (global.monster[myself] == 1) {
 
 			if (endtalktimer == 1) {
 				with (obj_elnina_enemy_rouxls) {
-					head = 4433;
+					head = 4435;
 					scr_move_to_point_over_time(x - 230, y, 30);
 				}
 			}
@@ -1647,7 +1647,7 @@ if (global.monster[myself] == 1) {
 					scr_enemyblcon(x + 20, y + 120, 11);
 					myblcon.side = -1;
 					pose = -1;
-					head = 4211;
+					head = 4212;
 				}
 
 				endtalktimer = 0;
@@ -1845,7 +1845,7 @@ if (global.monster[myself] == 1) {
 					head = 3799;
 
 				with (obj_lanino_enemy_rouxls)
-					head = 4542;
+					head = 4544;
 			}
 
 			if (talktimer == 5)

@@ -245,7 +245,7 @@ if (caught == 14 && !d_ex()) {
 			scr_delay_var("image_index", 6, _time);
 			scr_delay_var("image_index", 7, _time + 2);
 			scr_delay_var("image_index", 8, _time + 4);
-			scr_delay_var("sprite_index", 4120, round(_time / 2));
+			scr_delay_var("sprite_index", 4121, round(_time / 2));
 			scr_delay_var("depth", 96820, round(_time / 2));
 			scr_jump_to_point(obj_mainchara.x - 88, y - 22, 40, _time, true);
 			snd_play(snd_jump);

@@ -125,7 +125,7 @@ if (con == 5.1) {
 
 		with (ralsei) {
 			fun = 1;
-			var newsprite = 4938;
+			var newsprite = 4939;
 
 			if (x < 1350)
 				newsprite = 2674;

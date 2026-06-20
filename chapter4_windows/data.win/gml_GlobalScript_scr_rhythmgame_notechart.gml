@@ -3540,7 +3540,6 @@ function scr_rhythmgame_notechart_lead(arg0 = 0) {
 		scr_rhythmgame_addnote(63.54, 0, 0);
 		scr_rhythmgame_addnote(63.69, 0, 0, 1);
 		scr_rhythmgame_addnote(63.85, 1, 0);
-		scr_rhythmgame_addnote(63.85, 1, 0);
 		scr_rhythmgame_addnote(64, 0, 0);
 		scr_rhythmgame_addnote(64.31, 0, 0);
 		scr_rhythmgame_addnote(64.62, 1, 0);

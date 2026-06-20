@@ -463,6 +463,7 @@ if (con == 20 && customcon == 1) {
 	c_speaker("no_name");
 	c_msgsetsubloc(0, "* (\\cY[~1]\\cW returned to your inventory.)/%", item_name, "obj_ch3_closet_slash_Step_0_gml_685_0");
 	c_talk_wait();
+	c_var_instance(pipis_marker, "visible", false);
 	c_waitcustom();
 }
 
@@ -685,7 +686,7 @@ if (rabble_start) {
 
 	if (rabble_timer == 1) {
 		for (var i = 0; i < 20; i++) {
-			var sprite = ((i % 3) == 0) ? 2822 : 4284;
+			var sprite = ((i % 3) == 0) ? 2822 : 4285;
 			var y_offset = ((i % 4) == 0) ? 0 : 20;
 			fg_markers[i] = scr_dark_marker(camerax() + (i * 40), cameray() + view_hport[0] + 100, sprite);
 			var delay = ((i % 4) == 0) ? 0 : 5;

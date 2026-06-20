@@ -9,7 +9,7 @@ if (loadsong == 2) {
 if (obj_rhythmgame.song_initialized) {
 	if (!init) {
 		if (instrument == 1) {
-			if (global.chapter > 3)
+			if (global.chapter > 3 && !demo_mode)
 				confidence = 0.95;
 
 			debug_print("Susie's confidence at " + string(confidence) + "%");

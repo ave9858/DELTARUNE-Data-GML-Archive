@@ -13,7 +13,7 @@ prophecy = -4;
 var spritesArray = layer_get_all_elements("DEBUG_SPRITES");
 
 for (var i = 0; i < array_length(spritesArray); i++) {
-	if (layer_sprite_get_sprite(spritesArray[i]) == 5034) {
+	if (layer_sprite_get_sprite(spritesArray[i]) == 5035) {
 		var info = scr_assetgetinfo(spritesArray[i]);
 		prophecy = instance_create(info[2] + sprite_get_width(info[0]), info[3] + sprite_get_height(info[0]), obj_dw_church_prophecy);
 

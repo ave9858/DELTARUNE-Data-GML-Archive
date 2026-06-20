@@ -51,12 +51,12 @@ wave_count[8] = 0;
 wave_count[9] = 0;
 wave_count[10] = 0;
 melee = 185;
-red = 1551;
-blue = 572;
-gun = 910;
-rocket = 715;
-dozer = 725;
-laser = 1008;
+red = 1552;
+blue = 573;
+gun = 911;
+rocket = 716;
+dozer = 726;
+laser = 1009;
 tenna = obj_susiezilla_singlescreen_karatenna;
 ralsei_attacker[0] = melee;
 ralsei_attacker[1] = melee;
@@ -132,7 +132,7 @@ check_enemies = function() {
 		scr_script_delayed(snd_play, 294, snd_pombark);
 		var tetalk24 = stringsetloc("* WHAT THE HECK!?!?!?", "obj_susiezilla_gamecontroller_slash_Create_0_gml_200_0");
 		scr_script_delayed(scr_tennashouter, 350, tetalk24, 60);
-		scr_script_delayed(instance_create, 410, 0, 0, 539);
+		scr_script_delayed(instance_create, 410, 0, 0, 540);
 		alarm[3] = 410;
 	}
 

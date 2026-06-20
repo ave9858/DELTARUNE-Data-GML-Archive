@@ -198,7 +198,7 @@ if (song_initialized) {
 	if (rem_pos > 0)
 		draw_sprite_ext(spr_sneo_bullet_arrow, 0, (camerax() + 640) - 38, lerp((cameray() + 480) - 21, cameray() + 19, rem_pos / track_length), 1, 1, 0, _remcolor, 1);
 
-	var _walk_sprite = 4776;
+	var _walk_sprite = 4778;
 
 	if (instrument == 1)
 		_walk_sprite = 486;

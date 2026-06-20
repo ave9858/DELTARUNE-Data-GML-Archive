@@ -1,5 +1,5 @@
 preset = 0;
-shoulders = 4523;
+shoulders = 4525;
 legs = 4005;
 chest = 3079;
 head = 2590;

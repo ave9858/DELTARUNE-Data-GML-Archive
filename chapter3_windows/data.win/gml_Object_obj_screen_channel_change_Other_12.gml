@@ -92,9 +92,6 @@ if (i_ex(obj_tenna_enemy)) {
 
 		if (lightemuptimer == 70) {
 			lightemupcon = 0;
-			minigametext = instance_create_depth(x, y - 150, depth + 10, obj_tenna_enemy_minigametext);
-			minigametext.mystring = stringsetloc("DEFEAT TENNA!", "obj_screen_channel_change_slash_Other_12_gml_122_0");
-			minigametext.lightemup = 1;
 
 			with (obj_tenna_enemy)
 				keep_em_alive = true;

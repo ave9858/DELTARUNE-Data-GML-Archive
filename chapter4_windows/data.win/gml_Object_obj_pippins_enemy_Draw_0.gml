@@ -37,7 +37,7 @@ if (attackanim == true) {
 
 		if (attackanimindex >= 6) {
 			var rand = choose(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3);
-			var spinsprite = 3700;
+			var spinsprite = 3701;
 			draw_sprite_ext(spinsprite, attackanimindex, x, y, 2, 2, 0, c_white, 1);
 		} else {
 			draw_sprite_ext(spr_pippins_prepare, attackanimindex, x, y, 2, 2, 0, c_white, 1);

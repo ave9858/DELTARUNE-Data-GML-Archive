@@ -75,7 +75,7 @@ if (global.screen_border_active) {
 	if (instance_exists(obj_savepoint))
 		global.disable_border = false;
 
-	if (room_id == PLACE_CONTACT || room_id == 1527 || room_id == PLACE_MENU || room_id == room_gameover || room_id == PLACE_DOG)
+	if (room_id == PLACE_CONTACT || room_id == 1528 || room_id == PLACE_MENU || room_id == room_gameover || room_id == PLACE_DOG)
 		global.disable_border = true;
 }
 

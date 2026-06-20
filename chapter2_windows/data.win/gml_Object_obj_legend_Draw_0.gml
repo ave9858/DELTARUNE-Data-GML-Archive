@@ -580,19 +580,20 @@ if (draw_screen) {
 draw_set_alpha(1);
 
 if (ingame == 0) {
-	if (skip_buffer > 0) {
-		if (!button1_p())
-			skip_buffer--;
+	if (!variable_instance_exists(id, "presscount"))
+		presscount = 0;
 
-		exit;
-	}
+	if (button1_p())
+		presscount++;
 
-	if (button1_p() && skipped == 0) {
-		skipped = 1;
-		skiptimer = 0;
-		f = instance_create(0, 0, obj_fadeout);
-		f.fadespeed = 0.08;
-		mus_volume(global.currentsong[1], 0, 15);
+	if (!skipped) {
+		if ((button1_p() && textimer > 30) || presscount >= 2) {
+			skipped = 1;
+			skiptimer = 0;
+			f = instance_create(0, 0, obj_fadeout);
+			f.fadespeed = 0.08;
+			mus_volume(global.currentsong[1], 0, 15);
+		}
 	}
 
 	if (skipped == 1)

@@ -21,7 +21,7 @@ if (i_ex(obj_lightemup_controller)) {
 			yoffset = 0;
 		}
 
-		if (targetsprite == 4758) {
+		if (targetsprite == 4760) {
 			image_angle += 4;
 			xoffset = 8;
 			yoffset = 8;
@@ -48,7 +48,7 @@ if (i_ex(obj_lightemup_controller)) {
 		}
 
 		if (sprite_index == spr_ball_collision_full_3xscale) {
-			if (targetsprite == 4668) {
+			if (targetsprite == 4670) {
 				xoffset = -12;
 				yoffset = -14;
 			}

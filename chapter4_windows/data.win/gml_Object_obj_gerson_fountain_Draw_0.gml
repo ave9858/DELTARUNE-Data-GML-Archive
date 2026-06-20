@@ -73,6 +73,7 @@ if (menu == 0) {
 	for (var i = 0; i < array_length(menu_list); i++)
 		draw_text(camerax() + 480, cameray() + ((130 + (i * 20)) * 2), string_hash_to_newline(menu_list[i].option_text));
 
+	menuc[0] = min(menuc[0], menumax);
 	draw_sprite(spr_heart, 0, camerax() + 450, cameray() + ((135 + (menuc[0] * 20)) * 2));
 
 	if (button1_p() && onebuffer < 0) {
@@ -166,6 +167,7 @@ if (menu == 10) {
 		instance_create(camerax() + 460, cameray() + 260, obj_writer);
 	}
 
+	menuc[10] = min(menuc[10], menumax);
 	draw_sprite(spr_heart, 0, camerax() + 50, cameray() + 270 + (menuc[10] * 40));
 
 	if (button1_p() && onebuffer < 0) {
@@ -292,6 +294,7 @@ if (menu == 15 || menu == 16 || menu == 17 || menu == 18) {
 	draw_text(camerax() + 460, cameray() + y2_off, string_hash_to_newline(stringsetsubloc("$~1 ?", string(sellvalue), "obj_shop_vending_slash_Draw_0_gml_456_0")));
 	draw_text(camerax() + 480, cameray() + 340, string_hash_to_newline(stringsetloc("Yes", "obj_shop_vending_slash_Draw_0_gml_457_0")));
 	draw_text(camerax() + 480, cameray() + 370, string_hash_to_newline(stringsetloc("No", "obj_shop_vending_slash_Draw_0_gml_458_0")));
+	menuc[menu] = min(menuc[menu], menumax);
 	draw_sprite(spr_heart, 0, camerax() + 450, cameray() + 350 + (menuc[menu] * 30));
 }
 

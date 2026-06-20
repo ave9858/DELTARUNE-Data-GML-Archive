@@ -1,4 +1,4 @@
-tomake = 582;
+tomake = 583;
 
 if (room == room_board_1)
 	tomake = 72;

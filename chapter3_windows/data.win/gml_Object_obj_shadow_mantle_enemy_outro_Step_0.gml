@@ -58,7 +58,7 @@ if (con == 3 && !bw_ex()) {
 if (con == 4 && !bw_ex()) {
 	if (y < -32) {
 		con = 5;
-		kris = 543;
+		kris = 544;
 		global.interact = 0;
 		snd_stop(snd_board_door_close);
 		snd_play_pitch(snd_board_door_close, 1.2);

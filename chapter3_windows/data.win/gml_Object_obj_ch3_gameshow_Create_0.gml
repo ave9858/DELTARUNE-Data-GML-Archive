@@ -10,7 +10,7 @@ if (scr_debug()) {
 }
 
 global.facing = 2;
-kris = 1184;
+kris = 1185;
 kris.freeze = true;
 ralsei = 0;
 susie = 0;

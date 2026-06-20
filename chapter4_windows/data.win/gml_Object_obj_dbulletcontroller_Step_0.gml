@@ -1654,7 +1654,7 @@ if (type == 146) {
 		}
 
 		obj_growtangle.sprite_index = spr_ghost_house_starter;
-		obj_growtangle.spr_custom_box = 5417;
+		obj_growtangle.spr_custom_box = 5418;
 		obj_growtangle.mask_index = -1;
 		obj_heart.sprite_index = spr_dodgeheart_small;
 		obj_heart.mask_index = spr_dodgeheart_small_mask;
@@ -1984,7 +1984,9 @@ if (type == 149) {
 		made = true;
 
 		if (room == room_bullettest) {
-			instance_create(x, y, obj_jackendummy);
+			with (instance_create(x, y, obj_jackendummy))
+				scaredycat = false;
+
 			instance_create(x, y, obj_darkness_overlay_bullettest);
 			var mus = mus_play(snd_init("pumpkin_boss.ogg"));
 		}
@@ -2078,7 +2080,7 @@ if (type == 150) {
 		}
 
 		obj_growtangle.sprite_index = spr_ghost_house_chimney;
-		obj_growtangle.spr_custom_box = 3173;
+		obj_growtangle.spr_custom_box = 3174;
 		obj_growtangle.mask_index = -1;
 		obj_heart.sprite_index = spr_dodgeheart_small;
 		obj_heart.mask_index = spr_dodgeheart_small_mask;
@@ -2292,7 +2294,9 @@ if (type == 152) {
 		made = true;
 
 		if (room == room_bullettest) {
-			instance_create(x, y, obj_jackendummy);
+			with (instance_create(x, y, obj_jackendummy))
+				scaredycat = true;
+
 			instance_create(x, y, obj_darkness_overlay_bullettest);
 			var mus = mus_play(snd_init("pumpkin_boss.ogg"));
 		}
@@ -2470,7 +2474,7 @@ if (type == 153) {
 		}
 
 		obj_growtangle.sprite_index = spr_ghost_house_nopumpkin;
-		obj_growtangle.spr_custom_box = 5797;
+		obj_growtangle.spr_custom_box = 5798;
 		obj_growtangle.x += 26;
 		obj_growtangle.mask_index = -1;
 		obj_heart.sprite_index = spr_dodgeheart_small;
@@ -2601,7 +2605,7 @@ if (type == 154) {
 			instance_create(x, y, obj_darkness_overlay_bullettest);
 
 		obj_growtangle.sprite_index = spr_ghost_house_final;
-		obj_growtangle.spr_custom_box = 5172;
+		obj_growtangle.spr_custom_box = 5173;
 		obj_growtangle.mask_index = -1;
 		obj_growtangle.y -= 24;
 		obj_growtangle.x += 24;
@@ -2891,7 +2895,7 @@ if (type == 155) {
 		}
 
 		obj_growtangle.sprite_index = spr_ghost_house_lightup;
-		obj_growtangle.spr_custom_box = 4706;
+		obj_growtangle.spr_custom_box = 4707;
 		obj_growtangle.mask_index = -1;
 		obj_heart.sprite_index = spr_dodgeheart_small;
 		obj_heart.mask_index = spr_dodgeheart_small_mask;

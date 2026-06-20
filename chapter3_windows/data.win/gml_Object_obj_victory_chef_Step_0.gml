@@ -84,7 +84,7 @@ if (con == 4 && customcon == 1 && !d_ex()) {
 	with (obj_chefs_customer) {
 		depth = 9000;
 
-		if (sprEat == 4255) {
+		if (sprEat == 4256) {
 			scr_lerpvar("y", y, y + 40, 15, 2, "out");
 		} else {
 			var target_x = (image_xscale < 0) ? (camerax() - 200) : (view_wport[0] + 200);

@@ -303,7 +303,7 @@ if (global.myfight == 3) {
 				msgsetloc(0, "* Stole 100 Dark Dollars!/%", "obj_mizzle_enemy_slash_Step_0_gml_342_0");
 				scr_itemget_anytype(100, "money");
 			} else if (rand > 30 && rand <= 60) {
-				msgsetloc(0, "* Stole Scarlixer!/%", "obj_mizzle_enemy_slash_Step_0_gml_347_0");
+				msgsetloc(0, "* Stole Scarlixir!/%", "obj_mizzle_enemy_slash_Step_0_gml_347_0");
 				scr_itemget_anytype(62, "item");
 			} else if (rand > 60 && rand <= 90) {
 				msgsetloc(0, "* Stole Darker Candy!/%", "obj_mizzle_enemy_slash_Step_0_gml_352_0");

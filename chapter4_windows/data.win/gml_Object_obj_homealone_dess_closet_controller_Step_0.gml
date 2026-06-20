@@ -155,7 +155,7 @@ if (finish_sequence) {
 
 		var _kris_x = kris.x;
 		var _kris_y = kris.y;
-		var _kris_sprite = 5571;
+		var _kris_sprite = 5572;
 		var _emote = scr_marker(_kris_x + 10, _kris_y - 10, spr_exc);
 		scr_doom(_emote, 31);
 

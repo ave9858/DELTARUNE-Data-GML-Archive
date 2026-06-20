@@ -18,7 +18,7 @@ layer_set_visible("DEBUG_ASSETS", 0);
 var spritesArray = layer_get_all_elements("DEBUG_ASSETS");
 
 for (var i = 0; i < array_length(spritesArray); i++) {
-	if (layer_sprite_get_sprite(spritesArray[i]) == 4122) {
+	if (layer_sprite_get_sprite(spritesArray[i]) == 4123) {
 		book_marker = scr_marker_fromasset(spritesArray[i]);
 		book_marker.depth = layer_get_depth("Tiles_new_books") - 10;
 	}

@@ -10,17 +10,17 @@ if (init == 0) {
 	}
 
 	if (name == "susie") {
-		uspr = 4087;
+		uspr = 4088;
 		dspr = 486;
-		lspr = 4649;
-		rspr = 4697;
+		lspr = 4651;
+		rspr = 4699;
 	}
 
 	if (name == "ralsei") {
 		uspr = 3913;
 		dspr = 2318;
 		lspr = 2864;
-		rspr = 4161;
+		rspr = 4162;
 	}
 
 	init = 1;

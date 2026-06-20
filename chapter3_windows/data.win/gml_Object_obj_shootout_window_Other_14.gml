@@ -5,7 +5,7 @@ switch (char_state) {
 		char_timer = -1;
 		char_alpha = 1;
 		char_state = "idle";
-		char_sprite = 4853;
+		char_sprite = 4855;
 		char_imgindex = 2/3;
 		char_y = 40;
 		char_x = 5;
@@ -40,7 +40,7 @@ switch (char_state) {
 			char_sprite = 601;
 
 			if (obj_shootout_controller.shootout_type > 1)
-				char_sprite = 4840;
+				char_sprite = 4842;
 
 			char_imgindex = 0;
 			show_hit_spike = true;

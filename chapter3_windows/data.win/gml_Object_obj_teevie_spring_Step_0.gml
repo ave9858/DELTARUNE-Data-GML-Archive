@@ -197,7 +197,7 @@ if (con == 3) {
 		with (obj_mainchara) {
 			y -= 22;
 			scr_lerpvar("y", y, cameray() - 120, 10, 2, "out");
-			scr_delay_var("sprite_index", 4703, 2);
+			scr_delay_var("sprite_index", 4705, 2);
 			scr_delay_var("image_speed", 0.25, 2);
 		}
 

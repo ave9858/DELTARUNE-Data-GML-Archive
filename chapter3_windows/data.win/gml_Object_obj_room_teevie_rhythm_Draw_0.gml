@@ -43,7 +43,7 @@ if (drawcrowd) {
 		if (i > (count - 4))
 			my_blend_mode = merge_color(#132246, my_blend_mode, (count - i - 1) / 4);
 
-		var sprite = ((i % 2) == 1) ? 4279 : 4712;
+		var sprite = ((i % 2) == 1) ? 4280 : 4714;
 		draw_sprite_ext(sprite, siner + (i + 0.1), scr_even(xx + 50 + (i * 180) + (sin(siner + (i * 10)) * 4)), scr_even((base_y_pos - 12) + (sin((siner + (i * 10 * 4)) / 10) * 8)), base_x_scale, base_y_scale, 0, my_blend_mode, 1);
 	}
 
@@ -58,7 +58,7 @@ if (drawcrowd) {
 		if (i > (count - 4))
 			my_blend_mode = merge_color(#132246, my_blend_mode, (count - i - 1) / 4);
 
-		var sprite = ((i % 2) == 1) ? 4712 : 4279;
+		var sprite = ((i % 2) == 1) ? 4714 : 4280;
 		draw_sprite_ext(sprite, siner + (i + 0.4), scr_even(xx + (i * 160) + (sin(siner) * 1)), scr_even(base_y_pos + ((sin(siner * 2) * 4) + (i * 2))), base_x_scale, base_y_scale, 0, my_blend_mode, 1);
 	}
 }

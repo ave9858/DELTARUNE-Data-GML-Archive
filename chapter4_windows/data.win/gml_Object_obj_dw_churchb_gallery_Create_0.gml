@@ -67,7 +67,7 @@ for (var i = 0; i < array_length(spritesArray); i++) {
 	if (layer_sprite_get_sprite(spritesArray[i]) == 753)
 		cupadmirer = scr_makenpc_fromasset(spritesArray[i]);
 
-	if (layer_sprite_get_sprite(spritesArray[i]) == 4324) {
+	if (layer_sprite_get_sprite(spritesArray[i]) == 4325) {
 		if (layer_sprite_get_blend(spritesArray[i]) == 255) {
 			waferadmirer = scr_makenpc_fromasset(spritesArray[i]);
 			waferadmirer.marker.image_blend = c_white;
@@ -111,7 +111,7 @@ for (var i = 0; i < array_length(spritesArray); i++) {
 	if (layer_sprite_get_sprite(spritesArray[i]) == 1704)
 		watercooler = scr_makenpc_fromasset(spritesArray[i]);
 
-	if (layer_sprite_get_sprite(spritesArray[i]) == 4928) {
+	if (layer_sprite_get_sprite(spritesArray[i]) == 4929) {
 		angyboy = scr_makenpc_fromasset(spritesArray[i]);
 		angyboy.marker.depth -= 200;
 	}
@@ -120,7 +120,7 @@ for (var i = 0; i < array_length(spritesArray); i++) {
 		scr_marker_fromasset(spritesArray[i], undefined, 1);
 
 	if (createstar) {
-		if (layer_sprite_get_sprite(spritesArray[i]) == 5863) {
+		if (layer_sprite_get_sprite(spritesArray[i]) == 5864) {
 			starwalker = scr_makenpc_fromasset(spritesArray[i]);
 			angyboy.marker.depth -= 200;
 		}

@@ -38,11 +38,11 @@ if (state == 0) {
 	wingAnimating = 1;
 
 	if (wingAnimating == 0) {
-		wingSpriteL = 5803;
-		wingSpriteR = 4532;
+		wingSpriteL = 5804;
+		wingSpriteR = 4533;
 	} else {
-		wingSpriteL = 5029;
-		wingSpriteR = 5350;
+		wingSpriteL = 5030;
+		wingSpriteR = 5351;
 	}
 
 	thissprite = idlesprite;

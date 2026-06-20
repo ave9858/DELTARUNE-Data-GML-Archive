@@ -170,7 +170,7 @@ switch (char_state) {
 			char_sprite = 601;
 
 			if (obj_shootout_controller.shootout_type > 1)
-				char_sprite = 4840;
+				char_sprite = 4842;
 
 			char_imgindex = 0;
 			show_hit_spike = true;

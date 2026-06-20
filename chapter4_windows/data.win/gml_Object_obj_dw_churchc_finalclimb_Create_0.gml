@@ -106,7 +106,7 @@ if (global.plot < 245) {
 				case 0:
 				case 5:
 				default:
-					_shatter_sprite = 5305;
+					_shatter_sprite = 5306;
 					break;
 
 				case 1:
@@ -116,22 +116,22 @@ if (global.plot < 245) {
 
 				case 2:
 				case 7:
-					_shatter_sprite = 4498;
+					_shatter_sprite = 4499;
 					break;
 
 				case 3:
 				case 8:
-					_shatter_sprite = 4898;
+					_shatter_sprite = 4899;
 					break;
 
 				case 4:
 				case 9:
-					_shatter_sprite = 4154;
+					_shatter_sprite = 4155;
 					break;
 			}
 		}
 
-		if (_glass_sprite == 4986) {
+		if (_glass_sprite == 4987) {
 			switch (_glass_index) {
 				case 0:
 				case 6:
@@ -141,12 +141,12 @@ if (global.plot < 245) {
 
 				case 1:
 				case 7:
-					_shatter_sprite = 4273;
+					_shatter_sprite = 4274;
 					break;
 
 				case 2:
 				case 8:
-					_shatter_sprite = 5385;
+					_shatter_sprite = 5386;
 					break;
 
 				case 3:

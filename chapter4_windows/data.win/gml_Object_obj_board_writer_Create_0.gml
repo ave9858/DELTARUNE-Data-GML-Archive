@@ -25,4 +25,4 @@ boxleft = 0;
 boxright = 0;
 reachedend_draw_triangle = true;
 reachedend_draw_triangle_siner = 0;
-reachedend_triangle_sprite = 5020;
+reachedend_triangle_sprite = 5021;

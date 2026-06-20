@@ -6,7 +6,7 @@ crttimer = 0;
 crt_glitch = 0;
 chromStrength = 0.25;
 tenna_active = false;
-tenna_sprite = 4517;
+tenna_sprite = 4519;
 tenna_anim = 0;
 tenna_anim_speed = 0.1;
 bg_speed = 1;
@@ -73,7 +73,7 @@ set_tenna = function(arg0) {
 	if (tenna_mode == 0) {
 		bg_speed_max = 0;
 		tenna_anim_speed = 0.1;
-		tenna_sprite = 4517;
+		tenna_sprite = 4519;
 	} else if (tenna_mode == 1) {
 		bg_speed_max = 3;
 		tenna_anim_speed = 0.2;
@@ -131,7 +131,7 @@ challenge_start = function() {
 	scr_delay_var("tenna_mode", 0, 30);
 	scr_delay_var("bg_speed_max", 0, 30);
 	scr_delay_var("tenna_anim_speed", 0.1, 30);
-	scr_delay_var("tenna_sprite", 4517, 30);
+	scr_delay_var("tenna_sprite", 4519, 30);
 	scr_delay_var("door_active", false, 30);
 	challenge_started = true;
 };

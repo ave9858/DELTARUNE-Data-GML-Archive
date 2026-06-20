@@ -352,7 +352,13 @@ if (global.myfight == 3) {
 	}
 
 	if (acting == 3.1 && actcon == 0 && !i_ex(obj_writer)) {
-		msgsetsubloc(0, "* Aim with ~1~2 and ~3~4!&* Fire with ~5!", scr_get_input_name(3), scr_get_input_name(1), scr_get_input_name(2), scr_get_input_name(0), scr_get_input_name(6), "obj_shadowman_enemy_slash_Step_0_gml_325_0");
+		msgsetsubloc(0, "* Press directions to aim and ~1 to shoot!", scr_get_input_name(6), "obj_shadowman_enemy_slash_Step_0_gml_325_0");
+
+		if (scr_is_switch_os()) {
+			if (global.lang == "ja")
+				msgsetsub(0, "＊ 方向ボタンで　狙いを定めて\n　 ~1で発射！", scr_get_input_name(6));
+		}
+
 		scr_battletext_default();
 
 		with (obj_writer)

@@ -18,8 +18,8 @@ if (eyetimer == 90) {
 
 eyex = lerp(eyex, scr_even(targetEyeX), 0.2);
 eyey = lerp(eyey, scr_even(targetEyeY), 0.2);
-wingSpriteL = 5029;
-wingSpriteR = 5350;
+wingSpriteL = 5030;
+wingSpriteR = 5351;
 draw_sprite_ext(spr_halo_bat_sword, 0, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
 draw_sprite_ext(spr_halo_bat_topBit, 0, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
 draw_sprite_ext(wingSpriteL, siner * 0.25, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha);

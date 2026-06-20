@@ -38,7 +38,7 @@ if (view_current == 0) {
 			if (num != 0) {
 				sprangle = (num * 45) - 180 - 45;
 			} else {
-				spr = 4058;
+				spr = 4059;
 				scale = 2;
 			}
 

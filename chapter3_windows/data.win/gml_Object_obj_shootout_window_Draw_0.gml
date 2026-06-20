@@ -129,7 +129,7 @@ if (shaketimer > 7) {
 surface_reset_target();
 draw_surface(window_surface, x - sprite_xoffset, y - sprite_yoffset);
 
-if (char_sprite == 1105 || char_sprite == 557 || char_sprite == 3425 || char_sprite == 532 || char_sprite == 4853) {
+if (char_sprite == 1105 || char_sprite == 557 || char_sprite == 3425 || char_sprite == 532 || char_sprite == 4855) {
 	_x += (x - sprite_xoffset);
 	_y += (y - sprite_yoffset);
 	event_user(type);

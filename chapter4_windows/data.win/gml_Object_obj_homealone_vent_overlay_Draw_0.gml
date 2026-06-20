@@ -144,7 +144,7 @@ if (room == room_lw_noellehouse_dess) {
 	}
 
 	if (dess_closet_cover) {
-		draw_sprite_ext(spr_pixel_white, 0, x, -20, 60, 16.5, 0, c_black, 1);
+		draw_sprite_ext(spr_pixel_white, 0, x, -20, 100, 16.5, 0, c_black, 1);
 		draw_sprite_ext(spr_pixel_white, 0, 260, y + 30, 30, 23, 0, c_black, 1);
 	}
 }

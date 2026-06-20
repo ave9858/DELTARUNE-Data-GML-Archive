@@ -90,7 +90,7 @@ if (scr_isphase("enemytalk") && talked == 0 && !i_ex(obj_rouxls_ch3_enemy)) {
 			head = 1271;
 
 		with (obj_elnina_rematch_enemy)
-			head = 4843;
+			head = 4845;
 	}
 
 	scr_randomtarget();
@@ -312,10 +312,10 @@ if (scr_isphase("bullets") && attacked == 0) {
 	rtimer += 1;
 
 	if (rtimer == 12) {
-		var _a = 992;
+		var _a = 993;
 
 		if (!i_ex(obj_lanino_rematch_enemy))
-			_a = 1590;
+			_a = 1591;
 
 		if (global.mercymod[obj_lanino_rematch_enemy.myself] == 90 && i_ex(obj_elnina_umbrella)) {
 			scr_turntimer(260);
@@ -375,7 +375,7 @@ if (global.mnfight == 2 && global.turntimer <= 1) {
 		instance_destroy();
 
 	if (global.mercymod[obj_lanino_rematch_enemy.myself] == 100) {
-		obj_elnina_rematch_enemy.head = 4433;
+		obj_elnina_rematch_enemy.head = 4435;
 		obj_lanino_rematch_enemy.head = 3264;
 	}
 }

@@ -189,7 +189,7 @@ if (con == 2.5 && !i_ex(obj_round_evaluation_fg) && customcon == 1) {
 	c_mus2("initloop", "nes_intro_extended_part2.ogg", 0);
 	c_mus2("volume", 0.5, 0);
 	c_mus2("pitch", 1.1, 0);
-	scr_funnytext_init(2, 0, -14, 4462, 0, 0);
+	scr_funnytext_init(2, 0, -14, 4464, 0, 0);
 	c_speaker("tenna");
 	c_msgsetloc(0, "* ..^1. \\O2^1/", "obj_ch3_GSA06_slash_Step_0_gml_283_0");
 	c_facenext("ralsei", 21);

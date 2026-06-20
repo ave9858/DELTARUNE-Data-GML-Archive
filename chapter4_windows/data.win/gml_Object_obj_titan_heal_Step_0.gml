@@ -77,8 +77,10 @@ if (con == 1) {
 				type = 3;
 			}
 
-			if (i_ex(healamt))
+			if (i_ex(healamt)) {
 				healamt.damage = other.healamt;
+				healamt.depth -= 20;
+			}
 
 			var _index = 0;
 

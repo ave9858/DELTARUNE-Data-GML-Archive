@@ -142,3 +142,6 @@ for (var i = 0; i < array_length_1d(border_options); i++) {
 		break;
 	}
 }
+
+_spr_darkmenudesc = (global.lang == "en") ? 822 : 833;
+_spr_dmenu_captions = (global.lang == "en") ? 807 : 810;

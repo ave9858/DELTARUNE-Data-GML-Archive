@@ -10,14 +10,14 @@ if (_channelnumber == 3)
 	targetsprite = 3860;
 
 if (_channelnumber == 4)
-	targetsprite = 4758;
+	targetsprite = 4760;
 
 if (_channelnumber == 0)
 	targetsprite = 667;
 
 if (sprite_index == spr_ball_collision_full_3xscale) {
 	if (_channelnumber == 1)
-		targetsprite = 4668;
+		targetsprite = 4670;
 
 	if (_channelnumber == 2)
 		targetsprite = 3897;

@@ -22,6 +22,34 @@ if (scr_debug()) {
 	}
 }
 
+if (attackhit == 1) {
+	if (i_ex(obj_homealone_heart)) {
+		push_velocity += 8;
+		var velocity = push_velocity;
+
+		if (abs(obj_homealone_heart.x - 110) > 4 || abs(obj_homealone_heart.y - 30) > 4) {
+			with (obj_homealone_heart)
+				scr_obj_movetowards_point(110, 30, velocity);
+		} else {
+			push_timer++;
+
+			if (push_timer == 1) {
+				with (obj_homealone_heart) {
+					x += 2;
+					scr_minishakeobj();
+				}
+			}
+
+			if (push_timer >= 4) {
+				push_timer = 0;
+				attackhit = 0;
+				push_velocity = 0;
+				global.interact = 0;
+			}
+		}
+	}
+}
+
 if (is_tired)
 	exit;
 
@@ -251,38 +279,10 @@ if (mode == 1) {
 					obj_homealone_heart.depth = 30000;
 
 					with (obj_homealone_heart)
-						scr_delay_var("depth", d, 20);
+						scr_delay_var("depth", d, 18);
 
 					with (obj_event_manager)
 						trigger_event(UnknownEnum.Value_0, UnknownEnum.Value_8, UnknownEnum.Value_937);
-				}
-			}
-		}
-
-		if (attackhit == 1) {
-			if (i_ex(obj_homealone_heart)) {
-				push_velocity += 8;
-				var velocity = push_velocity;
-
-				if (obj_homealone_heart.x != 110 || obj_homealone_heart.y != 30) {
-					with (obj_homealone_heart)
-						scr_obj_movetowards_point(110, 30, velocity);
-				} else {
-					push_timer++;
-
-					if (push_timer == 1) {
-						with (obj_homealone_heart) {
-							x += 2;
-							scr_minishakeobj();
-						}
-					}
-
-					if (push_timer == 4) {
-						push_timer = 0;
-						attackhit = 0;
-						push_velocity = 0;
-						global.interact = 0;
-					}
 				}
 			}
 		}

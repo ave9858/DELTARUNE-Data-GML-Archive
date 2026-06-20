@@ -293,6 +293,11 @@ function scr_rhythmgame_get_rank(arg0, arg1) {
 }
 
 function scr_rhythmgame_load_events(arg0) {
+	if (arg0 > 3) {
+		scr_music_event_add_instance(drums, 0 - (meter * 5), "target_brightness", 0.75);
+		scr_music_event_add_instance(vocals, 0 - (meter * 5), "target_brightness", 0.75);
+	}
+
 	if (arg0 == 0) {
 		with (drums) {
 			scr_music_event_add_instance(performer, 16.7 - (meter * 6), "sprite_index", spr_susie_drum_ready, true);
@@ -359,16 +364,18 @@ function scr_rhythmgame_load_events(arg0) {
 		}
 	} else if (arg0 == 2) {
 		drums.auto_play = 1;
+		scr_music_event_add_instance(drums, 0 - meter, "target_brightness", 0.75);
+		scr_music_event_add_instance(vocals, 0 - meter, "target_brightness", 0.75);
 
-		if (global.chapter > 3 || (chart_start <= 158.92 && chart_end >= 158.92)) {
+		if (global.chapter >= 3 || (chart_start <= 158.92 && chart_end >= 158.92)) {
 			with (vocals.performer) {
 				scr_music_event_add(0, "sprite_index", spr_ralsei_sing_clap, true);
 				scr_music_event_add_instance(other.drums.performer, 4.85, "sprite_index", spr_susie_drum_ready, true);
 				scr_music_event_add(17, "sprite_index", spr_ralsei_sing_polite_closed, true);
 				scr_music_event_add(74.6, "sprite_index", spr_ralsei_sing_clap, true);
 				scr_music_event_add(86.95, "sprite_index", spr_ralsei_sing_polite_closed, true);
-				scr_music_event_add(158.92, "mid", 5310, true);
-				scr_music_event_add(158.92, "idle", 5271, true);
+				scr_music_event_add(158.92, "mid", 5311, true);
+				scr_music_event_add(158.92, "idle", 5272, true);
 				scr_music_event_add(158.92, "animspeed", 2, true);
 				scr_music_event_add(158.92, "sprite_index", spr_ralsei_sing_rude, true);
 				scr_music_event_add(162.16, "sprite_index", spr_ralsei_sing_cuss, true);

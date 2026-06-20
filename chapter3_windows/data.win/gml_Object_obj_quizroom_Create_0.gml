@@ -41,7 +41,7 @@ gacha_balls[0] = -4;
 gacha_balls[1] = -4;
 gacha_balls[2] = -4;
 board4 = obj_quizsequence.board4;
-tenna_podium = board4 ? 3839 : 4186;
+tenna_podium = board4 ? 3839 : 4187;
 susie_punch = false;
 susie_punch_timer = 0;
 

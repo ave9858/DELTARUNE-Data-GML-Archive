@@ -27,7 +27,7 @@ if (timer == 100) {
 if (timer == 201) {
 	line[0] = stringsetloc("-Main Team-", "obj_credits_2_slash_Step_0_gml_42_0");
 	line[1] = stringset("Sarah O'Donnell");
-	line[2] = stringset("Taxiderby");
+	line[2] = stringset("Juju (Taxiderby)");
 	line[3] = stringset("Fred Wood");
 	line[4] = stringset("Jean Canellas");
 	line[5] = stringset("Xan Wetherall");

@@ -1,7 +1,7 @@
 ps = part_system_create();
 part_system_automatic_draw(ps, false);
 ptdust = part_type_create();
-part_type_sprite(ptdust, 4843, true, false, false);
+part_type_sprite(ptdust, 4844, true, false, false);
 part_type_speed(ptdust, 0.06, 0.2, 0, 0.1);
 part_type_direction(ptdust, 0, 360, 0, 0.5);
 part_type_life(ptdust, 50, 350);

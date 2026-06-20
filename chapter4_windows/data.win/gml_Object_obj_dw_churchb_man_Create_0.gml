@@ -23,7 +23,7 @@ for (var i = 0; i < array_length(spritesArray); i++) {
 	var marker = scr_marker_fromasset(spritesArray[i]);
 	scr_depth(marker);
 
-	if (layer_sprite_get_sprite(spritesArray[i]) == 4777)
+	if (layer_sprite_get_sprite(spritesArray[i]) == 4778)
 		treedoor = marker;
 }
 

@@ -373,8 +373,6 @@ with (ranpc) {
 					linever = 1;
 			}
 
-			linever = 1;
-
 			if (linever == 0)
 				msgnextsubloc("\\EJ* By holding directions and pressing ~1!/", scr_get_input_name(4), "obj_dw_church_pianopiece_right_slash_Step_0_gml_396_0");
 

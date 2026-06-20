@@ -1,7 +1,7 @@
 if (init == 0) {
 	for (var i = 0; i < width; i++) {
 		for (var j = 0; j < height; j++) {
-			screensprite[i][j] = 4931;
+			screensprite[i][j] = 4933;
 			screencon[i][j] = 0;
 			screentimer[i][j] = floor(random(100) - 100);
 			screencolor[i][j] = c_white;
@@ -69,7 +69,7 @@ for (var i = 0; i < width; i++) {
 				if (screentimer[i][j] >= 15) {
 					screentimer[i][j] = -100 + floor(random(100));
 					screencon[i][j] = 0;
-					screensprite[i][j] = 4931;
+					screensprite[i][j] = 4933;
 					var myimage = choose(0, 2, 4);
 					screenimage[i][j] = myimage;
 

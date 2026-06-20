@@ -1,7 +1,7 @@
 con = -1;
 hand_sprite = spr_titan_climb_hand;
 finger_sprite = 1547;
-arm_sprite = 4313;
+arm_sprite = 4314;
 finger_anim = 0;
 anim_timer = 0;
 base_rot = -10;

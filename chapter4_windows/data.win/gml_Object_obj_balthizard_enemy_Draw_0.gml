@@ -86,10 +86,10 @@ if (state == 0) {
 		draw_sprite_ext(spr_incense_turtle_head_fire, lightupfireframes, x + 26 + headoffsetx + (sin(animsiner / 8) * headamplitude), y + 46 + headoffsety + ((cos(animsiner / 6) * headamplitude) / 2), head_scale, head_scale, image_angle, image_blend, pieces_alpha2);
 	}
 
-	turthead = 5547;
+	turthead = 5548;
 
 	if (global.mercymod[myself] >= global.mercymax[myself])
-		turthead = 3749;
+		turthead = 3750;
 
 	draw_monster_body_part(turthead, _headindex, x + 26 + headoffsetx + (sin(animsiner / 8) * headamplitude), y + 56 + headoffsety + ((cos(animsiner / 6) * headamplitude) / 2));
 
@@ -335,10 +335,10 @@ if (state == 10) {
 
 	draw_sprite_ext(spr_incense_turtle_leg3_transition, piece_index[4], x + piece_xoffset[4], y + piece_yoffset[4], image_xscale, image_yscale, image_angle, image_blend, pieces_alpha2);
 	draw_sprite_ext(spr_incense_turtle_leg2_transition, piece_index[3], x + piece_xoffset[3], y + piece_yoffset[3], image_xscale, image_yscale, image_angle, image_blend, pieces_alpha2);
-	turthead = 5547;
+	turthead = 5548;
 
 	if (global.mercymod[myself] >= global.mercymax[myself])
-		turthead = 3749;
+		turthead = 3750;
 
 	draw_sprite_ext(turthead, _headindex, x + 26 + headoffsetx + (sin(animsiner / 8) * headamplitude), y + 56 + headoffsety + ((cos(animsiner / 6) * headamplitude) / 2), head_scale, head_scale, image_angle, image_blend, pieces_alpha2);
 

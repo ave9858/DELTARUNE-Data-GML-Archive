@@ -59,7 +59,7 @@ if (con == 2) {
 	c_var_lerp_to_instance(spotlight, "x", spotlight.x + 140, 15, -1, "out");
 	c_var_lerp_to_instance(te_actor, "x", 493, 15, -1, "out");
 	c_wait(15);
-	var star_text = (global.lang == "ja") ? 4816 : 1724;
+	var star_text = (global.lang == "ja") ? 4818 : 1724;
 	var y_offset = (global.lang == "ja") ? 0 : -10;
 	scr_funnytext_init(0, 0, y_offset, star_text, 0, 0);
 	c_speaker("tenna");

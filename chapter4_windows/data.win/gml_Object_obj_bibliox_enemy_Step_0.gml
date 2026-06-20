@@ -180,11 +180,16 @@ if (global.myfight == 3) {
 		}
 	}
 
-	if (acting == 20 && !i_ex(obj_writer) && !i_ex(obj_proofread_controller_new)) {
-		actcon = 1;
+	if (acting == 20 && !i_ex(obj_proofread_controller_new)) {
+		timerb++;
 
-		with (obj_writer)
-			instance_destroy();
+		if (((button3_p() || button1_p()) && timerb > 17) || !i_ex(obj_writer)) {
+			with (obj_writer)
+				instance_destroy();
+
+			timerb = 0;
+			actcon = 1;
+		}
 	}
 
 	if (actingsus == 1 && actconsus == 1) {

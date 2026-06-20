@@ -47,10 +47,10 @@ if (endcon == 1) {
 			talking = true;
 
 		with (obj_lanino_rematch_enemy)
-			head = 5118;
+			head = 5119;
 
 		with (obj_elnina_rematch_enemy)
-			head = 4561;
+			head = 4562;
 	}
 
 	if ((button3_p() && introtimer > 15) || !i_ex(obj_writer)) {
@@ -68,7 +68,7 @@ if (endcon == 1) {
 			talking = true;
 
 		with (obj_lanino_rematch_enemy)
-			head = 5118;
+			head = 5119;
 
 		with (obj_elnina_rematch_enemy)
 			head = 1907;
@@ -125,7 +125,7 @@ if (endcon == 2.5) {
 			talking = false;
 
 		with (obj_elnina_rematch_enemy)
-			head = 4561;
+			head = 4562;
 
 		endcon = 3;
 		endtimer = 0;
@@ -584,7 +584,7 @@ if (scr_isphase("enemytalk") && talked == 0 && endcon == 0) {
 
 	if (global.mercymod[obj_lanino_rematch_enemy.myself] == 90) {
 		with (obj_lanino_rematch_enemy)
-			head = 4748;
+			head = 4749;
 
 		with (obj_elnina_rematch_enemy)
 			head = 2661;
@@ -604,7 +604,7 @@ if (scr_isphase("enemytalk") && talked == 0 && endcon == 0) {
 		balloonend = 1;
 	} else if (global.mercymod[obj_lanino_rematch_enemy.myself] == 95) {
 		with (obj_lanino_rematch_enemy)
-			head = 5232;
+			head = 5233;
 
 		with (obj_elnina_rematch_enemy)
 			head = 1066;
@@ -624,7 +624,7 @@ if (scr_isphase("enemytalk") && talked == 0 && endcon == 0) {
 		balloonend = 0;
 	} else {
 		with (obj_lanino_rematch_enemy)
-			head = 5232;
+			head = 5233;
 
 		with (obj_elnina_rematch_enemy)
 			head = 1066;
@@ -759,7 +759,7 @@ if (talked == 0.6) {
 			scr_enemyblcon(elnina.x - 40, global.monstery[elnina.myself] - 10, 10);
 
 			with (obj_lanino_rematch_enemy)
-				head = 5232;
+				head = 5233;
 
 			with (obj_elnina_rematch_enemy)
 				head = 1066;
@@ -772,7 +772,7 @@ if (talked == 0.6) {
 			scr_enemyblcon(elnina.x - 40, global.monstery[elnina.myself] - 10, 10);
 
 			with (obj_lanino_rematch_enemy)
-				head = 5232;
+				head = 5233;
 
 			with (obj_elnina_rematch_enemy)
 				head = 1066;

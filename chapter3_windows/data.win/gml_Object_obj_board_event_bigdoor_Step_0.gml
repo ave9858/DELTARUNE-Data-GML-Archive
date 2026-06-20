@@ -123,16 +123,54 @@ if (con == 90.5) {
 	scr_pathfind_to_point("susie", 6, 5, 2);
 	con = 90.6;
 	timer = 0;
+	failsafe = 0;
 }
 
 if (con == 90.6) {
-	if (scr_board_checklocation("kris", 5.5, 4, 2) && scr_board_checklocation("ralsei", 5, 5, 2) && scr_board_checklocation("susie", 6, 5, 2)) {
-		timer++;
+	var trig = 0;
+	var krtrig = 0;
 
-		if (timer == 5) {
-			con = 91;
-			timer = 0;
+	if (scr_board_checklocation("kris", 5.5, 4, 2))
+		krtrig = 1;
+
+	if (scr_board_checklocation("ralsei", 5, 5, 2))
+		trig++;
+
+	if (scr_board_checklocation("susie", 6, 5, 2))
+		trig++;
+
+	if (krtrig) {
+		var movecheck = 0;
+
+		with (obj_mainchara_board) {
+			if (!is_moving)
+				movecheck++;
 		}
+
+		if (movecheck == 3)
+			failsafe++;
+
+		if (failsafe > 5 && trig < 2)
+			trig = 2;
+	}
+
+	if (krtrig && trig == 2) {
+		timer = 0;
+		con = 90.7;
+	}
+}
+
+if (con == 90.7) {
+	timer++;
+
+	if (timer == 5) {
+		with (obj_mainchara_board) {
+			if (name == "kris")
+				setxy(304, 192);
+		}
+
+		con = 91;
+		timer = 0;
 	}
 }
 

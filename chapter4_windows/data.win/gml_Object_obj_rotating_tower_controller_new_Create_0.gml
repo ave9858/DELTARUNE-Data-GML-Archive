@@ -117,13 +117,13 @@ if ((tower_circumference % tile_width_fine) != 0) {
 
 horizontaltilecount = tower_circumference / tile_width_fine;
 tile_angle_difference = 360 / horizontaltilecount;
-var default_tile = 5179;
+var default_tile = 5180;
 
 if (tiledefaultclimbable)
 	default_tile = 2715;
 
 if (appearance == 2)
-	default_tile = 4167;
+	default_tile = 4168;
 
 var a = 16;
 var _index = 0;
@@ -149,10 +149,10 @@ if (use_collision_map) {
 	tm_collision = scr_layer_tilemap_get_id_fixed(collision_id);
 }
 
-var tileset = 3603;
+var tileset = 3604;
 
 if (appearance == 1)
-	tileset = 5100;
+	tileset = 5101;
 
 for (ii = 0; ii < verticaltilecount; ii++) {
 	if (use_collision_map) {
@@ -233,13 +233,13 @@ for (ii = 0; ii < verticaltilecount; ii++) {
 		_b = 0;
 }
 
-default_tile = 4083;
+default_tile = 4084;
 
 if (appearance == 1)
-	default_tile = 5407;
+	default_tile = 5408;
 
 if (appearance == 2)
-	default_tile = 5545;
+	default_tile = 5546;
 
 eye_sprite_width = sprite_get_width(spr_climb_eyeenemy_noeye);
 eye_sprite_height = sprite_get_height(spr_climb_eyeenemy_noeye);
@@ -524,7 +524,7 @@ if (appearance == 0)
 	default_tile = 2715;
 
 if (appearance == 1)
-	default_tile = 5407;
+	default_tile = 5408;
 
 if (appearance != 1) {
 	if (tiledefaultclimbable == false) {

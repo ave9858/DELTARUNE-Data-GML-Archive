@@ -1,7 +1,7 @@
 target_characters = [];
 var _char = [];
 var _y_offsets = [];
-_char[0] = 1184;
+_char[0] = 1185;
 _y_offsets[0] = 0;
 
 for (var i = 0; i < instance_number(obj_caterpillarchara); i++) {

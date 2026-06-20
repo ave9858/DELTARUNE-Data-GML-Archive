@@ -138,3 +138,4 @@ fallspeed = 0;
 lightemup_endingcon = 0;
 communication = 0;
 communicationtimer = 0;
+create_defeat_tenna_text_timer = 0;

@@ -1,7 +1,7 @@
 var _lancer = -1;
 
 if (i_ex(obj_lancergotchi))
-	_lancer = 1542;
+	_lancer = 1543;
 
 switch (subact_state) {
 	case "init":

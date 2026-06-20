@@ -16,6 +16,7 @@ if (room == room_dw_cyber_keyboard_puzzle_2) {
 }
 
 addString = "";
+idealLetter = [];
 letterCount = 0;
 lastPressedTile = -100;
 firstTileX = 0;

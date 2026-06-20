@@ -7,7 +7,7 @@ finalY = 0;
 remFinalX = 0;
 remFinalY = 0;
 remCurrentView = 0;
-remTargetObject = 1184;
+remTargetObject = 1185;
 lerpProgress = 0;
 startLerpX = 0;
 startLerpY = 0;
@@ -53,7 +53,7 @@ for (i = 0; i < maxViews; i++) {
 	ignoreFreezeArea[i] = -2;
 }
 
-targetObject[0] = 1184;
+targetObject[0] = 1185;
 
 if (global.darkzone == 0) {
 	targetObjectCenter[0] = 0;

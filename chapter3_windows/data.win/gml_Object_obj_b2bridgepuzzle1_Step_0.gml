@@ -667,8 +667,11 @@ if (resetralvis == true) {
 		}
 
 		with (obj_board_bridge_placed) {
-			if (sprite_index == spr_board_ralsei_surfboard)
-				instance_destroy();
+			if (sprite_index == spr_board_ralsei_surfboard) {
+				sprite_index = spr_board_bridge_1x;
+				image_index = 1;
+				image_speed = 0;
+			}
 		}
 	}
 }

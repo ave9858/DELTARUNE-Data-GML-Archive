@@ -1,7 +1,7 @@
 con = -1;
 marker_objects = [];
 marker_sprites = [];
-marker_exceptions = [3594, 5115, 2241, 1415];
+marker_exceptions = [3595, 5116, 2241, 1415];
 snowflakes = [];
 snowflakes_start = false;
 snowflakes_stop = false;

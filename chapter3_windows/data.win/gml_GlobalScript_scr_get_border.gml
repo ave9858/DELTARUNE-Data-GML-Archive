@@ -42,7 +42,7 @@ function scr_get_border(arg0) {
 		if (global.plot >= 340)
 			_border_image = border_lw_town_night;
 
-		var castle_town_rooms = [room_legend, 1534, PLACE_MENU, PLACE_LOGO];
+		var castle_town_rooms = [room_legend, 1535, PLACE_MENU, PLACE_LOGO];
 
 		for (var i = 0; i < array_length(castle_town_rooms); i++) {
 			if (arg0 != castle_town_rooms[i])

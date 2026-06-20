@@ -3,7 +3,7 @@ if (init == 0) {
 
 	if (extflag == "elnina1") {
 		sprite_index = spr_board_elnina_glasses_left;
-		pose = 4215;
+		pose = 4216;
 		mask_index = spr_board_spritemask_32x32_lowerhalf;
 	}
 
@@ -16,7 +16,7 @@ if (init == 0) {
 	if (extflag == "intro" || extflag == "b3tenna" || extflag == "b3shopping" || extflag == "b3bestcity" || extflag == "b3goodboy" || extflag == "b2intro" || extflag == "b3entertainment") {
 		sprite_index = spr_board_npc_tenna;
 		image_speed = 0.05;
-		pose = 4354;
+		pose = 4355;
 		mask_index = spr_board_spritemask_32x32_lowerhalf;
 	}
 

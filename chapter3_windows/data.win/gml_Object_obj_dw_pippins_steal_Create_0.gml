@@ -24,7 +24,7 @@ init = function(arg0) {
 
 		case "yak":
 			prize_x_offset = -280;
-			prize_sprite = 4690;
+			prize_sprite = 4692;
 			pippins_x = -170;
 			pippins_y = 100;
 			break;
@@ -38,7 +38,7 @@ init = function(arg0) {
 			break;
 
 		case "curtain":
-			prize_sprite = 4359;
+			prize_sprite = 4360;
 			prize_x_offset = -140;
 			pippins_x = 20;
 			pippins_y = 100;

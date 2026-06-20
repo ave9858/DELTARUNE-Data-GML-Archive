@@ -1,1 +1,2 @@
-safe_delete(shadowmarker);
+with (shadowmarker)
+	instance_destroy();

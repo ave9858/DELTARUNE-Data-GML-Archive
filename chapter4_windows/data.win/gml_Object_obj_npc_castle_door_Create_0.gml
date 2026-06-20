@@ -11,7 +11,7 @@ if (scr_recruited_all_in_chapter(2)) {
 }
 
 if (scr_recruited_all_in_chapter(3)) {
-	ball_sprite = 3715;
+	ball_sprite = 3716;
 	ball_x_offset = -16;
 	ball_y_offset = -20;
 }

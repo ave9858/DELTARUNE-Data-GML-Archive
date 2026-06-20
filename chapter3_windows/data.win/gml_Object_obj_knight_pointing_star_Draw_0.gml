@@ -1,4 +1,4 @@
-if (instance_exists(545 && con == 0))
+if (instance_exists(546 && con == 0))
 	exit;
 
 var _xscale = (sprite_width + 16) / sprite_get_width(sprite_index);

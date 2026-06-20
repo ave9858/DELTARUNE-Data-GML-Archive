@@ -46,7 +46,7 @@ if (spear_dodge == 1) {
 if (rotate)
 	image_index = 3 + (sin(timer / 2) * 1.6);
 
-var speargfx = 4399;
+var speargfx = 4401;
 var directshot = 1;
 
 if (makespear == 1 && (timer % 4) == 0) {

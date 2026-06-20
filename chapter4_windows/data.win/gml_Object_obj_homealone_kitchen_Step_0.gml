@@ -196,7 +196,7 @@ if (scr_flag_get(737) == 0) {
 			if (kris_throw_timer == 4) {
 				with (kris_marker) {
 					sprite_index = spr_noellehouse_kitchen_kris_drink_put_down;
-					scr_animate(4795, 1, 0.5);
+					scr_animate(4796, 1, 0.5);
 				}
 			}
 

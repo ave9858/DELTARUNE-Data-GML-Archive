@@ -25,14 +25,14 @@ function set_spriteset(arg0) {
 
 		case 0:
 			sprWalk = 3928;
-			sprEat = 4255;
+			sprEat = 4256;
 			sprLeave = 3131;
 			break;
 
 		case 1:
 			sprWalk = 3005;
 			sprEat = 3239;
-			sprLeave = 4412;
+			sprLeave = 4414;
 			break;
 
 		case 2:

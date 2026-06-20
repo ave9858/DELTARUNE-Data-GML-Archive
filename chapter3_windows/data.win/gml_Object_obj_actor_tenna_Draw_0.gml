@@ -953,6 +953,19 @@ if (drawtype == 0) {
 			var bulletnum = 3;
 			var bulletthick = 0;
 			var _geteasierifhaventhadchannelchange = 0;
+			create_defeat_tenna_text_timer++;
+
+			if (create_defeat_tenna_text_timer == 1) {
+				with (obj_tenna_enemy)
+					stopshoot = 1;
+			}
+
+			if (create_defeat_tenna_text_timer == 43) {
+				minigametext = instance_create_depth(x, y - 150, depth - 9999999, obj_tenna_enemy_minigametext);
+				minigametext.mystring = stringsetloc("DEFEAT TENNA!", "obj_screen_channel_change_slash_Other_12_gml_122_0");
+				minigametext.lightemup = 1;
+			}
+
 			pacetimer++;
 			geteasiertimer++;
 

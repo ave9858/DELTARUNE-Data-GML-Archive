@@ -83,6 +83,12 @@ with (obj_mainchara) {
 }
 
 if (drawoutline) {
+	var krcol = 15245824;
+	var sucol = 13138410;
+	var racol = 1959605;
+	var gercol = 4580517;
+	var nocol = 12320748;
+
 	with (obj_actor) {
 		if (visible) {
 			_char_array[_arrayCount] = self;
@@ -91,8 +97,9 @@ if (drawoutline) {
 	}
 
 	with (obj_dw_church_turtles) {
-		if (i_ex(gerson)) {
-			_char_array[_arrayCount] = gerson;
+		with (gerson) {
+			outlineColor = gercol;
+			_char_array[_arrayCount] = id;
 			_arrayCount++;
 		}
 	}
@@ -105,12 +112,6 @@ if (drawoutline) {
 			}
 		}
 	}
-
-	var krcol = 15245824;
-	var sucol = 13138410;
-	var racol = 1959605;
-	var gercol = 2533989;
-	var nocol = 12320748;
 
 	with (obj_dw_church_bookshelfpuzzle) {
 		if (i_ex(ranpc)) {

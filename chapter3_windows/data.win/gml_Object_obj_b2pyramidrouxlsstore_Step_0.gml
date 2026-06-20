@@ -8,7 +8,7 @@ if (su == 0) {
 scr_board_populatevars();
 
 if (kris_real == 0)
-	kris_real = 1184;
+	kris_real = 1185;
 
 if (susie_real == 0) {
 	with (obj_caterpillarchara) {

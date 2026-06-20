@@ -1,8 +1,8 @@
 scr_darksize();
 image_index = 6;
 image_speed = 0;
-playerObj = 543;
-pointObj = 658;
+playerObj = 544;
+pointObj = 659;
 solidObj = 322;
 init = 0;
 moveCon = 0;

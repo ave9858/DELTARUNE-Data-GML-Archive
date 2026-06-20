@@ -10,7 +10,7 @@ init = function(arg0) {
 		case "shadowman":
 			unhappy_sprite = 1477;
 			shock_sprite = 2628;
-			joy_sprite = 4866;
+			joy_sprite = 4868;
 			break;
 
 		case "pippins":
@@ -21,7 +21,7 @@ init = function(arg0) {
 
 		default:
 			unhappy_sprite = 2822;
-			shock_sprite = 4114;
+			shock_sprite = 4115;
 			joy_sprite = 1514;
 			break;
 	}

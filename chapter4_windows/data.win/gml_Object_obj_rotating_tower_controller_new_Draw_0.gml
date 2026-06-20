@@ -74,7 +74,7 @@ if (appearance == 1) {
 	var cx = camerax();
 	var cy = camy;
 	var len = array_length(backface_indices);
-	var statictile = 4387;
+	var statictile = 4388;
 	var statictilecount = 2;
 	var staticyoffset = 760;
 

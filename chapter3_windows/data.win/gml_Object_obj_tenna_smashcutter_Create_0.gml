@@ -7,7 +7,7 @@ with (obj_tenna_enemy) {
 	other.x = camerax() + 525 + shakex + hurtspriteoffx;
 	other.y = cameray() + 255 + hurtspriteoffy;
 	other.master = id;
-	other.depth = 1401;
+	other.depth = 1402;
 }
 
 master.tenna_actor.x = -9999;

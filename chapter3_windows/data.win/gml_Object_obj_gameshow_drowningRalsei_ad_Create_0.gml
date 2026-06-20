@@ -7,7 +7,7 @@ image_alpha = 0;
 depth = -10;
 x = camerax() + 469;
 y = cameray();
-fg = 4388;
+fg = 4390;
 bg = 3323;
 
 if (global.flag[1079] == 1) {

@@ -1,5 +1,5 @@
 function scr_enemy_animation(arg0, arg1 = 0, arg2 = 0, arg3 = false) {
-	return scr_enemy_animation_custom(1034, arg0, arg1, arg2, arg3);
+	return scr_enemy_animation_custom(1035, arg0, arg1, arg2, arg3);
 }
 
 function scr_enemy_animation_custom(arg0, arg1, arg2 = 0, arg3 = 0, arg4 = false) {

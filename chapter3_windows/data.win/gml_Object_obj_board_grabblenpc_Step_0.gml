@@ -5,7 +5,7 @@ if (init == 0) {
 	image_speed = 0;
 
 	if (extflag == "shadowman")
-		throwindex = 4209;
+		throwindex = 4210;
 
 	if (extflag == "elnina") {
 		sprite_index = spr_board_elnina_cute;
@@ -16,7 +16,7 @@ if (init == 0) {
 
 	if (extflag == "lanino") {
 		sprite_index = spr_board_lanino_pose;
-		grabindex = 4497;
+		grabindex = 4499;
 		throwindex = grabindex;
 		image_speed = 0.125;
 	}

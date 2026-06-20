@@ -37,7 +37,7 @@ if (appearcon == 1) {
 	draw_sprite_ext(spr_ch3_ballcon_lineside, 0, x + width, y + 12, -2, height - 24, 0, c_white, 1);
 
 	if (triangle == 1) {
-		if (trianglesprite != 4979) {
+		if (trianglesprite != 4981) {
 			if (triangleside == 0)
 				draw_sprite_ext(trianglesprite, 0, x + 6, (y - 32) + (height / 2), 2, 2, 0, c_white, 1);
 

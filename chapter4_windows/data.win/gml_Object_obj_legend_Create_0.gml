@@ -30,3 +30,4 @@ texture_prophecy = sprite_get_texture(IMAGE_DEPTH_EXTEND_MONO_SEAMLESS_POW2, 0);
 u_time = shader_get_uniform(shd_prophecy_legend, "time");
 prophecy_alpha = 1.5;
 skip_ready = false;
+draw_screen = true;

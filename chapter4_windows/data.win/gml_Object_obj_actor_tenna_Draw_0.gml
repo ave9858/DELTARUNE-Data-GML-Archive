@@ -902,13 +902,13 @@ if (drawtype == 3) {
 		if (rosetimer == 1) {
 			image_speed = 0;
 			image_index = 0;
-			rosetennasprite = 5384;
+			rosetennasprite = 5385;
 			scr_lerpvar("image_xscale", image_xscale, sign(image_xscale) * 2, 30, -1, "out");
 			scr_lerpvar("image_yscale", image_yscale, 2, 30, -1, "out");
 		}
 
 		if (rosetimer == 12) {
-			rosetennasprite = 3886;
+			rosetennasprite = 3887;
 			image_index = 0;
 		}
 

@@ -25,7 +25,7 @@ for (var i = 0; i < array_length(layerarray); i++) {
 
 		for (var j = 0; j < array_length(elements); j++) {
 			if (layer_get_element_type(elements[j]) == 4) {
-				if (layer_sprite_get_sprite(elements[j]) == 5688) {
+				if (layer_sprite_get_sprite(elements[j]) == 5689) {
 					sprite_array_size++;
 					organik[sprite_array_size] = instance_create(layer_sprite_get_x(elements[j]), layer_sprite_get_y(elements[j]), obj_trigger_interact);
 					organik[sprite_array_size].sprite_index = spr_dw_church_worshipstatue;

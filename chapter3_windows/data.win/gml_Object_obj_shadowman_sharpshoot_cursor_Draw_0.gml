@@ -1,3 +1,6 @@
+if (!i_ex(obj_battlecontroller) || (i_ex(obj_battlecontroller) && obj_battlecontroller.victory == true))
+	exit;
+
 siner++;
 draw_sprite_ext(sprite_index, image_index, x + (sin(siner / 4) * 2), y + (cos(siner / 4) * 2), image_xscale + 0.5, image_yscale + 0.5, image_angle, image_blend, image_alpha / 4);
 draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha / 3);

@@ -12,12 +12,12 @@ if (tutorial && tutorialtimer < 70) {
 	if (_tutorialtimer >= 50) {
 		_color = merge_color(c_red, c_aqua, (_tutorialtimer - 50) / 20);
 
-		if (sprite_index == spr_shutta_jump || mysprite == 4374)
+		if (sprite_index == spr_shutta_jump || mysprite == 4375)
 			_color = merge_color(c_lime, c_aqua, (_tutorialtimer - 50) / 20);
 	} else {
 		_color = 255;
 
-		if (sprite_index == spr_shutta_jump || mysprite == 4374)
+		if (sprite_index == spr_shutta_jump || mysprite == 4375)
 			_color = 65280;
 	}
 }

@@ -239,7 +239,7 @@ if (con == 3 || con == 3.5) {
 		}
 	} else if (quizid == "puppetshow") {
 		if (commenttimer == 20)
-			scr_createquizcomment(stringsetloc("Wh... WHAT!?", "obj_quizsequence_slash_Step_0_gml_224_0"), 0, 30, 4932);
+			scr_createquizcomment(stringsetloc("Wh... WHAT!?", "obj_quizsequence_slash_Step_0_gml_224_0"), 0, 30, 4934);
 
 		if (commenttimer == 55) {
 			snd_play_pitch(snd_board_text_main_end, 1.5);
@@ -250,7 +250,7 @@ if (con == 3 || con == 3.5) {
 		}
 
 		if (commenttimer == 70)
-			scr_createquizcomment(stringsetloc("It was CANCELLED!?#You gotta be kidding me!!", "obj_quizsequence_slash_Step_0_gml_235_0"), 0, 80, 4537, 0);
+			scr_createquizcomment(stringsetloc("It was CANCELLED!?#You gotta be kidding me!!", "obj_quizsequence_slash_Step_0_gml_235_0"), 0, 80, 4539, 0);
 
 		if (commenttimer == 150)
 			scr_createquizcomment(stringsetloc("No!! You're joking!! I...#I invested everything in puppets!!#Everything I had!", "obj_quizsequence_slash_Step_0_gml_239_0"), 0, 90, 773);
@@ -878,7 +878,7 @@ if (con == 5) {
 
 			if (myanswer == 0 || myanswer == -1) {
 				tetalk = stringsetloc("Don't you know your own TV?!", "obj_quizsequence_slash_Step_0_gml_535_0");
-				tesprite = 4932;
+				tesprite = 4934;
 			}
 
 			if (myanswer == 2) {
@@ -888,7 +888,7 @@ if (con == 5) {
 
 			if (myanswer == 1 || myanswer == 3) {
 				tetalk = stringsetloc("Haha! I, regret#including that answer.", "obj_quizsequence_slash_Step_0_gml_541_0");
-				tesprite = 4626;
+				tesprite = 4628;
 			}
 
 			quizzler.tenna.sprite_index = tesprite;
@@ -908,11 +908,11 @@ if (con == 5) {
 
 			if (myanswer < 3) {
 				scr_quizcomment_add(stringsetloc("That's right, Kris!#Smart kid!", "obj_quizsequence_slash_Step_0_gml_555_0"), 0, 60, 2232);
-				scr_quizcomment_add(stringsetloc("Now, let's see those RESULTS!", "obj_quizsequence_slash_Step_0_gml_556_0"), 0, 60, 4098);
+				scr_quizcomment_add(stringsetloc("Now, let's see those RESULTS!", "obj_quizsequence_slash_Step_0_gml_556_0"), 0, 60, 4099);
 			} else {
 				scr_quizcomment_add(stringsetloc("What the... OTHER!?", "obj_quizsequence_slash_Step_0_gml_560_0"), 0, 45, 2592);
 				scr_quizcomment_add(stringsetloc("I mean you can just stream whatever on a Smart TV.", "obj_quizsequence_slash_Step_0_gml_561_0"), 1, 60);
-				scr_quizcomment_add(stringsetloc("Smart... WHAT?#Are you calling me STUPID!?", "obj_quizsequence_slash_Step_0_gml_562_0"), 0, 60, 4626);
+				scr_quizcomment_add(stringsetloc("Smart... WHAT?#Are you calling me STUPID!?", "obj_quizsequence_slash_Step_0_gml_562_0"), 0, 60, 4628);
 			}
 		}
 	}
@@ -944,12 +944,12 @@ if (con == 5) {
 			with (obj_couchwriter)
 				instance_destroy();
 
-			var tesprite = 4186;
+			var tesprite = 4187;
 			var tetalk = stringsetloc("That's right,#Kris!", "obj_quizsequence_slash_Step_0_gml_574_0");
 
 			if (!correct) {
 				tetalk = stringsetloc("Kris!? Don't#you remember!?", "obj_quizsequence_slash_Step_0_gml_587_0");
-				tesprite = 4932;
+				tesprite = 4934;
 			}
 
 			quizzler.tenna.sprite_index = tesprite;
@@ -1065,7 +1065,7 @@ if (con == 5) {
 
 			if (!correct) {
 				tetalk = stringsetloc("OUT OF TIME!!! WRONG!!!", "obj_quizsequence_slash_Step_0_gml_619_0");
-				tesprite = 4626;
+				tesprite = 4628;
 			}
 
 			quizzler.tenna.sprite_index = tesprite;

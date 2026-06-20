@@ -57,16 +57,6 @@ if (minigametimecon == 0)
 if (minigametimecon == 0)
 	draw_text_transformed_outline(camerax() + 320, cameray() + 50, "SCORE", 2 + (sin(siner / 4) * 0.05), 1.5 + (sin(siner / 4) * 0.1), 16711680);
 
-if (addscore > 0) {
-	draw_text_transformed_outline(camerax() + 320 + 114, cameray() + 50, "bonus", 0.7 + (sin(siner / 6) * 0.2), 1.5, 16711680);
-	draw_text_transformed_outline(camerax() + 320 + 110, cameray() + 80, "+" + string(addscore), 1 + (sin(siner / 6) * 0.2), 1.5, 16711680);
-}
-
-if (addscore < 0) {
-	draw_text_transformed_outline(camerax() + 320 + 110, cameray() + 50, "bet", 1 + (sin(siner / 6) * 0.2), 1.5, 255);
-	draw_text_transformed_outline(camerax() + 320 + 110, cameray() + 80, string(addscore), 1 + (sin(siner / 6) * 0.2), 1.5, 255);
-}
-
 if (alarm[0] < 1) {
 	var rep = 10;
 
@@ -84,6 +74,16 @@ if (alarm[0] < 1) {
 		addscore++;
 		myscore--;
 	}
+}
+
+if (addscore > 0) {
+	draw_text_transformed_outline(camerax() + 320 + 114, cameray() + 50, "bonus", 0.7 + (sin(siner / 6) * 0.2), 1.5, 16711680);
+	draw_text_transformed_outline(camerax() + 320 + 110, cameray() + 80, "+" + string(addscore), 1 + (sin(siner / 6) * 0.2), 1.5, 16711680);
+}
+
+if (addscore < 0) {
+	draw_text_transformed_outline(camerax() + 320 + 110, cameray() + 50, "bet", 1 + (sin(siner / 6) * 0.2), 1.5, 255);
+	draw_text_transformed_outline(camerax() + 320 + 110, cameray() + 80, string(addscore), 1 + (sin(siner / 6) * 0.2), 1.5, 255);
 }
 
 draw_set_halign(fa_left);
@@ -160,8 +160,11 @@ draw_set_font(fnt_8bit);
 draw_set_color(c_white);
 draw_set_halign(fa_center);
 
-if (minigametimecon > 1)
+if (addscore < 0) {
+} else if (addscore > 0) {
+} else if (minigametimecon > 1) {
 	draw_text_transformed_outline(camerax() + 330, cameray() + 66, "GAME TIME!", 2 + (sin(siner / 4) * 0.05), 1.5 + (sin(siner / 4) * 0.1), 16711680);
+}
 
 draw_set_halign(fa_left);
 draw_set_alpha(whitefgalpha);
@@ -170,9 +173,9 @@ draw_set_alpha(1);
 draw_set_font(scr_84_get_font("8bit_mixed"));
 draw_sprite_ext(spr_tenna_enemy_bg_parts, 0, xx, yy + 12, 2, 2, image_angle, c_white, image_alpha);
 var count = 0;
-mysprite[0] = 4807;
-mysprite[1] = 4807;
-mysprite[2] = 4807;
+mysprite[0] = 4809;
+mysprite[1] = 4809;
+mysprite[2] = 4809;
 
 for (var i = -12; i < 10; i += 2) {
 	var myx = vx + ((i * xsep) / 2) + (scrollx * 1.5);

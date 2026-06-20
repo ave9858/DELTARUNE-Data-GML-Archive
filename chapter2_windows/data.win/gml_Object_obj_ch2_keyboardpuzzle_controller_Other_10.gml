@@ -1,3 +1,6 @@
+if (letterCount >= array_length(idealLetter))
+	exit;
+
 currentString += addString;
 
 if (letterCount == 0 && puzzle_id == 2)

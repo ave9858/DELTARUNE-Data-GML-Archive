@@ -13,7 +13,7 @@ for (i = 0; i < 26; i++) {
 	if (i >= 20)
 		prizeballcolor[i] = c_yellow;
 
-	prizesprite[i] = 4639;
+	prizesprite[i] = 4641;
 	prizeimage[i] = 0;
 	prizetype[i] = "item";
 	prizespecialmessage[i] = 0;

@@ -1,4 +1,4 @@
-if (current_lyric != "" && i_ex(vocals) && lyric_count > 0) {
+if (draw_lyrics && current_lyric != "" && i_ex(vocals) && lyric_count > 0) {
 	var _len = string_length(current_lyric);
 	var _len2 = 0;
 

@@ -27,13 +27,13 @@ hiddentiley = -4;
 var spritesArray = layer_get_all_elements("debug_assets");
 
 for (var i = 0; i < array_length(spritesArray); i++) {
-	if (layer_sprite_get_sprite(spritesArray[i]) == 5706) {
+	if (layer_sprite_get_sprite(spritesArray[i]) == 5707) {
 		var info = scr_assetgetinfo(spritesArray[i]);
 		hiddentilex = info[2];
 		hiddentiley = info[3];
 	}
 
-	if (layer_sprite_get_sprite(spritesArray[i]) == 5596) {
+	if (layer_sprite_get_sprite(spritesArray[i]) == 5597) {
 		var info = scr_assetgetinfo(spritesArray[i]);
 		hiddenlightx = info[2];
 		hiddenlighty = info[3];

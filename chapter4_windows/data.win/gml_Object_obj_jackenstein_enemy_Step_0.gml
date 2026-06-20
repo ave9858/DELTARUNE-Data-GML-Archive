@@ -25,6 +25,11 @@ if (init == false) {
 		visible = false;
 }
 
+if (scr_debug() && keyboard_check_pressed(ord("T"))) {
+	phaseturn = 8;
+	scr_debug_print("phaseturn = " + string(phaseturn));
+}
+
 if (i_ex(obj_battlecontroller) && obj_battlecontroller.victory == 1 && obj_battlecontroller.victoried == 0) {
 	with (susiemarker)
 		instance_destroy();

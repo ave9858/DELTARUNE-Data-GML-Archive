@@ -51,10 +51,10 @@ if (room == room_dw_3d_tower_test) {
 if (room == room_dw_titan_tower_test)
 	wide_tower = true;
 
-var _towersprite = 5712;
+var _towersprite = 5713;
 
 if (tower_type == 2)
-	_towersprite = 4167;
+	_towersprite = 4168;
 
 if (wide_tower == true)
 	_towersprite = 861;
@@ -159,16 +159,16 @@ if (wide_tower)
 	piecemaxdistance = 110;
 
 _tower_angle = tower_angle;
-laddersprite = 5083;
-stepssprite = 5713;
+laddersprite = 5084;
+stepssprite = 5714;
 rocksprite = 1902;
-eyesprite = 5369;
+eyesprite = 5370;
 eyedripsprite = 2654;
 
 if (wide_tower) {
-	laddersprite = 4784;
+	laddersprite = 4785;
 	stepssprite = 1308;
-	rocksprite = 4828;
-	eyesprite = 5129;
-	eyedripsprite = 4972;
+	rocksprite = 4829;
+	eyesprite = 5130;
+	eyedripsprite = 4973;
 }

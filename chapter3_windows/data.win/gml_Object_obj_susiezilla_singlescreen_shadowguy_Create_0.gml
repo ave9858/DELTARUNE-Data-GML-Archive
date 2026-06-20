@@ -11,23 +11,23 @@ states = {
 };
 state = states.none;
 state_timer = -40 + irandom(40);
-s_idle = 4352;
-s_hurt = 4387;
+s_idle = 4353;
+s_hurt = 4389;
 s_grab = 1093;
-s_grab_rise = 4604;
-s_grab_fall = 4456;
-s_punch = 4499;
-s_spin = 4521;
-s_spin_large = 4101;
-s_kick = 4377;
-s_hadou = 4513;
-s_fallen = 4313;
+s_grab_rise = 4606;
+s_grab_fall = 4458;
+s_punch = 4501;
+s_spin = 4523;
+s_spin_large = 4102;
+s_kick = 4378;
+s_hadou = 4515;
+s_fallen = 4314;
 
 if (i_ex(obj_tenna_enemy)) {
 	s_idle = 1386;
-	s_hurt = 4985;
-	s_spin = 4104;
-	s_spin_large = 4985;
+	s_hurt = 4987;
+	s_spin = 4105;
+	s_spin_large = 4987;
 }
 
 sprite_index = s_idle;

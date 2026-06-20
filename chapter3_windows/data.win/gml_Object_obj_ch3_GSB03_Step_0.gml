@@ -183,7 +183,7 @@ if (con == 3 || scr_cutscene_loaded()) {
 	c_msgsetloc(0, "* YES^1! The \\O2&doesn't lie^1! The viewers' voices are in...!/%", "obj_ch3_GSB03_slash_Step_0_gml_271_0");
 	c_talk_wait();
 	c_mus("free_all");
-	scr_funnytext_init(3, -10, -14, 4485, 0, 0);
+	scr_funnytext_init(3, -10, -14, 4487, 0, 0);
 	c_speaker("tenna");
 	c_msgsetloc(0, "* You've qualified for.../", "obj_ch3_GSB03_slash_Step_0_gml_278_0");
 	c_msgnextloc("* The \\O3^1!!!/%", "obj_ch3_GSB03_slash_Step_0_gml_279_0");

@@ -1,4 +1,4 @@
-kris = 1184;
+kris = 1185;
 kris.x = 300;
 kris.y = 298;
 kris.facing = 2;

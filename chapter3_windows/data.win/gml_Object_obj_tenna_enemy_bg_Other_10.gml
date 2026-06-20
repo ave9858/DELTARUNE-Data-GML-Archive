@@ -108,9 +108,9 @@ if (paused == 0)
 
 draw_sprite_ext(spr_tenna_enemy_bg_parts, 0, xx, yy + 12, 2, 2, image_angle, c_white, image_alpha);
 var count = 0;
-mysprite[0] = 4807;
-mysprite[1] = 4807;
-mysprite[2] = 4807;
+mysprite[0] = 4809;
+mysprite[1] = 4809;
+mysprite[2] = 4809;
 
 for (var i = -12; i < 10; i += 2) {
 	var myx = vx + ((i * xsep) / 2) + (scrollx * 1.5);

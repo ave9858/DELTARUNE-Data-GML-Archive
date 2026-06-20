@@ -17,7 +17,7 @@ depth = 99980;
 scr_darksize();
 buff = 0;
 con = 0;
-kris = 1184;
+kris = 1185;
 walktime = 999;
 draw_blue = false;
 draw_static = false;

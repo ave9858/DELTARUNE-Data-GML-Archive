@@ -21,8 +21,8 @@ var collision_obj = 322;
 var collision_chase_obj = 322;
 
 if (room == room_board_1_sword || room == room_board_2_sword) {
-	collision_obj = 1064;
-	collision_chase_obj = 708;
+	collision_obj = 1065;
+	collision_chase_obj = 709;
 }
 
 var aa = 0;

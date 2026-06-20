@@ -172,7 +172,7 @@ if (global.hp[global.char[myself]] > 0) {
 			global.faceaction[myself] = 0;
 
 			with (obj_tenna_board4_gacha) {
-				if (actor_target == 1410)
+				if (actor_target == 1411)
 					xx = 0;
 			}
 		}

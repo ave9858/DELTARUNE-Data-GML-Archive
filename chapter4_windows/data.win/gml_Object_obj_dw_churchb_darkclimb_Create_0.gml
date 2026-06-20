@@ -56,7 +56,7 @@ if (global.plot >= 239) {
 	var spritesArray = layer_get_all_elements("ENEM");
 
 	for (var i = 0; i < array_length(spritesArray); i++) {
-		if (layer_sprite_get_sprite(spritesArray[i]) == 4928)
+		if (layer_sprite_get_sprite(spritesArray[i]) == 4929)
 			mynpc = scr_makenpc_fromasset(spritesArray[i]);
 	}
 

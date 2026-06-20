@@ -7,7 +7,7 @@ switch (char_state) {
 		char_state = "idle";
 		can_shoot = true;
 		char_sprite = 3756;
-		dog_item = 4505;
+		dog_item = 4507;
 		char_imgindex = 0;
 		break;
 

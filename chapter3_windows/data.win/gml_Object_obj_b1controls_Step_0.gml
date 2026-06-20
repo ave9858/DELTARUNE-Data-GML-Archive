@@ -49,7 +49,7 @@ if (init == 1) {
 }
 
 if (kris_real == 0)
-	kris_real = 1184;
+	kris_real = 1185;
 
 if (susie_real == 0) {
 	with (obj_caterpillarchara) {

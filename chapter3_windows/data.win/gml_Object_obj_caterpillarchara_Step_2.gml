@@ -27,7 +27,7 @@ if (!init) {
 	}
 
 	if (name == "ralsei") {
-		climbsprite = 4220;
+		climbsprite = 4221;
 		halign = 2;
 		valign = 12;
 	}

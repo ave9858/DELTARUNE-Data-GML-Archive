@@ -149,11 +149,30 @@ hpcolor[1] = c_fuchsia;
 hpcolor[2] = c_lime;
 hpcolor[3] = c_yellow;
 disablesusieattack = 0;
-menu_sprite = scr_84_get_sprite("spr_darkmenudesc");
+menu_sprite = (global.lang == "en") ? 3545 : 3554;
 autorun_text = stringsetloc("Auto-Run", "obj_darkcontroller_slash_Draw_0_gml_94_0");
 back_text = stringsetloc("Back", "obj_darkcontroller_slash_Draw_0_gml_96_0");
 gamepad_controls = [gp_face1, gp_face2, gp_face3, gp_face4, gp_shoulderl, gp_shoulderlb, gp_shoulderr, gp_shoulderrb, gp_select, gp_start, gp_stickl, gp_stickr, gp_padu, gp_padd, gp_padl, gp_padr];
 border_options = [stringsetloc("Dynamic", "obj_darkcontroller_slash_Create_0_gml_153_0"), stringsetloc("Simple", "obj_darkcontroller_slash_Create_0_gml_153_1"), stringsetloc("None", "obj_darkcontroller_slash_Create_0_gml_153_2")];
+var border_options_en = ["Dynamic", "Simple", "None"];
+var border_options_ja = ["ダイナミック", "シンプル", "なし"];
+
+if (global.lang == "ja") {
+	for (var i = 0; i < array_length(border_options_en); i++) {
+		if (border_options_en[i] == global.screen_border_id) {
+			global.screen_border_id = border_options_ja[i];
+			break;
+		}
+	}
+} else {
+	for (var i = 0; i < array_length(border_options_ja); i++) {
+		if (border_options_ja[i] == global.screen_border_id) {
+			global.screen_border_id = border_options_en[i];
+			break;
+		}
+	}
+}
+
 selected_border = 0;
 
 for (var i = 0; i < array_length_1d(border_options); i++) {
@@ -162,3 +181,5 @@ for (var i = 0; i < array_length_1d(border_options); i++) {
 		break;
 	}
 }
+
+_spr_dmenu_captions = (global.lang == "en") ? 3317 : 3341;

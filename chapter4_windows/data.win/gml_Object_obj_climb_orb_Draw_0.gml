@@ -54,10 +54,10 @@ var _count = 32;
 var light = 16777215;
 var dark = 13212566;
 var mycol = merge_color(c_white, c_gray, bowlindex / 15);
-var mysprite = 5738;
+var mysprite = 5739;
 
 if (value > 5)
-	mysprite = 5010;
+	mysprite = 5011;
 
 var sinamt = sin(siner / 20) * 6 * clamp(1 - (bowlindex / 7), 0, 1);
 draw_sprite_ext(spr_dw_church_coinbowl, bowlindex, x, y - sinamt, 2, 2, 0, mycol, 1);

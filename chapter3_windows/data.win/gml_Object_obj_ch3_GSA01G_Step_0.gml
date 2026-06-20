@@ -107,7 +107,7 @@ if (con == 2 || scr_cutscene_loaded()) {
 	c_sel(su);
 	c_sprite(spr_susie_shocked_behind);
 	c_wait(7);
-	var tv_time_sprite = (global.lang == "ja") ? 4244 : 2843;
+	var tv_time_sprite = (global.lang == "ja") ? 4245 : 2843;
 	scr_funnytext_init(2, -10, -10, tv_time_sprite, 0, 0);
 	c_sel(te);
 	c_speaker("tenna");

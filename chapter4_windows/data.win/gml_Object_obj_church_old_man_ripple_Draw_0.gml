@@ -106,7 +106,7 @@ if ((timer > 0 || con > 2) && type < 2) {
 		if (timer <= 12)
 			shader_set(shd_linear_alpha);
 
-		var _underlight = 2971;
+		var _underlight = 2972;
 		var _stindex = step_index;
 		var _lightx = step_x - 50;
 
@@ -213,7 +213,7 @@ if (type == 2)
 
 if (type == 5) {
 	var _frame = 0;
-	var _crumbler = 4407;
+	var _crumbler = 4408;
 
 	if (punch == 0)
 		_frame = min(timer / 3, 6);

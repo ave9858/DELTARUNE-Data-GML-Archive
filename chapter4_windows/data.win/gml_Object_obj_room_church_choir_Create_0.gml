@@ -59,7 +59,7 @@ if (global.plot < 210) {
 
 	pal_swap_layer_init();
 	pal_swap_enable_layer("ASSETS_Items");
-	pal_swap_set_layer(3933, 2, "ASSETS_Items", false);
+	pal_swap_set_layer(3934, 2, "ASSETS_Items", false);
 	pal_swap_reset();
 
 	if (global.plot >= 290 && global.plot < 300) {

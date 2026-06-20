@@ -3,6 +3,7 @@ con = 0;
 special = 0;
 destroyonhit = false;
 active = 0;
+activetimer = 0;
 longtelegraph = false;
 image_alpha = 0;
 var a = (global.hp[2] - 30) / 250;
@@ -21,7 +22,10 @@ if (i_ex(obj_sound_of_justice_enemy)) {
 		damage = 58;
 }
 
-if (i_ex(obj_hammer_of_justice_enemy) && obj_hammer_of_justice_enemy.reachedendphase == 1) {
+if (i_ex(obj_hammer_of_justice_enemy) && obj_hammer_of_justice_enemy.attackpattern == 19) {
+	image_xscale = 1;
+	sprite_index = spr_gerson_swing_down_telegraph3;
+} else if (i_ex(obj_hammer_of_justice_enemy) && obj_hammer_of_justice_enemy.reachedendphase == 1) {
 	longtelegraph = true;
 	image_xscale = 1;
 	sprite_index = spr_gerson_swing_down_telegraph2;

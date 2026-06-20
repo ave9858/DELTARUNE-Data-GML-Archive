@@ -67,7 +67,7 @@ if (myinteract == 3.2 && !i_ex(obj_couchwriter)) {
 	myinteract = 4;
 
 	if (global.flag[1017] == 1)
-		idle = 4192;
+		idle = 4193;
 	else
 		idle = 1544;
 }

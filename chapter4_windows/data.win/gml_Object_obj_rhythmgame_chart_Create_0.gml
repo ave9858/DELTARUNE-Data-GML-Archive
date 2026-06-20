@@ -33,6 +33,7 @@ hold_end[2] = 0;
 heldnote[0] = 0;
 heldnote[1] = 0;
 heldnote[2] = 0;
+demo_mode = false;
 clapping = false;
 confidence = 1;
 drop_count = 0;

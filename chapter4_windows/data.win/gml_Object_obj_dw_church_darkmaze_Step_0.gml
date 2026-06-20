@@ -1654,14 +1654,18 @@ with (cup) {
 			friction = -2;
 		}
 
-		if ((timer % 4) == 0)
-			snd_play(snd_menumove, vol * 0.6, 0.4 + (image_index / 10));
+		if ((timer % 4) == 0) {
+			var _vol = vol * 0.6;
+
+			if (_vol > 0.1)
+				snd_play(snd_menumove, _vol, 0.4 + (image_index / 10));
+		}
 
 		if (timer > 30 && x <= xstart) {
 			image_speed = 0;
 			x = xstart;
 
-			if (vol > 0)
+			if (vol > 0.1)
 				snd_play(snd_menumove, vol, 0.2);
 
 			vspeed = -6;

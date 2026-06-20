@@ -4,7 +4,7 @@ if (!init) {
 
 	if (camera == -4) {
 		if (i_ex(obj_fx_zoom_camera)) {
-			camera = 1581;
+			camera = 1582;
 		} else {
 			camera = instance_create(x, y, obj_fx_zoom_camera);
 			camera.size = size;

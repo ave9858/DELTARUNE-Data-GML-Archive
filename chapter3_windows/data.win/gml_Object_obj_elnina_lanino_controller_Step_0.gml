@@ -122,7 +122,7 @@ if (i_ex(obj_board_event_ninfight) && obj_board_event_ninfight.retry == 1) {
 	if (intro == 0.1 && !i_ex(obj_writer)) {
 		global.fc = 22;
 		global.typer = 81;
-		msgsetloc(0, "All you have to&do say \"I love&to watch TV\" 99&times and you&will win!/%", "obj_elnina_lanino_controller_slash_Step_0_gml_45_0");
+		msgsetloc(0, "All you have to&do is say \"I love&to watch TV\" 99&times and you will&win!/%", "obj_elnina_lanino_controller_slash_Step_0_gml_45_0");
 
 		with (scr_enemyblcon(tenna.x - 56, tenna.y - 140, 10)) {
 		}
@@ -222,7 +222,7 @@ if (scr_isphase("menu")) {
 		forecast_turn = turns;
 		var _sun = 783;
 		var _moon = 1474;
-		var _rain = 4254;
+		var _rain = 4255;
 		var _snow = 1650;
 		var _hale = 14;
 		var _temp_min = 50;
@@ -364,14 +364,14 @@ if (scr_isphase("enemytalk") && talked == 0 && !i_ex(obj_rouxls_ch3_enemy)) {
 			with (obj_elnina_enemy)
 				pose = 1;
 
-			elnina.head = 4843;
+			elnina.head = 4845;
 		}
 
 		msgsetloc(0, "Today's weather is,&(ugh).../%", "obj_elnina_lanino_controller_slash_Step_0_gml_375_0");
 
 		if (_lanino_favored) {
 			scr_enemyblcon(elnina.x - 10, global.monstery[elnina.myself] - 10, 10);
-			elnina.head = 4433;
+			elnina.head = 4435;
 		} else {
 			scr_enemyblcon(lanino.x - 10, global.monstery[lanino.myself] - 10, 10);
 			lanino.head = 3264;
@@ -411,7 +411,7 @@ if (scr_isphase("enemytalk") && talked == 0 && !i_ex(obj_rouxls_ch3_enemy)) {
 				pose = 1;
 			}
 
-			elnina.head = 4843;
+			elnina.head = 4845;
 		}
 
 		msgsetloc(0, "(Grumble)...", "obj_elnina_lanino_controller_slash_Step_0_gml_392_0");
@@ -421,7 +421,7 @@ if (scr_isphase("enemytalk") && talked == 0 && !i_ex(obj_rouxls_ch3_enemy)) {
 			elnina.head = 871;
 		} else {
 			scr_enemyblcon(lanino.x - 10, global.monstery[lanino.myself] - 10, 10);
-			lanino.head = 4528;
+			lanino.head = 4530;
 		}
 
 		if (_lanino_favored)
@@ -462,7 +462,7 @@ if (scr_isphase("enemytalk") && talked == 0 && !i_ex(obj_rouxls_ch3_enemy)) {
 
 		if (_lanino_favored) {
 			scr_enemyblcon(elnina.x - 10, global.monstery[elnina.myself] - 10, 10);
-			elnina.head = 4433;
+			elnina.head = 4435;
 		} else {
 			scr_enemyblcon(lanino.x - 10, global.monstery[lanino.myself] - 10, 10);
 			lanino.head = 3264;
@@ -702,7 +702,7 @@ if (talked == 0.6) {
 			with (obj_elnina_enemy) {
 				talking = true;
 				pose = 3;
-				head = 4211;
+				head = 4212;
 				rightarm = 1888;
 				scr_lerpvar("rightarmindex", 0, 3, 20);
 				scr_delay_var("rightarm", 1641, 30);
@@ -748,7 +748,7 @@ if (talked == 0.6) {
 				msgsetloc(0, "EXTRA DEXTRA Sun!/%", "obj_elnina_lanino_controller_slash_Step_0_gml_688_0");
 			}
 
-			if (_elninabullesprite == 4254)
+			if (_elninabullesprite == 4255)
 				elnina_attack = _rain_atk;
 
 			if (_elninabullesprite == 1650)
@@ -771,7 +771,7 @@ if (talked == 0.6) {
 			if (_laninobulletsprite == 783)
 				lanino_attack = _sun_atk;
 
-			if (_elninabullesprite == 4254) {
+			if (_elninabullesprite == 4255) {
 				elnina_attack = _rain_atk;
 				msgsetloc(0, "TRUEST Drop!/%", "obj_elnina_lanino_controller_slash_Step_0_gml_707_0");
 			}
@@ -802,7 +802,7 @@ if (talked == 0.6) {
 				msgsetloc(0, "EXTRA DEXTRA Sun!/%", "obj_elnina_lanino_controller_slash_Step_0_gml_722_0");
 			}
 
-			if (_elninabullesprite == 4254)
+			if (_elninabullesprite == 4255)
 				elnina_attack = _rain_atk;
 
 			if (_elninabullesprite == 1650)
@@ -825,7 +825,7 @@ if (talked == 0.6) {
 			if (_laninobulletsprite == 783)
 				lanino_attack = _sun_atk;
 
-			if (_elninabullesprite == 4254) {
+			if (_elninabullesprite == 4255) {
 				elnina_attack = _rain_atk;
 				msgsetloc(0, "TRUEST Drop!/%", "obj_elnina_lanino_controller_slash_Step_0_gml_741_0");
 			}
@@ -958,7 +958,7 @@ if (scr_isphase("bullets") && attacked == 0 && !i_ex(obj_rouxls_ch3_enemy)) {
 		var _a = 379;
 
 		if (!i_ex(obj_lanino_enemy))
-			_a = 945;
+			_a = 946;
 
 		with (_a) {
 			dc = scr_bulletspawner(x, y, obj_dbulletcontroller);
@@ -1081,7 +1081,7 @@ if (extratimer == 50) {
 		with (obj_lanino_enemy)
 			talking = true;
 
-		lanino.head = 4528;
+		lanino.head = 4530;
 	}
 }
 
@@ -1106,7 +1106,7 @@ if (extratimer == 100) {
 		with (obj_lanino_enemy)
 			talking = true;
 
-		lanino.head = 4528;
+		lanino.head = 4530;
 	}
 }
 
@@ -1190,7 +1190,7 @@ if (i_ex(obj_battlecontroller)) {
 				with (obj_elnina_enemy)
 					talking = false;
 
-				lanino.head = 4542;
+				lanino.head = 4544;
 				ballooncon = 3;
 				balloonend = 0;
 			} else if (ballooncon == 3) {
@@ -1212,7 +1212,7 @@ if (i_ex(obj_battlecontroller)) {
 				with (obj_lanino_enemy)
 					talking = false;
 
-				elnina.head = 4211;
+				elnina.head = 4212;
 				ballooncon = 9;
 				balloonend = 0;
 			} else if (ballooncon == -1 && turns == 3 && !_lanino_favored) {
@@ -1222,7 +1222,7 @@ if (i_ex(obj_battlecontroller)) {
 				with (obj_elnina_enemy)
 					talking = true;
 
-				elnina.head = 4211;
+				elnina.head = 4212;
 
 				with (obj_elnina_enemy) {
 					talking = true;
@@ -1242,7 +1242,7 @@ if (i_ex(obj_battlecontroller)) {
 				with (obj_elnina_enemy)
 					talking = true;
 
-				elnina.head = 4211;
+				elnina.head = 4212;
 				ballooncon = 5.5;
 				balloonend = 0;
 			} else if (ballooncon == 5.5) {
@@ -1255,7 +1255,7 @@ if (i_ex(obj_battlecontroller)) {
 				with (obj_lanino_enemy) {
 					talking = true;
 					pose = 3;
-					head = 4528;
+					head = 4530;
 					chest = 1010;
 					scr_lerpvar("chestindex", 0, 3, 20);
 					scr_delay_var("chest", 3079, 30);
@@ -1306,7 +1306,7 @@ if (i_ex(obj_battlecontroller)) {
 				global.choicemsg[3] = stringset("");
 				msgsetloc(0, " \\C2", "obj_elnina_lanino_controller_slash_Step_0_gml_1114_0");
 				scr_battletext_default();
-				elnina.head = 4211;
+				elnina.head = 4212;
 				lanino.head = 2741;
 
 				with (obj_lanino_enemy)
@@ -1356,7 +1356,7 @@ if (i_ex(obj_battlecontroller)) {
 							talking = false;
 
 						lanino.head = 679;
-						elnina.head = 4433;
+						elnina.head = 4435;
 					}
 
 					global.flag[1017] = global.choice;
@@ -1403,8 +1403,8 @@ if (i_ex(obj_battlecontroller)) {
 					with (obj_lanino_enemy)
 						talking = true;
 
-					lanino.head = 4528;
-					elnina.head = 4433;
+					lanino.head = 4530;
+					elnina.head = 4435;
 				}
 
 				ballooncon = 12;
@@ -1470,7 +1470,7 @@ if (i_ex(obj_battlecontroller)) {
 
 				if (_lanino_favored) {
 					scr_enemyblcon(elnina.x - 10, global.monstery[elnina.myself] - 10, 10);
-					elnina.head = 4433;
+					elnina.head = 4435;
 				} else {
 					scr_enemyblcon(lanino.x - 10, global.monstery[lanino.myself] - 10, 10);
 					lanino.head = 3264;
@@ -1509,7 +1509,7 @@ if (i_ex(obj_battlecontroller)) {
 				with (obj_elnina_enemy)
 					talking = true;
 
-				lanino.head = 4528;
+				lanino.head = 4530;
 				elnina.head = 871;
 				ballooncon = 17;
 				balloonend = 0;
@@ -1535,10 +1535,10 @@ if (i_ex(obj_battlecontroller)) {
 				balloonend = 0;
 			} else if (ballooncon == 17.6) {
 				if (_lanino_favored) {
-					elnina.head = 4433;
+					elnina.head = 4435;
 					lanino.head = 1271;
 				} else {
-					elnina.head = 4843;
+					elnina.head = 4845;
 					lanino.head = 3264;
 				}
 
@@ -1578,7 +1578,7 @@ if (i_ex(obj_battlecontroller)) {
 					with (obj_elnina_enemy)
 						talking = false;
 
-					lanino.head = 4542;
+					lanino.head = 4544;
 				} else {
 					scr_enemyblcon(elnina.x - 10, global.monstery[elnina.myself] - 10, 10);
 
@@ -1615,7 +1615,7 @@ if (i_ex(obj_battlecontroller)) {
 					with (obj_lanino_enemy)
 						talking = true;
 
-					lanino.head = 4528;
+					lanino.head = 4530;
 				}
 
 				ballooncon = 20;
@@ -1712,7 +1712,7 @@ if (i_ex(obj_battlecontroller)) {
 					with (obj_elnina_enemy)
 						talking = true;
 
-					elnina.head = 4433;
+					elnina.head = 4435;
 				}
 
 				ballooncon = 23;
@@ -1733,7 +1733,7 @@ if (i_ex(obj_battlecontroller)) {
 					with (obj_elnina_enemy)
 						talking = true;
 
-					elnina.head = 4433;
+					elnina.head = 4435;
 				}
 
 				ballooncon = 23.1;

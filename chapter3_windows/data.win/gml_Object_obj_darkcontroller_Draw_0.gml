@@ -279,14 +279,14 @@ if (global.menuno == 4) {
 	if (global.lang == "ja")
 		draw_rectangle(xx + 60, yy + 216, xx + 60 + 552, yy + 216 + 5, false);
 
-	draw_sprite_ext(scr_84_get_sprite("spr_dmenu_captions"), 0, xx + 124, yy + 84, 2, 2, 0, c_white, 1);
-	draw_sprite_ext(scr_84_get_sprite("spr_dmenu_captions"), 4, xx + 124, yy + 210, 2, 2, 0, c_white, 1);
-	draw_sprite_ext(scr_84_get_sprite("spr_dmenu_captions"), 5, xx + 380, yy + 210, 2, 2, 0, c_white, 1);
+	draw_sprite_ext(_spr_dmenu_captions, 0, xx + 124, yy + 84, 2, 2, 0, c_white, 1);
+	draw_sprite_ext(_spr_dmenu_captions, 4, xx + 124, yy + 210, 2, 2, 0, c_white, 1);
+	draw_sprite_ext(_spr_dmenu_captions, 5, xx + 380, yy + 210, 2, 2, 0, c_white, 1);
 
 	if (global.lang == "ja")
-		draw_sprite_ext(scr_84_get_sprite("spr_dmenu_captions"), 6, xx + 310, yy + 225, 1, 1, 0, c_white, 1);
+		draw_sprite_ext(_spr_dmenu_captions, 6, xx + 310, yy + 225, 1, 1, 0, c_white, 1);
 	else
-		draw_sprite_ext(scr_84_get_sprite("spr_dmenu_captions"), 6, xx + 340, yy + 225, 1, 1, 0, c_white, 1);
+		draw_sprite_ext(_spr_dmenu_captions, 6, xx + 340, yy + 225, 1, 1, 0, c_white, 1);
 
 	coord = global.submenucoord[20];
 	charcoord = global.char[coord];
@@ -559,7 +559,7 @@ if (global.menuno == 4) {
 				draw_set_color(c_white);
 
 			if (global.lang == "ja")
-				draw_text(xx + 310, ch_y[i], string_hash_to_newline(string(round((global.spellcost[charcoord][i] / global.maxtension) * 100)) + "%"));
+				draw_text_width(xx + 310, ch_y[i], string_hash_to_newline(string(round((global.spellcost[charcoord][i] / global.maxtension) * 100)) + "%"), 42);
 			else
 				draw_text(xx + 340, ch_y[i], string_hash_to_newline(string(round((global.spellcost[charcoord][i] / global.maxtension) * 100)) + "%"));
 
@@ -608,15 +608,15 @@ if (global.menuno == 2) {
 
 	draw_rectangle(xx + 59, yy + 221, xx + langopt(584, 628) + __off, yy + 221 + 5, false);
 	draw_rectangle(xx + 323, yy + 221, xx + 323 + 5, yy + 221 + 190, false);
-	draw_sprite_ext(scr_84_get_sprite("spr_dmenu_captions"), 0, xx + 118, yy + 86, 2, 2, 0, c_white, 1);
-	draw_sprite_ext(scr_84_get_sprite("spr_dmenu_captions"), 1, xx + 376, yy + 86, 2, 2, 0, c_white, 1);
+	draw_sprite_ext(_spr_dmenu_captions, 0, xx + 118, yy + 86, 2, 2, 0, c_white, 1);
+	draw_sprite_ext(_spr_dmenu_captions, 1, xx + 376, yy + 86, 2, 2, 0, c_white, 1);
 
 	if (global.submenucoord[11] == 1 || global.submenucoord[11] == 2)
-		draw_sprite_ext(scr_84_get_sprite("spr_dmenu_captions"), 2, xx + 372, yy + 216, 2, 2, 0, c_white, 1);
+		draw_sprite_ext(_spr_dmenu_captions, 2, xx + 372, yy + 216, 2, 2, 0, c_white, 1);
 	else
-		draw_sprite_ext(scr_84_get_sprite("spr_dmenu_captions"), 3, xx + 372, yy + 216, 2, 2, 0, c_white, 1);
+		draw_sprite_ext(_spr_dmenu_captions, 3, xx + 372, yy + 216, 2, 2, 0, c_white, 1);
 
-	draw_sprite_ext(scr_84_get_sprite("spr_dmenu_captions"), 4, xx + 116, yy + 216, 2, 2, 0, c_white, 1);
+	draw_sprite_ext(_spr_dmenu_captions, 4, xx + 116, yy + 216, 2, 2, 0, c_white, 1);
 	coord = global.submenucoord[10];
 	charcoord = global.char[coord];
 	menusiner += 1;

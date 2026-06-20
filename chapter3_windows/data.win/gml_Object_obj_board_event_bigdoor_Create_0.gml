@@ -33,3 +33,4 @@ if (room == room_board_1_sword) {
 }
 
 siner = 0;
+failsafe = 0;

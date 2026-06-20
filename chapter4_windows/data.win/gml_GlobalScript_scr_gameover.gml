@@ -24,6 +24,8 @@ function scr_gameover() {
 		snd_play(snd_hurt1);
 
 		if (global.chapter == 4) {
+			if (i_ex(obj_jackenstein_enemy))
+				global.tempflag[89]++;
 		}
 
 		global.screenshot = sprite_create_from_surface(application_surface, 0, 0, __view_get(e__VW.WView, 0), __view_get(e__VW.HView, 0), 0, 0, 0, 0);

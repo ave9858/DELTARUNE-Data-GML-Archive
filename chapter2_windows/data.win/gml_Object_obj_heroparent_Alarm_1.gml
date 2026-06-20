@@ -10,6 +10,9 @@ if (cancelattack == 0) {
 
 	dm.delay = 8;
 
+	if (i_ex(obj_rouxls_enemy))
+		dm.depth = -999999;
+
 	if (global.chapter == 2 && instance_exists(obj_spamton_neo_enemy) && obj_spamton_neo_enemy.weirdpathendcon > 0) {
 		damage = round((global.battleat[myself] * points) / 150);
 

@@ -28,6 +28,7 @@ if (con == 3) {
 	c_var_instance(actor_talker, "talking_actor", to_actor);
 	c_var_instance(actor_talker, "paused", true);
 	c_var_instance(id, "disable_npcs", true);
+	c_wait(1);
 	c_sel(ru);
 	c_sprite(spr_rudy_juice_walk_left);
 	c_var_instance(actor_talker, "paused", false);
@@ -87,7 +88,8 @@ if (con == 3) {
 	c_imageindex(2);
 	c_wait(30);
 	c_sel(no);
-	c_sprite(spr_noelle_juice_drinking);
+	c_sprite(noelle_npc.sprite_index);
+	c_imageindex(noelle_npc.image_index);
 	c_sel(ru);
 	c_sprite(spr_rudy_juice_laugh);
 	c_imagespeed(0.2);
@@ -137,6 +139,7 @@ if (con == 12) {
 	c_var_instance(actor_talker, "talking_actor", to_actor);
 	c_var_instance(actor_talker, "paused", true);
 	c_var_instance(id, "disable_npcs", true);
+	c_wait(1);
 	c_sel(ru);
 	c_sprite(spr_rudy_juice_walk_right);
 	c_var_instance(actor_talker, "paused", false);
@@ -213,6 +216,7 @@ if (con == 22) {
 	c_var_instance(actor_talker, "talking_actor", to_actor);
 	c_var_instance(actor_talker, "paused", false);
 	c_var_instance(id, "disable_npcs", true);
+	c_wait(1);
 	c_sel(to);
 	c_autowalk(0);
 	c_sprite(spr_toriel_juice_talk_right_unhappy);
@@ -260,6 +264,7 @@ if (con == 32) {
 	c_sel(no);
 	c_autowalk(0);
 	c_var_instance(id, "disable_npcs", true);
+	c_wait(1);
 	c_sel(no);
 	c_autowalk(0);
 	c_halt();
@@ -313,6 +318,7 @@ if (con == 42) {
 	c_autowalk(0);
 	c_var_instance(actor_talker, "talking_actor", to_actor);
 	c_var_instance(id, "disable_npcs", true);
+	c_wait(1);
 
 	if (noelle_key_talk == 1) {
 		c_sel(no);
@@ -601,6 +607,9 @@ if (enable_npcs) {
 		y = ystart;
 		visible = 1;
 	}
+
+	if (i_ex(no_actor))
+		no_actor.visible = false;
 
 	with (noelle_npc) {
 		x = xstart;

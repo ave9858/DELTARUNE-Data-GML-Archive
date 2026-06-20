@@ -1,7 +1,7 @@
 if (obj_chefs_game.gameover)
 	exit;
 
-var _obj = 780;
+var _obj = 781;
 
 if (mode == 0) {
 	var _max = obj_chefs_game.timer_max;

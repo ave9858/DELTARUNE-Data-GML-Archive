@@ -129,7 +129,7 @@ if (active == 1) {
 			var idle = 1544;
 
 			if (global.flag[1017] == 1)
-				idle = 4192;
+				idle = 4193;
 
 			var desigx = obj_board_inventory.x + 8;
 			var desigy = obj_board_inventory.y + 174;

@@ -11,12 +11,12 @@ if (room == room_board_sword_intro) {
 if (scr_debug())
 	scr_setparty(0, 0, 0);
 
-kris = 1184;
+kris = 1185;
 kris.freeze = true;
 kris.fun = true;
 kris.sprite_index = spr_krisu_holdcontroller;
 highlight = instance_create(x, y, obj_sprhighlight);
-highlight.target = 1184;
+highlight.target = 1185;
 highlight.match_depth = false;
 highlight.depth = 0;
 highlight.mustbevisible = false;

@@ -44,7 +44,7 @@ if (init == 0) {
 
 	if (name == "kris") {
 		kris = id;
-		sleepsprite = 4292;
+		sleepsprite = 4293;
 		sprite_index = spr_board_kris_walk_down;
 
 		if (i_ex(obj_board_controller))
@@ -111,7 +111,7 @@ if (init == 0) {
 		lsprite = spr_board_susie_walk_left;
 		hurtsprite = spr_board_susie_hurt;
 		dsprite_carry = 1300;
-		rsprite_carry = 4304;
+		rsprite_carry = 4305;
 		lsprite_carry = 2383;
 		usprite_carry = 3940;
 		dsprite_item = 2407;
@@ -124,12 +124,12 @@ if (init == 0) {
 		usprite = spr_board_ralsei_walk_up;
 		lsprite = spr_board_ralsei_walk_left;
 		hurtsprite = spr_board_ralsei_hurt;
-		dsprite_carry = 4182;
-		rsprite_carry = 4651;
-		lsprite_carry = 4150;
+		dsprite_carry = 4183;
+		rsprite_carry = 4653;
+		lsprite_carry = 4151;
 		usprite_carry = 3832;
 		dsprite_item = 3102;
-		sleepsprite = 4431;
+		sleepsprite = 4433;
 	}
 
 	if (name == "lancer") {
@@ -138,12 +138,12 @@ if (init == 0) {
 		usprite = spr_board_lancer_up;
 		lsprite = spr_board_lancer_left;
 		hurtsprite = spr_board_lancer_down;
-		dsprite_carry = 4553;
+		dsprite_carry = 4555;
 		rsprite_carry = 474;
 		lsprite_carry = 2082;
 		usprite_carry = 3188;
-		dsprite_item = 4553;
-		sleepsprite = 4553;
+		dsprite_item = 4555;
+		sleepsprite = 4555;
 	}
 
 	if (name == "elnina") {
@@ -775,7 +775,7 @@ if (place_meeting(x, y, obj_board_hazard) && (canfreemove == 1 || (canfreemove =
 							dmg.depth = 0;
 							fun = 1;
 							sprite_index = spr_krisu_holdcontroller_hurt;
-							scr_delay_var("sprite_index", 4312, 5);
+							scr_delay_var("sprite_index", 4313, 5);
 							var __shock = scr_board_afterimage(0, 5, 3);
 							__shock.depth = obj_gameshow_swordroute.depth - 10;
 							__shock.sprite_index = spr_swordroute_shadowmantle_krishitflash;
@@ -802,7 +802,7 @@ if (place_meeting(x, y, obj_board_hazard) && (canfreemove == 1 || (canfreemove =
 
 		var hazard_hitbox = hazard.object_index;
 
-		if (hazard_hitbox == 1727)
+		if (hazard_hitbox == 1728)
 			hazard_hitbox = hazard_hitbox.parentid;
 
 		if (i_ex(hazard_hitbox)) {
@@ -1419,7 +1419,7 @@ if (graballpots == true && global.flag[1020] && global.interact == 0 && canfreem
 						var blok = instance_place(tx + (_xx * i), ty + (_yy * i), blockerlist[j]);
 
 						if (blok != -4) {
-							if (blok != id && blok != 543)
+							if (blok != id && blok != 544)
 								spaceFree = 0;
 						}
 					}
@@ -1641,7 +1641,7 @@ if (press_1 == 1 && name == "susie" && global.flag[1020] == 1 && (global.interac
 						if (!controlled || global.flag[1023] == 1) {
 							if (grabbed.object_index == obj_mainchara_board) {
 								if (controlled)
-									scr_board_blcon(grabbed.x, grabbed.y - 24, 4289);
+									scr_board_blcon(grabbed.x, grabbed.y - 24, 4290);
 
 								grabbed = -4;
 							}
@@ -1651,7 +1651,7 @@ if (press_1 == 1 && name == "susie" && global.flag[1020] == 1 && (global.interac
 							if (grabbed.object_index == obj_mainchara_board) {
 								if (grabbed.name == "kris") {
 									if (controlled)
-										scr_board_blcon(grabbed.x, grabbed.y - 24, 4289);
+										scr_board_blcon(grabbed.x, grabbed.y - 24, 4290);
 
 									grabbed = -4;
 								}

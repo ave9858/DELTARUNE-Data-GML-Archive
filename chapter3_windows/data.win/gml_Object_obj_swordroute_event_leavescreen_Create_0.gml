@@ -1,5 +1,5 @@
-kris = 1184;
-lilkris = 543;
+kris = 1185;
+lilkris = 544;
 con = 0;
 init = 0;
 rim = scr_dark_marker(512, 32, spr_gameshow_tvRim_sidemarker);
@@ -37,7 +37,8 @@ makelilkrisleave = false;
 subcon = 0;
 subtimer = 0;
 dropcontroller = 0;
-cont2 = 0;
+cont2 = -4;
+hidebar = 0;
 prefire = 0;
 
 if (scr_debug())

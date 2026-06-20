@@ -33,7 +33,7 @@ for (var i = 0; i < array_length(spritesArray); i++) {
 	if (layer_sprite_get_sprite(spritesArray[i]) == 2094 && layer_sprite_get_xscale(spritesArray[i]) == 2)
 		npc1 = scr_makenpc_fromasset(spritesArray[i]);
 
-	if (layer_sprite_get_sprite(spritesArray[i]) == 3019 && layer_sprite_get_xscale(spritesArray[i]) == -2) {
+	if (layer_sprite_get_sprite(spritesArray[i]) == 3020 && layer_sprite_get_xscale(spritesArray[i]) == -2) {
 		npc2 = scr_makenpc_fromasset(spritesArray[i]);
 		npc2.y = npc2.y - 1000;
 	}

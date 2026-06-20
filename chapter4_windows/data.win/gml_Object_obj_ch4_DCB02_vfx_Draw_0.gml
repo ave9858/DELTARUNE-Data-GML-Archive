@@ -63,7 +63,7 @@ if (follow_mode) {
 		depth = 100000;
 		var _kris = kris_target;
 		party_kris = instance_create(_kris.x, _kris.y, obj_marker_palette);
-		party_kris.current_palette = 4424;
+		party_kris.current_palette = 4425;
 		party_kris.palette_index = 1;
 		party_kris.sprite_index = _kris.sprite_index;
 		party_kris.image_index = _kris.image_index;
@@ -77,7 +77,7 @@ if (follow_mode) {
 
 		var _ralsei = ralsei_target;
 		party_ralsei = instance_create(_ralsei.x, _ralsei.y, obj_marker_palette);
-		party_ralsei.current_palette = 4424;
+		party_ralsei.current_palette = 4425;
 		party_ralsei.palette_index = 1;
 		party_ralsei.sprite_index = _ralsei.sprite_index;
 		party_ralsei.image_index = _ralsei.image_index;
@@ -91,7 +91,7 @@ if (follow_mode) {
 
 		var _susie = susie_target;
 		party_susie = instance_create(_susie.x, _susie.y, obj_marker_palette);
-		party_susie.current_palette = 4424;
+		party_susie.current_palette = 4425;
 		party_susie.palette_index = 1;
 		party_susie.sprite_index = _susie.sprite_index;
 		party_susie.image_index = _susie.image_index;
@@ -105,7 +105,7 @@ if (follow_mode) {
 
 		var _statue = statue_target;
 		var party_statue = instance_create(_statue.x, _statue.y, obj_marker_palette);
-		party_statue.current_palette = 4424;
+		party_statue.current_palette = 4425;
 		party_statue.palette_index = 1;
 		party_statue.sprite_index = _statue.sprite_index;
 

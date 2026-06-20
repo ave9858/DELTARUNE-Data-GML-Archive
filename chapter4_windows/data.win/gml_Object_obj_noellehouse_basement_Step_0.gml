@@ -400,7 +400,7 @@ if (tree_fall) {
 			scr_stickto(no_target, -20);
 
 		overlay.noelle_light_target = noelle_flashlight;
-		overlay.noelle_light_mask = 5830;
+		overlay.noelle_light_mask = 5831;
 		susie_marker.sprite_index = spr_susie_walk_left_flashlight;
 		susie_marker.x = 394;
 		susie_marker.y = 95;
@@ -408,7 +408,7 @@ if (tree_fall) {
 		susie_flashlight.x = susie_marker.x;
 		susie_flashlight.y = susie_marker.y + 26;
 		overlay.susie_light_target = susie_flashlight;
-		overlay.susie_light_mask = 5830;
+		overlay.susie_light_mask = 5831;
 		var su_target = susie_marker;
 
 		with (susie_flashlight)
@@ -420,7 +420,7 @@ if (tree_fall) {
 		with (susie_marker) {
 			scr_delay_var("image_index", 0, 31);
 			scr_delay_var("image_speed", 0, 31);
-			scr_delay_var("sprite_index", 4330, 31);
+			scr_delay_var("sprite_index", 4331, 31);
 		}
 	}
 
@@ -551,7 +551,7 @@ if (basement_scene) {
 		with (susie_marker) {
 			scr_delay_var("image_index", 0, 101);
 			scr_delay_var("image_speed", 0, 101);
-			scr_delay_var("sprite_index", 5845, 131);
+			scr_delay_var("sprite_index", 5846, 131);
 			scr_delay_var("image_speed", 0.04, 131);
 		}
 
@@ -622,7 +622,7 @@ if (basement_scene) {
 					susie_flashlight.y = susie_marker.y + 34;
 					susie_flashlight.depth = 6010;
 					susie_flashlight.image_angle = 0;
-					overlay.susie_light_mask = 5830;
+					overlay.susie_light_mask = 5831;
 				}
 
 				if (susie_surprise_index == 2) {
@@ -690,7 +690,7 @@ if (basement_scene) {
 		susie_flashlight.y -= 7;
 		susie_flashlight.image_angle = 0;
 		susie_flashlight.depth = 6010;
-		overlay.susie_light_mask = 3677;
+		overlay.susie_light_mask = 3678;
 	}
 
 	if (noelle_face_left) {
@@ -730,7 +730,7 @@ if (basement_scene) {
 					noelle_flashlight.image_angle = 0;
 					noelle_flashlight.x = noelle_marker.x;
 					noelle_flashlight.y = noelle_marker.y + 30;
-					overlay.noelle_light_mask = 5830;
+					overlay.noelle_light_mask = 5831;
 					noelle_flashlight.depth = 6010;
 				}
 
@@ -911,7 +911,7 @@ if (basement_scene) {
 						scr_delay_var("gravity", 0, 12);
 					}
 
-					overlay.susie_light_mask = 5830;
+					overlay.susie_light_mask = 5831;
 					move_wait = false;
 				}
 			}

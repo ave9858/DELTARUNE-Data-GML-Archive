@@ -202,7 +202,7 @@ if (con == 0) {
 	c_addxy(4, 0);
 	c_shakeobj();
 	scr_funnytext_init(1, 0, 0, 2914, 0, 0);
-	scr_funnytext_init(2, 0, -14, 4657, 0, 0);
+	scr_funnytext_init(2, 0, -14, 4659, 0, 0);
 	scr_funnytext_init(3, 0, -14, 130, 0, 0);
 	c_speaker("susie");
 	c_msgsetloc(0, "\\EI* H-hey^1, what the heck are you.../", "obj_ch3_GSC07_slash_Step_0_gml_969_0");

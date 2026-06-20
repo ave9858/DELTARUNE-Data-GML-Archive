@@ -31,8 +31,8 @@ if (con == 2) {
 	susindex = 0;
 	con = 2.1;
 	alarm[4] = 60;
-	scr_delay_var("sussprite", 3313, 15);
-	scr_delay_var("sprite_index", 3308, 15);
+	scr_delay_var("sussprite", 3314, 15);
+	scr_delay_var("sprite_index", 3309, 15);
 }
 
 if (con == 3.1) {

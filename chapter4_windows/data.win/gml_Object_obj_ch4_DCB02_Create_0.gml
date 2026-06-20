@@ -63,7 +63,7 @@ if (global.plot < 240) {
 }
 
 susie_yell = function() {
-	anim_player.init(su_actor, 5245, anim_timestamps);
+	anim_player.init(su_actor, 5246, anim_timestamps);
 	anim_player.start();
 };
 
@@ -71,7 +71,7 @@ if (global.plot >= 240) {
 	scr_musicer("raining_in_church2.ogg", 1, undefined, undefined, 30);
 	var _statue = debris;
 	var party_statue = instance_create(_statue.x, _statue.y, obj_marker_palette);
-	party_statue.current_palette = 4424;
+	party_statue.current_palette = 4425;
 	party_statue.palette_index = 1;
 	party_statue.sprite_index = _statue.sprite_index;
 

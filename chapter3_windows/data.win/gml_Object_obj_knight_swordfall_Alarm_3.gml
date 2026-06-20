@@ -7,15 +7,15 @@ if (next_up != -999) {
 			break;
 
 		case 2:
-			knight = 669;
+			knight = 670;
 			break;
 
 		case 3:
-			knight = 802;
+			knight = 803;
 			break;
 
 		case 5:
-			knight = 1173;
+			knight = 1174;
 			break;
 	}
 
@@ -42,12 +42,12 @@ if (next_up != -999) {
 		anchor_y = other.anchor_y;
 		event_user(0);
 
-		if (knight == 802) {
+		if (knight == 803) {
 			timer = -8;
 			fake_timer = -8;
 		}
 
-		if (knight == 1173) {
+		if (knight == 1174) {
 			with (instance_create_depth(x, y, depth, obj_knight_warp)) {
 				master = other.id;
 				event_user(1);

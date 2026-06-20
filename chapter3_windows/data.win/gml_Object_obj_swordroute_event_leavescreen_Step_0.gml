@@ -338,6 +338,7 @@ if (con == 20) {
 	c_wait(14);
 	c_speaker("susie");
 	c_msgsetloc(0, "\\E9* Hey Kris!/%", "obj_swordroute_event_leavescreen_slash_Step_0_gml_269_0");
+	c_var_instance(id, "hidebar", 1);
 	c_talk_wait();
 	c_sel(su);
 	c_walkdirect_wait(340, 282, 64);
@@ -351,8 +352,8 @@ if (con == 20) {
 	c_talk_wait();
 	c_wait(45);
 	c_sprite(spr_susieu_dark_faceleft);
-	c_var_instance(1367, "fun", 1);
-	c_var_instance(1367, "sprite_index", spr_susieu_dark_faceleft);
+	c_var_instance(1368, "fun", 1);
+	c_var_instance(1368, "sprite_index", spr_susieu_dark_faceleft);
 	c_var_instance(kris, "fun", 1);
 	c_var_instance(kris, "sprite_index", spr_krisu_dark_slightright);
 	c_wait(6);
@@ -454,8 +455,8 @@ if (con == 26.1 && !d_ex()) {
 	c_walkdirect_speed(400, 282, 4);
 	c_wait(30);
 	c_var_instance(id, "con", 120);
-	c_var_instance(1367, "fun", 1);
-	c_var_instance(1367, "sprite_index", spr_susie_right_dw);
+	c_var_instance(1368, "fun", 1);
+	c_var_instance(1368, "sprite_index", spr_susie_right_dw);
 	c_actortokris();
 	c_actortocaterpillar();
 	c_terminatekillactors();
@@ -623,6 +624,10 @@ if (con == 121 && !i_ex(cutscene_master)) {
 	global.interact = 0;
 	scr_losechar();
 	safe_delete(obj_caterpillarchara);
+
+	with (cont2)
+		depth = obj_mainchara.depth - 10;
+
 	con++;
 }
 
@@ -932,7 +937,7 @@ if (creepcon == 4) {
 		}
 
 		if (!i_ex(susie))
-			susie = 1367;
+			susie = 1368;
 
 		susie.visible = false;
 		snd_play(snd_grab);
@@ -1032,7 +1037,7 @@ if (makelilkrisleave == true) {
 }
 
 if (creepcon == 6) {
-	susie = 1367;
+	susie = 1368;
 	kris.x = krisandsusie.x - 62;
 	kris.y = krisandsusie.y + 16;
 	susie.x = krisandsusie.x - 16;
@@ -1185,4 +1190,12 @@ if (dropcontroller == 2) {
 				scr_delay_var("gravity", 0, 8);
 		}
 	}
+}
+
+if (hidebar == 1) {
+	with (obj_gameshow_swordroute)
+		drawui = false;
+
+	with (scr_marker_ext(board_tilex(0), board_tiley(-1), spr_pxwhite, 384, 32, undefined, undefined, c_black, 99999999))
+		hidebar = 2;
 }

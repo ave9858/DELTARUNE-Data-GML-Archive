@@ -68,7 +68,7 @@ if (init == 0) {
 	}
 }
 
-var objInd = 1155;
+var objInd = 1156;
 
 if (global.chapter == 3 && room == room_dw_ch3_man)
 	objInd = 184;

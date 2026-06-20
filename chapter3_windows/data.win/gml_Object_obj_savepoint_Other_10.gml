@@ -135,7 +135,7 @@ if (global.chapter == 3) {
 		if (shadhere == false && crowdhere == true) {
 			scr_speaker("no_name");
 			msgsetloc(0, "* (It's a concert^1, but no one is here to play.)/", "obj_savepoint_slash_Other_10_gml_178_0");
-			msgnextloc("* (You are filled with the power of a crowd cheering for noone.)/%", "obj_savepoint_slash_Other_10_gml_179_0");
+			msgnextloc("* (You are filled with the power of a crowd cheering for no one.)/%", "obj_savepoint_slash_Other_10_gml_179_0");
 		}
 
 		if (crowdhere == false && shadhere == false) {

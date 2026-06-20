@@ -391,7 +391,7 @@ if (mode == 4) {
 		if (ral_difficulty >= 2) {
 			if ((timer % modtimer) == 0) {
 				if (enemy_count < spawnamount && !i_ex(obj_susiezilla_singlescreen_kickboxin_tenna))
-					spawn((180 + irandom(60)) * choose(-1, 1), irandom_range(-60, 60), 1551, 8);
+					spawn((180 + irandom(60)) * choose(-1, 1), irandom_range(-60, 60), 1552, 8);
 			}
 		}
 	}

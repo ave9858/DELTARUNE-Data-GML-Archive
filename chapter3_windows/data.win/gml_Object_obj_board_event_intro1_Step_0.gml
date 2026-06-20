@@ -1,5 +1,5 @@
 if (kris == 0)
-	kris = 1184;
+	kris = 1185;
 
 if (susie == 0) {
 	with (obj_caterpillarchara) {
