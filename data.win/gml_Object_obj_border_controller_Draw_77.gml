@@ -8,13 +8,13 @@ global.window_xofs = xx;
 global.window_yofs = yy;
 
 if (os_type == os_switch && wh == 720)
-	texture_set_interpolation(1);
+	texture_set_interpolation(true);
 else
-	texture_set_interpolation(0);
+	texture_set_interpolation(false);
 
 if (global.screen_border_active && border_alpha >= 0) {
 	var border_id = global.screen_border_id;
-	draw_enable_alphablend(0);
+	draw_enable_alphablend(false);
 
 	if (border_id == "Dynamic" || border_id == "ダイナミック") {
 		scr_draw_background_ps4(_border_image, 0, 0);
@@ -25,7 +25,7 @@ if (global.screen_border_active && border_alpha >= 0) {
 	}
 
 	draw_set_alpha(1);
-	draw_enable_alphablend(1);
+	draw_enable_alphablend(true);
 
 	if (border_alpha < 1) {
 		draw_set_alpha(1 - border_alpha);
@@ -41,17 +41,17 @@ if (global.screen_border_active && border_alpha >= 0) {
 	var room_id = global.currentroom;
 
 	if (instance_exists(obj_savepoint))
-		global.disable_border = 0;
+		global.disable_border = false;
 
-	if (room_id == PLACE_CONTACT || room_id == 878 || room_id == PLACE_MENU || room_id == room_gameover || room_id == PLACE_DOG || room_id == ROOM_INITIALIZE || room_id == room_title_placeholder || room_id == room_intro_ch2)
-		global.disable_border = 1;
+	if (room_id == PLACE_CONTACT || room_id == 881 || room_id == PLACE_MENU || room_id == room_gameover || room_id == PLACE_DOG || room_id == ROOM_INITIALIZE || room_id == room_title_placeholder || room_id == room_intro_ch2)
+		global.disable_border = true;
 }
 
-draw_enable_alphablend(0);
+draw_enable_alphablend(false);
 draw_surface_ext(application_surface, xx, yy, global.window_scale, global.window_scale, 0, c_white, 1);
 
 if (instance_exists(obj_time)) {
-	var is_paused = 0;
+	var is_paused = false;
 
 	with (obj_time)
 		is_paused = paused;
@@ -62,5 +62,5 @@ if (instance_exists(obj_time)) {
 	}
 }
 
-draw_enable_alphablend(1);
-texture_set_interpolation(0);
+draw_enable_alphablend(true);
+texture_set_interpolation(false);

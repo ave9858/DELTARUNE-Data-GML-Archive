@@ -1,16 +1,16 @@
 var border_id = global.screen_border_id;
-var return_title = 0;
+var return_title = false;
 
 if (variable_global_exists("chapter_return")) {
 	if (global.chapter_return > 0)
-		return_title = 1;
+		return_title = true;
 }
 
 if (!return_title) {
 	if (border_id == "Dynamic" || border_id == "ダイナミック") {
 		if (!loaded) {
 			border_alpha = 0;
-			loaded = 1;
+			loaded = true;
 		}
 
 		border_fade_value = 0.025;
@@ -21,7 +21,7 @@ if (!return_title) {
 		var room_id = room;
 		_border_image = global.darkzone ? border_dw_castletown : border_lw_town;
 
-		if (room_id == room_legend || room_id == 883 || room_id == PLACE_MENU || room_id == PLACE_LOGO)
+		if (room_id == room_legend || room_id == 886 || room_id == PLACE_MENU || room_id == PLACE_LOGO)
 			_border_image = border_dw_castletown;
 
 		if (room_id >= room_dw_cyber_intro_1 && room_id < room_dw_city_spamton_shop_exterior)
@@ -44,7 +44,7 @@ if (!return_title) {
 		if (room_id == room_shop_ch2_spamton)
 			_border_image = border_dw_city;
 
-		if (room_id == PLACE_CONTACT || room_id == 878 || room_id == PLACE_MENU || room_id == room_gameover || room_id == PLACE_DOG || room_id == room_title_placeholder || room_id == room_intro_ch2) {
+		if (room_id == PLACE_CONTACT || room_id == 881 || room_id == PLACE_MENU || room_id == room_gameover || room_id == PLACE_DOG || room_id == room_title_placeholder || room_id == room_intro_ch2) {
 			border_alpha = 0;
 		} else if (room_id == room_insidecloset || room_id == room_cc_fountain) {
 			border_fade_out = border_alpha > 0;
@@ -98,10 +98,10 @@ if (!return_title) {
 
 			if (room_id == room_schooldoor) {
 				if (i_ex(obj_dw_transition)) {
-					border_fade_in = 0;
+					border_fade_in = false;
 					border_fade_out = border_alpha > 0;
 				} else {
-					border_fade_out = 0;
+					border_fade_out = false;
 					border_fade_in = border_alpha < 1;
 				}
 			}
@@ -109,14 +109,14 @@ if (!return_title) {
 			if (room_id == room_dw_castle_area_1) {
 				if (i_ex(obj_dw_leave)) {
 					if (obj_dw_leave.con >= 10) {
-						border_fade_in = 0;
+						border_fade_in = false;
 						border_fade_out = border_alpha > 0;
 					}
 				}
 
 				if (i_ex(obj_dw_transition)) {
 					if (obj_dw_transition.timer >= 30) {
-						border_fade_out = 0;
+						border_fade_out = false;
 						border_fade_in = border_alpha < 1;
 					}
 				}
@@ -143,7 +143,7 @@ if (!return_title) {
 
 			if (room_id == room_dw_cyber_rollercoaster) {
 				if (i_ex(obj_ch2_scene11a)) {
-					if (obj_ch2_scene11a.hide_border == 1)
+					if (obj_ch2_scene11a.hide_border == true)
 						border_fade_out = border_alpha > 0;
 				}
 			}
@@ -164,7 +164,7 @@ if (!return_title) {
 			if (room_id == room_dw_city_mansion_front) {
 				if (i_ex(obj_ch2_city08)) {
 					if (obj_ch2_city08.circle_zoom_timer >= 50) {
-						border_fade_in = 0;
+						border_fade_in = false;
 						border_fade_out = border_alpha > 0;
 					}
 				}
@@ -172,12 +172,12 @@ if (!return_title) {
 
 			if (room_id == room_dw_mansion_krisroom) {
 				border_alpha = 0;
-				border_fade_out = 0;
-				border_fade_in = 0;
+				border_fade_out = false;
+				border_fade_in = false;
 			}
 
 			if (room_id == room_dw_mansion_lightner_hallway) {
-				border_fade_out = 0;
+				border_fade_out = false;
 				border_fade_in = border_alpha < 1;
 			}
 
@@ -207,10 +207,10 @@ if (!return_title) {
 			if (room_id == room_dw_mansion_top_post) {
 				if (i_ex(obj_ch2_scene27)) {
 					if (obj_ch2_scene27.hide_border) {
-						border_fade_in = 0;
+						border_fade_in = false;
 						border_fade_out = border_alpha > 0;
 					} else if (obj_ch2_scene27.show_border) {
-						border_fade_out = 0;
+						border_fade_out = false;
 						border_fade_in = border_alpha < 1;
 					}
 				}
@@ -226,7 +226,7 @@ if (!return_title) {
 			if (room_id == room_torhouse) {
 				if (i_ex(obj_ch2_scene32)) {
 					if (obj_ch2_scene32.hide_border) {
-						border_fade_in = 0;
+						border_fade_in = false;
 						border_fade_out = border_alpha > 0;
 					}
 				}
@@ -240,7 +240,7 @@ if (!return_title) {
 			}
 		}
 
-		if ((room_id == room_legend || room_id == 883 || room_id == PLACE_MENU) && global.game_won == 1) {
+		if ((room_id == room_legend || room_id == 886 || room_id == PLACE_MENU) && global.game_won == 1) {
 			_border_image = border_dw_castletown;
 			border_alpha = 1;
 		}
@@ -266,7 +266,7 @@ if (!return_title) {
 }
 
 if (return_title) {
-	border_fade_in = 0;
+	border_fade_in = false;
 	border_fade_value = 0.05;
 	border_fade_out = border_alpha > 0;
 	global.disable_border = border_alpha != 1;

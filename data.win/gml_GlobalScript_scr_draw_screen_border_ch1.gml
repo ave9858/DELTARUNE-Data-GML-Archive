@@ -1,29 +1,29 @@
 function scr_draw_screen_border_ch1(arg0) {
 	var border_id = arg0;
-	var return_title = 0;
+	var return_title = false;
 
 	if (variable_global_exists("chapter_return")) {
 		if (global.chapter_return > 0)
-			return_title = 1;
+			return_title = true;
 	}
 
 	if (!return_title) {
-		draw_enable_alphablend_ch1(0);
+		draw_enable_alphablend_ch1(false);
 
 		if (border_id == "Dynamic" || border_id == "ダイナミック") {
 			if (!loaded) {
 				obj_time_ch1.border_alpha = 0;
-				loaded = 1;
+				loaded = true;
 			}
 
 			obj_time_ch1.border_fade_value = 0.025;
 			var room_id = room;
 			var _border_image = global.darkzone ? border_dark_ch1 : border_light_ch1;
 
-			if (room_id == room_legend_ch1 || room_id == 1638 || room_id == PLACE_MENU_ch1 || room_id == PLACE_LOGO_ch1)
+			if (room_id == room_legend_ch1 || room_id == 1642 || room_id == PLACE_MENU_ch1 || room_id == PLACE_LOGO_ch1)
 				_border_image = border_dark_ch1;
 
-			if (room_id == PLACE_CONTACT_ch1 || room_id == 1634 || room_id == PLACE_MENU_ch1 || room_id == room_splashscreen_ch1 || room_id == room_gameover_ch1 || room_id == PLACE_DOG_ch1 || room_id == room_dark1a_ch1 || room_id == room_dark_eyepuzzle_ch1)
+			if (room_id == PLACE_CONTACT_ch1 || room_id == 1638 || room_id == PLACE_MENU_ch1 || room_id == room_splashscreen_ch1 || room_id == room_gameover_ch1 || room_id == PLACE_DOG_ch1 || room_id == room_dark1a_ch1 || room_id == room_dark_eyepuzzle_ch1)
 				obj_time_ch1.border_alpha = 0;
 			else if (room_id == room_insidecloset_ch1 || room_id == room_cc_fountain_ch1)
 				obj_time_ch1.border_fade_out = obj_time_ch1.border_alpha > 0;
@@ -57,18 +57,18 @@ function scr_draw_screen_border_ch1(arg0) {
 				}
 			}
 
-			var game_won = 0;
+			var game_won = false;
 
 			if (ossafe_file_exists_ch1("filech1_3"))
-				game_won = 1;
+				game_won = true;
 
 			if (ossafe_file_exists_ch1("filech1_4"))
-				game_won = 1;
+				game_won = true;
 
 			if (ossafe_file_exists_ch1("filech1_5"))
-				game_won = 1;
+				game_won = true;
 
-			if ((room_id == room_legend_ch1 || room_id == 1638 || room_id == PLACE_MENU_ch1) && game_won == 1) {
+			if ((room_id == room_legend_ch1 || room_id == 1642 || room_id == PLACE_MENU_ch1) && game_won == true) {
 				_border_image = border_dark_ch1;
 				obj_time_ch1.border_alpha = 1;
 			}
@@ -95,11 +95,11 @@ function scr_draw_screen_border_ch1(arg0) {
 		}
 
 		draw_set_alpha(1);
-		draw_enable_alphablend_ch1(1);
+		draw_enable_alphablend_ch1(true);
 	}
 
 	if (return_title) {
-		obj_time_ch1.border_fade_in = 0;
+		obj_time_ch1.border_fade_in = false;
 		obj_time_ch1.border_fade_value = 0.05;
 		obj_time_ch1.border_fade_out = obj_time_ch1.border_alpha > 0;
 		global.disable_border = obj_time_ch1.border_alpha != 1;
