@@ -7,7 +7,7 @@ if (con == 4 || con == 5) {
 	timer++;
 
 	if ((timer % 12) == 0) {
-		var petal = create_object_to_draw(random_range(0, 500), -20, choose(3938, 5775, 5137));
+		var petal = create_object_to_draw(random_range(0, 500), -20, choose(3939, 5777, 5139));
 		petal.image_alpha = 0;
 		petal.image_speed = 0.125;
 		petal.image_blend = c_black;

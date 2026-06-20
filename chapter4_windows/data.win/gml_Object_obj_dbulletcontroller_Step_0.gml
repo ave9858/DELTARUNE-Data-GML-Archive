@@ -1654,7 +1654,7 @@ if (type == 146) {
 		}
 
 		obj_growtangle.sprite_index = spr_ghost_house_starter;
-		obj_growtangle.spr_custom_box = 5418;
+		obj_growtangle.spr_custom_box = 5420;
 		obj_growtangle.mask_index = -1;
 		obj_heart.sprite_index = spr_dodgeheart_small;
 		obj_heart.mask_index = spr_dodgeheart_small_mask;
@@ -1815,7 +1815,7 @@ if (type == 148) {
 		}
 
 		obj_growtangle.sprite_index = spr_ghost_house_toolong;
-		obj_growtangle.spr_custom_box = 2172;
+		obj_growtangle.spr_custom_box = 2173;
 		obj_growtangle.mask_index = -1;
 		obj_heart.sprite_index = spr_dodgeheart_small;
 		obj_heart.mask_index = spr_dodgeheart_small_mask;
@@ -1992,7 +1992,7 @@ if (type == 149) {
 		}
 
 		obj_growtangle.sprite_index = spr_ghost_house_twopumpkins;
-		obj_growtangle.spr_custom_box = 1867;
+		obj_growtangle.spr_custom_box = 1868;
 		obj_growtangle.mask_index = -1;
 		obj_heart.sprite_index = spr_dodgeheart_small;
 		obj_heart.mask_index = spr_dodgeheart_small_mask;
@@ -2080,7 +2080,7 @@ if (type == 150) {
 		}
 
 		obj_growtangle.sprite_index = spr_ghost_house_chimney;
-		obj_growtangle.spr_custom_box = 3174;
+		obj_growtangle.spr_custom_box = 3175;
 		obj_growtangle.mask_index = -1;
 		obj_heart.sprite_index = spr_dodgeheart_small;
 		obj_heart.mask_index = spr_dodgeheart_small_mask;
@@ -2213,7 +2213,7 @@ if (type == 151) {
 		}
 
 		obj_growtangle.sprite_index = spr_ghost_house_normal;
-		obj_growtangle.spr_custom_box = 2333;
+		obj_growtangle.spr_custom_box = 2334;
 		obj_growtangle.mask_index = -1;
 		obj_heart.sprite_index = spr_dodgeheart_small;
 		obj_heart.mask_index = spr_dodgeheart_small_mask;
@@ -2302,7 +2302,7 @@ if (type == 152) {
 		}
 
 		obj_growtangle.sprite_index = spr_ghost_house_yourtutu;
-		obj_growtangle.spr_custom_box = 1400;
+		obj_growtangle.spr_custom_box = 1401;
 		obj_growtangle.mask_index = -1;
 		obj_heart.sprite_index = spr_dodgeheart_small;
 		obj_heart.mask_index = spr_dodgeheart_small_mask;
@@ -2474,7 +2474,7 @@ if (type == 153) {
 		}
 
 		obj_growtangle.sprite_index = spr_ghost_house_nopumpkin;
-		obj_growtangle.spr_custom_box = 5798;
+		obj_growtangle.spr_custom_box = 5800;
 		obj_growtangle.x += 26;
 		obj_growtangle.mask_index = -1;
 		obj_heart.sprite_index = spr_dodgeheart_small;
@@ -2605,7 +2605,7 @@ if (type == 154) {
 			instance_create(x, y, obj_darkness_overlay_bullettest);
 
 		obj_growtangle.sprite_index = spr_ghost_house_final;
-		obj_growtangle.spr_custom_box = 5173;
+		obj_growtangle.spr_custom_box = 5175;
 		obj_growtangle.mask_index = -1;
 		obj_growtangle.y -= 24;
 		obj_growtangle.x += 24;
@@ -2895,7 +2895,7 @@ if (type == 155) {
 		}
 
 		obj_growtangle.sprite_index = spr_ghost_house_lightup;
-		obj_growtangle.spr_custom_box = 4707;
+		obj_growtangle.spr_custom_box = 4708;
 		obj_growtangle.mask_index = -1;
 		obj_heart.sprite_index = spr_dodgeheart_small;
 		obj_heart.mask_index = spr_dodgeheart_small_mask;

@@ -18,7 +18,7 @@ if (shutta_pose_return) {
 		image_index = 0;
 		image_speed = 0;
 		scr_lerpvar("image_index", 0, 4, 12);
-		scr_delay_var("sprite_index", 2569, 13);
+		scr_delay_var("sprite_index", 2570, 13);
 		scr_delay_var("image_speed", 0.2, 13);
 	}
 

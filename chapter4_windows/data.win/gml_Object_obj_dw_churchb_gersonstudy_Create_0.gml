@@ -10,7 +10,7 @@ var spritesArray = layer_get_all_elements("DEBUG_ASSETS");
 shop = -4;
 
 for (var i = 0; i < array_length(spritesArray); i++) {
-	if (layer_sprite_get_sprite(spritesArray[i]) == 1645) {
+	if (layer_sprite_get_sprite(spritesArray[i]) == 1646) {
 		shop = scr_makenpc_fromasset(spritesArray[i]);
 		shop.didgetitem = -1;
 		shop.issolid = false;

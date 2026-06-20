@@ -22,32 +22,32 @@ if (extflag == "treasure") {
 
 	switch (sprite_index) {
 		case spr_dw_church_2x2shelf_blue:
-			myicon = 4912;
+			myicon = 4914;
 			mycol = 5711637;
 			break;
 
 		case spr_dw_church_2x2shelf_red:
-			myicon = 5271;
+			myicon = 5273;
 			mycol = 1905236;
 			break;
 
 		case spr_dw_church_2x2shelf_green:
-			myicon = 4601;
+			myicon = 4602;
 			mycol = 16896;
 			break;
 
 		case spr_dw_church_2x2shelf_pink:
-			myicon = 3194;
+			myicon = 3195;
 			mycol = 9717932;
 			break;
 
 		case spr_dw_church_2x2shelf_purple:
-			myicon = 1378;
+			myicon = 1379;
 			mycol = 5114958;
 			break;
 
 		case spr_dw_church_2x2shelf_orange:
-			myicon = 1378;
+			myicon = 1379;
 			mycol = 77861;
 			alt = 1;
 			break;
@@ -84,7 +84,7 @@ if (extflag == "treasure") {
 		var sprangle = 0;
 		var scale = 2;
 		var circlespr = myicon;
-		var arrowspr = 4477;
+		var arrowspr = 4478;
 		var _space = 24;
 		var sinstrength = 0;
 		var sintimevar = 15;

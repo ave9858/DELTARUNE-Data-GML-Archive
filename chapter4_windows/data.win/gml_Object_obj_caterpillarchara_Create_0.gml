@@ -25,7 +25,7 @@ dsprite = spr_susied_dark;
 rsprite = spr_susier_dark;
 lsprite = spr_susiel_dark;
 slidesprite = spr_susie_slide;
-climbsprite = 2649;
+climbsprite = 2650;
 
 if (global.chapter >= 2) {
 	usprite = spr_susie_walk_up_dw;

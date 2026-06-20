@@ -2,16 +2,16 @@ con = -1;
 howl_con = 0;
 var ball_x_offset = 0;
 var ball_y_offset = 0;
-var ball_sprite = 1098;
+var ball_sprite = 1099;
 
 if (scr_recruited_all_in_chapter(2)) {
-	ball_sprite = 1221;
+	ball_sprite = 1222;
 	ball_x_offset = -16;
 	ball_y_offset = -12;
 }
 
 if (scr_recruited_all_in_chapter(3)) {
-	ball_sprite = 3716;
+	ball_sprite = 3717;
 	ball_x_offset = -16;
 	ball_y_offset = -20;
 }

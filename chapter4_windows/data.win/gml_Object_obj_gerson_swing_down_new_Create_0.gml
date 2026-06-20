@@ -25,7 +25,7 @@ if (i_ex(obj_growtangle))
 grazepoints = 4;
 version = 0;
 
-if (i_ex(obj_hammer_of_justice_enemy) && (obj_hammer_of_justice_enemy.trueturn == 10 || true)) {
+if ((i_ex(obj_hammer_of_justice_enemy) && (obj_hammer_of_justice_enemy.trueturn == 10 || true)) || i_ex(obj_sound_of_justice_enemy)) {
 	timetoswing = 10;
 	telegraphtime = 8;
 }

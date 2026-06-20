@@ -16,6 +16,6 @@ times_fused = 0;
 npc_sprite = sprite_index;
 
 if (global.chapter == 4)
-	npc_sprite = 1214;
+	npc_sprite = 1215;
 
 sprite_index = npc_sprite;

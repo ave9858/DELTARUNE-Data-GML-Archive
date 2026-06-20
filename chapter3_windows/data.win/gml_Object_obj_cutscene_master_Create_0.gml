@@ -35,6 +35,8 @@ with (obj_ch3_GSB02)
 with (obj_rhythmgame)
 	inittype = 1;
 
+inittype = 1;
+
 if (inittype == 0) {
 	for (i = 0; i < 20; i++) {
 		actor_id[i] = 99999999;

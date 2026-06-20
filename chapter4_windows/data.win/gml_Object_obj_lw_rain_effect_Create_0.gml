@@ -1,11 +1,11 @@
 rain_style = 1;
 rain_letters = "ABCDEF";
 rain_sprite[0] = 627;
-rain_sprite[1] = 4516;
-rain_sprite[2] = 1874;
-rain_sprite[3] = 3147;
+rain_sprite[1] = 4517;
+rain_sprite[2] = 1875;
+rain_sprite[3] = 3148;
 rain_sprite[4] = 847;
-rain_sprite[5] = 2912;
+rain_sprite[5] = 2913;
 xdir = -1;
 xspeed = 1;
 yspeed = 2;

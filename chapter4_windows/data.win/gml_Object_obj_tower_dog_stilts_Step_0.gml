@@ -28,7 +28,7 @@ if (con == 0 && x < (camerax() + 610) && obj_rotating_tower_controller_new.tower
 
 	with (obj_rotating_tower_controller) {
 		for (var i = 0; i < towerpiececount; i++)
-			tower_piece_sprite_dog[i] = 4168;
+			tower_piece_sprite_dog[i] = 4169;
 	}
 }
 

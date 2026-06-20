@@ -27,19 +27,19 @@ hiddentiley = -4;
 var spritesArray = layer_get_all_elements("debug_assets");
 
 for (var i = 0; i < array_length(spritesArray); i++) {
-	if (layer_sprite_get_sprite(spritesArray[i]) == 5707) {
+	if (layer_sprite_get_sprite(spritesArray[i]) == 5709) {
 		var info = scr_assetgetinfo(spritesArray[i]);
 		hiddentilex = info[2];
 		hiddentiley = info[3];
 	}
 
-	if (layer_sprite_get_sprite(spritesArray[i]) == 5597) {
+	if (layer_sprite_get_sprite(spritesArray[i]) == 5599) {
 		var info = scr_assetgetinfo(spritesArray[i]);
 		hiddenlightx = info[2];
 		hiddenlighty = info[3];
 	}
 
-	if (layer_sprite_get_sprite(spritesArray[i]) == 1861) {
+	if (layer_sprite_get_sprite(spritesArray[i]) == 1862) {
 		hiddennpc = scr_marker_fromasset(spritesArray[i]);
 		hiddennpc.image_speed = 1/3;
 		hiddennpc.depth = layer_get_depth("Tiles_new_main") + 10;

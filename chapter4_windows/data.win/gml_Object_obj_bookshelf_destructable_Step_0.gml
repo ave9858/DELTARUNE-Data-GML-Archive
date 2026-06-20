@@ -123,7 +123,7 @@ if (con == 1) {
 		var scatter = 791;
 
 		if ((thisID % 2) == 1)
-			scatter = 4201;
+			scatter = 4202;
 
 		with (scr_marker_ext(x, y + 80, scatter)) {
 			image_speed = 0.3;

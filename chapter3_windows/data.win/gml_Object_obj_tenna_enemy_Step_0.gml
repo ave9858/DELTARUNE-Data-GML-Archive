@@ -698,8 +698,12 @@ if (global.myfight == 3) {
 		if (acting == 4)
 			strng = stringsetloc("You and Ralsei get", "obj_tenna_enemy_slash_Step_0_gml_386_0");
 
-		if (acting == 5)
-			strng = stringsetloc("You get", "obj_tenna_enemy_slash_Step_0_gml_384_0");
+		if (acting == 5) {
+			if (global.lang != "ja")
+				strng = stringsetloc("You get", "obj_tenna_enemy_slash_Step_0_gml_384_0");
+			else
+				strng = "";
+		}
 
 		acting = 5.1;
 	}

@@ -6,22 +6,22 @@ var s = [];
 var spritesArray = layer_get_all_elements("debug_assets");
 
 for (var i = 0; i < array_length(spritesArray); i++) {
-	if (layer_sprite_get_sprite(spritesArray[i]) == 1278)
+	if (layer_sprite_get_sprite(spritesArray[i]) == 1279)
 		p[0] = scr_assetgetinfo(spritesArray[i]);
 
-	if (layer_sprite_get_sprite(spritesArray[i]) == 5436)
+	if (layer_sprite_get_sprite(spritesArray[i]) == 5438)
 		p[1] = scr_assetgetinfo(spritesArray[i]);
 
-	if (layer_sprite_get_sprite(spritesArray[i]) == 2301)
+	if (layer_sprite_get_sprite(spritesArray[i]) == 2302)
 		p[2] = scr_assetgetinfo(spritesArray[i]);
 
-	if (layer_sprite_get_sprite(spritesArray[i]) == 4969)
+	if (layer_sprite_get_sprite(spritesArray[i]) == 4971)
 		s[0] = scr_assetgetinfo(spritesArray[i]);
 
-	if (layer_sprite_get_sprite(spritesArray[i]) == 4232)
+	if (layer_sprite_get_sprite(spritesArray[i]) == 4233)
 		s[1] = scr_assetgetinfo(spritesArray[i]);
 
-	if (layer_sprite_get_sprite(spritesArray[i]) == 2267)
+	if (layer_sprite_get_sprite(spritesArray[i]) == 2268)
 		s[2] = scr_assetgetinfo(spritesArray[i]);
 }
 
@@ -119,7 +119,7 @@ if (revroom) {
 			}
 		}
 
-		if (layer_sprite_get_sprite(spritesArray[i]) == 3352) {
+		if (layer_sprite_get_sprite(spritesArray[i]) == 3353) {
 			telescope = scr_makenpc_fromasset(spritesArray[i]);
 
 			with (telescope) {

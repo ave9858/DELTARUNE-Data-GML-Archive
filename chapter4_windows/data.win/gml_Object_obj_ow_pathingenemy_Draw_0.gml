@@ -18,7 +18,7 @@ if (dodraw) {
 
 	var col = merge_color(c_white, c_black, clamp(dist / 140, 0, 0.85));
 	image_blend = col;
-	var spr = 2112;
+	var spr = 2113;
 	var scale = 1;
 	var angle = idir * 90;
 	var xoff = 20;

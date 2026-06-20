@@ -1,5 +1,5 @@
 var face = spr_jackenpumpkinlaugh_nomouth;
-var mouth = 1809;
+var mouth = 1810;
 var animindex = 0;
 idealmouthscale = 2 + (imgindex * 1.5);
 mouthscale = lerp(mouthscale, idealmouthscale, 0.5);

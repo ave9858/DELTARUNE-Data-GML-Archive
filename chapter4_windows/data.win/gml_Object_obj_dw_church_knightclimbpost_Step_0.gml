@@ -550,6 +550,7 @@ if (con == 40 && !d_ex()) {
 		snd_free_all();
 		instance_create(0, 0, obj_persistentfadein);
 		global.flag[1659] = 1;
+		global.tempflag[95] = 1;
 		global.interact = 3;
 		var room_id = scr_get_ini_value(global.chapter, global.filechoice, "Room");
 		var target_room = scr_get_room_by_id(room_id);

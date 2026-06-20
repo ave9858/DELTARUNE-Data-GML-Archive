@@ -1,32 +1,32 @@
 var lineup = scr_flag_get(792);
-addison_sell_sprite = 1174;
-addison_buy_sprite = 1178;
-ad_a_sprite = 4898;
-ad_b_sprite = 1512;
-ad_c_sprite = 3348;
+addison_sell_sprite = 1175;
+addison_buy_sprite = 1179;
+ad_a_sprite = 4900;
+ad_b_sprite = 1513;
+ad_c_sprite = 3349;
 
 if (lineup == 1) {
-	addison_sell_sprite = 1170;
-	addison_buy_sprite = 1174;
-	ad_a_sprite = 5086;
-	ad_b_sprite = 1512;
-	ad_c_sprite = 3348;
+	addison_sell_sprite = 1171;
+	addison_buy_sprite = 1175;
+	ad_a_sprite = 5088;
+	ad_b_sprite = 1513;
+	ad_c_sprite = 3349;
 }
 
 if (lineup == 2) {
-	addison_sell_sprite = 1172;
-	addison_buy_sprite = 1170;
-	ad_a_sprite = 3507;
-	ad_b_sprite = 5086;
-	ad_c_sprite = 4898;
+	addison_sell_sprite = 1173;
+	addison_buy_sprite = 1171;
+	ad_a_sprite = 3508;
+	ad_b_sprite = 5088;
+	ad_c_sprite = 4900;
 }
 
 if (lineup == 3) {
-	addison_sell_sprite = 1178;
-	addison_buy_sprite = 1172;
-	ad_a_sprite = 1512;
-	ad_b_sprite = 4898;
-	ad_c_sprite = 3348;
+	addison_sell_sprite = 1179;
+	addison_buy_sprite = 1173;
+	ad_a_sprite = 1513;
+	ad_b_sprite = 4900;
+	ad_c_sprite = 3349;
 }
 
 ad[0] = scr_dark_marker(700, 60, ad_a_sprite);

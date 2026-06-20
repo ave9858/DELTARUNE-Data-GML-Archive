@@ -11,7 +11,7 @@ pal_swap_layer_init();
 
 for (var i = 0; i < array_length(layer_names); i++) {
 	pal_swap_enable_layer(layer_names[i]);
-	pal_swap_set_layer(4884, palette_index, layer_names[i], false);
+	pal_swap_set_layer(4886, palette_index, layer_names[i], false);
 }
 
 pal_swap_reset();

@@ -49,7 +49,7 @@ for (var i = 0; i < array_length(recruited_list); i++) {
 	var recruit_sprite = _sprite;
 
 	if (_sprite == spr_npc_halo_bat)
-		recruit_sprite = 4188;
+		recruit_sprite = 4189;
 
 	recruited_sprites[array_length(recruited_sprites)] = recruit_sprite;
 	var height = (sprite_get_height(recruit_sprite) * 2) - 20;

@@ -47,10 +47,10 @@ if (endcon == 1) {
 			talking = true;
 
 		with (obj_lanino_rematch_enemy)
-			head = 5119;
+			head = 5121;
 
 		with (obj_elnina_rematch_enemy)
-			head = 4562;
+			head = 4563;
 	}
 
 	if ((button3_p() && introtimer > 15) || !i_ex(obj_writer)) {
@@ -68,10 +68,10 @@ if (endcon == 1) {
 			talking = true;
 
 		with (obj_lanino_rematch_enemy)
-			head = 5119;
+			head = 5121;
 
 		with (obj_elnina_rematch_enemy)
-			head = 1907;
+			head = 1908;
 
 		endcon = 2;
 		endtimer = 0;
@@ -99,7 +99,7 @@ if (endcon == 2) {
 			head = 735;
 
 		with (obj_elnina_rematch_enemy)
-			head = 1066;
+			head = 1067;
 
 		endcon = 2.5;
 		endtimer = 0;
@@ -125,7 +125,7 @@ if (endcon == 2.5) {
 			talking = false;
 
 		with (obj_elnina_rematch_enemy)
-			head = 4562;
+			head = 4563;
 
 		endcon = 3;
 		endtimer = 0;
@@ -150,7 +150,7 @@ if (endcon == 3) {
 			talking = true;
 
 		with (obj_lanino_rematch_enemy)
-			head = 2516;
+			head = 2517;
 
 		endcon = 3.5;
 		endtimer = 0;
@@ -584,10 +584,10 @@ if (scr_isphase("enemytalk") && talked == 0 && endcon == 0) {
 
 	if (global.mercymod[obj_lanino_rematch_enemy.myself] == 90) {
 		with (obj_lanino_rematch_enemy)
-			head = 4749;
+			head = 4750;
 
 		with (obj_elnina_rematch_enemy)
-			head = 2661;
+			head = 2662;
 
 		msgsetloc(0, "So you've caught on&to our forecasts!&Nice work, you&little sunshines!", "obj_elnina_lanino_rematch_controller_slash_Step_0_gml_518_0");
 		scr_enemyblcon(lanino.x - 10, global.monstery[lanino.myself] - 10, 10);
@@ -604,10 +604,10 @@ if (scr_isphase("enemytalk") && talked == 0 && endcon == 0) {
 		balloonend = 1;
 	} else if (global.mercymod[obj_lanino_rematch_enemy.myself] == 95) {
 		with (obj_lanino_rematch_enemy)
-			head = 5233;
+			head = 5235;
 
 		with (obj_elnina_rematch_enemy)
-			head = 1066;
+			head = 1067;
 
 		msgsetloc(0, "Haha, nice try,&but the weather's &only warming up!&Elnina, tell them &what's next!", "obj_elnina_lanino_rematch_controller_slash_Step_0_gml_535_0");
 		scr_enemyblcon(lanino.x - 10, global.monstery[lanino.myself] - 10, 10);
@@ -624,10 +624,10 @@ if (scr_isphase("enemytalk") && talked == 0 && endcon == 0) {
 		balloonend = 0;
 	} else {
 		with (obj_lanino_rematch_enemy)
-			head = 5233;
+			head = 5235;
 
 		with (obj_elnina_rematch_enemy)
-			head = 1066;
+			head = 1067;
 
 		msgsetloc(0, "Tonight's weather&is...", "obj_elnina_lanino_rematch_controller_slash_Step_0_gml_552_0_b");
 		scr_enemyblcon(lanino.x - 10, global.monstery[lanino.myself] - 10, 10);
@@ -759,10 +759,10 @@ if (talked == 0.6) {
 			scr_enemyblcon(elnina.x - 40, global.monstery[elnina.myself] - 10, 10);
 
 			with (obj_lanino_rematch_enemy)
-				head = 5233;
+				head = 5235;
 
 			with (obj_elnina_rematch_enemy)
-				head = 1066;
+				head = 1067;
 
 			ballooncon = 4;
 		} else if (ballooncon == 4) {
@@ -772,10 +772,10 @@ if (talked == 0.6) {
 			scr_enemyblcon(elnina.x - 40, global.monstery[elnina.myself] - 10, 10);
 
 			with (obj_lanino_rematch_enemy)
-				head = 5233;
+				head = 5235;
 
 			with (obj_elnina_rematch_enemy)
-				head = 1066;
+				head = 1067;
 
 			with (obj_lanino_rematch_enemy) {
 				talking = true;

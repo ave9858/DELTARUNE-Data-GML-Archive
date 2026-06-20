@@ -41,7 +41,7 @@ _trophy = -4;
 var spritesArray = layer_get_all_elements("DEBUG_ASSETS");
 
 for (var i = 0; i < array_length(spritesArray); i++) {
-	if (layer_sprite_get_sprite(spritesArray[i]) == 5585) {
+	if (layer_sprite_get_sprite(spritesArray[i]) == 5587) {
 		if (layer_sprite_get_blend(spritesArray[i]) == 65535) {
 			npc1 = scr_makenpc_fromasset(spritesArray[i]);
 			npc1.issolid = false;
@@ -61,12 +61,12 @@ for (var i = 0; i < array_length(spritesArray); i++) {
 		}
 	}
 
-	if (layer_sprite_get_sprite(spritesArray[i]) == 1056) {
+	if (layer_sprite_get_sprite(spritesArray[i]) == 1057) {
 		mizzle = scr_marker_fromasset(spritesArray[i], undefined, 1);
 		mizzle.image_speed = 0.25;
 	}
 
-	if (layer_sprite_get_sprite(spritesArray[i]) == 2496) {
+	if (layer_sprite_get_sprite(spritesArray[i]) == 2497) {
 		_trophy = scr_makenpc_fromasset(spritesArray[i], undefined, 1);
 		_trophy.issolid = false;
 	}

@@ -6,7 +6,7 @@ timer = 0;
 threshold = 3;
 count = 0;
 regrazetimer = 0;
-bulletsprite = 1761;
+bulletsprite = 1762;
 siner = 0;
 scr_turntimer(300);
 side = choose(-1, 1);

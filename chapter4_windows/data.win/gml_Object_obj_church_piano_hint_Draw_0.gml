@@ -29,7 +29,7 @@ if (view_current == 0) {
 		for (var i = 0; i < count; i++) {
 			var sprangle = 0;
 			var scale = 2;
-			var spr = 2663;
+			var spr = 2664;
 			var num = real(string_char_at(hint, i + 1));
 			var xloc = (x - (width / 2)) + ((spwid + drawspace) * i);
 			var yloc = y + (sin((siner + (i * 4)) / 8) * 4);
@@ -38,7 +38,7 @@ if (view_current == 0) {
 			if (num != 0) {
 				sprangle = (num * 45) - 180 - 45;
 			} else {
-				spr = 4059;
+				spr = 4060;
 				scale = 2;
 			}
 

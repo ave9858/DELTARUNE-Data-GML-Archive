@@ -5,7 +5,7 @@ if (scr_flag_get(457) == 0) {
 	var back_id = layer_background_get_id(lay_id);
 
 	if (scr_flag_get(349) > 0) {
-		layer_background_sprite(back_id, 3906);
+		layer_background_sprite(back_id, 3907);
 		instance_create(180, 105, obj_readable_room1);
 		instance_create(180, 105, obj_solidblockLight);
 
@@ -14,7 +14,7 @@ if (scr_flag_get(457) == 0) {
 			visible = 0;
 		}
 	} else {
-		layer_background_sprite(back_id, 2291);
+		layer_background_sprite(back_id, 2292);
 	}
 } else {
 	instance_destroy();

@@ -74,12 +74,12 @@ if (appearance == 1) {
 	var cx = camerax();
 	var cy = camy;
 	var len = array_length(backface_indices);
-	var statictile = 4388;
+	var statictile = 4389;
 	var statictilecount = 2;
 	var staticyoffset = 760;
 
 	if (i_ex(obj_dw_churchc_titanclimb2)) {
-		statictile = 1557;
+		statictile = 1558;
 		statictilecount = 3;
 		staticyoffset = 320;
 	}
@@ -176,7 +176,7 @@ if (appearance == 1) {
 	var staticyoffset = 760;
 
 	if (i_ex(obj_dw_churchb_rotatingtower)) {
-		statictile = 1664;
+		statictile = 1665;
 		statictilecount = 2;
 		staticyoffset = 0;
 	}

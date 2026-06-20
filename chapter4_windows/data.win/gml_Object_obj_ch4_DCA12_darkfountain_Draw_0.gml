@@ -39,7 +39,7 @@ bgsiner += 0.0625;
 if (bgsiner > 7)
 	bgsiner -= 7;
 
-bg = 3960;
+bg = 3961;
 draw_background_tiled_ext(bg, 0 - siner, 0 - siner, 2, 2, colcol, 0.7 * eyebody);
 draw_background_tiled_ext(bg, -240 + hscroll, 0 + siner, 2, 2, colcol, 0.3 * eyebody);
 draw_set_color(c_black);

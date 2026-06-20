@@ -45,7 +45,7 @@ create_object_to_draw = function(arg0, arg1, arg2) {
 };
 
 timer = 0;
-cityobj = create_object_to_draw(0, 0, 3079);
+cityobj = create_object_to_draw(0, 0, 3080);
 cityobj.image_alpha = 0;
 cityobj.image_blend = c_black;
 hammerobj = create_object_to_draw(100, 10, 530);
@@ -68,7 +68,7 @@ with (hammerobj) {
 }
 
 for (var i = 0; i < 10; i++) {
-	var petal = create_object_to_draw((i * 30) + random_range(0, 15), random_range(20, 120), 3578);
+	var petal = create_object_to_draw((i * 30) + random_range(0, 15), random_range(20, 120), 3579);
 	petal.image_alpha = 0;
 	petal.image_speed = random_range(0.125, 0.25);
 	petal.image_blend = #323299;
@@ -139,9 +139,9 @@ disappear = function() {
 };
 
 myShader = 24;
-textureSprite1 = 2081;
+textureSprite1 = 2082;
 sampler1 = shader_get_sampler_index(myShader, "sampler_1");
-textureSprite2 = 4679;
+textureSprite2 = 4680;
 sampler2 = shader_get_sampler_index(myShader, "sampler_2");
 uniformTime = shader_get_uniform(myShader, "time");
 uniformOpacity = shader_get_uniform(myShader, "opacity");

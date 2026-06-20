@@ -29,6 +29,6 @@ accounty = 0;
 crazy = 0;
 xoff = (__view_get(e__VW.XView, 0) * ss) + xstart;
 yoff = (__view_get(e__VW.YView, 0) * ssy) + ystart;
-windowbg = 2925;
+windowbg = 2926;
 spritewidth = sprite_get_width(windowbg);
 spriteheight = sprite_get_height(windowbg);

@@ -57,7 +57,7 @@ if (global.chapter == 4) {
 		var bratty_marker = instance_create(800, 0, obj_marker_palette);
 		bratty_marker.sprite_index = bg_building_brattyhouse_night;
 		bratty_marker.depth = 949996;
-		bratty_marker.current_palette = 2763;
+		bratty_marker.current_palette = 2764;
 		bratty_marker.palette_index = 1;
 		var door_readable = instance_create(526, 76, obj_readable_room1);
 		door_readable.image_xscale = 1.6;

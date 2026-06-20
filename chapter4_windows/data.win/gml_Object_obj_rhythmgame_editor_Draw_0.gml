@@ -201,12 +201,12 @@ if (song_initialized) {
 	if (rem_pos >= 0)
 		draw_sprite_ext(spr_sneo_bullet_arrow, 0, (camerax() + 640) - 38, lerp((cameray() + 480) - 21, cameray() + 19, rem_pos / track_length), 1, 1, 0, _remcolor, 1);
 
-	var _walk_sprite = 5636;
+	var _walk_sprite = 5638;
 
 	if (instrument == 1)
-		_walk_sprite = 5143;
+		_walk_sprite = 5145;
 	else if (instrument == 2)
-		_walk_sprite = 3320;
+		_walk_sprite = 3321;
 
 	gpu_set_fog(true, c_black, 0, 1);
 	draw_sprite(_walk_sprite, trackpos / notespacing, (camerax() + 640) - 28, lerp((cameray() + 480) - 28, cameray() + 12, trackpos / track_length) - 1);

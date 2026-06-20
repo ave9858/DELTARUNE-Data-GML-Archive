@@ -110,16 +110,16 @@ with (obj_mike_controller) {
 
 			switch (obj_mike_attack_controller.pet_current[0]) {
 				case 1:
-					hand_fruit = 1555;
+					hand_fruit = 1556;
 					break;
 
 				case 2:
-					hand_fruit = 2555;
+					hand_fruit = 2556;
 					break;
 
 				case 3:
 				default:
-					hand_fruit = 2287;
+					hand_fruit = 2288;
 					break;
 			}
 		}

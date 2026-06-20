@@ -39,6 +39,8 @@ with (obj_dw_churchb_darkclimb)
 with (obj_rhythmgame)
 	inittype = 1;
 
+inittype = 1;
+
 if (inittype == 0) {
 	for (i = 0; i < 20; i++) {
 		actor_id[i] = 99999999;

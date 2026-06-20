@@ -1,3 +1,3 @@
 event_inherited();
-palette_sprite = 2763;
+palette_sprite = 2764;
 palette_index = 1;

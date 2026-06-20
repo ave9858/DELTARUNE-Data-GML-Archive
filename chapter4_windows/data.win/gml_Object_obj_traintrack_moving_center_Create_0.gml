@@ -1,5 +1,5 @@
 event_inherited();
-track_sprite = 5738;
+track_sprite = 5740;
 
 switch (image_angle) {
 	case 0:

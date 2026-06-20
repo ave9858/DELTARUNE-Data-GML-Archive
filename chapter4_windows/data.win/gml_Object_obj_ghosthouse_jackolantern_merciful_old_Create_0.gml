@@ -34,4 +34,4 @@ with (obj_jackenstein_enemy) {
 }
 
 head_sprite = spr_guywhoappearswhenyouhavetakentoolongbutgotanastysurprise;
-mouth_sprite = 1809;
+mouth_sprite = 1810;

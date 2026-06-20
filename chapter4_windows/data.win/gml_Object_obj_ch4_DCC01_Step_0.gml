@@ -74,7 +74,7 @@ if (con == 4 && customcon == 1) {
 	c_customfunc(function() {
 		var anim_player = instance_create(0, 0, obj_anim_custom);
 		var anim_timestamps = [200, 200, 150, 150, 200, 500, 200, 60, 60, 60, 60, 60];
-		anim_player.init(roaring_knight, 4568, anim_timestamps);
+		anim_player.init(roaring_knight, 4569, anim_timestamps);
 		anim_player.start();
 	});
 	c_wait(30);

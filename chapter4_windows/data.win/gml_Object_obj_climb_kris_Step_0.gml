@@ -917,9 +917,9 @@ if (slipcon > 0) {
 		snd_play(snd_bump);
 
 		if (xclimb > 0)
-			slipsprite = 5168;
+			slipsprite = 5170;
 		else if (xclimb < 0)
-			slipsprite = 3591;
+			slipsprite = 3592;
 
 		sprite_index = slipsprite;
 		image_index = 1;
@@ -1065,9 +1065,9 @@ if (climbcon > 0) {
 
 	if (climbcon == 2) {
 		if (xclimb > 0)
-			slipsprite = 5168;
+			slipsprite = 5170;
 		else if (xclimb < 0)
-			slipsprite = 3591;
+			slipsprite = 3592;
 
 		recently_bumped = -1;
 		previous_bump = -1;

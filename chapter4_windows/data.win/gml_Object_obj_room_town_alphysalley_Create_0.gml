@@ -13,7 +13,7 @@ if (global.chapter >= 4) {
 		if (global.plot >= 300) {
 			var lay_id = layer_get_id("BACKGROUND");
 			var back_id = layer_background_get_id(lay_id);
-			layer_background_sprite(back_id, 2456);
+			layer_background_sprite(back_id, 2457);
 
 			with (obj_readable_room1)
 				instance_destroy();

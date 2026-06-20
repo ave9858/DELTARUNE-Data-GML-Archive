@@ -7,7 +7,7 @@ alpha = 0;
 bs = part_system_create();
 part_system_automatic_draw(bs, false);
 btballs = part_type_create();
-part_type_sprite(btballs, 3117, false, false, true);
+part_type_sprite(btballs, 3118, false, false, true);
 var lifetime = 700;
 part_type_speed(btballs, 0.8, 1.6, 0, 0.2);
 part_type_life(btballs, lifetime, lifetime);

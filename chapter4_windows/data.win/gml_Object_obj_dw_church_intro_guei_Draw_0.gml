@@ -36,10 +36,10 @@ if (ncon && instance_exists(obj_dialoguer)) {
 			draw3 = true;
 	}
 
-	var spr = 1488;
+	var spr = 1489;
 
 	if (global.lang == "ja")
-		spr = 1421;
+		spr = 1422;
 
 	var vpos = [138, 298, 342];
 

@@ -50,10 +50,10 @@ if (room == room_dw_3d_tower_test) {
 if (room == room_dw_titan_tower_test)
 	wide_tower = true;
 
-var _towersprite = 5713;
+var _towersprite = 5715;
 
 if (tower_type == 2)
-	_towersprite = 4168;
+	_towersprite = 4169;
 
 if (wide_tower == true)
 	_towersprite = 861;

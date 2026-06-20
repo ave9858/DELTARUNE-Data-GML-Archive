@@ -52,7 +52,7 @@ if (sprite_index == spr_gerson_swing_down && image_index > 3.5) {
 	image_speed = 0;
 }
 
-if (sprite_index == spr_gerson_swing_down && image_index > 1.5 && con == 0) {
+if (sprite_index == spr_gerson_swing_down && con == 0 && image_index > 1) {
 	active = 1;
 	con = 1;
 	x += lengthdir_x(30, direction);

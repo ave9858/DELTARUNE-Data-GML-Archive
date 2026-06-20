@@ -50,7 +50,7 @@ if (state == 1) {
 		image_speed = 0;
 		image_index = 0;
 		scr_lerpvar("image_index", 4, 0, 12 - offset);
-		scr_delay_var("sprite_index", 2221, 12 - offset);
+		scr_delay_var("sprite_index", 2222, 12 - offset);
 		scr_script_delayed(scr_lerpvar, 12 - offset, "image_index", 0, 4, 12 - offset);
 		snd_play(snd_knight_teleport);
 	}

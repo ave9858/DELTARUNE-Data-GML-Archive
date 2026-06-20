@@ -53,7 +53,7 @@ dsprite = spr_heartsmall;
 rsprite = spr_heartsmall;
 usprite = spr_heartsmall;
 lsprite = spr_heartsmall;
-climbsprite = 3708;
+climbsprite = 3709;
 fun = 0;
 
 if (global.facing == 0)

@@ -63,6 +63,7 @@ if (menu == 0) {
 	draw_text(480, 300, string_hash_to_newline(scr_84_get_lang_string("obj_shop2_slash_Draw_0_gml_83_0")));
 	draw_text(480, 340, string_hash_to_newline(scr_84_get_lang_string("obj_shop2_slash_Draw_0_gml_84_0")));
 	draw_text(480, 380, string_hash_to_newline(scr_84_get_lang_string("obj_shop2_slash_Draw_0_gml_85_0")));
+	menuc[menu] = min(menuc[menu], menumax);
 	draw_sprite(spr_heart, 0, 450, (135 + (menuc[0] * 20)) * 2);
 
 	if (button1_p()) {
@@ -130,6 +131,7 @@ if (menu == 1 || menu == 2) {
 			instance_create(450, 260, obj_writer);
 		}
 
+		menuc[menu] = min(menuc[menu], menumax);
 		draw_sprite(spr_heart, 0, 30, 270 + (menuc[1] * 40));
 
 		if (button1_p() && onebuffer < 0) {
@@ -170,6 +172,7 @@ if (menu == 1 || menu == 2) {
 
 		draw_text(480, 340, string_hash_to_newline(scr_84_get_lang_string("obj_shop2_slash_Draw_0_gml_146_0")));
 		draw_text(480, 370, string_hash_to_newline(scr_84_get_lang_string("obj_shop2_slash_Draw_0_gml_147_0")));
+		menuc[menu] = min(menuc[menu], menumax);
 		draw_sprite(spr_heart, 0, 450, 350 + (menuc[2] * 30));
 
 		if (button2_p() && twobuffer < 0) {
@@ -254,6 +257,7 @@ if (menu == 3) {
 		instance_create(440, 260, obj_writer);
 	}
 
+	menuc[menu] = min(menuc[menu], menumax);
 	draw_sprite(spr_heart, 0, 50, 270 + (menuc[3] * 40));
 
 	if (button1_p() && onebuffer < 0) {
@@ -302,6 +306,7 @@ if (menu == 10) {
 		instance_create(460, 260, obj_writer);
 	}
 
+	menuc[menu] = min(menuc[menu], menumax);
 	draw_sprite(spr_heart, 0, 50, 270 + (menuc[10] * 40));
 
 	if (button1_p() && onebuffer < 0) {
@@ -414,6 +419,7 @@ if (menu == 15 || menu == 16 || menu == 17) {
 
 	draw_text(480, 340, string_hash_to_newline(scr_84_get_lang_string("obj_shop2_slash_Draw_0_gml_325_0")));
 	draw_text(480, 370, string_hash_to_newline(scr_84_get_lang_string("obj_shop2_slash_Draw_0_gml_326_0")));
+	menuc[menu] = min(menuc[menu], menumax);
 	draw_sprite(spr_heart, 0, 450, 350 + (menuc[menu] * 30));
 }
 

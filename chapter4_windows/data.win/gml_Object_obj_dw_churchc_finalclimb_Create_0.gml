@@ -101,37 +101,37 @@ if (global.plot < 245) {
 		var _glass_depth = layer_get_depth(layer_get_element_layer(arg0));
 		var _shatter_sprite = -1;
 
-		if (_glass_sprite == 2781) {
+		if (_glass_sprite == 2782) {
 			switch (_glass_index) {
 				case 0:
 				case 5:
 				default:
-					_shatter_sprite = 5306;
+					_shatter_sprite = 5308;
 					break;
 
 				case 1:
 				case 6:
-					_shatter_sprite = 1684;
+					_shatter_sprite = 1685;
 					break;
 
 				case 2:
 				case 7:
-					_shatter_sprite = 4499;
+					_shatter_sprite = 4500;
 					break;
 
 				case 3:
 				case 8:
-					_shatter_sprite = 4899;
+					_shatter_sprite = 4901;
 					break;
 
 				case 4:
 				case 9:
-					_shatter_sprite = 4155;
+					_shatter_sprite = 4156;
 					break;
 			}
 		}
 
-		if (_glass_sprite == 4987) {
+		if (_glass_sprite == 4989) {
 			switch (_glass_index) {
 				case 0:
 				case 6:
@@ -141,27 +141,27 @@ if (global.plot < 245) {
 
 				case 1:
 				case 7:
-					_shatter_sprite = 4274;
+					_shatter_sprite = 4275;
 					break;
 
 				case 2:
 				case 8:
-					_shatter_sprite = 5386;
+					_shatter_sprite = 5388;
 					break;
 
 				case 3:
 				case 9:
-					_shatter_sprite = 2968;
+					_shatter_sprite = 2969;
 					break;
 
 				case 4:
 				case 10:
-					_shatter_sprite = 2348;
+					_shatter_sprite = 2349;
 					break;
 
 				case 5:
 				case 11:
-					_shatter_sprite = 1738;
+					_shatter_sprite = 1739;
 					break;
 			}
 		}

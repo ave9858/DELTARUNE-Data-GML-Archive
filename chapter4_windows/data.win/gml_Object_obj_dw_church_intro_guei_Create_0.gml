@@ -69,7 +69,7 @@ if (global.plot >= 151) {
 		if (layer_sprite_get_sprite(spritesArray[i]) == 385)
 			bibliox = scr_makenpc_fromasset(spritesArray[i]);
 
-		if (layer_sprite_get_sprite(spritesArray[i]) == 5585)
+		if (layer_sprite_get_sprite(spritesArray[i]) == 5587)
 			cup = scr_makenpc_fromasset(spritesArray[i]);
 	}
 }

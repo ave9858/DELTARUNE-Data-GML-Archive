@@ -54,14 +54,64 @@ function scr_gamestart_chapter_override() {
 		global.flag[31] = 1;
 		global.flag[32] = 0;
 		var took_watch = false;
-		scr_litemcheck(14);
-		took_watch = haveit || scr_armorcheck_equipped_party(14) || scr_armorcheck_inventory(14);
+		var max_party = 3;
+
+		for (var i = 0; i < array_length(global.litem); i++) {
+			if (global.litem[i] == 14) {
+				took_watch = true;
+				break;
+			}
+		}
+
+		for (var i = 0; i < array_length(global.armor); i++) {
+			if (global.armor[i] == 14) {
+				took_watch = true;
+				break;
+			}
+		}
+
+		for (var i = 0; i < array_length(global.chararmor1); i++) {
+			if (i > max_party)
+				break;
+
+			if (global.chararmor1[i] == 14) {
+				took_watch = true;
+				break;
+			}
+		}
+
+		for (var i = 0; i < array_length(global.chararmor2); i++) {
+			if (i > max_party)
+				break;
+
+			if (global.chararmor2[i] == 14) {
+				took_watch = true;
+				break;
+			}
+		}
 
 		if (took_watch) {
 			scr_flag_set(708, 1);
 
 			if (scr_sideb_active()) {
-				scr_litemget(3);
+				global.larmor = 3;
+
+				for (var i = 0; i < array_length(global.chararmor1); i++) {
+					if (i > max_party)
+						break;
+
+					if (global.chararmor1[i] == 14)
+						global.chararmor1[i] = 0;
+				}
+
+				for (var i = 0; i < array_length(global.chararmor2); i++) {
+					if (i > max_party)
+						break;
+
+					if (global.chararmor2[i] == 14)
+						global.chararmor2[i] = 0;
+				}
+
 				scr_litemremove(14);
 				scr_armorremove(14);
 			}

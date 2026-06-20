@@ -69,4 +69,4 @@ with (obj_jackenstein_enemy) {
 
 first_turn = !quick_start;
 head_sprite = spr_guywhoappearswhenyouhavetakentoolongbutgotanastysurprise;
-mouth_sprite = 1809;
+mouth_sprite = 1810;

@@ -149,7 +149,7 @@ hpcolor[1] = c_fuchsia;
 hpcolor[2] = c_lime;
 hpcolor[3] = c_yellow;
 disablesusieattack = 0;
-menu_sprite = (global.lang == "en") ? 3545 : 3554;
+menu_sprite = (global.lang == "en") ? 3546 : 3555;
 autorun_text = stringsetloc("Auto-Run", "obj_darkcontroller_slash_Draw_0_gml_94_0");
 back_text = stringsetloc("Back", "obj_darkcontroller_slash_Draw_0_gml_96_0");
 gamepad_controls = [gp_face1, gp_face2, gp_face3, gp_face4, gp_shoulderl, gp_shoulderlb, gp_shoulderr, gp_shoulderrb, gp_select, gp_start, gp_stickl, gp_stickr, gp_padu, gp_padd, gp_padl, gp_padr];
@@ -182,4 +182,4 @@ for (var i = 0; i < array_length_1d(border_options); i++) {
 	}
 }
 
-_spr_dmenu_captions = (global.lang == "en") ? 3317 : 3341;
+_spr_dmenu_captions = (global.lang == "en") ? 3318 : 3342;

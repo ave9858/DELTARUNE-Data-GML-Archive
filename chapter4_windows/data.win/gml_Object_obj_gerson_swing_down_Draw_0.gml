@@ -177,7 +177,7 @@ if (eye_con == 1) {
 			var xlocation;
 
 			if (image_xscale < 0)
-				xlocation = x + 52;
+				xlocation = x + 52 + 60;
 			else
 				xlocation = x + 18;
 
@@ -227,20 +227,13 @@ if (eye_con == 1) {
 
 			if (obj_growtangle.maxxscale == 2) {
 				if (image_xscale < 0)
-					xlocation = x - 90;
+					xlocation = (x - 90) + 20;
 				else
-					xlocation = x + 18;
+					xlocation = (x + 18) - 16;
+			} else if (image_xscale < 0) {
+				xlocation = x + 52;
 			} else {
-				if (image_xscale < 0)
-					xlocation = x + 52;
-				else
-					xlocation = x + 18;
-
-				if (xlocation < (obj_growtangle.x - 70))
-					xlocation = obj_growtangle.x - 70;
-
-				if (xlocation > obj_growtangle.x)
-					xlocation = obj_growtangle.x;
+				xlocation = x + 18;
 			}
 
 			inst = instance_create(xlocation, (obj_growtangle.y - 75) + 5, obj_gerson_growtangle_telegraph);

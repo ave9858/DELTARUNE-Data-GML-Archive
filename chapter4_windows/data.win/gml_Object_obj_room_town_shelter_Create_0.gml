@@ -15,9 +15,9 @@ if (global.chapter >= 4) {
 	grass_marker.depth = panel_marker.depth - 10;
 
 	if (global.plot >= 300) {
-		panel_marker.current_palette = 2763;
+		panel_marker.current_palette = 2764;
 		panel_marker.palette_index = 1;
-		grass_marker.current_palette = 2763;
+		grass_marker.current_palette = 2764;
 		grass_marker.palette_index = 1;
 	}
 }

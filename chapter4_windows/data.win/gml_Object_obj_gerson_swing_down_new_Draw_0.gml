@@ -75,7 +75,7 @@ if (image_angle < 1) {
 			if (image_angle == 270) {
 				with (inst) {
 					image_xscale = 1;
-					sprite_index = spr_gerson_swing_down_telegraph3;
+					sprite_index = spr_gerson_swing_down_telegraph4;
 				}
 			}
 

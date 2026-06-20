@@ -18,10 +18,10 @@ npc = -4;
 var spritesArray = layer_get_all_elements("DEBUG_ASSETS");
 
 for (var i = 0; i < array_length(spritesArray); i++) {
-	if (layer_sprite_get_sprite(spritesArray[i]) == 1021)
+	if (layer_sprite_get_sprite(spritesArray[i]) == 1022)
 		npc = scr_makenpc_fromasset(spritesArray[i]);
 
-	if (layer_sprite_get_sprite(spritesArray[i]) == 1614)
+	if (layer_sprite_get_sprite(spritesArray[i]) == 1615)
 		npc2 = scr_makenpc_fromasset(spritesArray[i]);
 }
 

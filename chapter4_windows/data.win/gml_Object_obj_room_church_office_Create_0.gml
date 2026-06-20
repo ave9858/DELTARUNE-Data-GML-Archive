@@ -51,7 +51,7 @@ if (global.plot < 210) {
 	bg_vfx.depth = 1000290;
 	pal_swap_layer_init();
 	pal_swap_enable_layer("BG_Items");
-	pal_swap_set_layer(3934, palette_index, "BG_Items", false);
+	pal_swap_set_layer(3935, palette_index, "BG_Items", false);
 	pal_swap_reset();
 
 	if (global.plot >= 290 && global.plot < 300) {

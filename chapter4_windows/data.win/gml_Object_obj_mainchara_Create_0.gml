@@ -68,7 +68,7 @@ dsprite = spr_krisd;
 rsprite = spr_krisr;
 usprite = spr_krisu;
 lsprite = spr_krisl;
-climbsprite = 3708;
+climbsprite = 3709;
 
 if (global.darkzone == 1) {
 	dsprite = spr_krisd_dark;

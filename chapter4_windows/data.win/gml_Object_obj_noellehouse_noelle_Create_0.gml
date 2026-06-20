@@ -1,5 +1,5 @@
 var side_b = scr_sideb_active();
-curtains_sprite = side_b ? 5236 : 1415;
+curtains_sprite = side_b ? 5238 : 1416;
 curtain_marker = scr_marker(132, 62, curtains_sprite);
 
 with (curtain_marker)

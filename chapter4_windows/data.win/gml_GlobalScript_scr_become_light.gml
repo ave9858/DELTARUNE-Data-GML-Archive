@@ -34,11 +34,6 @@ function scr_become_light() {
 
 	var armorconverted = 0;
 
-	if (scr_armorcheck_equipped(1, 14) > 0) {
-		armorconverted = 1;
-		global.larmor = 14;
-	}
-
 	if (armorconverted == 1)
 		global.ladef = 1;
 	else

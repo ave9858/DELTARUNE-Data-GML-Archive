@@ -13,7 +13,7 @@ var middlex = 320;
 if (wide_tower)
 	middlex = 300;
 
-var towertilesprite = 2215;
+var towertilesprite = 2216;
 
 with (obj_tower_falling_piece)
 	image_index = obj_rotating_tower_controller.tower_image_index;
@@ -79,7 +79,7 @@ if (tower_falls_apart_con == 1) {
 			i = render_ypos + 7;
 
 			while (i < 499) {
-				tower_piece_sprite[i] = 4168;
+				tower_piece_sprite[i] = 4169;
 
 				for (var _i = 0; _i < 8; _i++)
 					tower_object[i][_i] = 0;
@@ -179,7 +179,7 @@ if (tower_falls_apart_con == 1) {
 	}
 
 	if (tower_falls_apart_timer == 2) {
-		tower_piece_sprite[tower_falls_apart_i] = 4168;
+		tower_piece_sprite[tower_falls_apart_i] = 4169;
 
 		for (var _i = 0; _i < 8; _i++)
 			tower_object[tower_falls_apart_i][_i] = tower_object[tower_falls_apart_i][_i] * -1;
@@ -205,7 +205,7 @@ if (room == room_dw_church_dogclimb && tower_falls_apart_con == 1) {
 			i = render_ypos + 7;
 
 			while (i < 499) {
-				tower_piece_sprite_dog[i] = 4168;
+				tower_piece_sprite_dog[i] = 4169;
 				i++;
 			}
 		} else {
@@ -271,7 +271,7 @@ if (room == room_dw_church_dogclimb && tower_falls_apart_con == 1) {
 	}
 
 	if (tower_falls_apart_timer_dog == 2)
-		tower_piece_sprite_dog[tower_falls_apart_i_dog] = 4168;
+		tower_piece_sprite_dog[tower_falls_apart_i_dog] = 4169;
 
 	if (endclimb == false) {
 		var fallfast = true;
@@ -291,7 +291,7 @@ for (i = render_ypos_start; i < render_ypos_end; i++) {
 
 		draw_sprite(tower_piece_sprite[i], tower_image_index, 320 + tower_xoffset[i], ((40 * i) + yoffset) - (towerpiececount * 40));
 
-		if (wide_tower && tower_piece_sprite[i] != 5316)
+		if (wide_tower && tower_piece_sprite[i] != 5318)
 			draw_sprite(spr_tower_rotating_fountain_gradient, 0, 320 + tower_xoffset[i], ((40 * i) + yoffset) - (towerpiececount * 40));
 
 		if (room == room_dw_church_dogclimb)
@@ -303,14 +303,14 @@ for (i = render_ypos_start; i < render_ypos_end; i++) {
 			for (ii = 0; ii < (piececount + 1); ii++) {
 				event_user(10);
 				blend = merge_color(c_white, c_gray, abs(_x[i][ii]) / 130);
-				towertilesprite = 5408;
+				towertilesprite = 5410;
 
 				if (tower_object[i][ii] > 0 && tower_object[i][ii] < 4)
-					towertilesprite = 5279;
+					towertilesprite = 5281;
 
 				var showtile = true;
 
-				if (tower_piece_sprite[i] == 5316 && tower_object[i][ii] == 0)
+				if (tower_piece_sprite[i] == 5318 && tower_object[i][ii] == 0)
 					showtile = false;
 
 				if (_vis[i][ii] == false && mathtype[i][ii] == 0 && showtile)
@@ -322,14 +322,14 @@ for (i = render_ypos_start; i < render_ypos_end; i++) {
 			for (ii = 0; ii < (piececount + 1); ii++) {
 				event_user(10);
 				blend = merge_color(c_white, c_gray, abs(_x[i][ii]) / 130);
-				towertilesprite = 5408;
+				towertilesprite = 5410;
 
 				if (tower_object[i][ii] > 0 && tower_object[i][ii] < 4)
-					towertilesprite = 5279;
+					towertilesprite = 5281;
 
 				var showtile = true;
 
-				if (tower_piece_sprite[i] == 5316 && tower_object[i][ii] == 0)
+				if (tower_piece_sprite[i] == 5318 && tower_object[i][ii] == 0)
 					showtile = false;
 
 				if (_vis[i][ii] == false && mathtype[i][ii] == 1 && showtile)
@@ -337,21 +337,21 @@ for (i = render_ypos_start; i < render_ypos_end; i++) {
 			}
 		}
 
-		if (tower_piece_sprite[i] == 5316)
+		if (tower_piece_sprite[i] == 5318)
 			draw_sprite(tower_piece_sprite[i], tower_image_index, 320 + tower_xoffset[i], ((40 * i) + yoffset) - (towerpiececount * 40));
 
 		if (wide_tower) {
 			for (ii = 0; ii < (piececount + 1); ii++) {
 				event_user(10);
 				blend = merge_color(c_white, c_gray, abs(_x[i][ii]) / 130);
-				towertilesprite = 5408;
+				towertilesprite = 5410;
 
 				if (tower_object[i][ii] > 0 && tower_object[i][ii] < 4)
-					towertilesprite = 5279;
+					towertilesprite = 5281;
 
 				var showtile = true;
 
-				if (tower_piece_sprite[i] == 5316 && tower_object[i][ii] == 0)
+				if (tower_piece_sprite[i] == 5318 && tower_object[i][ii] == 0)
 					showtile = false;
 
 				if (_vis[i][ii] == true && showtile)
@@ -450,7 +450,7 @@ for (i = render_ypos_start; i < render_ypos_end; i++) {
 				if (tower_angle < 100)
 					xx = lerp(0, 70, tower_angle / 100);
 
-				if (tower_piece_sprite_dog[i] != 4168) {
+				if (tower_piece_sprite_dog[i] != 4169) {
 					if ((((40 * i) + yoffset) - (towerpiececount * 40)) > -20 || endclimb == false)
 						draw_sprite(spr_tower_rotating_ladder, ladder_index, 560 + xx + tower_xoffset[i], ((40 * i) + yoffset) - (towerpiececount * 40));
 				}

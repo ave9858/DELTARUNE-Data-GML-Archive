@@ -9,6 +9,9 @@ if (timer == (timetoswing - 12) || (swingdowntype == 0 && timer == (timetoswing 
 if (timer > timetoswing && sprite_index == spr_gerson_swing_down)
 	image_index += 0.5;
 
+if (swingdowntype == -3)
+	mask_index = spr_nothing;
+
 if (swingdowntype == -3 && eye_con == 0) {
 	if (timer == 34) {
 		with (obj_gerson_swing_down) {
@@ -50,7 +53,7 @@ if (sprite_index == spr_gerson_swing_down && image_index > 3.5) {
 	image_speed = 0;
 }
 
-if (sprite_index == spr_gerson_swing_down && image_index > 1.5 && con == 0) {
+if (sprite_index == spr_gerson_swing_down && con == 0 && image_index > 1) {
 	active = 1;
 	con = 1;
 	x += lengthdir_x(30, direction);

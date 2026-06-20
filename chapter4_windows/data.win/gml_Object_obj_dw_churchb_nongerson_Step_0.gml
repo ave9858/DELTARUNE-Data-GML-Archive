@@ -112,7 +112,7 @@ if (con == 34 && !d_ex() && customcon == 1) {
 	customcon = 0;
 	con = 38;
 	c_waitcustom_end();
-	c_var_instance(rippler, "susie_sprite", 5197);
+	c_var_instance(rippler, "susie_sprite", 5199);
 	c_var_instance(id, "susie_timer", 10);
 	c_var_instance(id, "force_ripple", true);
 	c_speaker("susie");
@@ -265,7 +265,7 @@ if (con == 46 && !d_ex() && customcon == 1) {
 	c_waitcustom_end();
 	c_fefc(0, 0);
 	c_wait(26);
-	c_var_instance(rippler, "susie_sprite", 1535);
+	c_var_instance(rippler, "susie_sprite", 1536);
 	c_var_instance(rippler, "variant", 1);
 	c_var_instance(rippler, "shiner", 0);
 	c_wait(32);
@@ -274,7 +274,7 @@ if (con == 46 && !d_ex() && customcon == 1) {
 	c_var_instance(id, "ripple_con", 1);
 	c_wait(10);
 	c_wait(45);
-	c_var_instance(rippler, "susie_sprite", 1551);
+	c_var_instance(rippler, "susie_sprite", 1552);
 	c_wait(85);
 	c_var_instance(rippler, "x", camerax() + 180);
 	c_var_instance(rippler, "variant", 2);

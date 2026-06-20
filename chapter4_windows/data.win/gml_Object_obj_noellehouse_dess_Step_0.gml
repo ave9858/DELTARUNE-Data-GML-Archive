@@ -297,7 +297,7 @@ if (kris_bed_hide) {
 
 		if (heart_fall_timer == 60) {
 			hit_heart = false;
-			anim_player.init(kris_bed_marker, 3096, kris_bed_timestamps);
+			anim_player.init(kris_bed_marker, 3097, kris_bed_timestamps);
 			anim_player.event_connect("anim_end", kris_get_heart);
 			anim_player.start();
 		}
@@ -421,7 +421,7 @@ if (con == 1) {
 	c_wait(6);
 	c_var_instance(kris_marker, "image_index", 0);
 	c_var_instance(kris_marker, "image_speed", 0);
-	c_var_instance(310, "kris_sprite", 3534);
+	c_var_instance(310, "kris_sprite", 3535);
 	c_var_instance(310, "kris_x", 190);
 	c_var_instance(310, "kris_y", 80);
 	c_var_instance(310, "kris_active", true);
@@ -674,7 +674,7 @@ if (con == 50 && !d_ex() && customcon == 1) {
 	c_facing("u");
 	c_wait(30);
 	c_snd_play(snd_wing);
-	c_var_instance(310, "kris_sprite", 3820);
+	c_var_instance(310, "kris_sprite", 3821);
 	c_var_instance(310, "kris_x", 213);
 	c_var_instance(310, "kris_y", 89);
 	c_var_instance(310, "open_door", true);
@@ -689,7 +689,7 @@ if (con == 50 && !d_ex() && customcon == 1) {
 	c_sprite(spr_susie_guitar_grab_up);
 	c_lerp_var_instance(su_actor, "image_index", 0, 4, 16);
 	c_wait(8);
-	c_var_instance(310, "kris_sprite", 4635);
+	c_var_instance(310, "kris_sprite", 4636);
 	c_var_instance(310, "kris_index", 0);
 	c_wait(45);
 	c_snd_play(snd_wing);
@@ -788,7 +788,7 @@ if (con == 50 && !d_ex() && customcon == 1) {
 	c_snd_play(snd_noise);
 	c_var_instance(310, "kris_x", kris_closet_x);
 	c_var_instance(310, "kris_y", 80);
-	c_var_instance(310, "kris_sprite", 1460);
+	c_var_instance(310, "kris_sprite", 1461);
 	c_var_lerp_to_instance(310, "door_xpos", obj_noellehouse_dess_closet.door_xpos - 14, 15);
 	c_wait(30);
 	c_var_instance(kris_marker, "x", kris_closet_x);

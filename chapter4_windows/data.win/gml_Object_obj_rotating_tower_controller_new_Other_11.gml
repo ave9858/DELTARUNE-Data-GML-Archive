@@ -10,7 +10,7 @@ bgsiner += 0.0625;
 if (bgsiner > 7)
 	bgsiner -= 7;
 
-bg = 3960;
+bg = 3961;
 var yy = cameray();
 draw_sprite_tiled_ext(bg, 0, tower_x, yy, 2, 2, colcol, 0.7 * eyebody);
 draw_sprite_tiled_ext(bg, 0, tower_x - 240, yy, 2, 2, colcol, 0.3 * eyebody);

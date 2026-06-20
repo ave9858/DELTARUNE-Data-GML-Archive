@@ -35,7 +35,7 @@ if (!init) {
 
 	if (sprite_exists(_icon)) {
 		if (extflag == "knight2")
-			_icon = 2478;
+			_icon = 2479;
 
 		prophecy_icon.initialize_sprite(_icon);
 	}
@@ -76,7 +76,7 @@ if (destroy == 1) {
 			snd_add_complex(snd, 4, 321, 1, 0.95, 0, -1, 0);
 	}
 
-	var _shattersprite = (type != 2) ? 5059 : 907;
+	var _shattersprite = (type != 2) ? 5061 : 907;
 	var count = sprite_get_number(_shattersprite);
 
 	for (var i = 0; i < count; i++) {

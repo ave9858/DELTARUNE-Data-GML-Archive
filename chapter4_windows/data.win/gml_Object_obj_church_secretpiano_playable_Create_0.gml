@@ -54,7 +54,7 @@ instrument = 524;
 var spritesArray = layer_get_all_elements("DEBUG_ASSETS");
 
 for (var i = 0; i < array_length(spritesArray); i++) {
-	if (layer_sprite_get_sprite(spritesArray[i]) == 2862) {
+	if (layer_sprite_get_sprite(spritesArray[i]) == 2863) {
 		pianomarker = scr_marker_fromasset(spritesArray[i]);
 		scr_depth_alt(pianomarker);
 	}

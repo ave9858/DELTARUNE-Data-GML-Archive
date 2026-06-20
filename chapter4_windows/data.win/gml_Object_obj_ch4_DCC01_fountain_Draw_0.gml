@@ -273,7 +273,7 @@ if (con == 3) {
 
 			with (beam) {
 				sprite_index = spr_tower_titanbeam_start;
-				scr_delay_var("sprite_index", 1836, 20);
+				scr_delay_var("sprite_index", 1837, 20);
 				scr_darksize();
 				depth = other.depth - 2500;
 				scr_lerpvar("x", other.hand.x + 288, other.hand.x + 432, 10);

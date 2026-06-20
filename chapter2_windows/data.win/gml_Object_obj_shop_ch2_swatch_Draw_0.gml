@@ -75,6 +75,7 @@ if (menu == 0) {
 	draw_text(480, 300, string_hash_to_newline(stringsetloc("Sell", "obj_shop1_slash_Draw_0_gml_107_0")));
 	draw_text(480, 340, string_hash_to_newline(stringsetloc("Talk", "obj_shop1_slash_Draw_0_gml_108_0")));
 	draw_text(480, 380, string_hash_to_newline(stringsetloc("Exit", "obj_shop1_slash_Draw_0_gml_109_0")));
+	menuc[menu] = min(menuc[menu], menumax);
 	draw_sprite(spr_heart, 0, 450, (135 + (menuc[0] * 20)) * 2);
 
 	if (button1_p()) {
@@ -143,6 +144,7 @@ if (menu == 1 || menu == 2) {
 			instance_create(450, 260, obj_writer);
 		}
 
+		menuc[menu] = min(menuc[menu], menumax);
 		draw_sprite(spr_heart, 0, 30, 270 + (menuc[1] * 40));
 
 		if (button1_p() && onebuffer < 0) {
@@ -178,6 +180,7 @@ if (menu == 1 || menu == 2) {
 		draw_text(460, y2_off, string_hash_to_newline(stringsetsubloc("$~1 ?", string(buyvalue[menuc[1]]), "obj_shop_ch2_swatch_slash_Draw_0_gml_160_0")));
 		draw_text(480, 340, string_hash_to_newline(stringsetloc("Yes", "obj_shop1_slash_Draw_0_gml_169_0")));
 		draw_text(480, 370, string_hash_to_newline(stringsetloc("No", "obj_shop1_slash_Draw_0_gml_170_0")));
+		menuc[menu] = min(menuc[menu], menumax);
 		draw_sprite(spr_heart, 0, 450, 350 + (menuc[2] * 30));
 
 		if (button2_p() && twobuffer < 0) {
@@ -279,6 +282,7 @@ if (menu == 3) {
 		instance_create(440, 260, obj_writer);
 	}
 
+	menuc[menu] = min(menuc[menu], menumax);
 	draw_sprite(spr_heart, 0, 50, 270 + (menuc[3] * 40));
 
 	if (button1_p() && onebuffer < 0) {
@@ -328,6 +332,7 @@ if (menu == 10) {
 		instance_create(460, 260, obj_writer);
 	}
 
+	menuc[menu] = min(menuc[menu], menumax);
 	draw_sprite(spr_heart, 0, 50, 270 + (menuc[10] * 40));
 
 	if (button1_p() && onebuffer < 0) {
@@ -464,6 +469,7 @@ if (menu == 15 || menu == 16 || menu == 17) {
 	draw_text(460, y2_off, string_hash_to_newline(stringsetsubloc("$~1 ?", string(sellvalue), "obj_shop_ch2_swatch_slash_Draw_0_gml_387_0")));
 	draw_text(480, 340, string_hash_to_newline(stringsetloc("Yes", "obj_shop1_slash_Draw_0_gml_367_0")));
 	draw_text(480, 370, string_hash_to_newline(stringsetloc("No", "obj_shop1_slash_Draw_0_gml_368_0")));
+	menuc[menu] = min(menuc[menu], menumax);
 	draw_sprite(spr_heart, 0, 450, 350 + (menuc[menu] * 30));
 }
 

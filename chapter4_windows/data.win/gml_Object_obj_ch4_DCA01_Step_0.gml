@@ -547,8 +547,8 @@ if (palette_shift) {
 			change_palette = true;
 	}
 
-	pal_swap_set_layer(3666, palette_index, "TILES", false);
-	pal_swap_set_layer(3666, palette_index, "ASSETS_Staircase", false);
+	pal_swap_set_layer(3667, palette_index, "TILES", false);
+	pal_swap_set_layer(3667, palette_index, "ASSETS_Staircase", false);
 	pal_swap_reset();
 }
 

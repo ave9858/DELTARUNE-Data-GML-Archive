@@ -142,18 +142,18 @@ if (con == 2) {
 		c_sel(no);
 		c_sprite(spr_noelle_sit_closed_eyes_side_b);
 		c_wait_talk();
+		c_wait(30);
+
+		if (global.flag[915] == 20)
+			c_msgsetloc(0, "\\Ec* You said^1, sorry for being weird at the hospital^1, Noelle./", "obj_ch4_PDC14A_noelle_slash_Step_0_gml_206_0");
+		else
+			c_msgsetloc(0, "\\Ec* You said^1, sorry for being weird yesterday^1, Noelle./", "obj_ch4_PDC14A_noelle_slash_Step_0_gml_210_0");
+
+		c_msgnextloc("\\Eb* You said^1, it was all a stupid prank./", "obj_ch4_PDC14A_noelle_slash_Step_0_gml_212_0");
+		c_msgnextloc("\\Ec* You said^1, Berdly was going to get better./%", "obj_ch4_PDC14A_noelle_slash_Step_0_gml_213_0");
+		c_talk_wait();
 	}
 
-	c_wait(30);
-
-	if (global.flag[915] == 20)
-		c_msgsetloc(0, "\\Ec* You said^1, sorry for being weird at the hospital^1, Noelle./", "obj_ch4_PDC14A_noelle_slash_Step_0_gml_206_0");
-	else
-		c_msgsetloc(0, "\\Ec* You said^1, sorry for being weird yesterday^1, Noelle./", "obj_ch4_PDC14A_noelle_slash_Step_0_gml_210_0");
-
-	c_msgnextloc("\\Eb* You said^1, it was all a stupid prank./", "obj_ch4_PDC14A_noelle_slash_Step_0_gml_212_0");
-	c_msgnextloc("\\Ec* You said^1, Berdly was going to get better./%", "obj_ch4_PDC14A_noelle_slash_Step_0_gml_213_0");
-	c_talk_wait();
 	c_wait(30);
 	c_sel(no);
 	c_sprite(spr_noelle_sit_look_down_neutral);

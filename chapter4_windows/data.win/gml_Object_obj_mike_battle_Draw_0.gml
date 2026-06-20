@@ -58,7 +58,7 @@ if (sprite_index == spr_mike_small || sprite_index == spr_mike_s) {
 	image_speed = 1;
 
 	if (sprite_index == spr_mike_m) {
-		_sp = 2133;
+		_sp = 2134;
 		image_speed = 0.25;
 	}
 

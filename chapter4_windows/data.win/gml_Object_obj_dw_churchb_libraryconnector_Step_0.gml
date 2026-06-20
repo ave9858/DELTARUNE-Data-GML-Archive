@@ -272,7 +272,7 @@ if (econ == 1) {
 		var spritesArray = layer_get_all_elements("DEBUG_ASSETS");
 
 		for (var i = 0; i < array_length(spritesArray); i++) {
-			if (layer_sprite_get_sprite(spritesArray[i]) == 4929)
+			if (layer_sprite_get_sprite(spritesArray[i]) == 4931)
 				npc2 = scr_marker_fromasset(spritesArray[i], undefined, 1);
 		}
 	}

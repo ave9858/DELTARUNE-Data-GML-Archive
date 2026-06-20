@@ -14,7 +14,7 @@ if (con == 0) {
 	if (image_alpha <= -1.3) {
 		activetimer++;
 
-		if (activetimer == 4)
+		if (activetimer == 3)
 			active = 1;
 		else
 			active = 0;

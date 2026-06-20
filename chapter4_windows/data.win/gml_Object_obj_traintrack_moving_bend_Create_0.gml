@@ -1,5 +1,5 @@
 event_inherited();
-track_sprite = 2023;
+track_sprite = 2024;
 track_angle = image_angle + (image_index * 90);
 track_angle_target = image_angle + (image_index * 90);
 

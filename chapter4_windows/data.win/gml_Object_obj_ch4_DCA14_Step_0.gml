@@ -86,7 +86,7 @@ if (con == 2) {
 
 if (con == 3 && customcon == 1 && !d_ex()) {
 	con = 4;
-	anim_player.init(su_actor, 1283, anim_timestamps);
+	anim_player.init(su_actor, 1284, anim_timestamps);
 	anim_player.event_connect("frame_change", snd_play, 5, [261]);
 	anim_player.event_connect("anim_end", continue_cutscene);
 	anim_player.start();

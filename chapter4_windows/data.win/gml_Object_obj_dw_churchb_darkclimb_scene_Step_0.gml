@@ -113,7 +113,7 @@ if (con == 0) {
 		var spritesArray = layer_get_all_elements("CUTSCENE_ASSETS_PART1");
 
 		for (var i = 0; i < array_length(spritesArray); i++) {
-			if (layer_sprite_get_sprite(spritesArray[i]) == 1550) {
+			if (layer_sprite_get_sprite(spritesArray[i]) == 1551) {
 				var info = scr_assetgetinfo(spritesArray[i]);
 				actor_count++;
 				ger = array_length(global.cinstance) + 2;
@@ -524,7 +524,7 @@ if (crackglass == 1) {
 		}
 
 		for (var i = 0; i < array_length(shatter); i++) {
-			var spr = 1252;
+			var spr = 1253;
 
 			with (shatter[i]) {
 				for (var j = 0; j < sprite_get_number(spr); j++) {

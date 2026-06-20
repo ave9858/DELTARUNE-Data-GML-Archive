@@ -8,7 +8,7 @@ else
 draw_set_alpha(1);
 
 for (var i = 0; i < array_length(layer_names); i++)
-	pal_swap_set_layer(4884, palette_index, layer_names[i], false);
+	pal_swap_set_layer(4886, palette_index, layer_names[i], false);
 
 pal_swap_set(bg_town_church_palette, palette_index, false);
 draw_set_alpha(1);

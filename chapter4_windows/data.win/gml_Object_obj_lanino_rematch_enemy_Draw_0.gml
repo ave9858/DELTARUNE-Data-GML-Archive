@@ -15,7 +15,7 @@ laughtimer--;
 
 if (laughtimer == 0) {
 	talking = 0;
-	head = 5233;
+	head = 5235;
 }
 
 if (preset == 0) {

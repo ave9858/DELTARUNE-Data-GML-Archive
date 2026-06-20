@@ -24,9 +24,9 @@ with (obj_dw_church_remotepianomove) {
 		draw_set_alpha(1);
 		var sprangle = 0;
 		var scale = 2;
-		var spr = 2663;
-		var circlespr = 4059;
-		var arrowspr = 5251;
+		var spr = 2664;
+		var circlespr = 4060;
+		var arrowspr = 5253;
 		var _space = 28;
 		var sinstrength = 3;
 		var sintimevar = 15;

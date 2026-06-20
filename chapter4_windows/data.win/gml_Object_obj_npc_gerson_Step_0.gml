@@ -316,7 +316,7 @@ if (state == 20) {
 	anim_timer++;
 
 	if (anim_timer == 1)
-		scr_jump_to_point_sprite(x, y, 8, 8, 2203, 2203);
+		scr_jump_to_point_sprite(x, y, 8, 8, 2204, 2204);
 
 	if (anim_timer == 14) {
 		current_sprite_index = spr_gerson_outfit_walk_cane;

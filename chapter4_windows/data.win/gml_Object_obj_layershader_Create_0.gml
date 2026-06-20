@@ -2,9 +2,9 @@ if (targetLayer != "self")
 	layer = layer_get_id(targetLayer);
 
 if (myShader == 24) {
-	textureSprite1 = 2081;
+	textureSprite1 = 2082;
 	sampler1 = shader_get_sampler_index(myShader, "sampler_1");
-	textureSprite2 = 4679;
+	textureSprite2 = 4680;
 	sampler2 = shader_get_sampler_index(myShader, "sampler_2");
 	uniformTime = shader_get_uniform(myShader, "time");
 	uniformOpacity = shader_get_uniform(myShader, "opacity");

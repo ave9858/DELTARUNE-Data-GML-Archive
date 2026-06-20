@@ -28,7 +28,7 @@ if (con == 1) {
 	var delaytime = delay;
 
 	if (delay) {
-		spr = 1252;
+		spr = 1253;
 
 		for (var j = 0; j < sprite_get_number(spr); j++) {
 			with (scr_marker_ext(x + choose(2, -2), y + choose(2, -2), spr, 2, 2, undefined, j, undefined, depth)) {

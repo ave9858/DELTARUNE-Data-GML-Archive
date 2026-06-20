@@ -32,6 +32,7 @@ with (obj_ch2_scene19c)
 
 actor_selected = "noone";
 actor_selected_id = 99999999;
+inittype = 1;
 
 if (inittype == 0) {
 	for (i = 0; i < 20; i++) {

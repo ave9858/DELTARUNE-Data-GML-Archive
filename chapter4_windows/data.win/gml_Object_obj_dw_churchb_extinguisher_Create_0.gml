@@ -61,7 +61,7 @@ for (var i = 0; i < array_length(elements); i++) {
 var spritesArray = layer_get_all_elements("NPC");
 
 for (var i = 0; i < array_length(spritesArray); i++) {
-	if (layer_sprite_get_sprite(spritesArray[i]) == 3102) {
+	if (layer_sprite_get_sprite(spritesArray[i]) == 3103) {
 		chicknpc = scr_makenpc_fromasset(spritesArray[i]);
 		chicknpc.siner = 0;
 	}

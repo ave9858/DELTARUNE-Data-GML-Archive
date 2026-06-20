@@ -23,14 +23,14 @@ for (var i = 0; i < array_length(spritesArray); i++) {
 	var marker = scr_marker_fromasset(spritesArray[i]);
 	scr_depth(marker);
 
-	if (layer_sprite_get_sprite(spritesArray[i]) == 4778)
+	if (layer_sprite_get_sprite(spritesArray[i]) == 4779)
 		treedoor = marker;
 }
 
 spritesArray = layer_get_all_elements("DEBUG_ASSETS");
 
 for (var i = 0; i < array_length(spritesArray); i++) {
-	if (layer_sprite_get_sprite(spritesArray[i]) == 2325) {
+	if (layer_sprite_get_sprite(spritesArray[i]) == 2326) {
 		npc = scr_makenpc_fromasset(spritesArray[i]);
 		npc.mask_index = spr_dw_churchb_man_npcmask;
 	}

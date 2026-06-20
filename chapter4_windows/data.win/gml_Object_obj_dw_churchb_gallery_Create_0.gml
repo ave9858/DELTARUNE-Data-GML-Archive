@@ -49,7 +49,7 @@ if (scr_debug()) {
 spritesArray = layer_get_all_elements("TALKABLE_NPCS");
 
 for (var i = 0; i < array_length(spritesArray); i++) {
-	if (layer_sprite_get_sprite(spritesArray[i]) == 2269) {
+	if (layer_sprite_get_sprite(spritesArray[i]) == 2270) {
 		if (layer_sprite_get_blend(spritesArray[i]) == 11185407) {
 			baltadmirer = scr_makenpc_fromasset(spritesArray[i]);
 			baltadmirer.marker.image_blend = c_white;
@@ -58,7 +58,7 @@ for (var i = 0; i < array_length(spritesArray); i++) {
 		}
 	}
 
-	if (layer_sprite_get_sprite(spritesArray[i]) == 1614) {
+	if (layer_sprite_get_sprite(spritesArray[i]) == 1615) {
 		gueiadmirer = scr_makenpc_fromasset(spritesArray[i]);
 		gueiadmirer.marker.image_blend = c_white;
 		gueiadmirer.marker.sprite_index = spr_npc_organik_3;
@@ -67,7 +67,7 @@ for (var i = 0; i < array_length(spritesArray); i++) {
 	if (layer_sprite_get_sprite(spritesArray[i]) == 753)
 		cupadmirer = scr_makenpc_fromasset(spritesArray[i]);
 
-	if (layer_sprite_get_sprite(spritesArray[i]) == 4325) {
+	if (layer_sprite_get_sprite(spritesArray[i]) == 4326) {
 		if (layer_sprite_get_blend(spritesArray[i]) == 255) {
 			waferadmirer = scr_makenpc_fromasset(spritesArray[i]);
 			waferadmirer.marker.image_blend = c_white;
@@ -98,7 +98,7 @@ for (var i = 0; i < array_length(spritesArray); i++) {
 		}
 	}
 
-	if (layer_sprite_get_sprite(spritesArray[i]) == 1301) {
+	if (layer_sprite_get_sprite(spritesArray[i]) == 1302) {
 		if (layer_sprite_get_blend(spritesArray[i]) == 3355443) {
 			angysign = scr_makenpc_fromasset(spritesArray[i]);
 			angysign.marker.image_blend = c_white;
@@ -108,19 +108,19 @@ for (var i = 0; i < array_length(spritesArray); i++) {
 		}
 	}
 
-	if (layer_sprite_get_sprite(spritesArray[i]) == 1704)
+	if (layer_sprite_get_sprite(spritesArray[i]) == 1705)
 		watercooler = scr_makenpc_fromasset(spritesArray[i]);
 
-	if (layer_sprite_get_sprite(spritesArray[i]) == 4929) {
+	if (layer_sprite_get_sprite(spritesArray[i]) == 4931) {
 		angyboy = scr_makenpc_fromasset(spritesArray[i]);
 		angyboy.marker.depth -= 200;
 	}
 
-	if (layer_sprite_get_sprite(spritesArray[i]) == 1011)
+	if (layer_sprite_get_sprite(spritesArray[i]) == 1012)
 		scr_marker_fromasset(spritesArray[i], undefined, 1);
 
 	if (createstar) {
-		if (layer_sprite_get_sprite(spritesArray[i]) == 5864) {
+		if (layer_sprite_get_sprite(spritesArray[i]) == 5866) {
 			starwalker = scr_makenpc_fromasset(spritesArray[i]);
 			angyboy.marker.depth -= 200;
 		}

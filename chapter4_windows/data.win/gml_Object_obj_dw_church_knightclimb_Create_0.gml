@@ -67,7 +67,7 @@ with (tile_cover) {
 
 knight_notice = function() {
 	anim_timestamps = [200, 200, 150, 150, 200, 500, 200, 60, 60, 60, 60, 60];
-	anim_player.init(roaring_knight, 4667, anim_timestamps);
+	anim_player.init(roaring_knight, 4668, anim_timestamps);
 	anim_player.event_connect("anim_end", continue_cutscene);
 	anim_player.start();
 };

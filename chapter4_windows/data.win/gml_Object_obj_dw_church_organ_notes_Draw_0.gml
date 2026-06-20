@@ -18,8 +18,8 @@ with (obj_dw_church_organ) {
 	draw_sprite_ext(spr_gradient20, 0, cx, yy, 32, 1, 0, bgcol, alph);
 	draw_sprite_ext(spr_pxwhite, 0, cx, yy, 640, barheight, 0, bgcol, alph);
 	draw_sprite_ext(spr_gradient20, 0, cx, yy + barheight, 32, -1, 0, bgcol, alph);
-	var whole = 2848;
-	var outline = 1294;
+	var whole = 2849;
+	var outline = 1295;
 	var arrows = whole;
 
 	if (button3_h())
