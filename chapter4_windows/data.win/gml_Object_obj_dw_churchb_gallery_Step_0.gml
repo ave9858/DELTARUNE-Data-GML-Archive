@@ -208,23 +208,23 @@ with (susie) {
 			}
 
 			image_speed = 0.25;
-			var targsprite = 409;
+			var targsprite = 410;
 
 			switch (spos[ind].image_index) {
 				case 0:
-					targsprite = 409;
+					targsprite = 410;
 					break;
 
 				case 1:
-					targsprite = 427;
+					targsprite = 428;
 					break;
 
 				case 2:
-					targsprite = 429;
+					targsprite = 430;
 					break;
 
 				case 3:
-					targsprite = 421;
+					targsprite = 422;
 					break;
 			}
 

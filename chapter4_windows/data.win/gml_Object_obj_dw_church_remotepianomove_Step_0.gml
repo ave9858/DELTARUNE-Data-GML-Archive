@@ -255,17 +255,19 @@ var version = 1;
 if (con == 2 && version == 1) {
 	var dir = -1;
 
-	if (keyboard_check_pressed(vk_numpad2))
-		dir = 0;
+	if (scr_debug()) {
+		if (keyboard_check_pressed(vk_numpad2))
+			dir = 0;
 
-	if (keyboard_check_pressed(vk_numpad6))
-		dir = 1;
+		if (keyboard_check_pressed(vk_numpad6))
+			dir = 1;
 
-	if (keyboard_check_pressed(vk_numpad8))
-		dir = 2;
+		if (keyboard_check_pressed(vk_numpad8))
+			dir = 2;
 
-	if (keyboard_check_pressed(vk_numpad4))
-		dir = 3;
+		if (keyboard_check_pressed(vk_numpad4))
+			dir = 3;
+	}
 
 	if (xbuff && !final) {
 		dbuff = 0;

@@ -375,7 +375,7 @@ function scr_rhythmgame_load_events(arg0) {
 				scr_music_event_add(162.16, "shakeamt", 10, true);
 				scr_music_event_add(162.16, "animspeed", 1, true);
 				scr_music_event_add(165.4, "mid", 956, true);
-				scr_music_event_add(165.4, "idle", 738, true);
+				scr_music_event_add(165.4, "idle", 739, true);
 				scr_music_event_add(165.4, "sprite_index", spr_ralsei_sing_clap, true);
 			}
 		}

@@ -199,7 +199,7 @@ if (con == 3) {
 			scr_lerpvar("y", y, pos[1], waittime);
 			sprite_index = spr_susie_run_excited_left;
 			image_speed = 0.25;
-			scr_delay_var("sprite_index", 429, waittime + 1);
+			scr_delay_var("sprite_index", 430, waittime + 1);
 			scr_delay_var("image_speed", 0, waittime + 1);
 			scr_delay_var("image_index", 0, waittime + 1);
 		}

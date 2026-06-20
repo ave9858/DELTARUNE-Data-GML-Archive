@@ -533,7 +533,7 @@ if (suendcon == 1) {
 		snd_play_delay(snd_noise, jumptime);
 		var pos = scr_heromarker("susie", "top");
 		scr_jump_to_point(pos[0], pos[1], 12, jumptime, true);
-		scr_delay_var("sprite_index", 421, jumptime + 1);
+		scr_delay_var("sprite_index", 422, jumptime + 1);
 		scr_delay_var("image_index", 0, jumptime + 1);
 		scr_delay_var("image_speed", 0, jumptime + 1);
 	}

@@ -14,7 +14,7 @@ if (!shelvesinit) {
 	sunpc = instance_create(sumark[0], sumark[1], obj_trigger_interact);
 	sunpc.talked = 0;
 	sunpc.strict = true;
-	sunpc.susprite = 435;
+	sunpc.susprite = 436;
 	sunpc.marker = scr_marker_ext(sumark[0], sumark[1], sunpc.susprite, 2, 2, 0, undefined, undefined, undefined, 1);
 	sunpc.sitting = false;
 	scr_sizeexact(sumark[2].bbox_right - sumark[2].bbox_left, sumark[2].bbox_bottom - sumark[2].bbox_top, sunpc);

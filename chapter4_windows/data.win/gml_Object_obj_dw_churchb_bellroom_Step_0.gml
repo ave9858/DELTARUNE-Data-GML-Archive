@@ -70,7 +70,7 @@ with (susie) {
 			scr_delay_var("con", 1, movewait + 1);
 			scr_delay_var("image_speed", 0, movewait + 1);
 			scr_delay_var("image_index", 0, movewait + 1);
-			scr_delay_var("sprite_index", 429, movewait + 1);
+			scr_delay_var("sprite_index", 430, movewait + 1);
 			global.flag[1572] = 1;
 		}
 	}
@@ -86,7 +86,7 @@ with (susie) {
 			scr_delay_var("con", 2, movewait + 1);
 			scr_delay_var("image_speed", 0, movewait + 1);
 			scr_delay_var("image_index", 0, movewait + 1);
-			scr_delay_var("sprite_index", 429, movewait + 1);
+			scr_delay_var("sprite_index", 430, movewait + 1);
 			global.flag[1572] = 2;
 		}
 	}
