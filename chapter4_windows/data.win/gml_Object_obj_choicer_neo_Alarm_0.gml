@@ -1,8 +1,8 @@
-var dialoguerObj = 350;
+var dialoguerObj = 351;
 
 if (global.chapter == 3) {
 	if (i_ex(obj_board_writer))
-		dialoguerObj = 1248;
+		dialoguerObj = 1249;
 }
 
 with (dialoguerObj) {

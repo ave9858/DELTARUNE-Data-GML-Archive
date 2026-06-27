@@ -1,5 +1,5 @@
 if (!on && (instance_exists(obj_mainchara) || instance_exists(obj_climb_kris))) {
-	var _char = instance_exists(obj_climb_kris) ? 27 : 1049;
+	var _char = instance_exists(obj_climb_kris) ? 27 : 1050;
 	var _xx = _char.bbox_left + (_char.sprite_width / 2);
 	var _yy = _char.bbox_bottom - (_char.sprite_height / 2);
 	var _top = bbox_top;

@@ -341,8 +341,8 @@ if (con == 5 && customcon == 1 && !d_ex()) {
 		c_wait_talk();
 		c_wait(30);
 		c_var_instance(id, "wind_track_fade", true);
-		c_var_instance(211, "introcon", 0);
-		c_var_instance(211, "introtimer", 0);
+		c_var_instance(212, "introcon", 0);
+		c_var_instance(212, "introtimer", 0);
 		c_wait(90);
 		c_mus2("initloop", "GALLERY.ogg", 0);
 		c_mus2("pitch", 0.75, 1);
@@ -403,8 +403,8 @@ if (con == 5 && customcon == 1 && !d_ex()) {
 		c_facing("r");
 		c_addxy(-8, -58);
 		c_wait(4);
-		c_var_instance(211, "introcon", 2);
-		c_var_instance(211, "introtimer", 0);
+		c_var_instance(212, "introcon", 2);
+		c_var_instance(212, "introtimer", 0);
 		c_wait(150);
 		c_speaker("susie");
 		c_msgsetloc(0, "\\El* Kris^1! Ralsei^1! Let's go!!/%", "obj_dw_churchc_titanclimb2_post_slash_Step_0_gml_541_0");
@@ -415,11 +415,11 @@ if (con == 5 && customcon == 1 && !d_ex()) {
 	} else {
 		c_var_instance(id, "wind_track_fade", true);
 		c_wait(camera_pan_time);
-		c_var_instance(211, "introcon", 0);
-		c_var_instance(211, "introtimer", 0);
+		c_var_instance(212, "introcon", 0);
+		c_var_instance(212, "introtimer", 0);
 		c_wait(90);
-		c_var_instance(211, "introcon", 2);
-		c_var_instance(211, "introtimer", 0);
+		c_var_instance(212, "introcon", 2);
+		c_var_instance(212, "introtimer", 0);
 		c_wait(150);
 	}
 

@@ -1,4 +1,4 @@
-var watchboy = 1049;
+var watchboy = 1050;
 
 with (obj_climb_kris)
 	watchboy = id;

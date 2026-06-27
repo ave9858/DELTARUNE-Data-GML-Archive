@@ -30,10 +30,10 @@ if (y < (camy - lenience) || y > (camy + 480 + 200))
 spawntimer++;
 
 if (spawntimer >= spawnrate) {
-	var spawnobj = 1341;
+	var spawnobj = 1342;
 
 	if (spawntype == 0 || spawntype == 1 || spawntype == 2)
-		spawnobj = 990;
+		spawnobj = 991;
 
 	var moveenemy = false;
 	var makeenemy = false;
@@ -127,7 +127,7 @@ if (spawntimer >= spawnrate) {
 		with (enemy) {
 			ignoreblocked = true;
 
-			if (spawnobj == 990) {
+			if (spawnobj == 991) {
 				if (other.spawntype == 0) {
 				}
 

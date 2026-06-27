@@ -3,13 +3,13 @@ if (scr_debug()) {
 		if (keyboard_check_pressed(ord("1"))) {
 			con = 1;
 			var pos = scr_heromarker("kris", "debugwarp1");
-			setxy(pos[0], pos[1], 1049);
+			setxy(pos[0], pos[1], 1050);
 		}
 
 		if (keyboard_check_pressed(ord("2"))) {
 			con = 2;
 			var pos = scr_heromarker("kris", "debugwarp2");
-			setxy(pos[0], pos[1], 1049);
+			setxy(pos[0], pos[1], 1050);
 		}
 	}
 
@@ -17,7 +17,7 @@ if (scr_debug()) {
 		if (con == 0) {
 			global.tempflag[90] = 0;
 			var pos = scr_heromarker("kris", "endofcutscene");
-			setxy(pos[0], pos[1], 1049);
+			setxy(pos[0], pos[1], 1050);
 			con = 3;
 		}
 	}
@@ -213,8 +213,8 @@ with (obj_treasure_room) {
 	var _maxPt = 103;
 	var minClamp = 0.75;
 	var maxClamp = 1;
-	var input = distance_to_object_bbox(id, 1049);
-	var prog = scr_progress(distance_to_object_bbox(id, 1049), 39.2, 103, 0.75, 1);
+	var input = distance_to_object_bbox(id, 1050);
+	var prog = scr_progress(distance_to_object_bbox(id, 1050), 39.2, 103, 0.75, 1);
 	lightindex = lerp(lightindex, prog, 0.25);
 	image_blend = merge_color(c_white, c_black, lightindex);
 }

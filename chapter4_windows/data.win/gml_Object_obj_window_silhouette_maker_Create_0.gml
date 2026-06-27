@@ -1,5 +1,5 @@
 if (silhouette_obj == 0)
-	silhouette_obj = 505;
+	silhouette_obj = 506;
 
 if (stretch == 0)
 	stretch = 1;

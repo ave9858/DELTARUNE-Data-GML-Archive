@@ -29,7 +29,7 @@ if (scr_debug()) {
 		krlight = instance_create(x, y, obj_light_following);
 
 		with (krlight) {
-			target = 1049;
+			target = 1050;
 			preset = 1;
 			setxy(899, 678);
 		}

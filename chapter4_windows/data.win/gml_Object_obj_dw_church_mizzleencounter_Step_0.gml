@@ -27,7 +27,7 @@ if (scr_debug()) {
 		with (obj_climbloc)
 			pos = id;
 
-		setxy(bell.x, pos.y, 1049);
+		setxy(bell.x, pos.y, 1050);
 	}
 }
 

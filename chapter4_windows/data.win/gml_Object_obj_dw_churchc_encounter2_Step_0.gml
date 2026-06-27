@@ -11,7 +11,7 @@ if (scr_debug()) {
 			}
 
 			if (i_ex(pos)) {
-				setxy(pos.x, pos.y, 1049);
+				setxy(pos.x, pos.y, 1050);
 				forcedark = true;
 			}
 		}
@@ -28,7 +28,7 @@ if (!init) {
 			loc = id;
 	}
 
-	if (scr_checklocation(1049, loc.x, loc.y, 40)) {
+	if (scr_checklocation(1050, loc.x, loc.y, 40)) {
 		forcedark = 1;
 
 		with (obj_dw_church_organikchaser) {

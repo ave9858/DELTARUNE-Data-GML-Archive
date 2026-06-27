@@ -5,7 +5,7 @@ if (scr_debug()) {
 		if (global.tempflag[90] == 10) {
 			global.tempflag[90] = 0;
 			var pos = scr_heromarker("kris", "cutsceneEnd");
-			setxy(pos[0], pos[1], 1049);
+			setxy(pos[0], pos[1], 1050);
 			con = 1;
 		}
 	}

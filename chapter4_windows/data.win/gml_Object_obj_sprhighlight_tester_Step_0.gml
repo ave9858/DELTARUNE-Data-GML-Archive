@@ -1,8 +1,8 @@
 if (init == false && i_ex(obj_caterpillarchara)) {
-	var _highlight = scr_sprhighlight(1049);
+	var _highlight = scr_sprhighlight(1050);
 	_highlight.darkness = 1;
 	var _shadow = instance_create(x, y, obj_floorshadow);
-	_shadow.target = 1049;
+	_shadow.target = 1050;
 	_shadow.image_alpha = 0;
 	_shadow.name = "kris";
 

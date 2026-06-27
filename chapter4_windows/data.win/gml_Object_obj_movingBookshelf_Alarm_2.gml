@@ -4,7 +4,7 @@ with (mycam) {
 	cameraActive = 0;
 	ignoreFreeze = 1;
 	panStyle[0] = 1;
-	targetObject[0] = 1049;
+	targetObject[0] = 1050;
 	targetObjectCenter[0] = 1;
 	targetXRelative[0] = 0;
 	targetYRelative[0] = 0;

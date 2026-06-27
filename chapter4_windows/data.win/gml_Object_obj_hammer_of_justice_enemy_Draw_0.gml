@@ -240,7 +240,7 @@ if (state == 11) {
 	if (swingtimer == 12) {
 		blast = instance_create(x - 40, y + 20, obj_gerson_rudebuster);
 		blast.battlemode = 0;
-		blast.target = 1280;
+		blast.target = 1281;
 		blast.image_alpha = 1;
 		snd_play(snd_rudebuster_swing);
 		obj_hammer_of_justice_enemy.rudebusterhitcount++;

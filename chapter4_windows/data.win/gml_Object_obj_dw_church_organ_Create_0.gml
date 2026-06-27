@@ -14,7 +14,7 @@ if (scr_debug()) {
 
 	if (keyboard_check(ord("2"))) {
 		debug_print("Returned here after closing eyes with ralsei.");
-		setxy(1200, 252, 1049);
+		setxy(1200, 252, 1050);
 		scr_keyitemremove(30);
 		global.flag[847] = 0;
 		global.plot = 180;
@@ -22,14 +22,14 @@ if (scr_debug()) {
 
 	if (keyboard_check(ord("3"))) {
 		debug_print("Returned here after getting the music sheet.");
-		setxy(1200, 252, 1049);
+		setxy(1200, 252, 1050);
 		scr_keyitemget(30);
 		global.plot = 180;
 	}
 
 	if (keyboard_check(ord("4"))) {
 		debug_print("Returned here after using the music sheet.");
-		setxy(1200, 252, 1049);
+		setxy(1200, 252, 1050);
 		scr_keyitemget(30);
 		global.flag[847] = 1;
 		global.plot = 180;

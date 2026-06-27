@@ -1,5 +1,5 @@
 enum UnknownEnum {
-	Value_4 = 4,
+	Value_5 = 5,
 	Value_7 = 7
 }
 
@@ -12,7 +12,7 @@ _chapters = [];
 _chapter_index = 0;
 _fade_in = false;
 var max_chapter = UnknownEnum.Value_7;
-var max_available_chapter = UnknownEnum.Value_4;
+var max_available_chapter = UnknownEnum.Value_5;
 
 for (var i = 0; i < max_chapter; i++) {
 	var new_chapter = instance_create(0, -10 + (i * 60), obj_ui_chapter);

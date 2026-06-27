@@ -484,13 +484,13 @@ if (scr_flag_get(737) == 0) {
 
 					if (obj_homealone_heart.x < turn_pos) {
 						if (x != (obj_homealone_heart.x - 8) || y != (obj_homealone_heart.y - sprite_height)) {
-							scr_obj_movetowards_obj(568, 10, -8, -sprite_height);
+							scr_obj_movetowards_obj(569, 10, -8, -sprite_height);
 						} else {
 							global.interact = 1;
 							take = true;
 						}
 					} else if (x != (obj_homealone_heart.x - 30) || y != (obj_homealone_heart.y - sprite_height)) {
-						scr_obj_movetowards_obj(568, 10, -30, -sprite_height);
+						scr_obj_movetowards_obj(569, 10, -30, -sprite_height);
 					} else {
 						global.interact = 1;
 						take = true;

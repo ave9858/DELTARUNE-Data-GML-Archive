@@ -20,7 +20,7 @@ if (!init_heart) {
 	init_heart = true;
 
 	with (overlay)
-		set_heart_target(568);
+		set_heart_target(569);
 
 	if (scr_sideb_active() && global.plot == 63) {
 		with (vent_block)
@@ -518,7 +518,7 @@ if (angel_fall) {
 
 		with (overlay) {
 			set_fall_mode(false);
-			set_heart_target(568);
+			set_heart_target(569);
 		}
 	}
 

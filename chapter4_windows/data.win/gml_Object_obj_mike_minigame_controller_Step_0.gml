@@ -417,10 +417,10 @@ if (phase == 2) {
 				if (cave_last_top != -1 && cave_last_bottom != -1)
 					_newy = choose(cave_last_top.y + irandom_range(cave_height * 0.35, cave_height * 0.85), cave_last_bottom.y - irandom_range(cave_height * 0.35, cave_height * 0.85));
 
-				var _cat = 378;
+				var _cat = 379;
 
 				if (_vol < 0.1)
-					_cat = choose(378, 378, 788);
+					_cat = choose(379, 379, 789);
 
 				instance_create_depth(room_width + 80, _newy, depth - 2, _cat);
 			}

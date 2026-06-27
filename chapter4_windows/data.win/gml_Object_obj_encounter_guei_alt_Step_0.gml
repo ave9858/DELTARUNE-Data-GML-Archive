@@ -73,7 +73,7 @@ if (con == 1) {
 	if (global.interact == 0)
 		chasespeed = lerp(chasespeed, maxchase, 0.0125);
 
-	var targ = 1049;
+	var targ = 1050;
 
 	with (chaser) {
 		if (global.interact == 0)

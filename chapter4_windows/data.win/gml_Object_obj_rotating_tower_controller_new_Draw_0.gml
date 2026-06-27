@@ -126,8 +126,8 @@ if (appearance == 1) {
 	var col = scr_make_color_hsv(current_time / 400, 50, (sin(current_time / 1600) * 10) + 70);
 	draw_sprite_ext(bg_fountain1, 0, tower_x - (tower_radius * indent), camera_get_view_y(view_camera[0]), (tower_radius * 2 * indent) / sprite_get_width(bg_fountain1), 480 / sprite_get_height(bg_fountain1), 0, col, 1);
 	shader_reset();
-	obj_rotating_tower_controller_new.render_big_eye(625);
-	obj_rotating_tower_controller_new.render_big_eye(1332);
+	obj_rotating_tower_controller_new.render_big_eye(626);
+	obj_rotating_tower_controller_new.render_big_eye(1333);
 	surface_set_target(tilesurface);
 	draw_clear_alpha(c_black, 0);
 	len = array_length(visible_indices);

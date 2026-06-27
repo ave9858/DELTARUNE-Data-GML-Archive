@@ -40,5 +40,8 @@ get_text = function(arg0) {
 };
 
 get_font = function() {
-	return (global.lang == "en") ? 8 : 16;
+	if (room == room_chapter_continue)
+		return (global.lang == "en") ? 7 : 13;
+	else
+		return (global.lang == "en") ? 8 : 16;
 };

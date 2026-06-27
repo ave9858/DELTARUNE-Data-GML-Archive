@@ -1,4 +1,4 @@
-if (active && scr_in_light(1214, 10, 10) == lightBullet) {
+if (active && scr_in_light(1215, 10, 10) == lightBullet) {
 	snd_stop(snd_hurt1);
 	snd_play(snd_hurt1);
 

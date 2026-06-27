@@ -844,10 +844,10 @@ if (scr_isphase("bullets") && attacked == 0) {
 	rtimer += 1;
 
 	if (rtimer == 12) {
-		var _a = 1372;
+		var _a = 1373;
 
 		if (!i_ex(obj_lanino_rematch_enemy))
-			_a = 717;
+			_a = 718;
 
 		global.typer = 6;
 		global.fc = 0;

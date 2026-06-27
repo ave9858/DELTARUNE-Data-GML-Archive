@@ -21,7 +21,7 @@ var _dist_max = 300;
 var _dist = front ? _dist_min : _dist_max;
 var _sign = front ? 1 : -1;
 var _cnum = array_length(obj_cloud_controller_new.clouds);
-var _hero_obj = 1049;
+var _hero_obj = 1050;
 
 if (i_ex(obj_climb_kris))
 	_hero_obj = 27;

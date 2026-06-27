@@ -69,7 +69,7 @@ init_border = function() {
 			set_border(room_border);
 		}
 
-		if (room_id == room_legend || room_id == 1399 || room_id == PLACE_MENU) {
+		if (room_id == room_legend || room_id == 1400 || room_id == PLACE_MENU) {
 			stop_custom_effect();
 
 			if (scr_completed_chapter_any_slot(global.chapter)) {

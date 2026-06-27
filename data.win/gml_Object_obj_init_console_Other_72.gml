@@ -2,7 +2,7 @@ enum UnknownEnum {
 	Value_0,
 	Value_1,
 	Value_2,
-	Value_4 = 4
+	Value_5 = 5
 }
 
 if (ds_map_find_value(async_load, "id") == global.savedata_async_id) {
@@ -57,7 +57,7 @@ if (ds_map_find_value(async_load, "id") == global.savedata_async_id) {
 					}
 
 					if (!scr_has_ura_data()) {
-						for (var i = 0; i < UnknownEnum.Value_4; i++) {
+						for (var i = 0; i < UnknownEnum.Value_5; i++) {
 							var chapter = i + 1;
 							scr_convert_ura_data(chapter);
 						}
@@ -100,7 +100,7 @@ if (ds_map_find_value(async_load, "id") == global.savedata_async_id) {
 					}
 
 					if (!scr_has_ura_data()) {
-						for (var i = 0; i < UnknownEnum.Value_4; i++) {
+						for (var i = 0; i < UnknownEnum.Value_5; i++) {
 							var chapter = i + 1;
 							scr_convert_ura_data(chapter);
 						}

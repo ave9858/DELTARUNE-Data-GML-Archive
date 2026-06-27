@@ -116,7 +116,7 @@ if (con == 2) {
 	c_shake();
 	c_imageindex(13);
 	c_imagespeed(0.5);
-	c_instance(210, 122, 1273);
+	c_instance(210, 122, 1274);
 	c_soundplay(snd_grab);
 	c_soundplay(snd_hurt1);
 	c_wait(14);

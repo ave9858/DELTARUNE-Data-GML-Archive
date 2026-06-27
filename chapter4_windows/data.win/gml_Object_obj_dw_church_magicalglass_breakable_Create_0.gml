@@ -6,9 +6,9 @@ depth = 700000;
 nosound = false;
 idlealpha = 0.2;
 clientlist = [];
-array_push(clientlist, 1049);
-array_push(clientlist, 1235);
-array_push(clientlist, 1409);
+array_push(clientlist, 1050);
+array_push(clientlist, 1236);
+array_push(clientlist, 1410);
 clientlist_length = array_length(clientlist);
 
 if (i_ex(obj_dw_churchc_dodge) && global.entrance != 12)

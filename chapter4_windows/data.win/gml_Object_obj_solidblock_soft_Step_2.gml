@@ -16,7 +16,7 @@ if (i_ex(kris)) {
 
 if (push_cat) {
 	var _list = ds_list_create();
-	var _num = instance_place_list(x, y, 1235, _list, false);
+	var _num = instance_place_list(x, y, 1236, _list, false);
 
 	if (_num > 0) {
 		for (var i = 0; i < _num; i++) {

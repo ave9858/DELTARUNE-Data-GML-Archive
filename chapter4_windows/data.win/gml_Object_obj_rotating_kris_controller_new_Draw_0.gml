@@ -7,7 +7,7 @@ if (i_ex(obj_climb_kris) && i_ex(obj_rotating_tower_controller_new)) {
 	with (obj_climb_mover) {
 		if (con == 2) {
 			other.depth = 1000;
-			var tower = 1010;
+			var tower = 1011;
 			var adjustment = 0;
 			var _tilex = (x / tower.tile_width_fine) + adjustment;
 

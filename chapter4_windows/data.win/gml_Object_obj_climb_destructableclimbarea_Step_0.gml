@@ -11,7 +11,7 @@ if (con == 1) {
 	var target = 27;
 
 	if (extflag == "susie")
-		target = 731;
+		target = 732;
 
 	if (always_break_on_timer) {
 		with (climbarea) {

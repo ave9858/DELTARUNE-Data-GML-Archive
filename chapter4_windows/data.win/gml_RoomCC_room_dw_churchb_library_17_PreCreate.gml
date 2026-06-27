@@ -1,2 +1,2 @@
 flagno = 1584;
-flagbit = 23;
+flagbit = 12;

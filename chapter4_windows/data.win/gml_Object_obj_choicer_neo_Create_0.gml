@@ -42,7 +42,7 @@ boardwriter = 0;
 
 if (global.chapter == 3) {
 	if (i_ex(obj_board_writer)) {
-		boardwriter = 1248;
+		boardwriter = 1249;
 		d = obj_board_writer.side;
 	}
 }

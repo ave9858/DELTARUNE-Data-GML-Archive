@@ -4,6 +4,6 @@ shot_count = 1;
 fire_rate = 4;
 range = 360;
 spread_angle = 0;
-child_bullet = 252;
+child_bullet = 253;
 angle_bullet = false;
 rotation = 0;

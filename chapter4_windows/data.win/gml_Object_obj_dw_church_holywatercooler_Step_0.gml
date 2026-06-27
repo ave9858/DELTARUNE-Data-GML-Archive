@@ -4,7 +4,7 @@ if (!init)
 if (scr_debug()) {
 	if (keyboard_check(ord("W")) && keyboard_check_pressed(ord("1"))) {
 		var pos = scr_heromarker("kris", "holywaterexit");
-		setxy(pos[0], pos[1], 1049);
+		setxy(pos[0], pos[1], 1050);
 	}
 }
 

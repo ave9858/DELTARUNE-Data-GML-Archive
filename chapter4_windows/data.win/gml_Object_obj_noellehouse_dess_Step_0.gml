@@ -125,7 +125,7 @@ if (!init_heart) {
 			instance_destroy();
 
 		set_alpha(0.3);
-		set_heart_target(568);
+		set_heart_target(569);
 		heart_glow_show();
 	}
 
@@ -354,7 +354,7 @@ if (con == 1) {
 	c_shakeobj();
 	c_wait(2);
 	c_var_instance(kris_marker, "image_index", 2);
-	c_var_instance(568, "visible", 0);
+	c_var_instance(569, "visible", 0);
 	c_wait(2);
 	c_var_instance(kris_marker, "x", 172);
 	c_var_instance(kris_marker, "y", 88);
@@ -410,24 +410,24 @@ if (con == 1) {
 	c_var_instance(kris_marker, "image_speed", 0);
 	c_var_instance(kris_marker, "depth", 5200);
 	c_wait(6);
-	c_var_instance(191, "dess_closet_cover", true);
-	c_var_instance(850, "con", 1);
+	c_var_instance(192, "dess_closet_cover", true);
+	c_var_instance(851, "con", 1);
 	c_snd_play(snd_wing);
-	c_var_instance(850, "open_closet", true);
+	c_var_instance(851, "open_closet", true);
 	c_wait(6);
-	c_var_instance(191, "dess_closet_cover", false);
+	c_var_instance(192, "dess_closet_cover", false);
 	c_var_instance(kris_marker, "image_speed", 0.2);
 	c_var_lerp_to_instance(kris_marker, "y", 80, 6);
 	c_wait(6);
 	c_var_instance(kris_marker, "image_index", 0);
 	c_var_instance(kris_marker, "image_speed", 0);
-	c_var_instance(310, "kris_sprite", 3535);
-	c_var_instance(310, "kris_x", 190);
-	c_var_instance(310, "kris_y", 80);
-	c_var_instance(310, "kris_active", true);
+	c_var_instance(311, "kris_sprite", 3535);
+	c_var_instance(311, "kris_x", 190);
+	c_var_instance(311, "kris_y", 80);
+	c_var_instance(311, "kris_active", true);
 	c_var_instance(kris_marker, "visible", 0);
 	c_snd_play(snd_wing);
-	c_var_instance(850, "close_closet", true);
+	c_var_instance(851, "close_closet", true);
 	c_wait(4);
 	c_snd_play(snd_dooropen);
 	c_sel(no);
@@ -674,10 +674,10 @@ if (con == 50 && !d_ex() && customcon == 1) {
 	c_facing("u");
 	c_wait(30);
 	c_snd_play(snd_wing);
-	c_var_instance(310, "kris_sprite", 3821);
-	c_var_instance(310, "kris_x", 213);
-	c_var_instance(310, "kris_y", 89);
-	c_var_instance(310, "open_door", true);
+	c_var_instance(311, "kris_sprite", 3821);
+	c_var_instance(311, "kris_x", 213);
+	c_var_instance(311, "kris_y", 89);
+	c_var_instance(311, "open_door", true);
 	c_wait(30);
 	c_speaker("susie");
 	c_msgsetloc(0, "\\EH* (Dude^1, stop making so much goddamn noise!)/", "obj_noellehouse_dess_slash_Step_0_gml_892_0");
@@ -689,11 +689,11 @@ if (con == 50 && !d_ex() && customcon == 1) {
 	c_sprite(spr_susie_guitar_grab_up);
 	c_lerp_var_instance(su_actor, "image_index", 0, 4, 16);
 	c_wait(8);
-	c_var_instance(310, "kris_sprite", 4636);
-	c_var_instance(310, "kris_index", 0);
+	c_var_instance(311, "kris_sprite", 4636);
+	c_var_instance(311, "kris_index", 0);
 	c_wait(45);
 	c_snd_play(snd_wing);
-	c_var_instance(310, "close_door", true);
+	c_var_instance(311, "close_door", true);
 	c_wait(15);
 	c_sel(no);
 	c_autowalk(0);
@@ -786,17 +786,17 @@ if (con == 50 && !d_ex() && customcon == 1) {
 		}
 	});
 	c_snd_play(snd_noise);
-	c_var_instance(310, "kris_x", kris_closet_x);
-	c_var_instance(310, "kris_y", 80);
-	c_var_instance(310, "kris_sprite", 1461);
-	c_var_lerp_to_instance(310, "door_xpos", obj_noellehouse_dess_closet.door_xpos - 14, 15);
+	c_var_instance(311, "kris_x", kris_closet_x);
+	c_var_instance(311, "kris_y", 80);
+	c_var_instance(311, "kris_sprite", 1461);
+	c_var_lerp_to_instance(311, "door_xpos", obj_noellehouse_dess_closet.door_xpos - 14, 15);
 	c_wait(30);
 	c_var_instance(kris_marker, "x", kris_closet_x);
 	c_var_instance(kris_marker, "y", 80);
 	c_var_instance(kris_marker, "sprite_index", spr_kris_walk_hide_arm);
 	c_var_instance(kris_marker, "visible", 1);
 	c_var_instance(kris_marker, "depth", 29000);
-	c_var_instance(310, "kris_active", false);
+	c_var_instance(311, "kris_active", false);
 	c_var_instance(kris_marker, "image_speed", 0.2);
 	c_var_lerp_to_instance(kris_marker, "x", kris_closet_x - 10, 15);
 	c_wait(15);
@@ -842,7 +842,7 @@ if (con == 50 && !d_ex() && customcon == 1) {
 	c_delaycmd(28, "imageindex", 0);
 	c_walkdirect(202, 80, 30);
 	c_snd_play(snd_wing);
-	c_var_lerp_to_instance(310, "door_xpos", obj_noellehouse_dess_closet.door_xpos - 14 - 10, 30);
+	c_var_lerp_to_instance(311, "door_xpos", obj_noellehouse_dess_closet.door_xpos - 14 - 10, 30);
 	c_wait(90);
 	c_waitcustom();
 }
@@ -863,7 +863,7 @@ if (con == 53 && !d_ex() && customcon == 1) {
 	c_waitcustom_end();
 	c_wait(30);
 	c_snd_play(snd_wing);
-	c_var_lerp_to_instance(310, "door_xpos", obj_noellehouse_dess_closet.door_xpos + 14 + 10, 15);
+	c_var_lerp_to_instance(311, "door_xpos", obj_noellehouse_dess_closet.door_xpos + 14 + 10, 15);
 	c_sel(kr);
 	c_autodepth(0);
 	c_depth(10000);

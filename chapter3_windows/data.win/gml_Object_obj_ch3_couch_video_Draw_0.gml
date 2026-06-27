@@ -1,20 +1,24 @@
+if (!_video_enabled)
+	exit;
+
 var _video_data = video_draw();
 var _video_status = _video_data[0];
 
 if (_video_status == 0) {
 	switch (video_get_format()) {
 		case 0:
-			draw_surface(_video_data[1], 0, 0);
+			_vid_surface = _video_data[1];
+			draw_surface(_vid_surface, 0, 0);
 			break;
 
 		case 1:
-			var _surf = _video_data[1];
-			var _chromasurf = _video_data[2];
+			_vid_surface = _video_data[1];
+			_chroma_surface = _video_data[2];
 
-			if (surface_exists(_surf) && surface_exists(_chromasurf)) {
+			if (surface_exists(_vid_surface) && surface_exists(_chroma_surface)) {
 				shader_set(shd_video_yuv);
-				var _tex_id = surface_get_texture(_surf);
-				var _chroma_tex_id = surface_get_texture(_chromasurf);
+				var _tex_id = surface_get_texture(_vid_surface);
+				var _chroma_tex_id = surface_get_texture(_chroma_surface);
 				texture_set_stage(videochromasampler, _chroma_tex_id);
 				gpu_set_texfilter(false);
 				var sw = surface_get_width(application_surface);

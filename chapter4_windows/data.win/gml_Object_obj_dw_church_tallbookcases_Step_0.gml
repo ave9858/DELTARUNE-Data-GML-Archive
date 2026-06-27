@@ -85,16 +85,16 @@ if (gueicheck == true) {
 		if (i_ex(obj_climb_kris)) {
 			gueitoskip = 4;
 		} else {
-			if (scr_checklocation(1049, ent1.x, ent1.y, 40))
+			if (scr_checklocation(1050, ent1.x, ent1.y, 40))
 				gueitoskip = 2;
 
-			if (scr_checklocation(1049, ent3.x, ent3.y, 40))
+			if (scr_checklocation(1050, ent3.x, ent3.y, 40))
 				gueitoskip = 2;
 
-			if (scr_checklocation(1049, ent4.x, ent4.y, 40))
+			if (scr_checklocation(1050, ent4.x, ent4.y, 40))
 				gueitoskip = 0;
 
-			if (scr_checklocation(1049, ent14.x, ent14.y, 40))
+			if (scr_checklocation(1050, ent14.x, ent14.y, 40))
 				gueitoskip = 4;
 		}
 

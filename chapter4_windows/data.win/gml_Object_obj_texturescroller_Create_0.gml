@@ -1,5 +1,5 @@
 surf_textured = -1;
-tile_object = 455;
+tile_object = 456;
 base_texture = 88;
 scroll_texture = 992;
 fade_time_seconds = 4;

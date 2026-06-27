@@ -11,7 +11,7 @@ with (obj_trigger) {
 		}
 
 		var _list = ds_list_create();
-		var _num = instance_place_list(x, y, 769, _list, false);
+		var _num = instance_place_list(x, y, 770, _list, false);
 
 		if (_num > 0) {
 			for (var i = 0; i < _num; i++)

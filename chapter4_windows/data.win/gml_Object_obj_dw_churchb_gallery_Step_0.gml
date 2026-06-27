@@ -25,8 +25,8 @@ if (!init) {
 
 	if (global.tempflag[90] == 1) {
 		pos = scr_heromarker("kris", "warp1");
-		setxy(pos[0], pos[1], 1049);
-		setxy(pos[0], pos[1], 1235);
+		setxy(pos[0], pos[1], 1050);
+		setxy(pos[0], pos[1], 1236);
 		global.facing = pos[2].image_index;
 		global.tempflag[90] = 0;
 		scr_caterpillar_interpolate("all");

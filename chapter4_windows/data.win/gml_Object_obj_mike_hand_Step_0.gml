@@ -28,7 +28,7 @@ with (obj_mike_controller) {
 		var ob2 = -1;
 
 		if (i_ex(obj_mouse_drawer) && mx > obj_mouse_drawer.bbox_left && mx < obj_mouse_drawer.bbox_right && my > obj_mouse_drawer.bbox_top && my < obj_mouse_drawer.bbox_bottom && obj_mouse_drawer.act < 3)
-			ob2 = 651;
+			ob2 = 652;
 
 		if (i_ex(obj_mouse_hat)) {
 			var _li = ds_list_create();

@@ -18,7 +18,7 @@ if (scr_debug()) {
 
 	if (keyboard_check(ord("3"))) {
 		var loc = findspriteinfo(spr_krisd_heart, "DEBUG_ASSETS");
-		setxy(loc.x, loc.y, 1049);
+		setxy(loc.x, loc.y, 1050);
 
 		with (obj_caterpillarchara)
 			setxy(loc.x, loc.y);
@@ -106,8 +106,8 @@ if (global.flag[1526] < 2)
 	setxy(room_width, room_height, npc3);
 
 init = 0;
-stufftomove[0] = 601;
-array_push(stufftomove, 202);
+stufftomove[0] = 602;
+array_push(stufftomove, 203);
 r1leavetopentrance = 0;
 r1leavebottomentrance = 0;
 r2leavetopentrance = 0;

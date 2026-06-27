@@ -41,7 +41,7 @@ with (instance_create(ph[0], ph[1], obj_church_piano_hint)) {
 with (obj_genmarker) {
 	if (extflag == "shortcutkiller") {
 		var _list = ds_list_create();
-		var _num = instance_place_list(x, y, 376, _list, false);
+		var _num = instance_place_list(x, y, 377, _list, false);
 
 		for (var i = 0; i < _num; i++) {
 			with (ds_list_find_value(_list, i))
@@ -50,7 +50,7 @@ with (obj_genmarker) {
 
 		ds_list_destroy(_list);
 		_list = ds_list_create();
-		_num = instance_place_list(x, y, 1031, _list, false);
+		_num = instance_place_list(x, y, 1032, _list, false);
 
 		for (var i = 0; i < _num; i++) {
 			with (ds_list_find_value(_list, i))

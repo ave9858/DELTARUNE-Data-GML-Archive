@@ -1,5 +1,5 @@
 enum UnknownEnum {
-	Value_4 = 4
+	Value_5 = 5
 }
 
 _parent = -4;
@@ -57,7 +57,7 @@ init = function(arg0, arg1) {
 	}
 
 	if (!scr_has_ura_data()) {
-		for (var i = 0; i < UnknownEnum.Value_4; i++) {
+		for (var i = 0; i < UnknownEnum.Value_5; i++) {
 			var chapter = i + 1;
 			scr_convert_ura_data(chapter);
 		}

@@ -1,4 +1,4 @@
-var targ = 1049;
+var targ = 1050;
 
 if (con == 0) {
 	timer++;

@@ -302,7 +302,7 @@ if (con == 1) {
 	c_walkdirect_wait(360, su_actor.ystart, 20);
 	c_walkdirect_wait(360, su_actor.ystart - 40, 15);
 	c_walkdirect_wait(270, su_actor.ystart - 40, 20);
-	c_var_instance(568, "visible", 1);
+	c_var_instance(569, "visible", 1);
 	c_var_instance(angel_marker, "visible", 0);
 	c_mus2("volume", 0, 30);
 	c_pannable(1);
@@ -330,7 +330,7 @@ if (con == 10 && customcon == 1 && !d_ex()) {
 	snd_free_all();
 
 	with (overlay) {
-		set_heart_target(568);
+		set_heart_target(569);
 		set_angel_mode();
 		radius_offset = 0;
 	}

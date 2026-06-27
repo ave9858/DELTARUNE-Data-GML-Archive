@@ -212,7 +212,7 @@ with (plueywater) {
 	depth = other.depth + 105;
 
 	draw_func = function() {
-		var contr = 240;
+		var contr = 241;
 
 		if (!contr.shelter_has_time_limit)
 			exit;

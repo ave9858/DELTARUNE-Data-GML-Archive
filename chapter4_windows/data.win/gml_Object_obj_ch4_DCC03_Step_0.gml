@@ -137,7 +137,7 @@ if (con == 5 && customcon == 1) {
 	c_sel(ra);
 	c_sprite(spr_ralsei_shocked_subtle_right);
 	c_var_instance(final_prophecy, "destroy", 1);
-	c_instance(3220 + camerawidth(), su_actor.y, 524);
+	c_instance(3220 + camerawidth(), su_actor.y, 525);
 	c_wait(1);
 	c_customfunc(function() {
 		with (obj_hsv_shifter)

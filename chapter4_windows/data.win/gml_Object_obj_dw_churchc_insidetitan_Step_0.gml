@@ -58,7 +58,7 @@ if (con == 2) {
 	c_var_lerp_to_instance(id, "extra_y", 50, _xease, 2, "in");
 	c_var_lerp_to_instance(id, "susie_y", 600, _xease, 2, "out");
 	c_var_lerp_to_instance(id, "fall_speed", 1, _xease, 5, "in");
-	c_var_lerp_to_instance(1229, "fall_speed", 2, 30);
+	c_var_lerp_to_instance(1230, "fall_speed", 2, 30);
 	c_wait(5);
 	c_var_lerp_to_instance(id, "spread", 50, 300);
 	c_customfunc(function() {

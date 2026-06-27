@@ -1,7 +1,7 @@
 if (!i_ex(obj_roomglow))
 	instance_create(0, 0, obj_roomglow);
 
-roomglow = 942;
+roomglow = 943;
 con = 0;
 timer = 0;
 window_con = 0;

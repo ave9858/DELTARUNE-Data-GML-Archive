@@ -10,7 +10,7 @@ if (con == 0 && !d_ex()) {
 	darkness_overlay = instance_find(obj_darkness_overlay, 0);
 
 	with (obj_light_following) {
-		if (target == 1049)
+		if (target == 1050)
 			other.follow_light = id;
 	}
 
@@ -35,7 +35,7 @@ if (con == 3) {
 
 	if (follow_light == -4) {
 		with (obj_light_following) {
-			if (target == 1049)
+			if (target == 1050)
 				other.follow_light = id;
 		}
 	}

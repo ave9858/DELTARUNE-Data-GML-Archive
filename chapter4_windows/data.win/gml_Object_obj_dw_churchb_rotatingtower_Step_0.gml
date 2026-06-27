@@ -17,7 +17,7 @@ if (!init) {
 	prop2.fade_edges = true;
 
 	if (global.plot <= 238.6) {
-		var tower = 1010;
+		var tower = 1011;
 		tower.col_blend = 0;
 		towercon = 0;
 	}
@@ -30,7 +30,7 @@ if (!init) {
 	if (global.tempflag[90] == 0.1) {
 		global.tempflag[90] = 0;
 		var pos = scr_heromarker("kris", "top");
-		setxy(pos[0], pos[1], 1049);
+		setxy(pos[0], pos[1], 1050);
 	}
 
 	init = 1;
@@ -66,7 +66,7 @@ if (scr_debug()) {
 
 	if (keyboard_check(ord("W")) && keyboard_check_pressed(ord("2"))) {
 		var pos = scr_heromarker("kris", "top");
-		setxy(pos[0], pos[1], 1049);
+		setxy(pos[0], pos[1], 1050);
 		scr_setparty(0);
 
 		if (con < 2)
@@ -378,12 +378,12 @@ with (obj_dw_church_prophecy)
 	active = glowactive;
 
 if (towercon == 0) {
-	var tower = 1010;
+	var tower = 1011;
 
 	if (floor(tower.tower_angle) != 294)
 		towercon = 1;
 } else if (towercon < 10) {
-	var tower = 1010;
+	var tower = 1011;
 	towercon++;
 	tower.col_blend = towercon / 10;
 	global.plot = 238.61;

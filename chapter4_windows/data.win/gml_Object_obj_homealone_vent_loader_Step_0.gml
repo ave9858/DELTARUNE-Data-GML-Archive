@@ -56,13 +56,13 @@ if (!loaded) {
 			}
 
 			if (loaded_type == "bottom")
-				scr_lerpvar_instance(568, "y", obj_homealone_heart.y, obj_homealone_heart.y + 3, 5);
+				scr_lerpvar_instance(569, "y", obj_homealone_heart.y, obj_homealone_heart.y + 3, 5);
 
 			if (loaded_type == "right")
-				scr_lerpvar_instance(568, "x", obj_homealone_heart.x, obj_homealone_heart.x + 3, 5);
+				scr_lerpvar_instance(569, "x", obj_homealone_heart.x, obj_homealone_heart.x + 3, 5);
 
 			if (loaded_type == "left")
-				scr_lerpvar_instance(568, "x", obj_homealone_heart.x, obj_homealone_heart.x - 3, 5);
+				scr_lerpvar_instance(569, "x", obj_homealone_heart.x, obj_homealone_heart.x - 3, 5);
 
 			alarm[0] = 5;
 		}

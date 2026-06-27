@@ -171,7 +171,7 @@ with (ranpc) {
 	if (myinteract == 5) {
 		if (d_ex()) {
 			if (scr_getmsgno() == 1) {
-				var raface = direction_to_object_bbox(undefined, 1049, 1);
+				var raface = direction_to_object_bbox(undefined, 1050, 1);
 
 				switch (raface) {
 					case 3:
@@ -196,7 +196,7 @@ with (ranpc) {
 	}
 
 	if (myinteract == 10 && global.choice != -1) {
-		var raface = direction_to_object_bbox(undefined, 1049, 1);
+		var raface = direction_to_object_bbox(undefined, 1050, 1);
 
 		switch (raface) {
 			case 3:
@@ -286,7 +286,7 @@ with (sunpc) {
 	if (myinteract == 45) {
 		if (d_ex()) {
 			if (scr_getmsgno() == 0) {
-				var suface = direction_to_object_bbox(undefined, 1049, 1);
+				var suface = direction_to_object_bbox(undefined, 1050, 1);
 
 				switch (suface) {
 					case 3:
@@ -338,7 +338,7 @@ with (sunpc) {
 	if (myinteract == 11 && global.choice == -1) {
 		if (d_ex()) {
 			if (scr_getmsgno() == 0) {
-				var suface = direction_to_object_bbox(undefined, 1049, 1);
+				var suface = direction_to_object_bbox(undefined, 1050, 1);
 
 				switch (suface) {
 					case 3:

@@ -278,13 +278,13 @@ if (con == 3 && customcon == 1 && obj_mainchara.y < 230 && global.interact == 0)
 	c_waitcustom_end();
 	c_var_instance(id, "chase_start", false);
 	c_var_instance(id, "wind_push", false);
-	c_var_lerp_to_instance(1049, "battlealpha", 0, 5);
+	c_var_lerp_to_instance(1050, "battlealpha", 0, 5);
 	c_sel(kr);
 	c_setxy(obj_mainchara.x, obj_mainchara.y);
 	c_sprite(obj_mainchara.sprite_index);
 	c_halt();
 	c_visible(1);
-	c_var_instance(1049, "visible", 0);
+	c_var_instance(1050, "visible", 0);
 	c_wait(15);
 	c_msgside("bottom");
 	c_speaker("susie");

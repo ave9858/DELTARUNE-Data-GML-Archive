@@ -1,5 +1,5 @@
 enum UnknownEnum {
-	Value_4 = 4
+	Value_5 = 5
 }
 
 _grid_lines = [];
@@ -7,7 +7,7 @@ _fade_in = false;
 _alpha = 0;
 var highest_chapter_obtained = 0;
 
-for (var i = 0; i < UnknownEnum.Value_4; i++) {
+for (var i = 0; i < UnknownEnum.Value_5; i++) {
 	var chapter = i + 1;
 
 	if (scr_fought_secret_boss_any_slot(chapter) && chapter > highest_chapter_obtained)

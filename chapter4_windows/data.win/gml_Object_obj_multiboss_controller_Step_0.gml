@@ -71,11 +71,11 @@ if (scr_isphase("bullets") && attacked == 0) {
 			var attackingenemy = 0;
 
 			if (global.monster[0] == 1)
-				attackingenemy = 851;
+				attackingenemy = 852;
 			else if (global.monster[1] == 1)
-				attackingenemy = 871;
-			else if (global.monster[2] == 1)
 				attackingenemy = 872;
+			else if (global.monster[2] == 1)
+				attackingenemy = 873;
 
 			if (myattackchoice == 0) {
 				with (attackingenemy) {

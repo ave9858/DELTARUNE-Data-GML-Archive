@@ -26,7 +26,7 @@ if (scr_debug()) {
 		global.tempflag[90] = 43;
 
 	if (keyboard_check(ord("O"))) {
-		setxy(room_width / 2, room_height / 2, 1049);
+		setxy(room_width / 2, room_height / 2, 1050);
 		qcon = 41;
 		global.interact = 1;
 		con = -1;

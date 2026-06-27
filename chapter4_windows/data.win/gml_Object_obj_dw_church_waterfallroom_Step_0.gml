@@ -20,7 +20,7 @@ if (scr_debug()) {
 		var debugwarp = scr_heromarker("kr", "debugwarp1");
 
 		if (i_ex(debugwarp[2])) {
-			setxy(debugwarp[0], debugwarp[1], 1049);
+			setxy(debugwarp[0], debugwarp[1], 1050);
 			snd_free_all();
 			con = 0;
 			global.interact = 0;
@@ -32,7 +32,7 @@ if (scr_debug()) {
 		var debugwarp = scr_heromarker("kr", "debugwarp");
 
 		if (i_ex(debugwarp[2])) {
-			setxy(debugwarp[0], debugwarp[1], 1049);
+			setxy(debugwarp[0], debugwarp[1], 1050);
 			snd_free_all();
 			con = 5;
 		}
@@ -299,7 +299,7 @@ if (tspawn == 2) {
 		snd_play_delay(snd_tspawn, 4, 0.1, 0.6);
 	}
 
-	var target = 1049;
+	var target = 1050;
 	var _hhsp = lengthdir_x(2, direction == point_direction(x, y, target.x + 40, target.y + 60));
 	var _vvsp = lengthdir_y(2, direction == point_direction(x, y, target.x + 40, target.y + 60));
 	scr_fancy_ripple_alt(camerax() + 640 + 40, cameray() - 40, 60, 255, 300, 1, 12, target.depth, _hhsp, _vvsp, 0);
@@ -310,7 +310,7 @@ if (tspawn == 1) {
 	snd_play_delay(snd_tspawn, 2, 0.5, 0.8);
 	snd_play_delay(snd_tspawn, 4, 0.3, 0.6);
 	snd_play_delay(snd_tspawn, 6, 0.1, 0.4);
-	var target = 1049;
+	var target = 1050;
 	var _hhsp = lengthdir_x(2, direction == point_direction(x, y, target.x + 40, target.y + 60));
 	var _vvsp = lengthdir_y(2, direction == point_direction(x, y, target.x + 40, target.y + 60));
 	scr_fancy_ripple_alt(camerax() + 640 + 40, cameray() - 40, 255, 30, 360, 1, 12, target.depth, _hhsp, _vvsp, 0);

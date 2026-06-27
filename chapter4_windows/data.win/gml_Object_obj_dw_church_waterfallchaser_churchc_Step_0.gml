@@ -26,8 +26,8 @@ if (con == 0) {
 	if (offscreen)
 		chasespeed = 24;
 
-	var targ = 1049;
-	var player_in_light = scr_in_light(1214, 10, 10);
+	var targ = 1050;
+	var player_in_light = scr_in_light(1215, 10, 10);
 
 	if (player_in_light) {
 		siner = random_range(0, 48);
@@ -138,7 +138,7 @@ if (con == 2) {
 	if (y < cy || y > (cy + 480))
 		offscreen = true;
 
-	var player_in_light = scr_in_light(1214, 10, 10);
+	var player_in_light = scr_in_light(1215, 10, 10);
 
 	if (!player_in_light && !offscreen) {
 		con = 0;
@@ -165,7 +165,7 @@ siner++;
 
 if (siner >= sinertarg) {
 	siner = 0;
-	var target = 1049;
+	var target = 1050;
 	var speedd = 2;
 
 	if (i_ex(obj_ch4_DCA04)) {

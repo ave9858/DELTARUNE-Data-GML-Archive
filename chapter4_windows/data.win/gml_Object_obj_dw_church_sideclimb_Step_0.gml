@@ -4,7 +4,7 @@ if (scr_debug()) {
 	if (keyboard_check(ord("W"))) {
 		if (keyboard_check_pressed(ord("2"))) {
 			var pos = scr_heromarker("kr", "debugwarp2");
-			setxy(pos[0], pos[1], 1049);
+			setxy(pos[0], pos[1], 1050);
 
 			with (obj_caterpillarchara)
 				setxy(pos[0], pos[1]);
@@ -19,7 +19,7 @@ if (scr_debug()) {
 	if (keyboard_check(ord("W"))) {
 		if (keyboard_check_pressed(ord("3"))) {
 			var pos = scr_heromarker("kr", "debugwarp3");
-			setxy(pos[0], pos[1], 1049);
+			setxy(pos[0], pos[1], 1050);
 
 			with (obj_caterpillarchara)
 				setxy(pos[0], pos[1]);

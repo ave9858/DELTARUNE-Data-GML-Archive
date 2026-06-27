@@ -203,7 +203,7 @@ if (econ == 5) {
 				setxy(xstart, ystart);
 
 				if (place_meeting(x, y, obj_mainchara)) {
-					setxy(obj_mainchara.x, 246, 1049);
+					setxy(obj_mainchara.x, 246, 1050);
 					scr_caterpillar_interpolate("all");
 				}
 			}

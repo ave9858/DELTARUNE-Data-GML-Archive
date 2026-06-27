@@ -446,7 +446,7 @@ if ((type == 2 || type == 4 || type == 5 || type >= 7) && global.interact != 5) 
 
 					if (ob == ob3) {
 						var li = ds_list_create();
-						instance_place_list(x, y, 594, li, false);
+						instance_place_list(x, y, 595, li, false);
 
 						for (var i = 0; i < ds_list_size(li); i++)
 							instance_destroy(ds_list_find_value(li, i));

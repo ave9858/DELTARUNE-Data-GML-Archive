@@ -62,38 +62,42 @@ if (glowing_active) {
 
 	if (con == 50 && !i_ex(obj_writer)) {
 		con = 51;
-		scr_delay_var("con", 52, 90);
+		scr_delay_var("con", 52, 30);
 	}
 
 	if (con == 52 && !i_ex(obj_writer)) {
 		con = 53;
-		scr_delay_var("con", 54, 180);
+		scr_delay_var("con", 54, 90);
 		credit_index++;
 		creditalpha = 1;
-		scr_lerpvar("year_alpha", -1, 1, 120);
+		scr_lerpvar("year_alpha", -1, 1, 30);
 	}
 
-	if (con == 54 && !i_ex(obj_writer)) {
+	if (con == 54) {
+		con = -1;
+		scr_delay_var("con", 55, 90);
+		scr_lerpvar("year_alpha", 1, 0, 30);
+	}
+
+	if (con == 55 && !i_ex(obj_writer)) {
 		if (audio_is_playing(song1)) {
 			var track_progress = audio_sound_get_track_position(song1);
 			var measure_progress = track_progress / measure_time;
 			var current_measure = floor(measure_progress);
 
 			if (current_measure == 26) {
-				con = 59;
-				scr_delay_var("con", 60, 60);
+				con = 60;
 				creditalpha = 0;
 			}
 		} else {
-			con = 59;
-			scr_delay_var("con", 60, 60);
+			con = 60;
 			creditalpha = 0;
 		}
 	}
 
 	if (con == 60) {
 		con = -1;
-		game_restart();
+		room_goto(room_chapter_continue);
 	}
 
 	if (auto_text) {

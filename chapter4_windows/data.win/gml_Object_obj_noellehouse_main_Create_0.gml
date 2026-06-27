@@ -189,7 +189,7 @@ if (global.plot >= 65) {
 
 		with (overlay) {
 			set_alpha(0.5);
-			set_heart_target(568);
+			set_heart_target(569);
 			heart_glow_show();
 		}
 

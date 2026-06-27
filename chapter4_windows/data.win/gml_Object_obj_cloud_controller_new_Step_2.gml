@@ -5,7 +5,7 @@ if (!active) {
 	exit;
 }
 
-var _hero_obj = 1049;
+var _hero_obj = 1050;
 
 if (i_ex(obj_climb_kris))
 	_hero_obj = 27;

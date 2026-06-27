@@ -1,5 +1,5 @@
 var ladder_index = 4;
-var tower = 1010;
+var tower = 1011;
 var tile_angle1 = tower.tile_angle[i] + tower.tower_angle;
 
 while (tile_angle1 < 0)

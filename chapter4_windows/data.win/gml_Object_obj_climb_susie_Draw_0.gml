@@ -1,5 +1,5 @@
 if (onrotatingtower) {
-	var tower = 1010;
+	var tower = 1011;
 	var adjustment = -304;
 
 	if (tower.appearance == 1)

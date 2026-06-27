@@ -1,7 +1,7 @@
 var target = -4;
 
 if (i_ex(obj_mike_minigame_controller)) {
-	target = 719;
+	target = 720;
 } else {
 	with (obj_mike_grabcat_pluey) {
 		target = id;

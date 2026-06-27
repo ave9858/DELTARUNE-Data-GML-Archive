@@ -1,7 +1,7 @@
 if (image_alpha < 1 && con >= 0)
 	image_alpha += 0.15;
 
-var hammer = 1435;
+var hammer = 1436;
 
 if (con == 4 || con == 5) {
 	timer++;

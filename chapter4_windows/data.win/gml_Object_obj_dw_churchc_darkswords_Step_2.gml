@@ -1,6 +1,6 @@
 if (con < 99) {
 	var _animspeed = 0.30000000000000004;
-	var _kristarget = 1049;
+	var _kristarget = 1050;
 	var _hx = obj_mainchara.x + 12;
 	var _hy = obj_mainchara.y + 40;
 	var _cx = camerax();
@@ -131,10 +131,10 @@ if (con < 99) {
 		}
 	} else {
 		with (light_player)
-			target = 1049;
+			target = 1050;
 
 		with (light_player_b)
-			target = 1049;
+			target = 1050;
 	}
 
 	with (flash) {

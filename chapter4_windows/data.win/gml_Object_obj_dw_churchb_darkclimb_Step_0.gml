@@ -78,7 +78,7 @@ if (scr_debug()) {
 			global.tempflag[90] = 0;
 			scr_setparty(0);
 			var pos = scr_heromarker("kris", "top");
-			setxy(pos[0], pos[1], 1049);
+			setxy(pos[0], pos[1], 1050);
 			pos = scr_heromarker("susie", "top");
 			sujumpoff = scr_marker_ext(pos[0], pos[1], spr_susie_walk_left_dw, 2, 2, undefined, undefined, undefined, undefined, 1);
 			con = 32;

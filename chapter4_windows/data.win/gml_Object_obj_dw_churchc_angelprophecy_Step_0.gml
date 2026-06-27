@@ -19,7 +19,7 @@ if (cutscene == 0) {
 		var stren = 0;
 
 		with (obj_sprhighlight) {
-			if (target == 1049) {
+			if (target == 1050) {
 				stren = strength;
 				hiimgalp = image_alpha;
 			}

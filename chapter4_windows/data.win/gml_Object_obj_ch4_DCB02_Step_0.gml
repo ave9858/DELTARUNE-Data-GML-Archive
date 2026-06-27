@@ -694,7 +694,7 @@ if (swap_characters) {
 
 	statue_fx.susie_target = susie_instance;
 	statue_fx.ralsei_target = ralsei_instance;
-	statue_fx.kris_target = 1049;
+	statue_fx.kris_target = 1050;
 
 	with (statue_fx)
 		target_characters = [statue_target, ralsei_target, susie_target, kris_target];

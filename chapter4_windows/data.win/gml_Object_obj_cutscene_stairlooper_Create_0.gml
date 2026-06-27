@@ -12,7 +12,7 @@ cutscene_object = -4;
 
 if (room == room_dw_church_intro3) {
 	xpoint = 640;
-	cutscene_object = 681;
+	cutscene_object = 682;
 }
 
 if (room == room_dw_church_intro_guei) {

@@ -1,9 +1,9 @@
 if (!is_init) {
 	if (i_ex(obj_mainchara))
-		kr_target = 1049;
+		kr_target = 1050;
 
 	if (i_ex(obj_caterpillarchara))
-		su_target = 1235;
+		su_target = 1236;
 
 	if (kr_target != -4 && su_target != -4)
 		is_init = true;

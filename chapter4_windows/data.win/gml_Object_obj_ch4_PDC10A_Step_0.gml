@@ -82,7 +82,7 @@ if (con == 6 && !d_ex()) {
 	c_imageindex(16);
 	c_wait(10);
 	c_imagespeed(0);
-	c_instance(204, 116, 1273);
+	c_instance(204, 116, 1274);
 	c_soundplay(snd_break1);
 	c_soundplay(snd_grab);
 	c_imageindex(38);

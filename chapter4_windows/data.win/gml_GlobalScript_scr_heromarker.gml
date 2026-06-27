@@ -2,22 +2,22 @@ function scr_heromarker(arg0 = "", arg1 = "") {
 	var ____foundmarker = -4;
 	var xpos = -1;
 	var ypos = -1;
-	var objindextocheck = 1365;
+	var objindextocheck = 1366;
 
 	if (string_pos("kr", arg0) != 0)
-		objindextocheck = 544;
+		objindextocheck = 545;
 
 	if (string_pos("su", arg0) != 0)
-		objindextocheck = 522;
+		objindextocheck = 523;
 
 	if (string_pos("ra", arg0) != 0)
 		objindextocheck = 75;
 
 	if (string_pos("no", arg0) != 0)
-		objindextocheck = 933;
+		objindextocheck = 934;
 
 	if (string_pos("gen", arg0) != 0)
-		objindextocheck = 1365;
+		objindextocheck = 1366;
 
 	with (objindextocheck) {
 		if (variable_instance_exists(id, "extflag")) {

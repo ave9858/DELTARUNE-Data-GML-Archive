@@ -98,7 +98,7 @@ if (susieattackcon == 2) {
 		snd_play(snd_rudebuster_swing);
 		blast = instance_create((obj_heroparent.x + 180) - 36, (obj_heroparent.y + 60) - 18, obj_rudebuster_bolt);
 		blast.caster = 0;
-		blast.target = 1435;
+		blast.target = 1436;
 		blast.damage = ceil(((global.battlemag[1] * 5) + (global.battleat[1] * 11)) - (global.monsterdf[0] * 3));
 		blast.star = 0;
 		blast.speedmax = 10;

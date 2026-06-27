@@ -23,6 +23,11 @@ if (global.plot < 237)
 if (global.plot > 237)
 	cutscene = -1;
 
+var flag = global.flag[1584];
+
+if (flag >= 524288)
+	global.flag[1584] = 524287;
+
 scr_walkntalk_create();
 var spritesArray = layer_get_all_elements("DEBUG_ASSETS");
 npc1 = -4;

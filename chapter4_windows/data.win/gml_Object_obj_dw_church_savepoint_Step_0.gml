@@ -16,7 +16,7 @@ if (!init) {
 }
 
 if (lightinit == 0) {
-	if (scr_checklocation(1049, 2220, 258, 40)) {
+	if (scr_checklocation(1050, 2220, 258, 40)) {
 		roomglow.active = true;
 		roomglow.actind = 1;
 

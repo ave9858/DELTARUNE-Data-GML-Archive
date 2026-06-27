@@ -122,7 +122,7 @@ if (con == 1) {
 
 			if (met == -4) {
 				var _list = ds_list_create();
-				var _num = instance_place_list(x + (px * i), y + (py * i), 1031, _list, false);
+				var _num = instance_place_list(x + (px * i), y + (py * i), 1032, _list, false);
 
 				if (_num > 0) {
 					for (var j = 0; j < _num; j++) {

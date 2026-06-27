@@ -6,9 +6,9 @@ if (con == 0) {
 }
 
 var clientlist = [];
-array_push(clientlist, 1049);
-array_push(clientlist, 1235);
-array_push(clientlist, 1409);
+array_push(clientlist, 1050);
+array_push(clientlist, 1236);
+array_push(clientlist, 1410);
 
 with (obj_dw_churchb_darkclimb) {
 	if (i_ex(sujumpoff))

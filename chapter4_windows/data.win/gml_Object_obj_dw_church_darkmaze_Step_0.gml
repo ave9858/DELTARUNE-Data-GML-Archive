@@ -7,7 +7,7 @@ if (scr_debug()) {
 		hidecater = 1;
 		gcon = 0;
 		ccon = 0;
-		setxy(746, 384, 1049);
+		setxy(746, 384, 1050);
 		con = 10;
 	}
 }
@@ -591,7 +591,7 @@ if (gcon == 5.1) {
 	c_var_instance(germark, "hspeed", -6);
 	c_wait(60);
 	c_pannable(1);
-	c_panobj(1049, 30);
+	c_panobj(1050, 30);
 	c_wait(30);
 	c_var_instance(id, "gcon", 5.2);
 	c_pannable(0);

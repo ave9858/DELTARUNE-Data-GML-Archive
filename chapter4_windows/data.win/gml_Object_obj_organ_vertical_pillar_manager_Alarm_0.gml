@@ -98,7 +98,7 @@ for (var a = 0; a < sameattack; a++) {
 			var randoff = choose(12.5, 137.5);
 
 			for (a = 0; a < 6; a++)
-				scr_script_delayed(scr_fire_bullet, 16, x, (y - 75) + (((25 * a) + randoff) % 150), 1438, (a % 2) * 180, 0);
+				scr_script_delayed(scr_fire_bullet, 16, x, (y - 75) + (((25 * a) + randoff) % 150), 1439, (a % 2) * 180, 0);
 		}
 
 		alarm[0] = other.interval + 4;

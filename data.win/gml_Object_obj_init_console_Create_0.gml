@@ -1,6 +1,6 @@
 enum UnknownEnum {
 	Value_0,
-	Value_4 = 4
+	Value_5 = 5
 }
 
 global.savedata_async_id = -1;
@@ -91,7 +91,7 @@ function convert_loaded_file() {
 	}
 
 	if (!scr_has_ura_data()) {
-		for (var i = 0; i < UnknownEnum.Value_4; i++) {
+		for (var i = 0; i < UnknownEnum.Value_5; i++) {
 			var chapter = i + 1;
 			scr_convert_ura_data(chapter);
 		}

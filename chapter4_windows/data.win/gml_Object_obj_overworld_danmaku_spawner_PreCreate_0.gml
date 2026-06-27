@@ -2,7 +2,7 @@ event_inherited();
 spreader = false;
 range = 180;
 fire_type = 0;
-child_bullet = 1230;
+child_bullet = 1231;
 fire_rate = 3;
 shot_count = 1;
 spread_angle = 0;

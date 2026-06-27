@@ -230,7 +230,7 @@ var cancelcon = 0;
 
 if (global.interact == 0) {
 	var _list = ds_list_create();
-	var _num = instance_place_list(x, y, 538, _list, false);
+	var _num = instance_place_list(x, y, 539, _list, false);
 
 	if (ds_list_size(_list) > 0) {
 		for (var i = 0; i < ds_list_size(_list); i++) {

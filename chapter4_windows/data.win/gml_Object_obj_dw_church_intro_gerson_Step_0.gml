@@ -88,8 +88,8 @@ with (tres) {
 
 if (scr_debug()) {
 	if (keyboard_check_pressed(ord("W")))
-		setxy(1660, 800, 1049);
+		setxy(1660, 800, 1050);
 
 	if (keyboard_check_pressed(ord("E")))
-		setxy(1760, 1080, 1049);
+		setxy(1760, 1080, 1050);
 }

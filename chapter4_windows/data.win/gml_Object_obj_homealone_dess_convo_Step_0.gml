@@ -62,7 +62,7 @@ if (auto_text) {
 		if (auto_text_stop) {
 			auto_text_buffer--;
 
-			if (variable_instance_exists(1026, "button1") && obj_writer.button1 == 1)
+			if (variable_instance_exists(1027, "button1") && obj_writer.button1 == 1)
 				auto_text_start = false;
 
 			if (auto_text_buffer <= 0) {

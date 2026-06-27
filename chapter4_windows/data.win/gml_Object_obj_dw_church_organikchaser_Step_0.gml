@@ -101,7 +101,7 @@ if (con == 0) {
 
 if (con == 1) {
 	if (global.interact == 0) {
-		dir = direction_to_object_bbox(undefined, 1049);
+		dir = direction_to_object_bbox(undefined, 1050);
 		facing = 0;
 
 		if (dir < 90 || dir > 270)

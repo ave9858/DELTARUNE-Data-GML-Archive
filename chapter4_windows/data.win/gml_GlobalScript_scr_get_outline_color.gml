@@ -29,7 +29,7 @@ function scr_get_outline_color(arg0, arg1 = 8421504, arg2 = 1) {
 			return 8421504;
 	}
 
-	if (object_get_parent(arg0.object_index) == 1276) {
+	if (object_get_parent(arg0.object_index) == 1277) {
 		if (arg0.object_index == obj_herokris)
 			col = krcol;
 		else if (arg0.object_index == obj_herosusie)

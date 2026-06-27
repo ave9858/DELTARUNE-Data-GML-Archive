@@ -117,7 +117,7 @@ regain_control = function() {
 	with (obj_actor)
 		visible = 0;
 
-	overlay_controller.target = 1049;
+	overlay_controller.target = 1050;
 };
 
 lose_control = function() {

@@ -331,10 +331,10 @@ if (con < 99) {
 			global.interact = 0;
 
 			with (light_player)
-				target = 1049;
+				target = 1050;
 
 			with (light_player_b)
-				target = 1049;
+				target = 1050;
 
 			with (obj_mainchara)
 				sprite_index = spr_kris_walk_up_windy;

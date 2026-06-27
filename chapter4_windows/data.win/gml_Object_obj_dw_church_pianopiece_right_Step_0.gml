@@ -94,7 +94,7 @@ with (sunpc) {
 		global.choicemsg[3] = stringset("");
 
 		if (!sitting) {
-			var face = direction_to_object_bbox(undefined, 1049, 1);
+			var face = direction_to_object_bbox(undefined, 1050, 1);
 
 			switch (face) {
 				case 3:
@@ -232,7 +232,7 @@ with (sunpc) {
 		}
 
 		if (!sitting) {
-			var face = direction_to_object_bbox(undefined, 1049, 1);
+			var face = direction_to_object_bbox(undefined, 1050, 1);
 
 			switch (face) {
 				case 3:
@@ -277,7 +277,7 @@ with (ranpc) {
 			d_make();
 			myinteract = 999;
 		} else {
-			switch (direction_to_object_bbox(undefined, 1049, 1)) {
+			switch (direction_to_object_bbox(undefined, 1050, 1)) {
 				case 2:
 					marker.sprite_index = spr_ralsei_walk_up;
 					break;

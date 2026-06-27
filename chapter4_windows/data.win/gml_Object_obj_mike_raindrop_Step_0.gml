@@ -1,4 +1,4 @@
-var controller = 240;
+var controller = 241;
 var shelterwidth = 120;
 
 if (place_meeting(x, y + 60, obj_mike_catbasket))
@@ -14,7 +14,7 @@ if (y >= (cameray() + 310) || (image_blend != c_red && ((x <= (camerax() + shelt
 
 	vspeed = min(vspeed, 6);
 
-	if (controller == 240) {
+	if (controller == 241) {
 		var seg = clamp(floor((x - camerax()) / 92), 0, 6);
 		snd_play(snds[seg], random_range(0.8, 1.1), 1);
 

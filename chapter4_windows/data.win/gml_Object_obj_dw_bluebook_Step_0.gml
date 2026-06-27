@@ -56,7 +56,7 @@ if (con == 2) {
 		spd = lerp(spd, maxspd, accel);
 		var myxoff = x + 48 + 4;
 		var myyoff = y + 40 + 8;
-		var obj2 = 1049;
+		var obj2 = 1050;
 		var point2x = obj2.bbox_left + ((obj2.bbox_right - obj2.bbox_left) / 2);
 		var point2y = obj2.bbox_top + ((obj2.bbox_bottom - obj2.bbox_top) / 2);
 		var dir = point_direction(myxoff, myyoff, point2x, point2y);

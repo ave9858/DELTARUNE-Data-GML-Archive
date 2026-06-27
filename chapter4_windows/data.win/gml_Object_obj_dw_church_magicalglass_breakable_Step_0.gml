@@ -25,7 +25,7 @@ if (scr_onscreen(self)) {
 	}
 
 	if (specialcase) {
-		clientlist = [1409];
+		clientlist = [1410];
 		clientlist_length = 1;
 	}
 

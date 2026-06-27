@@ -37,7 +37,7 @@ if (con == 0) {
 	if (y < cy || y > (cy + 480))
 		offscreen = true;
 
-	var targ = 1049;
+	var targ = 1050;
 	move_towards_point(targ.x + 40, targ.y + 60, chasespeed);
 	var lerprate = 0.1;
 
@@ -148,7 +148,7 @@ if (con == 401) {
 siner++;
 
 if ((siner % sinertarg) == 0) {
-	var hittarget = 1049;
+	var hittarget = 1050;
 
 	if (i_ex(obj_ch4_DCA04)) {
 		with (obj_actor) {

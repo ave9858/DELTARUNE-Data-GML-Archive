@@ -2,13 +2,13 @@ if (!shadinit) {
 	shadinit = 1;
 
 	with (instance_create(0, 0, obj_floorshadow)) {
-		target = 1049;
+		target = 1050;
 		yoff = -8;
 		stretch = 3;
 	}
 
 	with (instance_create(0, 0, obj_floorshadow)) {
-		target = 1235;
+		target = 1236;
 		yoff = -4;
 		stretch = 3;
 	}
@@ -20,12 +20,12 @@ if (!shadinit) {
 		image_blend = c_black;
 
 	with (instance_create(0, 0, obj_sprhighlight)) {
-		target = 1049;
+		target = 1050;
 		yoffset = 4;
 	}
 
 	with (instance_create(0, 0, obj_sprhighlight)) {
-		target = 1235;
+		target = 1236;
 		yoffset = 4;
 	}
 }

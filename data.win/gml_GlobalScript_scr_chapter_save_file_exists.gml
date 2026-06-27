@@ -1,6 +1,6 @@
 enum UnknownEnum {
 	Value_1 = 1,
-	Value_4 = 4
+	Value_5 = 5
 }
 
 function scr_chapter_save_file_exists(arg0) {
@@ -96,7 +96,7 @@ function scr_is_chapter_revealed(arg0) {
 function get_highest_revealed_chapter() {
 	var highest_revealed = UnknownEnum.Value_1;
 
-	for (var i = 0; i < UnknownEnum.Value_4; i++) {
+	for (var i = 0; i < UnknownEnum.Value_5; i++) {
 		var chapter = i + 1;
 
 		if (!scr_is_chapter_revealed(chapter))

@@ -14,7 +14,7 @@ if (scr_debug()) {
 		global.plot = 126;
 		global.facing = 1;
 		global.tempflag[90] = 0;
-		setxy(2936, 860, 1049);
+		setxy(2936, 860, 1050);
 		scr_setparty(1, 1);
 	}
 

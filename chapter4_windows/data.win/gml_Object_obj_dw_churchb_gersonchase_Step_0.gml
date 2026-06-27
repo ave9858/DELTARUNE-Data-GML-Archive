@@ -42,7 +42,7 @@ if (!init) {
 	if (global.tempflag[90] == 43) {
 		global.tempflag[90] = 0;
 		pos = scr_heromarker("kris", "debugwarp1");
-		setxy(pos[0], pos[1], 1049);
+		setxy(pos[0], pos[1], 1050);
 		setxy(pos[0], pos[1], 93);
 		scr_caterpillar_interpolate("all");
 		con = 11;
@@ -51,7 +51,7 @@ if (!init) {
 	if (global.tempflag[90] == 44) {
 		global.tempflag[90] = 0;
 		pos = scr_heromarker("kris", "debugwarp1");
-		setxy(pos[0], pos[1], 1049);
+		setxy(pos[0], pos[1], 1050);
 		setxy(pos[0], pos[1], 93);
 		scr_caterpillar_interpolate("all");
 		qcon = 41;
@@ -215,7 +215,7 @@ if (con == 12) {
 			instance_destroy();
 
 		safe_delete(blackout);
-		setxy(room_width / 2, room_height / 2, 1049);
+		setxy(room_width / 2, room_height / 2, 1050);
 		layer_set_visible("TILES_WALL", 0);
 
 		with (obj_solidblock)
